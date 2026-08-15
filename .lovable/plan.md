@@ -9,7 +9,8 @@ A mobile-first web app that generates ready-to-read VHF radio call scripts (Mayd
 - Live header: current UTC time and current position (decimal degrees + degrees/decimal-minutes, the format read on the radio), with accuracy and a refresh button.
 - Active vessel selector at the top; switching vessels regenerates the script instantly.
 - Inputs above the script: nature of emergency (preset list + free text), persons on board, radio channel (16 default) / DSC note.
-- Bottom tab menu with three tabs: MAYDAY, PAN-PAN, SÉCURITÉ. Tapping a tab swaps the template and carries over all entered data.
+- Bottom tab menu with four tabs: MAYDAY, PAN-PAN, SÉCURITÉ, STANDARD. Tapping a tab swaps the template and carries over all entered data.
+- Each call type owns the page's main colour: the whole call screen (accents, header, active tab, script card border, action buttons) re-themes to red for Mayday, orange for Pan-Pan, yellow for Sécurité, green for Standard.
 - Actions: copy script, share, and a large-type "read mode" that shows the script full screen for reading aloud on the radio.
 
 **Vessels**
