@@ -28,7 +28,16 @@ Each script inserts vessel name, MMSI, call sign, position, UTC time, POB, natur
 ## Position and time
 
 - Browser Geolocation API with permission prompt, watch mode for continuous updates, manual refresh, and a manual-entry fallback if GPS is denied or unavailable.
+- Auto-update of the position can be switched on or off; when on, the position refreshes on a fixed interval (default 10 seconds) and the script updates with it. Last-fix timestamp is shown.
 - UTC clock ticking every second, formatted `HH:MM UTC`.
+
+## Settings page
+
+- Toggle: auto-update position (on by default).
+- Refresh interval in seconds, default 10, sensible bounds (e.g. 2–300) with validation.
+- Default radio channel and preferred position format (decimal degrees vs degrees/decimal-minutes).
+- Settings persist on the device alongside the vessel profiles.
+
 
 ## Data storage
 
