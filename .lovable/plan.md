@@ -51,7 +51,8 @@ Marine-instrument look: deep navy base, high-contrast readable typography, overs
 
 ## Technical notes
 
-- Routes: `/` (call screen), `/vessels`, `/vessels/$id` (edit), `/settings`. Each with its own head() metadata.
+- Routes: `/` (redirects to the Mayday call), `/call/$type` for the four call types, `/vessels`, `/vessels/$id` (edit), `/settings`. Each with its own head() metadata.
+- Call-type theming via a data attribute on the call screen wrapper that overrides the accent design tokens in `src/styles.css` — no hardcoded colour utilities in components.
 - Vessel state and settings in small localStorage-backed hooks; template generation in a pure `lib/templates.ts` module so scripts are testable.
 - Geolocation in a `useGeoPosition` hook that takes the interval from settings, read only after hydration to avoid SSR mismatch.
 - Disclaimer note that the app is an aid and does not replace proper radio training or DSC operation.
