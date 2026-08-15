@@ -9,7 +9,8 @@ A mobile-first web app that generates ready-to-read VHF radio call scripts (Mayd
 - Live header: current UTC time and current position (decimal degrees + degrees/decimal-minutes, the format read on the radio), with accuracy and a refresh button.
 - Active vessel selector at the top; switching vessels regenerates the script instantly.
 - Inputs above the script: nature of emergency (preset list + free text), persons on board, radio channel (16 default) / DSC note.
-- Bottom tab menu with three tabs: MAYDAY, PAN-PAN, SÉCURITÉ. Tapping a tab swaps the template and carries over all entered data.
+- Bottom tab menu with four tabs: MAYDAY, PAN-PAN, SÉCURITÉ, STANDARD. Tapping a tab swaps the template and carries over all entered data.
+- Each call type owns the page's main colour: the whole call screen (accents, header, active tab, script card border, action buttons) re-themes to red for Mayday, orange for Pan-Pan, yellow for Sécurité, green for Standard.
 - Actions: copy script, share, and a large-type "read mode" that shows the script full screen for reading aloud on the radio.
 
 **Vessels**
@@ -19,9 +20,10 @@ A mobile-first web app that generates ready-to-read VHF radio call scripts (Mayd
 
 ## Templates (English, standard phraseology)
 
-- Mayday: distress call + distress message, name spoken three times, MMSI, position, nature of distress, assistance required, POB, "Over".
-- Pan-Pan: urgency call, same data block, nature of urgency.
-- Sécurité: safety call, addressed to all stations, position and safety message.
+- Mayday (red): distress call + distress message, name spoken three times, MMSI, position, nature of distress, assistance required, POB, "Over".
+- Pan-Pan (orange): urgency call, same data block, nature of urgency.
+- Sécurité (yellow): safety call, addressed to all stations, position and safety message.
+- Standard (green): routine call to a named station or marina — station called three times, own vessel name, call sign and MMSI, working channel request, short message, "Over".
 
 Each script inserts vessel name, MMSI, call sign, position, UTC time, POB, nature and channel. Missing values render as clearly marked placeholders (e.g. `[POSITION UNKNOWN]`) so nothing is silently wrong.
 
@@ -45,11 +47,12 @@ Everything stays on the device (local storage). No account, no internet needed a
 
 ## Design
 
-Marine-instrument look: deep navy background, high-contrast readable typography, colour-coded call types (red Mayday, amber Pan-Pan, blue Sécurité), oversized touch targets suited to a moving boat and daylight glare.
+Marine-instrument look: deep navy base, high-contrast readable typography, oversized touch targets suited to a moving boat and daylight glare. The accent colour is a single semantic token that the selected call type swaps: red (Mayday), orange (Pan-Pan), yellow (Sécurité), green (Standard), with a short transition so the change is obvious. Text/foreground pairings are tuned per colour so yellow and green stay readable.
 
 ## Technical notes
 
-- Routes: `/` (call screen), `/vessels`, `/vessels/$id` (edit), `/settings`. Each with its own head() metadata.
+- Routes: `/` (redirects to the Mayday call), `/call/$type` for the four call types, `/vessels`, `/vessels/$id` (edit), `/settings`. Each with its own head() metadata.
+- Call-type theming via a data attribute on the call screen wrapper that overrides the accent design tokens in `src/styles.css` — no hardcoded colour utilities in components.
 - Vessel state and settings in small localStorage-backed hooks; template generation in a pure `lib/templates.ts` module so scripts are testable.
 - Geolocation in a `useGeoPosition` hook that takes the interval from settings, read only after hydration to avoid SSR mismatch.
 - Disclaimer note that the app is an aid and does not replace proper radio training or DSC operation.
