@@ -54,9 +54,9 @@ function VesselEditPage() {
 
   const save = () => {
     const next: Record<string, string> = {};
-    if (!draft.name.trim()) next.name = "Vessel name is required";
-    if (!/^\d{9}$/.test(draft.mmsi.trim())) next.mmsi = "MMSI must be exactly 9 digits";
-    if (!draft.callSign.trim()) next.callSign = "Call sign is required";
+    if (!draft.name.trim()) next["name"] = "Vessel name is required";
+    if (!/^\d{9}$/.test(draft.mmsi.trim())) next["mmsi"] = "MMSI must be exactly 9 digits";
+    if (!draft.callSign.trim()) next["callSign"] = "Call sign is required";
     setErrors(next);
     if (Object.keys(next).length) return;
 

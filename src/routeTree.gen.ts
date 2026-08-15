@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as SettingsRouteImport } from './routes/settings'
 import { Route as CallTypeRouteImport } from './routes/call.$type'
 import { Route as VesselsIndexRouteImport } from './routes/vessels.index'
+import { Route as VesselsIdRouteImport } from './routes/vessels.$id'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -34,17 +35,24 @@ const VesselsIndexRoute = VesselsIndexRouteImport.update({
   path: '/vessels/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const VesselsIdRoute = VesselsIdRouteImport.update({
+  id: '/vessels/$id',
+  path: '/vessels/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/settings': typeof SettingsRoute
   '/call/$type': typeof CallTypeRoute
+  '/vessels/$id': typeof VesselsIdRoute
   '/vessels/': typeof VesselsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/settings': typeof SettingsRoute
   '/call/$type': typeof CallTypeRoute
+  '/vessels/$id': typeof VesselsIdRoute
   '/vessels': typeof VesselsIndexRoute
 }
 export interface FileRoutesById {
@@ -52,20 +60,28 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/settings': typeof SettingsRoute
   '/call/$type': typeof CallTypeRoute
+  '/vessels/$id': typeof VesselsIdRoute
   '/vessels/': typeof VesselsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/settings' | '/call/$type' | '/vessels/'
+  fullPaths: '/' | '/settings' | '/call/$type' | '/vessels/$id' | '/vessels/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/settings' | '/call/$type' | '/vessels'
-  id: '__root__' | '/' | '/settings' | '/call/$type' | '/vessels/'
+  to: '/' | '/settings' | '/call/$type' | '/vessels/$id' | '/vessels'
+  id:
+    | '__root__'
+    | '/'
+    | '/settings'
+    | '/call/$type'
+    | '/vessels/$id'
+    | '/vessels/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   SettingsRoute: typeof SettingsRoute
   CallTypeRoute: typeof CallTypeRoute
+  VesselsIdRoute: typeof VesselsIdRoute
   VesselsIndexRoute: typeof VesselsIndexRoute
 }
 
@@ -99,6 +115,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof VesselsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/vessels/$id': {
+      id: '/vessels/$id'
+      path: '/vessels/$id'
+      fullPath: '/vessels/$id'
+      preLoaderRoute: typeof VesselsIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -106,6 +129,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   SettingsRoute: SettingsRoute,
   CallTypeRoute: CallTypeRoute,
+  VesselsIdRoute: VesselsIdRoute,
   VesselsIndexRoute: VesselsIndexRoute,
 }
 export const routeTree = rootRouteImport
