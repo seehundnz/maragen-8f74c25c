@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SettingsRouteImport } from './routes/settings'
 import { Route as CallTypeRouteImport } from './routes/call.$type'
+import { Route as VesselsIndexRouteImport } from './routes/vessels.index'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -28,35 +29,44 @@ const CallTypeRoute = CallTypeRouteImport.update({
   path: '/call/$type',
   getParentRoute: () => rootRouteImport,
 } as any)
+const VesselsIndexRoute = VesselsIndexRouteImport.update({
+  id: '/vessels/',
+  path: '/vessels/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/settings': typeof SettingsRoute
   '/call/$type': typeof CallTypeRoute
+  '/vessels/': typeof VesselsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/settings': typeof SettingsRoute
   '/call/$type': typeof CallTypeRoute
+  '/vessels': typeof VesselsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/settings': typeof SettingsRoute
   '/call/$type': typeof CallTypeRoute
+  '/vessels/': typeof VesselsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/settings' | '/call/$type'
+  fullPaths: '/' | '/settings' | '/call/$type' | '/vessels/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/settings' | '/call/$type'
-  id: '__root__' | '/' | '/settings' | '/call/$type'
+  to: '/' | '/settings' | '/call/$type' | '/vessels'
+  id: '__root__' | '/' | '/settings' | '/call/$type' | '/vessels/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   SettingsRoute: typeof SettingsRoute
   CallTypeRoute: typeof CallTypeRoute
+  VesselsIndexRoute: typeof VesselsIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -82,6 +92,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CallTypeRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/vessels/': {
+      id: '/vessels/'
+      path: '/vessels'
+      fullPath: '/vessels/'
+      preLoaderRoute: typeof VesselsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -89,6 +106,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   SettingsRoute: SettingsRoute,
   CallTypeRoute: CallTypeRoute,
+  VesselsIndexRoute: VesselsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
