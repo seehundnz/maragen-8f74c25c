@@ -28,7 +28,16 @@ Each script inserts vessel name, MMSI, call sign, position, UTC time, POB, natur
 ## Position and time
 
 - Browser Geolocation API with permission prompt, watch mode for continuous updates, manual refresh, and a manual-entry fallback if GPS is denied or unavailable.
+- Auto-update of the position can be switched on or off; when on, the position refreshes on a fixed interval (default 10 seconds) and the script updates with it. Last-fix timestamp is shown.
 - UTC clock ticking every second, formatted `HH:MM UTC`.
+
+## Settings page
+
+- Toggle: auto-update position (on by default).
+- Refresh interval in seconds, default 10, sensible bounds (e.g. 2–300) with validation.
+- Default radio channel and preferred position format (decimal degrees vs degrees/decimal-minutes).
+- Settings persist on the device alongside the vessel profiles.
+
 
 ## Data storage
 
@@ -40,7 +49,7 @@ Marine-instrument look: deep navy background, high-contrast readable typography,
 
 ## Technical notes
 
-- Routes: `/` (call screen), `/vessels`, `/vessels/$id` (edit). Each with its own head() metadata.
-- Vessel state in a small localStorage-backed hook; template generation in a pure `lib/templates.ts` module so scripts are testable.
-- Geolocation in a `useGeoPosition` hook, read only after hydration to avoid SSR mismatch.
+- Routes: `/` (call screen), `/vessels`, `/vessels/$id` (edit), `/settings`. Each with its own head() metadata.
+- Vessel state and settings in small localStorage-backed hooks; template generation in a pure `lib/templates.ts` module so scripts are testable.
+- Geolocation in a `useGeoPosition` hook that takes the interval from settings, read only after hydration to avoid SSR mismatch.
 - Disclaimer note that the app is an aid and does not replace proper radio training or DSC operation.
