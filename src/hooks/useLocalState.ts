@@ -7,7 +7,14 @@ export function useLocalState<T>(key: string, initial: T) {
   useEffect(() => {
     try {
       const raw = window.localStorage.getItem(key);
-      if (raw) setValue({ ...initial, ...(JSON.parse(raw) as T) } as T);
+      if (raw) {
+        const parsed = JSON.parse(raw) as T;
+        setValue(
+          Array.isArray(initial) || typeof parsed !== "object" || parsed === null
+            ? parsed
+            : ({ ...(initial as object), ...(parsed as object) } as T),
+        );
+      }
     } catch {
       /* ignore corrupt storage */
     }
