@@ -49,7 +49,7 @@ Marine-instrument look: deep navy background, high-contrast readable typography,
 
 ## Technical notes
 
-- Routes: `/` (call screen), `/vessels`, `/vessels/$id` (edit). Each with its own head() metadata.
-- Vessel state in a small localStorage-backed hook; template generation in a pure `lib/templates.ts` module so scripts are testable.
-- Geolocation in a `useGeoPosition` hook, read only after hydration to avoid SSR mismatch.
+- Routes: `/` (call screen), `/vessels`, `/vessels/$id` (edit), `/settings`. Each with its own head() metadata.
+- Vessel state and settings in small localStorage-backed hooks; template generation in a pure `lib/templates.ts` module so scripts are testable.
+- Geolocation in a `useGeoPosition` hook that takes the interval from settings, read only after hydration to avoid SSR mismatch.
 - Disclaimer note that the app is an aid and does not replace proper radio training or DSC operation.
