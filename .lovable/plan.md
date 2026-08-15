@@ -20,9 +20,10 @@ A mobile-first web app that generates ready-to-read VHF radio call scripts (Mayd
 
 ## Templates (English, standard phraseology)
 
-- Mayday: distress call + distress message, name spoken three times, MMSI, position, nature of distress, assistance required, POB, "Over".
-- Pan-Pan: urgency call, same data block, nature of urgency.
-- Sécurité: safety call, addressed to all stations, position and safety message.
+- Mayday (red): distress call + distress message, name spoken three times, MMSI, position, nature of distress, assistance required, POB, "Over".
+- Pan-Pan (orange): urgency call, same data block, nature of urgency.
+- Sécurité (yellow): safety call, addressed to all stations, position and safety message.
+- Standard (green): routine call to a named station or marina — station called three times, own vessel name, call sign and MMSI, working channel request, short message, "Over".
 
 Each script inserts vessel name, MMSI, call sign, position, UTC time, POB, nature and channel. Missing values render as clearly marked placeholders (e.g. `[POSITION UNKNOWN]`) so nothing is silently wrong.
 
