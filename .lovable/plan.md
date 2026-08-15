@@ -47,7 +47,7 @@ Everything stays on the device (local storage). No account, no internet needed a
 
 ## Design
 
-Marine-instrument look: deep navy background, high-contrast readable typography, colour-coded call types (red Mayday, amber Pan-Pan, blue Sécurité), oversized touch targets suited to a moving boat and daylight glare.
+Marine-instrument look: deep navy base, high-contrast readable typography, oversized touch targets suited to a moving boat and daylight glare. The accent colour is a single semantic token that the selected call type swaps: red (Mayday), orange (Pan-Pan), yellow (Sécurité), green (Standard), with a short transition so the change is obvious. Text/foreground pairings are tuned per colour so yellow and green stay readable.
 
 ## Technical notes
 
