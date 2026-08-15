@@ -77,14 +77,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "VHF Call Builder — Mayday, Pan-Pan, Sécurité" },
+      {
+        name: "description",
+        content:
+          "Build spoken VHF radio calls for sailors: vessel profiles, live GPS position and UTC time.",
+      },
+      { name: "author", content: "VHF Call Builder" },
+      { property: "og:title", content: "VHF Call Builder" },
+      {
+        property: "og:description",
+        content: "Mayday, Pan-Pan, Sécurité and routine VHF call scripts from your phone.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
