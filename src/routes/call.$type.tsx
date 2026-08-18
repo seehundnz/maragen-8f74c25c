@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
-import { Copy, Crosshair, Maximize2, RefreshCw, Share2, X } from "lucide-react";
+import { Copy, Crosshair, Loader2, Maximize2, RefreshCw, Share2, Square, Volume2, X } from "lucide-react";
 import { toast } from "sonner";
 
 import { AppShell } from "@/components/AppShell";
@@ -17,6 +17,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useGeoPosition, useUtcNow } from "@/hooks/useGeoPosition";
+import { useSpeech } from "@/hooks/useSpeech";
 import { useSettings, useVessels } from "@/hooks/useFleet";
 import { buildScript } from "@/lib/templates";
 import { formatPositionShort, utcClockString } from "@/lib/position";
@@ -86,6 +87,7 @@ function CallPage() {
     settings.intervalSeconds,
   );
   const [readMode, setReadMode] = useState(false);
+  const speech = useSpeech();
   const [manualOpen, setManualOpen] = useState(false);
   const [manualLat, setManualLat] = useState("");
   const [manualLon, setManualLon] = useState("");
@@ -133,6 +135,29 @@ function CallPage() {
       void copy();
     }
   };
+
+  const toggleSpeak = async () => {
+    if (speech.speaking) {
+      speech.stop();
+      return;
+    }
+    const result = await speech.speak(script);
+    if (result.failed) toast.error("Speech is not available on this device");
+    else if (result.fallback) toast.info("Offline — using the device voice");
+  };
+
+  const SpeakButton = ({ size = "sm" as const }) => (
+    <Button size={size} variant="secondary" onClick={toggleSpeak}>
+      {speech.loading ? (
+        <Loader2 className="animate-spin" />
+      ) : speech.speaking ? (
+        <Square />
+      ) : (
+        <Volume2 />
+      )}
+      {speech.speaking ? "Stop" : "Speak"}
+    </Button>
+  );
 
   return (
     <div data-call={type} className="transition-colors duration-300">
@@ -336,7 +361,8 @@ function CallPage() {
               <h2 className="text-sm font-bold tracking-widest text-primary uppercase">
                 Radio script
               </h2>
-              <div className="flex gap-2">
+              <div className="flex flex-wrap gap-2">
+                <SpeakButton />
                 <Button size="sm" variant="secondary" onClick={copy}>
                   <Copy /> Copy
                 </Button>
@@ -367,9 +393,12 @@ function CallPage() {
           <div className="mx-auto max-w-3xl">
             <div className="mb-4 flex items-center justify-between">
               <span className="text-lg font-black tracking-widest text-primary">{meta.label}</span>
-              <Button variant="secondary" size="sm" onClick={() => setReadMode(false)}>
-                <X /> Close
-              </Button>
+              <div className="flex gap-2">
+                <SpeakButton />
+                <Button variant="secondary" size="sm" onClick={() => setReadMode(false)}>
+                  <X /> Close
+                </Button>
+              </div>
             </div>
             <pre className="font-mono text-2xl leading-relaxed break-words whitespace-pre-wrap sm:text-3xl">
               {script}
