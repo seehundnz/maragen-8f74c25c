@@ -361,7 +361,8 @@ function CallPage() {
               <h2 className="text-sm font-bold tracking-widest text-primary uppercase">
                 Radio script
               </h2>
-              <div className="flex gap-2">
+              <div className="flex flex-wrap gap-2">
+                <SpeakButton />
                 <Button size="sm" variant="secondary" onClick={copy}>
                   <Copy /> Copy
                 </Button>
@@ -392,9 +393,12 @@ function CallPage() {
           <div className="mx-auto max-w-3xl">
             <div className="mb-4 flex items-center justify-between">
               <span className="text-lg font-black tracking-widest text-primary">{meta.label}</span>
-              <Button variant="secondary" size="sm" onClick={() => setReadMode(false)}>
-                <X /> Close
-              </Button>
+              <div className="flex gap-2">
+                <SpeakButton />
+                <Button variant="secondary" size="sm" onClick={() => setReadMode(false)}>
+                  <X /> Close
+                </Button>
+              </div>
             </div>
             <pre className="font-mono text-2xl leading-relaxed break-words whitespace-pre-wrap sm:text-3xl">
               {script}
