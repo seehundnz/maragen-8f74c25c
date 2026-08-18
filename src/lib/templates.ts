@@ -59,7 +59,7 @@ export function buildScript(type: CallType, ctx: TemplateContext): string {
     lines.push(...positionBlock(ctx));
     lines.push(`Nature of distress: ${value(input.nature, "NATURE OF DISTRESS")}`);
     lines.push(`I require ${value(input.assistance, "ASSISTANCE REQUIRED")}`);
-    lines.push(`${pob} persons on board`);
+    if (pob.trim()) lines.push(`${pob} persons on board`);
     if (desc) lines.push(desc);
     if (input.message.trim()) lines.push(input.message.trim());
     lines.push(`I am listening on VHF channel ${channel}`);
@@ -71,7 +71,7 @@ export function buildScript(type: CallType, ctx: TemplateContext): string {
     lines.push(...positionBlock(ctx));
     lines.push(`Nature of urgency: ${value(input.nature, "NATURE OF URGENCY")}`);
     lines.push(`I require ${value(input.assistance, "ASSISTANCE REQUIRED")}`);
-    lines.push(`${pob} persons on board`);
+    if (pob.trim()) lines.push(`${pob} persons on board`);
     if (desc) lines.push(desc);
     if (input.message.trim()) lines.push(input.message.trim());
     lines.push(`I am listening on VHF channel ${channel}`);
