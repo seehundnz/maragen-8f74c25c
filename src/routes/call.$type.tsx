@@ -87,6 +87,7 @@ function CallPage() {
     settings.intervalSeconds,
   );
   const [readMode, setReadMode] = useState(false);
+  const speech = useSpeech();
   const [manualOpen, setManualOpen] = useState(false);
   const [manualLat, setManualLat] = useState("");
   const [manualLon, setManualLon] = useState("");
