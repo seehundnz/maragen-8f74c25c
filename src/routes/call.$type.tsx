@@ -136,6 +136,29 @@ function CallPage() {
     }
   };
 
+  const toggleSpeak = async () => {
+    if (speech.speaking) {
+      speech.stop();
+      return;
+    }
+    const result = await speech.speak(script);
+    if (result.failed) toast.error("Speech is not available on this device");
+    else if (result.fallback) toast.info("Offline — using the device voice");
+  };
+
+  const SpeakButton = ({ size = "sm" as const }) => (
+    <Button size={size} variant="secondary" onClick={toggleSpeak}>
+      {speech.loading ? (
+        <Loader2 className="animate-spin" />
+      ) : speech.speaking ? (
+        <Square />
+      ) : (
+        <Volume2 />
+      )}
+      {speech.speaking ? "Stop" : "Speak"}
+    </Button>
+  );
+
   return (
     <div data-call={type} className="transition-colors duration-300">
       <AppShell>
