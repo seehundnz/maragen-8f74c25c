@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SettingsRouteImport } from './routes/settings'
+import { Route as ApiTtsRouteImport } from './routes/api/tts'
 import { Route as CallTypeRouteImport } from './routes/call.$type'
 import { Route as VesselsIndexRouteImport } from './routes/vessels.index'
 import { Route as VesselsIdRouteImport } from './routes/vessels.$id'
@@ -23,6 +24,11 @@ const IndexRoute = IndexRouteImport.update({
 const SettingsRoute = SettingsRouteImport.update({
   id: '/settings',
   path: '/settings',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiTtsRoute = ApiTtsRouteImport.update({
+  id: '/api/tts',
+  path: '/api/tts',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CallTypeRoute = CallTypeRouteImport.update({
@@ -44,6 +50,7 @@ const VesselsIdRoute = VesselsIdRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/settings': typeof SettingsRoute
+  '/api/tts': typeof ApiTtsRoute
   '/call/$type': typeof CallTypeRoute
   '/vessels/$id': typeof VesselsIdRoute
   '/vessels/': typeof VesselsIndexRoute
@@ -51,6 +58,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/settings': typeof SettingsRoute
+  '/api/tts': typeof ApiTtsRoute
   '/call/$type': typeof CallTypeRoute
   '/vessels/$id': typeof VesselsIdRoute
   '/vessels': typeof VesselsIndexRoute
@@ -59,19 +67,28 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/settings': typeof SettingsRoute
+  '/api/tts': typeof ApiTtsRoute
   '/call/$type': typeof CallTypeRoute
   '/vessels/$id': typeof VesselsIdRoute
   '/vessels/': typeof VesselsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/settings' | '/call/$type' | '/vessels/$id' | '/vessels/'
+  fullPaths:
+    | '/'
+    | '/settings'
+    | '/api/tts'
+    | '/call/$type'
+    | '/vessels/$id'
+    | '/vessels/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/settings' | '/call/$type' | '/vessels/$id' | '/vessels'
+  to:
+    '/' | '/settings' | '/api/tts' | '/call/$type' | '/vessels/$id' | '/vessels'
   id:
     | '__root__'
     | '/'
     | '/settings'
+    | '/api/tts'
     | '/call/$type'
     | '/vessels/$id'
     | '/vessels/'
@@ -80,6 +97,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   SettingsRoute: typeof SettingsRoute
+  ApiTtsRoute: typeof ApiTtsRoute
   CallTypeRoute: typeof CallTypeRoute
   VesselsIdRoute: typeof VesselsIdRoute
   VesselsIndexRoute: typeof VesselsIndexRoute
@@ -99,6 +117,13 @@ declare module '@tanstack/react-router' {
       path: '/settings'
       fullPath: '/settings'
       preLoaderRoute: typeof SettingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/tts': {
+      id: '/api/tts'
+      path: '/api/tts'
+      fullPath: '/api/tts'
+      preLoaderRoute: typeof ApiTtsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/call/$type': {
@@ -128,6 +153,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   SettingsRoute: SettingsRoute,
+  ApiTtsRoute: ApiTtsRoute,
   CallTypeRoute: CallTypeRoute,
   VesselsIdRoute: VesselsIdRoute,
   VesselsIndexRoute: VesselsIndexRoute,

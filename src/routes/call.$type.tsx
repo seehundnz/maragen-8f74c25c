@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
-import { Copy, Crosshair, Maximize2, RefreshCw, Share2, X } from "lucide-react";
+import { Copy, Crosshair, Loader2, Maximize2, RefreshCw, Share2, Square, Volume2, X } from "lucide-react";
 import { toast } from "sonner";
 
 import { AppShell } from "@/components/AppShell";
@@ -17,6 +17,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useGeoPosition, useUtcNow } from "@/hooks/useGeoPosition";
+import { useSpeech } from "@/hooks/useSpeech";
 import { useSettings, useVessels } from "@/hooks/useFleet";
 import { buildScript } from "@/lib/templates";
 import { formatPositionShort, utcClockString } from "@/lib/position";
