@@ -1,8 +1,10 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
+import { QrCode } from "lucide-react";
 
 import { AppShell } from "@/components/AppShell";
+import { VesselQrDialog } from "@/components/VesselQrDialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -45,6 +47,7 @@ function VesselEditPage() {
   const { setSettings } = useSettings();
   const [draft, setDraft] = useState<Vessel>(EMPTY);
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [shareOpen, setShareOpen] = useState(false);
 
   useEffect(() => {
     if (!hydrated || id === "new") return;
@@ -148,13 +151,19 @@ function VesselEditPage() {
             placeholder="16"
           />
         </div>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           <Button onClick={save}>{t("vessels.save")}</Button>
+          {draft.id && (
+            <Button variant="secondary" onClick={() => setShareOpen(true)}>
+              <QrCode /> {t("share.share")}
+            </Button>
+          )}
           <Button variant="ghost" onClick={() => void navigate({ to: "/vessels" })}>
             {t("vessels.cancel")}
           </Button>
         </div>
       </div>
+      <VesselQrDialog vessel={draft.id ? draft : null} open={shareOpen} onOpenChange={setShareOpen} />
     </AppShell>
   );
 }

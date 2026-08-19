@@ -58,6 +58,10 @@ function PrivacyPage() {
           </p>
         </Section>
 
+        <Section heading={t("privacy.h.qr")}>
+          <p>{t("privacy.p.qr")}</p>
+        </Section>
+
         <Section heading={t("privacy.h.install")}>
           <p>{t("privacy.p.install1")}</p>
           <p>{t("privacy.p.install2")}</p>
