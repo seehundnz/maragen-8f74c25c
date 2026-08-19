@@ -46,7 +46,7 @@ export const de: Dictionary = {
   "call.additionalMessagePlaceholder": "Was die Küstenfunkstelle sonst noch wissen sollte",
   "call.additionalMessagePlaceholder.panpan": "Weitere Angaben zur Dringlichkeitsmeldung",
   "call.additionalMessagePlaceholder.securite": "Weitere Angaben zur Sicherheitsmeldung",
-  "call.additionalMessagePlaceholder.standard": "Ihre Nachricht oder Anfrage",
+  "call.additionalMessagePlaceholder.standard": "Deine Nachricht oder Anfrage",
   "call.radioScript": "Funkspruch",
   "call.scriptEnglishNote":
     "Der Funkspruch ist immer auf Englisch — der internationalen Sprache im UKW-Seefunk.",
