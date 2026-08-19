@@ -22,6 +22,7 @@ import { useSettings, useVessels } from "@/hooks/useFleet";
 import { buildScript } from "@/lib/templates";
 import { formatPositionShort, utcClockString } from "@/lib/position";
 import { CALL_META, isCallType, type CallInput, type CallType } from "@/lib/types";
+import { useT, type TranslationKey } from "@/lib/i18n";
 
 export const Route = createFileRoute("/call/$type")({
   loader: ({ params }) => {
@@ -46,32 +47,32 @@ export const Route = createFileRoute("/call/$type")({
   component: CallPage,
 });
 
-const NATURE_PRESETS: Record<CallType, string[]> = {
+const NATURE_PRESETS: Record<CallType, { key: TranslationKey; value: string }[]> = {
   mayday: [
-    "Sinking",
-    "Taking on water",
-    "Fire on board",
-    "Person overboard",
-    "Grounding",
-    "Capsized",
-    "Collision",
-    "Medical emergency",
+    { key: "nature.sinking", value: "Sinking" },
+    { key: "nature.takingOnWater", value: "Taking on water" },
+    { key: "nature.fire", value: "Fire on board" },
+    { key: "nature.pob", value: "Person overboard" },
+    { key: "nature.grounding", value: "Grounding" },
+    { key: "nature.capsized", value: "Capsized" },
+    { key: "nature.collision", value: "Collision" },
+    { key: "nature.medical", value: "Medical emergency" },
   ],
   panpan: [
-    "Engine failure",
-    "Steering failure",
-    "Dismasted",
-    "Adrift",
-    "Out of fuel",
-    "Medical advice required",
-    "Rigging damage",
+    { key: "nature.engineFailure", value: "Engine failure" },
+    { key: "nature.steeringFailure", value: "Steering failure" },
+    { key: "nature.dismasted", value: "Dismasted" },
+    { key: "nature.adrift", value: "Adrift" },
+    { key: "nature.outOfFuel", value: "Out of fuel" },
+    { key: "nature.medicalAdvice", value: "Medical advice required" },
+    { key: "nature.riggingDamage", value: "Rigging damage" },
   ],
   securite: [
-    "Navigation hazard sighted",
-    "Floating object adrift",
-    "Unlit buoy",
-    "Restricted manoeuvrability",
-    "Severe weather observed",
+    { key: "nature.navHazard", value: "Navigation hazard sighted" },
+    { key: "nature.floatingObject", value: "Floating object adrift" },
+    { key: "nature.unlitBuoy", value: "Unlit buoy" },
+    { key: "nature.restrictedManoeuvrability", value: "Restricted manoeuvrability" },
+    { key: "nature.severeWeather", value: "Severe weather observed" },
   ],
   standard: [],
 };
@@ -79,6 +80,7 @@ const NATURE_PRESETS: Record<CallType, string[]> = {
 function CallPage() {
   const { type } = Route.useLoaderData();
   const meta = CALL_META[type];
+  const { t } = useT();
   const { vessels } = useVessels();
   const { settings, setSettings } = useSettings();
   const now = useUtcNow();
@@ -118,9 +120,9 @@ function CallPage() {
   const copy = async () => {
     try {
       await navigator.clipboard.writeText(script);
-      toast.success("Radio script copied");
+      toast.success(t("call.copied"));
     } catch {
-      toast.error("Could not copy — select the text manually");
+      toast.error(t("call.copyFailed"));
     }
   };
 
@@ -142,8 +144,8 @@ function CallPage() {
       return;
     }
     const result = await speech.speak(script, { useAiVoice: settings.useAiVoice !== false });
-    if (result.failed) toast.error("Speech is not available on this device");
-    else if (result.fallback) toast.info("Offline — using the device voice");
+    if (result.failed) toast.error(t("call.speechUnavailable"));
+    else if (result.fallback) toast.info(t("call.offlineVoice"));
   };
 
   const SpeakButton = ({ size = "sm" as const }) => (
@@ -155,7 +157,7 @@ function CallPage() {
       ) : (
         <Volume2 />
       )}
-      {speech.speaking ? "Stop" : "Speak"}
+      {speech.speaking ? t("call.stop") : t("call.speak")}
     </Button>
   );
 
@@ -167,46 +169,46 @@ function CallPage() {
             <h1 className="text-2xl font-black tracking-[0.15em] text-primary uppercase">
               {meta.label}
             </h1>
-            <p className="mt-1 text-sm text-muted-foreground">{meta.description}</p>
+            <p className="mt-1 text-sm text-muted-foreground">{t(`call.${type}.description`)}</p>
           </section>
 
           <section className="grid gap-3 rounded-xl border border-border bg-card p-4 sm:grid-cols-2">
             <div>
-              <p className="text-xs tracking-widest text-muted-foreground uppercase">UTC time</p>
+              <p className="text-xs tracking-widest text-muted-foreground uppercase">{t("call.utcTime")}</p>
               <p className="font-mono text-xl tabular-nums">
                 {now ? utcClockString(now) : "--:--:-- UTC"}
               </p>
             </div>
             <div>
-              <p className="text-xs tracking-widest text-muted-foreground uppercase">Position</p>
+              <p className="text-xs tracking-widest text-muted-foreground uppercase">{t("call.position")}</p>
               <p className="font-mono text-base break-words">
                 {formatPositionShort(fix, settings.positionFormat)}
               </p>
               <p className="mt-0.5 text-xs text-muted-foreground">
                 {fix?.manual
-                  ? "Manual entry"
+                  ? t("call.manualEntry")
                   : fix
                     ? `±${Math.round(fix.accuracy ?? 0)} m · ${new Date(fix.timestamp).toUTCString().slice(17, 25)} UTC`
-                    : (error ?? "Waiting for GPS…")}
+                    : (error ?? t("call.waitingGps"))}
               </p>
             </div>
             <div className="flex flex-wrap gap-2 sm:col-span-2">
               <Button variant="secondary" size="sm" onClick={refresh} disabled={loading}>
-                <RefreshCw className={loading ? "animate-spin" : ""} /> Refresh fix
+                <RefreshCw className={loading ? "animate-spin" : ""} /> {t("call.refreshFix")}
               </Button>
               <Button variant="ghost" size="sm" onClick={() => setManualOpen((o) => !o)}>
-                <Crosshair /> Manual position
+                <Crosshair /> {t("call.manualPosition")}
               </Button>
               <span className="self-center text-xs text-muted-foreground">
                 {settings.autoUpdate
-                  ? `Auto-update every ${settings.intervalSeconds}s`
-                  : "Auto-update off"}
+                  ? t("call.autoUpdateOn", { seconds: settings.intervalSeconds })
+                  : t("call.autoUpdateOff")}
               </span>
             </div>
             {manualOpen && (
               <div className="grid gap-2 sm:col-span-2 sm:grid-cols-3">
                 <div>
-                  <Label htmlFor="lat">Latitude (decimal)</Label>
+                  <Label htmlFor="lat">{t("call.latitude")}</Label>
                   <Input
                     id="lat"
                     inputMode="decimal"
@@ -216,7 +218,7 @@ function CallPage() {
                   />
                 </div>
                 <div>
-                  <Label htmlFor="lon">Longitude (decimal)</Label>
+                  <Label htmlFor="lon">{t("call.longitude")}</Label>
                   <Input
                     id="lon"
                     inputMode="decimal"
@@ -232,13 +234,13 @@ function CallPage() {
                     const lo = Number(manualLon);
                     if (Number.isFinite(la) && Number.isFinite(lo)) {
                       setManualFix(la, lo);
-                      toast.success("Manual position set");
+                      toast.success(t("call.manualPositionSet"));
                     } else {
-                      toast.error("Enter valid decimal coordinates");
+                      toast.error(t("call.invalidCoordinates"));
                     }
                   }}
                 >
-                  Use position
+                  {t("call.usePosition")}
                 </Button>
               </div>
             )}
@@ -246,14 +248,14 @@ function CallPage() {
 
           <section className="space-y-3 rounded-xl border border-border bg-card p-4">
             <div>
-              <Label htmlFor="vessel">Vessel</Label>
+              <Label htmlFor="vessel">{t("call.vessel")}</Label>
               {vessels.length ? (
                 <Select
                   value={activeVessel?.id ?? ""}
                   onValueChange={(id) => setSettings((s) => ({ ...s, activeVesselId: id }))}
                 >
                   <SelectTrigger id="vessel">
-                    <SelectValue placeholder="Select vessel" />
+                    <SelectValue placeholder={t("call.selectVessel")} />
                   </SelectTrigger>
                   <SelectContent>
                     {vessels.map((v) => (
@@ -265,9 +267,9 @@ function CallPage() {
                 </Select>
               ) : (
                 <p className="text-sm text-muted-foreground">
-                  No vessel saved yet.{" "}
+                  {t("call.noVessel")}{" "}
                   <Link to="/vessels" className="text-primary underline">
-                    Add your vessel
+                    {t("call.addYourVessel")}
                   </Link>
                 </p>
               )}
@@ -275,7 +277,7 @@ function CallPage() {
 
             {type === "standard" ? (
               <div>
-                <Label htmlFor="station">Station called</Label>
+                <Label htmlFor="station">{t("call.stationCalled")}</Label>
                 <Input
                   id="station"
                   value={input.station}
@@ -286,7 +288,7 @@ function CallPage() {
             ) : (
               <div className="space-y-2">
                 <Label htmlFor="nature">
-                  {type === "securite" ? "Safety message" : "Nature of the situation"}
+                  {type === "securite" ? t("call.safetyMessage") : t("call.natureOfSituation")}
                 </Label>
                 <Input
                   id="nature"
@@ -297,12 +299,12 @@ function CallPage() {
                 <div className="flex flex-wrap gap-2">
                   {NATURE_PRESETS[type].map((preset) => (
                     <button
-                      key={preset}
+                      key={preset.key}
                       type="button"
-                      onClick={() => setInput((i) => ({ ...i, nature: preset }))}
+                      onClick={() => setInput((i) => ({ ...i, nature: preset.value }))}
                       className="rounded-full border border-border px-3 py-1 text-xs transition-colors hover:border-primary hover:text-primary"
                     >
-                      {preset}
+                      {t(preset.key)}
                     </button>
                   ))}
                 </div>
@@ -312,7 +314,7 @@ function CallPage() {
             <div className="grid gap-3 sm:grid-cols-3">
               {type !== "securite" && type !== "standard" && (
                 <div>
-                  <Label htmlFor="assistance">Assistance required</Label>
+                  <Label htmlFor="assistance">{t("call.assistanceRequired")}</Label>
                   <Input
                     id="assistance"
                     value={input.assistance}
@@ -322,7 +324,7 @@ function CallPage() {
               )}
               {type !== "standard" && (
                 <div>
-                  <Label htmlFor="pob">Persons on board</Label>
+                  <Label htmlFor="pob">{t("call.pob")}</Label>
                   <Input
                     id="pob"
                     inputMode="numeric"
@@ -333,7 +335,7 @@ function CallPage() {
                 </div>
               )}
               <div>
-                <Label htmlFor="channel">VHF channel</Label>
+                <Label htmlFor="channel">{t("call.channel")}</Label>
                 <Input
                   id="channel"
                   inputMode="numeric"
@@ -345,13 +347,13 @@ function CallPage() {
             </div>
 
             <div>
-              <Label htmlFor="message">Additional message</Label>
+              <Label htmlFor="message">{t("call.additionalMessage")}</Label>
               <Textarea
                 id="message"
                 rows={2}
                 value={input.message}
                 onChange={(e) => setInput((i) => ({ ...i, message: e.target.value }))}
-                placeholder="Anything else the coast station should know"
+                placeholder={t("call.additionalMessagePlaceholder")}
               />
             </div>
           </section>
@@ -359,30 +361,28 @@ function CallPage() {
           <section className="rounded-xl border-2 border-primary bg-card p-4">
             <div className="mb-3 flex items-center justify-between">
               <h2 className="text-sm font-bold tracking-widest text-primary uppercase">
-                Radio script
+                {t("call.radioScript")}
               </h2>
               <div className="flex flex-wrap gap-2">
                 <SpeakButton />
                 <Button size="sm" variant="secondary" onClick={copy}>
-                  <Copy /> Copy
+                  <Copy /> {t("call.copy")}
                 </Button>
                 <Button size="sm" variant="secondary" onClick={share}>
-                  <Share2 /> Share
+                  <Share2 /> {t("call.share")}
                 </Button>
                 <Button size="sm" onClick={() => setReadMode(true)}>
-                  <Maximize2 /> Read
+                  <Maximize2 /> {t("call.read")}
                 </Button>
               </div>
             </div>
             <pre className="font-mono text-base leading-relaxed break-words whitespace-pre-wrap">
               {script}
             </pre>
+            <p className="mt-3 text-xs text-muted-foreground">{t("call.scriptEnglishNote")}</p>
           </section>
 
-          <p className="pb-2 text-xs text-muted-foreground">
-            This app is an aid only. It does not replace proper radio training, a DSC distress
-            alert, or the skipper's judgement. Always send a DSC alert first where available.
-          </p>
+          <p className="pb-2 text-xs text-muted-foreground">{t("call.disclaimer")}</p>
         </div>
       </AppShell>
 
@@ -396,7 +396,7 @@ function CallPage() {
               <div className="flex gap-2">
                 <SpeakButton />
                 <Button variant="secondary" size="sm" onClick={() => setReadMode(false)}>
-                  <X /> Close
+                  <X /> {t("call.close")}
                 </Button>
               </div>
             </div>
