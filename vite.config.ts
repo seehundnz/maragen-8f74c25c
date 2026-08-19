@@ -27,6 +27,8 @@ export default defineConfig({
         manifest: false,
         workbox: {
           globPatterns: ["**/*.{js,css,png,svg,webmanifest}"],
+          // Build output nests browser assets under client/, but they are served from the root.
+          modifyURLPrefix: { "client/": "" },
           navigateFallback: null,
           navigateFallbackDenylist: [/^\/~oauth/, /^\/api\//],
           runtimeCaching: [
