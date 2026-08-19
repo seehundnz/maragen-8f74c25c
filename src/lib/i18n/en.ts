@@ -72,7 +72,7 @@ export const en = {
   "comms.title": "Further communication",
   "comms.intro": "Standard radio phrases for further communication, silence requests, false-alarm cancellation and ending a distress call.",
   "comms.h.relay": "1. Further communication during a distress case",
-  "comms.p.relay": "All stations, all stations, all stations. This is [vessel name], [vessel name], [vessel name]. Mayday relay. The following distress message was received from [vessel name] at [time] UTC in position [position].",
+  "comms.p.relay": "MAYDAY [name vessel in distress], [call sign vessel in distress]\nThis is [vessel name], [call sign]\n[message]\nOVER\n",
   "comms.h.silence": "2. Asking for silence (only coast radio station or vessel in distress)",
   "comms.p.silence": "All stations, all stations, all stations. This is [coast station name / vessel in distress name]. Stop transmitting. Mayday. Silence mayday.",
   "comms.h.cancel": "3. Revert a mistakenly issued distress alert",
