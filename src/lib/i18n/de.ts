@@ -101,6 +101,18 @@ export const de: Dictionary = {
   "settings.aiVoice": "KI-Stimme für „Vorlesen“ verwenden",
   "settings.aiVoiceHint":
     "Ein: Der Text des Funkspruchs wird an unseren Sprachdienst gesendet, um eine klare Funkstimme zu erzeugen. Aus: Es wird nur die eingebaute Stimme deines Geräts genutzt, es verlässt kein Text dein Gerät.",
+  "settings.appHeading": "App & Updates",
+  "settings.offlineHint":
+    "Nach der Installation speichert sich die App lokal und lässt sich auch ohne Netzverbindung öffnen. Der Offline-Modus funktioniert nur in der veröffentlichten App, nicht in der Editor-Vorschau.",
+  "settings.buildDate": "Installierte Version",
+  "settings.checkUpdate": "Nach Updates suchen",
+  "settings.checking": "Suche…",
+  "settings.updateAvailable": "Eine neue Version ist verfügbar.",
+  "settings.updateNow": "Jetzt aktualisieren",
+  "settings.upToDate": "Du nutzt die neueste Version.",
+  "settings.updateHint":
+    "Die App aktualisiert sich automatisch im Hintergrund; hier kannst du manuell prüfen.",
+
   "settings.privacyHeading": "Datenschutz & Recht",
   "settings.privacyHint":
     "Alle Einstellungen und Schiffsprofile werden ausschließlich auf diesem Gerät gespeichert. Kein Konto, kein Tracking, keine Analyse.",

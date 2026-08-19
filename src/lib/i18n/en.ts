@@ -98,6 +98,18 @@ export const en = {
   "settings.aiVoice": 'Use AI voice for "Speak"',
   "settings.aiVoiceHint":
     "On: the script text is sent to our speech service for a clear radio-operator voice. Off: only your device's built-in voice is used and no text ever leaves this device.",
+  "settings.appHeading": "App & updates",
+  "settings.offlineHint":
+    "Once installed, the app caches itself so it also opens without a network connection. Offline mode only works in the published app, not in the editor preview.",
+  "settings.buildDate": "Installed version",
+  "settings.checkUpdate": "Check for updates",
+  "settings.checking": "Checking…",
+  "settings.updateAvailable": "A new version is available.",
+  "settings.updateNow": "Update now",
+  "settings.upToDate": "You are on the latest version.",
+  "settings.updateHint":
+    "The app updates itself automatically in the background; you can force a check here.",
+
   "settings.privacyHeading": "Privacy & legal",
   "settings.privacyHint":
     "All settings and vessel profiles are stored on this device only. No account, no tracking, no analytics.",
