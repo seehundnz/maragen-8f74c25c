@@ -63,8 +63,8 @@ export const en = {
 
   "dsc.title": "Send a DSC distress alert first",
   "dsc.intro": "If your radio has DSC (red distress button), send the DSC alert before speaking:",
-  "dsc.step1": "Lift the cover and press and hold the red DISTRESS button for about 5 seconds.",
-  "dsc.step2": "If time allows, select the nature of distress (e.g. sinking, fire, man overboard).",
+  "dsc.step1": "If time allows, select the nature of distress in the radio's DSC menu (e.g. sinking, fire, man overboard).",
+  "dsc.step2": "Then lift the cover and press and hold the red DISTRESS button for about 5 seconds.",
   "dsc.step3": "Wait for the acknowledgement; the radio switches to channel 16 automatically.",
   "dsc.step4": "Then speak the MAYDAY message below on channel 16.",
   "dsc.note": "Check that your MMSI is programmed into the radio and a GPS position is connected. Without DSC, call MAYDAY directly on channel 16.",
