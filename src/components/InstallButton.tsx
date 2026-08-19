@@ -20,8 +20,9 @@ import {
   promptInstall,
   type InstallPlatform,
 } from "@/lib/pwa";
+import type { TranslationKey } from "@/lib/i18n";
 
-function steps(platform: InstallPlatform): string[] {
+function steps(platform: InstallPlatform): TranslationKey[] {
   switch (platform) {
     case "ios-safari":
     case "ios-other":
