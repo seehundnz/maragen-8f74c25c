@@ -74,7 +74,7 @@ export const de: Dictionary = {
   "comms.title": "Weitere Kommunikation",
   "comms.intro": "Standard-Funkfloskeln für weitere Kommunikation, Stille-Aufforderungen, Falschalarm-Rücknahme und Beendigung eines Notrufs.",
   "comms.h.relay": "1. Weitere Kommunikation im Notfall",
-  "comms.p.relay": "All stations, all stations, all stations. This is [Schiffsname], [Schiffsname], [Schiffsname]. Mayday relay. The following distress message was received from [Schiffsname] at [Uhrzeit] UTC in position [Position].",
+  "comms.p.relay": "MAYDAY [name vessel in distress], [call sign vessel in distress]\nThis is [vessel name], [call sign]\n[message]\nOVER\n",
   "comms.h.silence": "2. Stille auffordern (nur Küstenfunkstelle oder notleidendes Schiff)",
   "comms.p.silence": "All stations, all stations, all stations. This is [Name Küstenfunkstelle / notleidendes Schiff]. Stop transmitting. Mayday. Silence mayday.",
   "comms.h.cancel": "3. Falsch ausgelösten Notalarm zurücknehmen",
