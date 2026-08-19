@@ -179,27 +179,29 @@ function CallPage() {
             <p className="mt-1 text-sm text-muted-foreground">{t(`call.${type}.description`)}</p>
           </section>
 
-          <section className="grid gap-3 rounded-xl border border-border bg-card p-4 sm:grid-cols-[1fr_1.5fr]">
-            <div>
-              <p className="text-xs tracking-widest text-muted-foreground uppercase">{t("call.utcTime")}</p>
-              <p className="font-mono text-sm tabular-nums whitespace-nowrap">
+          <section className="grid gap-3 rounded-xl border border-border bg-card p-4">
+            <div className="grid grid-cols-[1fr_1.5fr] gap-x-3 gap-y-1">
+              <p className="text-xs leading-4 tracking-widest text-muted-foreground uppercase">
+                {t("call.utcTime")}
+              </p>
+              <p className="text-xs leading-4 tracking-widest text-muted-foreground uppercase">
+                {t("call.position")}
+              </p>
+              <p className="font-mono text-sm leading-6 tabular-nums whitespace-nowrap">
                 {now ? utcClockString(now) : "--:--:-- UTC"}
               </p>
-            </div>
-            <div>
-              <p className="text-xs tracking-widest text-muted-foreground uppercase">{t("call.position")}</p>
-              <p className="font-mono text-sm whitespace-nowrap">
+              <p className="font-mono text-sm leading-6 whitespace-nowrap">
                 {formatPositionShort(fix, settings.positionFormat)}
               </p>
-              <p className="mt-0.5 text-xs text-muted-foreground">
-                {fix?.manual
-                  ? t("call.manualEntry")
-                  : fix
-                    ? `±${Math.round(fix.accuracy ?? 0)} m · ${new Date(fix.timestamp).toUTCString().slice(17, 25)} UTC`
-                    : (error ?? t("call.waitingGps"))}
-              </p>
             </div>
-            <div className="flex flex-wrap gap-2 sm:col-span-2">
+            <p className="text-xs text-muted-foreground">
+              {fix?.manual
+                ? t("call.manualEntry")
+                : fix
+                  ? `±${Math.round(fix.accuracy ?? 0)} m · ${new Date(fix.timestamp).toUTCString().slice(17, 25)} UTC`
+                  : (error ?? t("call.waitingGps"))}
+            </p>
+            <div className="flex flex-wrap gap-2">
               <Button variant="secondary" size="sm" onClick={refresh} disabled={loading}>
                 <RefreshCw className={loading ? "animate-spin" : ""} /> {t("call.refreshFix")}
               </Button>
@@ -212,6 +214,7 @@ function CallPage() {
                   : t("call.autoUpdateOff")}
               </span>
             </div>
+
             {manualOpen && (
               <div className="grid gap-2 sm:col-span-2 sm:grid-cols-3">
                 <div>
