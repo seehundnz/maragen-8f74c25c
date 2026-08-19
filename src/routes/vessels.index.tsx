@@ -44,6 +44,7 @@ function VesselsPage() {
   const [shareVessel, setShareVessel] = useState<Vessel | null>(null);
   const [scanOpen, setScanOpen] = useState(false);
   const [pending, setPending] = useState<SharedVessel | null>(null);
+  const [deleteConfirm, setDeleteConfirm] = useState<Vessel | null>(null);
 
   const onDetected = useCallback((vessel: SharedVessel) => {
     setScanOpen(false);
