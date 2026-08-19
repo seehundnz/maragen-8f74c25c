@@ -42,6 +42,9 @@ export const en = {
   "call.channel": "VHF channel",
   "call.additionalMessage": "Additional message",
   "call.additionalMessagePlaceholder": "Anything else the coast station should know",
+  "call.additionalMessagePlaceholder.panpan": "Any further details about the urgency",
+  "call.additionalMessagePlaceholder.securite": "Further details about the safety issue",
+  "call.additionalMessagePlaceholder.standard": "Your message or request",
   "call.radioScript": "Radio script",
   "call.scriptEnglishNote":
     "The radio script is always in English — the international language for VHF communication.",

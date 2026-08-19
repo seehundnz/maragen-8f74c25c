@@ -102,6 +102,13 @@ function CallPage() {
     message: "",
   });
 
+  const MESSAGE_PLACEHOLDER: Record<CallType, TranslationKey> = {
+    mayday: "call.additionalMessagePlaceholder",
+    panpan: "call.additionalMessagePlaceholder.panpan",
+    securite: "call.additionalMessagePlaceholder.securite",
+    standard: "call.additionalMessagePlaceholder.standard",
+  };
+
   const activeVessel =
     vessels.find((v) => v.id === settings.activeVesselId) ?? vessels[0] ?? null;
 
@@ -353,7 +360,7 @@ function CallPage() {
                 rows={2}
                 value={input.message}
                 onChange={(e) => setInput((i) => ({ ...i, message: e.target.value }))}
-                placeholder={t("call.additionalMessagePlaceholder")}
+                placeholder={t(MESSAGE_PLACEHOLDER[type])}
               />
             </div>
           </section>
