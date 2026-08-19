@@ -65,8 +65,8 @@ export const de: Dictionary = {
 
   "dsc.title": "Zuerst DSC-Notalarm senden",
   "dsc.intro": "Wenn dein Funkgerät DSC hat (roter Notruf-Knopf), sende den DSC-Alarm vor dem Sprechfunkspruch:",
-  "dsc.step1": "Klappe öffnen und die rote DISTRESS-Taste ca. 5 Sekunden gedrückt halten.",
-  "dsc.step2": "Wenn Zeit bleibt, die Art der Notlage wählen (z. B. sinkend, Feuer, Person über Bord).",
+  "dsc.step1": "Wenn Zeit bleibt, die Art der Notlage im DSC-Menü des Funkgeräts wählen (z. B. sinkend, Feuer, Person über Bord).",
+  "dsc.step2": "Danach die Klappe öffnen und die rote DISTRESS-Taste ca. 5 Sekunden gedrückt halten.",
   "dsc.step3": "Auf die Bestätigung warten; das Gerät schaltet automatisch auf Kanal 16.",
   "dsc.step4": "Danach den MAYDAY-Spruch unten auf Kanal 16 sprechen.",
   "dsc.note": "Prüfe, dass die MMSI im Funkgerät programmiert und eine GPS-Position angeschlossen ist. Ohne DSC direkt MAYDAY auf Kanal 16 rufen.",
