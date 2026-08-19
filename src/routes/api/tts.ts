@@ -25,15 +25,15 @@ export const Route = createFileRoute("/api/tts")({
             Authorization: `Bearer ${apiKey}`,
             "Content-Type": "application/json",
           },
-            body: JSON.stringify({
-              model: "openai/gpt-4o-mini-tts",
-              input: text,
-              voice: "alloy",
-              speed: 0.85,
-              response_format: "mp3",
-              instructions:
-                "Read this maritime VHF radio message as a professional coast-station radio operator: slowly, clearly, and calmly. Pronounce all numbers and digits individually and distinctly. Spell out the vessel's call sign using the NATO phonetic alphabet (Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, X-ray, Yankee, Zulu). Read the vessel name, position coordinates and MMSI slowly, pausing between each element. Pause briefly at the end of each line.",
-            }),
+          body: JSON.stringify({
+            model: "openai/gpt-4o-mini-tts",
+            input: text,
+            voice: "alloy",
+            speed: 0.8,
+            response_format: "mp3",
+            instructions:
+              "Read this maritime VHF radio message as a professional coast-station radio operator: slowly, clearly, and calmly. Pronounce all numbers and digits individually and distinctly. Spell out the vessel's call sign using the NATO phonetic alphabet (Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, X-ray, Yankee, Zulu). Read the vessel name, position coordinates and MMSI slowly, pausing between each element. Pause briefly at the end of each line.",
+          }),
         });
 
         if (!response.ok) {
