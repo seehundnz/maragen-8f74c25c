@@ -154,6 +154,10 @@ export const en = {
   "settings.clearConfirm": "Yes, delete everything",
   "settings.clearing": "Deleting…",
 
+  "settings.supportHeading": "Support this app",
+  "settings.supportBody":
+    "If you like this app, I would appreciate a small donation. It helps cover hosting and development costs.",
+  "settings.supportLink": "Buy me a coffee",
 
   "settings.privacyHeading": "Privacy & legal",
   "settings.privacyHint":
