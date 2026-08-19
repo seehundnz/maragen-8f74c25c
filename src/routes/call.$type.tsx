@@ -182,13 +182,13 @@ function CallPage() {
           <section className="grid gap-3 rounded-xl border border-border bg-card p-4 sm:grid-cols-[1fr_1.5fr]">
             <div>
               <p className="text-xs tracking-widest text-muted-foreground uppercase">{t("call.utcTime")}</p>
-              <p className="font-mono text-xl tabular-nums">
+              <p className="font-mono text-sm tabular-nums whitespace-nowrap">
                 {now ? utcClockString(now) : "--:--:-- UTC"}
               </p>
             </div>
             <div>
               <p className="text-xs tracking-widest text-muted-foreground uppercase">{t("call.position")}</p>
-              <p className="font-mono text-xl break-words">
+              <p className="font-mono text-sm whitespace-nowrap">
                 {formatPositionShort(fix, settings.positionFormat)}
               </p>
               <p className="mt-0.5 text-xs text-muted-foreground">
