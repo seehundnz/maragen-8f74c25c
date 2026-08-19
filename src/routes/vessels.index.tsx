@@ -55,12 +55,12 @@ function VesselsPage() {
   const commitImport = (mode: "new" | "update") => {
     if (!pending) return;
     if (mode === "update" && duplicate) {
-      const merged: Vessel = { ...duplicate, ...pending, id: duplicate.id };
+      const merged: Vessel = sharedToVessel(pending, duplicate.id);
       setVessels((list) => list.map((v) => (v.id === merged.id ? merged : v)));
       setSettings((s) => ({ ...s, activeVesselId: merged.id }));
       toast.success(t("share.updated", { name: merged.name }));
     } else {
-      const created: Vessel = { ...pending, id: createVesselId() };
+      const created: Vessel = sharedToVessel(pending, createVesselId());
       setVessels((list) => [...list, created]);
       setSettings((s) => ({ ...s, activeVesselId: created.id }));
       toast.success(t("share.imported", { name: created.name }));
