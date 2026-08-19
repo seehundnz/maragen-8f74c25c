@@ -73,14 +73,14 @@ export const de: Dictionary = {
 
   "comms.title": "Weitere Kommunikation",
   "comms.intro": "Standard-Funkfloskeln für weitere Kommunikation, Stille-Aufforderungen, Falschalarm-Rücknahme und Beendigung eines Notrufs.",
-  "comms.h.relay": "1. Weitere Kommunikation im Notfall",
+  "comms.h.relay": "Weitere Kommunikation im Notfall",
   "comms.p.relay": "MAYDAY [name vessel in distress], [call sign vessel in distress]\nThis is [vessel name], [call sign]\n[message]\nOVER\n",
-  "comms.h.silence": "2. Stille auffordern (nur Küstenfunkstelle oder notleidendes Schiff)",
+  "comms.h.silence": "Stille auffordern (nur Küstenfunkstelle oder notleidendes Schiff)",
   "comms.p.silence": "All stations\nSilence mayday\n",
-  "comms.h.cancel": "3. Falsch ausgelösten Notalarm zurücknehmen (nur das in Not befindliche Schiff)",
+  "comms.h.cancel": "Falsch ausgelösten Notalarm zurücknehmen (nur das in Not befindliche Schiff)",
   "comms.p.cancel":
     "All stations, all stations, all stations\nThis is [vessel name], [vessel name], [vessel name]\nCall sign [call sign], MMSI [MMSI]\nCancel my false distress alert of [time] UTC\nOVER\n",
-  "comms.h.end": "4. Notruf beenden (nur Küstenfunkstelle oder notleidendes Schiff)",
+  "comms.h.end": "Notruf beenden (nur Küstenfunkstelle oder notleidendes Schiff)",
   "comms.p.end":
     "MAYDAY\nAll stations, all stations, all stations\nThis is [coast station name / vessel in distress name] at UTC [current UTC]\n[vessel in distress name], [vessel in distress call sign], [vessel in distress MMSI]\nSILENCE FINI\n",
 
