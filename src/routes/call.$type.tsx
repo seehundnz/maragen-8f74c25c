@@ -188,7 +188,7 @@ function CallPage() {
             </div>
             <div>
               <p className="text-xs tracking-widest text-muted-foreground uppercase">{t("call.position")}</p>
-              <p className="font-mono text-base break-words">
+              <p className="font-mono text-xl break-words">
                 {formatPositionShort(fix, settings.positionFormat)}
               </p>
               <p className="mt-0.5 text-xs text-muted-foreground">
