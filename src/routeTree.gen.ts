@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as SettingsRouteImport } from './routes/settings'
 import { Route as ApiTtsRouteImport } from './routes/api/tts'
 import { Route as CallTypeRouteImport } from './routes/call.$type'
@@ -19,6 +20,11 @@ import { Route as VesselsIdRouteImport } from './routes/vessels.$id'
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SettingsRoute = SettingsRouteImport.update({
@@ -49,6 +55,7 @@ const VesselsIdRoute = VesselsIdRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/privacy': typeof PrivacyRoute
   '/settings': typeof SettingsRoute
   '/api/tts': typeof ApiTtsRoute
   '/call/$type': typeof CallTypeRoute
@@ -57,6 +64,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/privacy': typeof PrivacyRoute
   '/settings': typeof SettingsRoute
   '/api/tts': typeof ApiTtsRoute
   '/call/$type': typeof CallTypeRoute
@@ -66,6 +74,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/privacy': typeof PrivacyRoute
   '/settings': typeof SettingsRoute
   '/api/tts': typeof ApiTtsRoute
   '/call/$type': typeof CallTypeRoute
@@ -76,6 +85,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/privacy'
     | '/settings'
     | '/api/tts'
     | '/call/$type'
@@ -83,10 +93,17 @@ export interface FileRouteTypes {
     | '/vessels/'
   fileRoutesByTo: FileRoutesByTo
   to:
-    '/' | '/settings' | '/api/tts' | '/call/$type' | '/vessels/$id' | '/vessels'
+    | '/'
+    | '/privacy'
+    | '/settings'
+    | '/api/tts'
+    | '/call/$type'
+    | '/vessels/$id'
+    | '/vessels'
   id:
     | '__root__'
     | '/'
+    | '/privacy'
     | '/settings'
     | '/api/tts'
     | '/call/$type'
@@ -96,6 +113,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  PrivacyRoute: typeof PrivacyRoute
   SettingsRoute: typeof SettingsRoute
   ApiTtsRoute: typeof ApiTtsRoute
   CallTypeRoute: typeof CallTypeRoute
@@ -110,6 +128,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/settings': {
@@ -152,6 +177,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  PrivacyRoute: PrivacyRoute,
   SettingsRoute: SettingsRoute,
   ApiTtsRoute: ApiTtsRoute,
   CallTypeRoute: CallTypeRoute,
