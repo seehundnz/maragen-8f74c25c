@@ -180,17 +180,19 @@ function CallPage() {
           </section>
 
           <section className="grid gap-3 rounded-xl border border-border bg-card p-4">
-            <div className="grid grid-cols-[1fr_1.5fr] gap-x-3 gap-y-1">
-              <p className="text-xs leading-4 tracking-widest text-muted-foreground uppercase">
-                {t("call.utcTime")}
-              </p>
-              <p className="text-xs leading-4 tracking-widest text-muted-foreground uppercase">
-                {t("call.position")}
-              </p>
-              <p className="font-mono text-sm leading-6 tabular-nums whitespace-nowrap">
-                {now ? utcClockString(now) : "--:--:-- UTC"}
-              </p>
-              <div>
+            <div className="grid gap-4 sm:grid-cols-[1fr_1.5fr]">
+              <div className="space-y-1">
+                <p className="text-xs leading-4 tracking-widest text-muted-foreground uppercase">
+                  {t("call.utcTime")}
+                </p>
+                <p className="font-mono text-sm leading-6 tabular-nums whitespace-nowrap">
+                  {now ? utcClockString(now) : "--:--:-- UTC"}
+                </p>
+              </div>
+              <div className="space-y-1">
+                <p className="text-xs leading-4 tracking-widest text-muted-foreground uppercase">
+                  {t("call.position")}
+                </p>
                 <p className="font-mono text-sm leading-6 whitespace-nowrap">
                   {formatPositionShort(fix, settings.positionFormat)}
                 </p>
