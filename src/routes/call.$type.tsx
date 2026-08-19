@@ -101,6 +101,7 @@ function CallPage() {
   const speech = useSpeech();
   const [manualOpen, setManualOpen] = useState(false);
   const [dscOpen, setDscOpen] = useState(false);
+  const [commsOpen, setCommsOpen] = useState(false);
   const [manualLat, setManualLat] = useState("");
   const [manualLon, setManualLon] = useState("");
   const [input, setInput] = useState<CallInput>({
