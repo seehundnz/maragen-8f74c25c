@@ -442,11 +442,11 @@ function CallPage() {
             <p className="mt-3 text-xs text-muted-foreground">{t("call.scriptEnglishNote")}</p>
           </section>
           {type === "mayday" && (
-            <section className="rounded-xl border-2 border-primary bg-card p-4">
+            <section className="rounded-xl border border-border bg-card p-4">
               <button
                 type="button"
                 onClick={() => setCommsOpen((prev) => !prev)}
-                className="group flex w-full cursor-pointer items-center justify-between text-left text-sm font-black tracking-widest text-primary uppercase"
+                className="group flex w-full cursor-pointer items-center justify-between text-left text-sm font-black tracking-widest text-foreground uppercase"
                 aria-expanded={commsOpen}
               >
                 <span className="pr-2">{t("comms.title")}</span>
@@ -458,25 +458,25 @@ function CallPage() {
                 <div className="mt-3 space-y-4">
                   <p className="text-sm text-muted-foreground">{t("comms.intro")}</p>
                   <div>
-                    <p className="text-sm font-bold tracking-widest text-primary uppercase">{t("comms.h.relay")}</p>
+                    <p className="text-sm font-bold tracking-widest text-foreground uppercase">{t("comms.h.relay")}</p>
                     <p className="font-mono text-base leading-relaxed break-words whitespace-pre-wrap">
                       {t("comms.p.relay")}
                     </p>
                   </div>
                   <div>
-                    <p className="text-sm font-bold tracking-widest text-primary uppercase">{t("comms.h.silence")}</p>
+                    <p className="text-sm font-bold tracking-widest text-foreground uppercase">{t("comms.h.silence")}</p>
                     <p className="font-mono text-base leading-relaxed break-words whitespace-pre-wrap">
                       {t("comms.p.silence")}
                     </p>
                   </div>
                   <div>
-                    <p className="text-sm font-bold tracking-widest text-primary uppercase">{t("comms.h.cancel")}</p>
+                    <p className="text-sm font-bold tracking-widest text-foreground uppercase">{t("comms.h.cancel")}</p>
                     <p className="font-mono text-base leading-relaxed break-words whitespace-pre-wrap">
                       {t("comms.p.cancel")}
                     </p>
                   </div>
                   <div>
-                    <p className="text-sm font-bold tracking-widest text-primary uppercase">{t("comms.h.end")}</p>
+                    <p className="text-sm font-bold tracking-widest text-foreground uppercase">{t("comms.h.end")}</p>
                     <p className="font-mono text-base leading-relaxed break-words whitespace-pre-wrap">
                       {t("comms.p.end")}
                     </p>
