@@ -93,27 +93,21 @@ function PrivacyPage() {
         </Section>
 
         <Section heading="Imprint / Impressum (§ 5 DDG)">
-          <p>
-            Please replace the placeholders below with your own details before publishing — legally
-            required for a publicly available service in Germany/EU.
-          </p>
           <address className="not-italic leading-relaxed text-foreground">
-            [Name / Company]
+            Sebastian Esch
             <br />
-            [Street and number]
+            Rosental 25
             <br />
-            [Postal code and city]
+            41334 Nettetal
             <br />
-            [Country]
+            Germany
             <br />
             <br />
-            Email: [email address]
+            Email: info@maragen.de
             <br />
-            Phone: [phone number]
+            Phone: 02153 9572722
             <br />
-            Responsible for content (§ 18 (2) MStV): [Name]
-            <br />
-            VAT ID (if applicable): [DE…]
+            Responsible for content (§ 18 (2) MStV): Sebastian Esch
           </address>
         </Section>
 
