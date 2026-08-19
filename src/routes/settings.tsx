@@ -4,13 +4,7 @@ import { AppShell } from "@/components/AppShell";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useSettings } from "@/hooks/useFleet";
 import { useT } from "@/lib/i18n";
 import { UpdateSection } from "@/components/UpdateSection";
@@ -46,9 +40,7 @@ function SettingsPage() {
             <Label htmlFor="language">{t("settings.language")}</Label>
             <Select
               value={settings.language ?? "auto"}
-              onValueChange={(v) =>
-                setSettings((s) => ({ ...s, language: v as "auto" | "en" | "de" }))
-              }
+              onValueChange={(v) => setSettings((s) => ({ ...s, language: v as "auto" | "en" | "de" }))}
             >
               <SelectTrigger id="language" className="max-w-72">
                 <SelectValue />
@@ -84,15 +76,11 @@ function SettingsPage() {
               min={2}
               max={300}
               value={settings.intervalSeconds}
-              onChange={(e) =>
-                setSettings((s) => ({ ...s, intervalSeconds: Number(e.target.value) }))
-              }
+              onChange={(e) => setSettings((s) => ({ ...s, intervalSeconds: Number(e.target.value) }))}
               className="max-w-32"
             />
             <p className="mt-1 text-xs text-muted-foreground">{t("settings.intervalHint")}</p>
-            {!intervalValid && (
-              <p className="mt-1 text-xs text-destructive">{t("settings.intervalError")}</p>
-            )}
+            {!intervalValid && <p className="mt-1 text-xs text-destructive">{t("settings.intervalError")}</p>}
           </div>
         </section>
 
@@ -111,9 +99,7 @@ function SettingsPage() {
             <Label htmlFor="format">{t("settings.positionFormat")}</Label>
             <Select
               value={settings.positionFormat}
-              onValueChange={(v) =>
-                setSettings((s) => ({ ...s, positionFormat: v as "ddm" | "dd" }))
-              }
+              onValueChange={(v) => setSettings((s) => ({ ...s, positionFormat: v as "ddm" | "dd" }))}
             >
               <SelectTrigger id="format" className="max-w-72">
                 <SelectValue />
@@ -160,7 +146,7 @@ function SettingsPage() {
           <h2 className="text-sm font-semibold">{t("settings.supportHeading")}</h2>
           <p className="text-xs text-muted-foreground">{t("settings.supportBody")}</p>
           <a
-            href="https://buymecoffee.com/maragen"
+            href="https://buymeacoffee.com/maragen"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 text-sm font-medium text-primary underline-offset-4 hover:underline"
