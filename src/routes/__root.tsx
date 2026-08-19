@@ -14,6 +14,7 @@ import { Toaster } from "../components/ui/sonner";
 import { I18nProvider, resolveLanguage } from "@/lib/i18n";
 import { useSettings } from "@/hooks/useFleet";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { registerServiceWorker } from "@/lib/pwa";
 
 function NotFoundComponent() {
   return (
@@ -138,6 +139,10 @@ function RootComponent() {
   useEffect(() => {
     document.documentElement.lang = lang;
   }, [lang]);
+
+  useEffect(() => {
+    void registerServiceWorker();
+  }, []);
 
   return (
     <QueryClientProvider client={queryClient}>
