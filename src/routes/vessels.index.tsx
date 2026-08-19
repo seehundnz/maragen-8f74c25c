@@ -44,11 +44,19 @@ function VesselsPage() {
   const [shareVessel, setShareVessel] = useState<Vessel | null>(null);
   const [scanOpen, setScanOpen] = useState(false);
   const [pending, setPending] = useState<SharedVessel | null>(null);
+  const [deleteConfirm, setDeleteConfirm] = useState<Vessel | null>(null);
 
   const onDetected = useCallback((vessel: SharedVessel) => {
     setScanOpen(false);
     setPending(vessel);
   }, []);
+
+  const confirmDelete = (vessel: Vessel) => {
+    setVessels((list) => list.filter((x) => x.id !== vessel.id));
+    if (activeId === vessel.id) setSettings((s) => ({ ...s, activeVesselId: null }));
+    toast.success(t("vessels.deleted", { name: vessel.name }));
+    setDeleteConfirm(null);
+  };
 
   const duplicate = pending ? vessels.find((v) => v.mmsi === pending.mmsi) : undefined;
 
@@ -140,11 +148,7 @@ function VesselsPage() {
                   variant="ghost"
                   size="icon"
                   aria-label={t("vessels.delete")}
-                  onClick={() => {
-                    setVessels((list) => list.filter((x) => x.id !== v.id));
-                    if (activeId === v.id) setSettings((s) => ({ ...s, activeVesselId: null }));
-                    toast.success(t("vessels.deleted", { name: v.name }));
-                  }}
+                  onClick={() => setDeleteConfirm(v)}
                 >
                   <Trash2 />
                 </Button>
@@ -193,6 +197,26 @@ function VesselsPage() {
             )}
             <Button variant="ghost" onClick={() => setPending(null)}>
               {t("share.cancel")}
+            </Button>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+
+      <Dialog open={deleteConfirm !== null} onOpenChange={(o) => !o && setDeleteConfirm(null)}>
+        <DialogContent className="max-w-sm">
+          <DialogHeader>
+            <DialogTitle>{t("vessels.deleteConfirmTitle")}</DialogTitle>
+            <DialogDescription>
+              {deleteConfirm ? t("vessels.deleteConfirmBody", { name: deleteConfirm.name }) : ""}
+            </DialogDescription>
+          </DialogHeader>
+          <div className="flex flex-wrap gap-2">
+            <Button variant="destructive" onClick={() => deleteConfirm && confirmDelete(deleteConfirm)}>
+              {t("vessels.deleteConfirm")}
+            </Button>
+            <Button variant="ghost" onClick={() => setDeleteConfirm(null)}>
+              {t("vessels.deleteCancel")}
             </Button>
           </div>
         </DialogContent>
