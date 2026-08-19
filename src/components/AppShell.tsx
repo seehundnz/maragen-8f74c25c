@@ -8,8 +8,8 @@ export function AppShell({ children }: { children: ReactNode }) {
   const { t } = useT();
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <header className="sticky top-0 z-20 border-b border-border bg-background/95 backdrop-blur">
-        <div className="mx-auto flex max-w-3xl items-center justify-between px-4 py-3">
+      <header className="sticky top-0 z-20 border-b border-border bg-background/95 pt-[env(safe-area-inset-top)] backdrop-blur">
+        <div className="mx-auto flex max-w-3xl items-center justify-between px-4 py-3 pl-[max(1rem,env(safe-area-inset-left))] pr-[max(1rem,env(safe-area-inset-right))]">
           <Link to="/" className="flex items-center gap-2">
             <Radio className="size-5 text-primary" aria-hidden />
             <span className="text-sm font-bold tracking-[0.2em] uppercase">{t("app.name")}</span>
