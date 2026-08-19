@@ -1,4 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { ShieldCheck } from "lucide-react";
 import { AppShell } from "@/components/AppShell";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -105,9 +106,20 @@ function SettingsPage() {
           </div>
         </section>
 
-        <p className="text-xs text-muted-foreground">
-          All settings and vessel profiles are stored on this device only.
-        </p>
+        <section className="space-y-2 rounded-xl border border-border bg-card p-4">
+          <h2 className="text-sm font-semibold">Privacy &amp; legal</h2>
+          <p className="text-xs text-muted-foreground">
+            All settings and vessel profiles are stored on this device only. No account, no
+            tracking, no analytics.
+          </p>
+          <Link
+            to="/privacy"
+            className="inline-flex items-center gap-1.5 text-sm font-medium text-primary underline-offset-4 hover:underline"
+          >
+            <ShieldCheck className="size-4" aria-hidden />
+            GDPR/DSGVO information &amp; imprint
+          </Link>
+        </section>
       </div>
     </AppShell>
   );
