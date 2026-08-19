@@ -16,7 +16,7 @@ import { VesselQrDialog } from "@/components/VesselQrDialog";
 import { VesselScanDialog } from "@/components/VesselScanDialog";
 import { createVesselId, useSettings, useVessels } from "@/hooks/useFleet";
 import type { Vessel } from "@/lib/types";
-import type { SharedVessel } from "@/lib/vesselShare";
+import { sharedToVessel, type SharedVessel } from "@/lib/vesselShare";
 import { useT } from "@/lib/i18n";
 
 const title = "Vessels — VHF Call Builder";
