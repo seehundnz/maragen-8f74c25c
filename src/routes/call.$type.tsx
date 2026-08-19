@@ -220,44 +220,6 @@ function CallPage() {
             </section>
           )}
 
-          {type === "mayday" && (
-            <section className="rounded-xl border border-border bg-card p-4">
-              <button
-                type="button"
-                onClick={() => setCommsOpen((prev) => !prev)}
-                className="group flex w-full cursor-pointer items-center justify-between text-left text-sm font-black tracking-widest text-foreground uppercase"
-                aria-expanded={commsOpen}
-              >
-                <span className="pr-2">{t("comms.title")}</span>
-                <ChevronDown
-                  className={`size-4 shrink-0 transition-transform ${commsOpen ? "rotate-180" : ""}`}
-                />
-              </button>
-              {commsOpen && (
-                <>
-                  <p className="mt-2 text-sm text-muted-foreground">{t("comms.intro")}</p>
-                  <div className="mt-3 space-y-3">
-                    <div>
-                      <p className="text-sm font-bold text-foreground">{t("comms.h.relay")}</p>
-                      <p className="text-sm text-muted-foreground">{t("comms.p.relay")}</p>
-                    </div>
-                    <div>
-                      <p className="text-sm font-bold text-foreground">{t("comms.h.silence")}</p>
-                      <p className="text-sm text-muted-foreground">{t("comms.p.silence")}</p>
-                    </div>
-                    <div>
-                      <p className="text-sm font-bold text-foreground">{t("comms.h.cancel")}</p>
-                      <p className="text-sm text-muted-foreground">{t("comms.p.cancel")}</p>
-                    </div>
-                    <div>
-                      <p className="text-sm font-bold text-foreground">{t("comms.h.end")}</p>
-                      <p className="text-sm text-muted-foreground">{t("comms.p.end")}</p>
-                    </div>
-                  </div>
-                </>
-              )}
-            </section>
-          )}
 
 
 
