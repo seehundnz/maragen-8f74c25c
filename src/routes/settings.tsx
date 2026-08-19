@@ -145,7 +145,6 @@ function SettingsPage() {
         <ClearDataSection />
 
         <section className="space-y-2 rounded-xl border border-border bg-card p-4">
-
           <h2 className="text-sm font-semibold">{t("settings.privacyHeading")}</h2>
           <p className="text-xs text-muted-foreground">{t("settings.privacyHint")}</p>
           <Link
@@ -155,6 +154,20 @@ function SettingsPage() {
             <ShieldCheck className="size-4" aria-hidden />
             {t("settings.privacyLink")}
           </Link>
+        </section>
+
+        <section className="space-y-2 rounded-xl border border-border bg-card p-4">
+          <h2 className="text-sm font-semibold">{t("settings.supportHeading")}</h2>
+          <p className="text-xs text-muted-foreground">{t("settings.supportBody")}</p>
+          <a
+            href="https://buymecoffee.com/maragen"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-sm font-medium text-primary underline-offset-4 hover:underline"
+          >
+            <Coffee className="size-4" aria-hidden />
+            {t("settings.supportLink")}
+          </a>
         </section>
       </div>
     </AppShell>
