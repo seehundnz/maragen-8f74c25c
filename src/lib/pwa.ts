@@ -158,6 +158,30 @@ export function isPwaInstalled(): boolean {
   return window.matchMedia("(display-mode: standalone)").matches;
 }
 
+/** Wipes all locally stored app data: caches, local/session storage and the service worker. */
+export async function clearAllData(): Promise<void> {
+  if (typeof window === "undefined") return;
+  try {
+    if ("caches" in window) {
+      const names = await caches.keys();
+      await Promise.allSettled(names.map((n) => caches.delete(n)));
+    }
+  } catch {
+    /* ignore */
+  }
+  try {
+    window.localStorage.clear();
+    window.sessionStorage.clear();
+  } catch {
+    /* ignore */
+  }
+  try {
+    await unregisterApp();
+  } catch {
+    /* ignore */
+  }
+}
+
 
 export function onConnectionChange(cb: () => void): () => void {
   if (typeof window === "undefined") return () => {};

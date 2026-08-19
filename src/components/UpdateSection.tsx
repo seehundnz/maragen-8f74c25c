@@ -23,14 +23,18 @@ export function UpdateSection() {
   const [checking, setChecking] = useState(false);
   const [checked, setChecked] = useState(false);
   const [buildLabel, setBuildLabel] = useState("");
-  const [swStatus, setSwStatus] = useState<SwStatus>(getSwStatus());
-  const [online, setOnline] = useState(isOnline());
-  const [installed, setInstalled] = useState(isPwaInstalled());
-  const [lastCheck, setLastCheck] = useState(getLastUpdateCheck());
+  const [swStatus, setSwStatus] = useState<SwStatus>("notRegistered");
+  const [online, setOnline] = useState(true);
+  const [installed, setInstalled] = useState(false);
+  const [lastCheck, setLastCheck] = useState<Date | null>(null);
 
   useEffect(() => onUpdateAvailable(setAvailable), []);
   useEffect(() => {
     setBuildLabel(new Date(BUILD_DATE).toLocaleString());
+    setSwStatus(getSwStatus());
+    setOnline(isOnline());
+    setInstalled(isPwaInstalled());
+    setLastCheck(getLastUpdateCheck());
   }, []);
   useEffect(() => onSwStatusChange(setSwStatus), []);
   useEffect(() => onConnectionChange(() => setOnline(isOnline())), []);

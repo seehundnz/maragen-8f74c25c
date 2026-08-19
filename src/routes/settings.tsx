@@ -14,6 +14,7 @@ import {
 import { useSettings } from "@/hooks/useFleet";
 import { useT } from "@/lib/i18n";
 import { UpdateSection } from "@/components/UpdateSection";
+import { ClearDataSection } from "@/components/ClearDataSection";
 
 const title = "Settings — VHF Call Builder";
 const description =
@@ -140,6 +141,8 @@ function SettingsPage() {
         </section>
 
         <UpdateSection />
+
+        <ClearDataSection />
 
         <section className="space-y-2 rounded-xl border border-border bg-card p-4">
 
