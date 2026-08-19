@@ -124,6 +124,12 @@ function PrivacyPage() {
             radio operator certificate, or official procedures. In an emergency, always follow the
             instructions of the coordinating rescue authority.
           </p>
+          <p>
+            No liability is assumed for the use of this app. The operator and developers cannot be
+            held responsible for any incidents, damages or consequences resulting from its use.
+            You use the app entirely at your own risk and are solely responsible for your actions
+            and decisions on the water.
+          </p>
         </Section>
       </div>
     </AppShell>
