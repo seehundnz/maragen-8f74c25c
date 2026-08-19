@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
-import { AlertTriangle, Copy, Crosshair, Loader2, Maximize2, RefreshCw, Share2, Square, Volume2, X } from "lucide-react";
+import { AlertTriangle, ChevronDown, Copy, Crosshair, Loader2, Maximize2, RefreshCw, Share2, Square, Volume2, X } from "lucide-react";
 import { toast } from "sonner";
 
 import { AppShell } from "@/components/AppShell";
@@ -91,6 +91,7 @@ function CallPage() {
   const [readMode, setReadMode] = useState(false);
   const speech = useSpeech();
   const [manualOpen, setManualOpen] = useState(false);
+  const [dscOpen, setDscOpen] = useState(false);
   const [manualLat, setManualLat] = useState("");
   const [manualLon, setManualLon] = useState("");
   const [input, setInput] = useState<CallInput>({
@@ -181,17 +182,31 @@ function CallPage() {
 
           {type === "mayday" && (
             <section className="rounded-xl border-2 border-primary bg-primary/10 p-4">
-              <h2 className="flex items-center gap-2 text-sm font-bold tracking-widest text-primary uppercase">
-                <AlertTriangle className="size-4" /> {t("dsc.title")}
-              </h2>
-              <p className="mt-2 text-sm">{t("dsc.intro")}</p>
-              <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm text-muted-foreground">
-                <li>{t("dsc.step1")}</li>
-                <li>{t("dsc.step2")}</li>
-                <li>{t("dsc.step3")}</li>
-                <li>{t("dsc.step4")}</li>
-              </ol>
-              <p className="mt-2 text-xs text-muted-foreground">{t("dsc.note")}</p>
+              <button
+                type="button"
+                onClick={() => setDscOpen((prev) => !prev)}
+                className="group flex w-full cursor-pointer items-center justify-between text-left text-sm font-black tracking-widest text-primary uppercase"
+                aria-expanded={dscOpen}
+              >
+                <span className="flex items-center gap-2 whitespace-nowrap pr-2">
+                  <AlertTriangle className="size-4" /> {t("dsc.title")}
+                </span>
+                <ChevronDown
+                  className={`size-4 shrink-0 transition-transform ${dscOpen ? "rotate-180" : ""}`}
+                />
+              </button>
+              {dscOpen && (
+                <>
+                  <p className="mt-2 text-sm">{t("dsc.intro")}</p>
+                  <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm text-muted-foreground">
+                    <li>{t("dsc.step1")}</li>
+                    <li>{t("dsc.step2")}</li>
+                    <li>{t("dsc.step3")}</li>
+                    <li>{t("dsc.step4")}</li>
+                  </ol>
+                  <p className="mt-2 text-xs text-muted-foreground">{t("dsc.note")}</p>
+                </>
+              )}
             </section>
           )}
 
