@@ -29,10 +29,10 @@ export const Route = createFileRoute("/api/tts")({
             model: "openai/gpt-4o-mini-tts",
             input: text,
             voice: "alloy",
-            speed: 0.8,
+            speed: 0.9,
             response_format: "mp3",
             instructions:
-              "Read this maritime VHF radio message in a calm, neutral, professional radio-operator voice. Speak slowly and clearly. Pronounce all numbers individually and distinctly. Read the vessel name slowly and clearly. Spell the call sign using the NATO phonetic alphabet (Alpha, Bravo, Charlie, etc.), then repeat each letter. Pause briefly at the end of each line and between major sections.",
+              "Read this maritime VHF radio message clearly, calmly and slowly, in a neutral professional radio-operator voice. Pause briefly at the end of each line.",
           }),
         });
 
