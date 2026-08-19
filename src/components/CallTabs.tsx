@@ -1,8 +1,10 @@
 import { Link } from "@tanstack/react-router";
 import { CALL_META, CALL_TYPES, type CallType } from "@/lib/types";
 import { cn } from "@/lib/utils";
+import { useT } from "@/lib/i18n";
 
 export function CallTabs({ active }: { active: CallType }) {
+  const { t } = useT();
   return (
     <nav className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-background/95 backdrop-blur">
       <div className="mx-auto grid max-w-3xl grid-cols-4">
@@ -24,7 +26,7 @@ export function CallTabs({ active }: { active: CallType }) {
               <span className="text-[0.7rem] leading-tight font-bold tracking-wider sm:text-xs">
                 {CALL_META[type].label}
               </span>
-              <span className="text-[0.6rem] opacity-70">{CALL_META[type].short}</span>
+              <span className="text-[0.6rem] opacity-70">{t(`call.${type}.short`)}</span>
             </Link>
           );
         })}
