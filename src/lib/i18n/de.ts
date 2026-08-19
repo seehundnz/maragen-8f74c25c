@@ -157,6 +157,10 @@ export const de: Dictionary = {
   "settings.clearConfirm": "Ja, alles löschen",
   "settings.clearing": "Wird gelöscht…",
 
+  "settings.supportHeading": "Diese App unterstützen",
+  "settings.supportBody":
+    "Wenn dir die App gefällt, freue ich mich über eine kleine Spende. Sie hilft, Hosting- und Entwicklungskosten zu decken.",
+  "settings.supportLink": "Buy me a coffee",
 
   "settings.privacyHeading": "Datenschutz & Recht",
   "settings.privacyHint":

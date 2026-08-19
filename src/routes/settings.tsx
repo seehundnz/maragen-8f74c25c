@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ShieldCheck } from "lucide-react";
+import { ShieldCheck, Coffee } from "lucide-react";
 import { AppShell } from "@/components/AppShell";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
