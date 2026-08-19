@@ -203,7 +203,7 @@ function CallPage() {
               <Button variant="secondary" size="sm" onClick={refresh} disabled={loading}>
                 <RefreshCw className={loading ? "animate-spin" : ""} /> {t("call.refreshFix")}
               </Button>
-              <Button variant="ghost" size="sm" onClick={() => setManualOpen((o) => !o)}>
+              <Button variant="secondary" size="sm" onClick={() => setManualOpen((o) => !o)} aria-pressed={manualOpen}>
                 <Crosshair /> {t("call.manualPosition")}
               </Button>
               <span className="self-center text-xs text-muted-foreground">
