@@ -153,9 +153,11 @@ export function isOnline(): boolean {
 
 export function isPwaInstalled(): boolean {
   if (typeof window === "undefined") return false;
-  if ("standalone" in navigator && (navigator as Navigator).standalone === true) return true;
+  const nav = navigator as Navigator & { standalone?: boolean };
+  if ("standalone" in nav && nav.standalone === true) return true;
   return window.matchMedia("(display-mode: standalone)").matches;
 }
+
 
 export function onConnectionChange(cb: () => void): () => void {
   if (typeof window === "undefined") return () => {};
