@@ -165,38 +165,20 @@ function VesselsPage() {
       />
       <VesselScanDialog open={scanOpen} onOpenChange={setScanOpen} onDetected={onDetected} />
 
-      <Dialog open={pending !== null} onOpenChange={(o) => !o && setPending(null)}>
+      <Dialog open={deleteConfirm !== null} onOpenChange={(o) => !o && setDeleteConfirm(null)}>
         <DialogContent className="max-w-sm">
           <DialogHeader>
-            <DialogTitle>{t("share.confirmTitle")}</DialogTitle>
+            <DialogTitle>{t("vessels.deleteConfirmTitle")}</DialogTitle>
             <DialogDescription>
-              {duplicate ? t("share.duplicate", { mmsi: pending?.mmsi ?? "" }) : t("share.scanHint")}
+              {deleteConfirm ? t("vessels.deleteConfirmBody", { name: deleteConfirm.name }) : ""}
             </DialogDescription>
           </DialogHeader>
-          <div className="rounded-xl border border-border bg-card p-3">
-            <p className="font-semibold">{pending?.name}</p>
-            <p className="font-mono text-sm text-muted-foreground">
-              MMSI {pending?.mmsi} · {pending?.callSign}
-            </p>
-            {pending && (pending.vesselType || pending.length || pending.hullColor) && (
-              <p className="text-xs text-muted-foreground">
-                {[pending.length, pending.vesselType, pending.hullColor].filter(Boolean).join(" · ")}
-              </p>
-            )}
-          </div>
           <div className="flex flex-wrap gap-2">
-            {duplicate ? (
-              <>
-                <Button onClick={() => commitImport("update")}>{t("share.updateExisting")}</Button>
-                <Button variant="secondary" onClick={() => commitImport("new")}>
-                  {t("share.addAsNew")}
-                </Button>
-              </>
-            ) : (
-              <Button onClick={() => commitImport("new")}>{t("share.import")}</Button>
-            )}
-            <Button variant="ghost" onClick={() => setPending(null)}>
-              {t("share.cancel")}
+            <Button variant="destructive" onClick={() => deleteConfirm && confirmDelete(deleteConfirm)}>
+              {t("vessels.deleteConfirm")}
+            </Button>
+            <Button variant="ghost" onClick={() => setDeleteConfirm(null)}>
+              {t("vessels.deleteCancel")}
             </Button>
           </div>
         </DialogContent>
