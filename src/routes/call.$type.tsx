@@ -378,7 +378,7 @@ function CallPage() {
               <h2 className="text-sm font-bold tracking-widest text-primary uppercase">
                 {t("call.radioScript")}
               </h2>
-              <div className="flex flex-wrap justify-end gap-2">
+              <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:justify-end">
                 <SpeakButton />
                 <Button size="sm" variant="secondary" onClick={copy}>
                   <Copy /> {t("call.copy")}
