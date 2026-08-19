@@ -174,6 +174,7 @@ export const en = {
   "vessels.englishNotice": "Please enter vessel type, length and hull colour in English — they are inserted into the English radio script as typed.",
   "vessels.errName": "Vessel name is required",
   "vessels.errMmsi": "MMSI must be exactly 9 digits",
+  "vessels.errMmsiShort": "MMSI is too short — {count} more digit(s) needed (9 in total)",
   "vessels.errCallSign": "Call sign is required",
 
   "privacy.title": "Privacy & Imprint",

@@ -178,6 +178,7 @@ export const de: Dictionary = {
   "vessels.englishNotice": "Bitte Schiffstyp, Länge und Rumpffarbe auf Englisch eingeben — sie werden unverändert in den englischen Funkspruch übernommen.",
   "vessels.errName": "Schiffsname ist erforderlich",
   "vessels.errMmsi": "Die MMSI muss genau 9 Ziffern haben",
+  "vessels.errMmsiShort": "MMSI ist zu kurz — noch {count} Ziffer(n) nötig (insgesamt 9)",
   "vessels.errCallSign": "Rufzeichen ist erforderlich",
 
   "privacy.title": "Datenschutz & Impressum",
