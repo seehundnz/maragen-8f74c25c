@@ -89,6 +89,15 @@ function CallPage() {
     settings.intervalSeconds,
   );
   const [readMode, setReadMode] = useState(false);
+
+  useEffect(() => {
+    if (!readMode) return;
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = previous;
+    };
+  }, [readMode]);
   const speech = useSpeech();
   const [manualOpen, setManualOpen] = useState(false);
   const [dscOpen, setDscOpen] = useState(false);
