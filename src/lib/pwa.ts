@@ -90,8 +90,8 @@ function setUpdateAvailable(value: boolean) {
 function deriveStatus(reg: ServiceWorkerRegistration | null): SwStatus {
   if (typeof window === "undefined" || !("serviceWorker" in navigator)) return "unsupported";
   if (!reg) return "notRegistered";
-  if (reg.active) return "active";
   if (reg.waiting) return "waiting";
+  if (reg.active) return "active";
   if (reg.installing) return "installing";
   return "notRegistered";
 }
