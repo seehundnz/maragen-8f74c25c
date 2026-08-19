@@ -41,6 +41,8 @@ async function unregisterApp(): Promise<void> {
   );
 }
 
+export type SwStatus = "unsupported" | "notRegistered" | "installing" | "waiting" | "active";
+
 export type PwaHandle = {
   registration: ServiceWorkerRegistration | null;
   checkForUpdate: () => Promise<void>;
@@ -48,8 +50,19 @@ export type PwaHandle = {
 };
 
 let registration: ServiceWorkerRegistration | null = null;
+let swStatus: SwStatus = "notRegistered";
+let lastCheck: Date | null = null;
 const updateListeners = new Set<(available: boolean) => void>();
+const statusListeners = new Set<(status: SwStatus) => void>();
 let updateAvailable = false;
+
+export function getSwStatus(): SwStatus {
+  return swStatus;
+}
+
+export function getLastUpdateCheck(): Date | null {
+  return lastCheck;
+}
 
 export function onUpdateAvailable(cb: (available: boolean) => void): () => void {
   updateListeners.add(cb);
@@ -57,10 +70,22 @@ export function onUpdateAvailable(cb: (available: boolean) => void): () => void 
   return () => updateListeners.delete(cb);
 }
 
+export function onSwStatusChange(cb: (status: SwStatus) => void): () => void {
+  statusListeners.add(cb);
+  cb(swStatus);
+  return () => statusListeners.delete(cb);
+}
+
+function setSwStatus(value: SwStatus) {
+  swStatus = value;
+  statusListeners.forEach((cb) => cb(value));
+}
+
 function setUpdateAvailable(value: boolean) {
   updateAvailable = value;
   updateListeners.forEach((cb) => cb(value));
 }
+
 
 export async function registerServiceWorker(): Promise<void> {
   if (!swAllowed()) {
