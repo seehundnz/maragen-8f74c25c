@@ -80,7 +80,7 @@ export const en = {
     "All stations, all stations, all stations\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
   "comms.h.end": "End a distress call (only coast station or vessel in distress)",
   "comms.p.end":
-    "MAYDAY\nAll stations, all stations, all stations\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at UTC [Current UTC]\n[Vessel in distress name], [Vessel in distress call sign], [Vessel in distress MMSI]\nSILENCE FINI\n",
+    "MAYDAY\nAll stations, all stations, all stations\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC \n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
 
   "nature.sinking": "Sinking",
   "nature.takingOnWater": "Taking on water",
