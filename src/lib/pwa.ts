@@ -87,10 +87,35 @@ function setUpdateAvailable(value: boolean) {
 }
 
 
+function deriveStatus(reg: ServiceWorkerRegistration | null): SwStatus {
+  if (typeof window === "undefined" || !("serviceWorker" in navigator)) return "unsupported";
+  if (!reg) return "notRegistered";
+  if (reg.active) return "active";
+  if (reg.waiting) return "waiting";
+  if (reg.installing) return "installing";
+  return "notRegistered";
+}
+
+function refreshStatus() {
+  const next = deriveStatus(registration);
+  setSwStatus(next);
+  if (registration?.waiting) setUpdateAvailable(true);
+}
+
+function trackWorker(worker: ServiceWorker | null) {
+  if (!worker) return;
+  worker.addEventListener("statechange", () => {
+    if (worker.state === "installed" && navigator.serviceWorker.controller && registration?.waiting) {
+      setUpdateAvailable(true);
+    }
+    refreshStatus();
+  });
+}
+
 export async function registerServiceWorker(): Promise<void> {
   if (!swAllowed()) {
     await unregisterApp();
-    if (!("serviceWorker" in navigator)) {
+    if (typeof navigator === "undefined" || !("serviceWorker" in navigator)) {
       setSwStatus("unsupported");
     } else {
       setSwStatus("notRegistered");
@@ -99,30 +124,32 @@ export async function registerServiceWorker(): Promise<void> {
   }
   try {
     registration = await navigator.serviceWorker.register(SW_URL, { scope: "/" });
-    setSwStatus(registration.active ? "active" : registration.waiting ? "waiting" : registration.installing ? "installing" : "notRegistered");
-    if (registration.waiting) setUpdateAvailable(true);
+    refreshStatus();
+
+    // An install may already be in flight before `updatefound` could be attached.
+    trackWorker(registration.installing);
+    trackWorker(registration.waiting);
+
     registration.addEventListener("updatefound", () => {
-      const installing = registration?.installing;
-      if (installing) {
-        setSwStatus("installing");
-        installing.addEventListener("statechange", () => {
-          if (installing.state === "installed") {
-            if (navigator.serviceWorker.controller) {
-              setUpdateAvailable(true);
-              setSwStatus("waiting");
-            } else {
-              setSwStatus("active");
-            }
-          } else if (installing.state === "activated") {
-            setSwStatus("active");
-          }
-        });
-      }
+      trackWorker(registration?.installing ?? null);
+      refreshStatus();
+    });
+
+    navigator.serviceWorker.addEventListener("controllerchange", refreshStatus);
+
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible") refreshStatus();
+    });
+
+    void navigator.serviceWorker.ready.then((ready) => {
+      registration = ready;
+      refreshStatus();
     });
   } catch {
     setSwStatus("notRegistered");
   }
 }
+
 
 export async function checkForUpdate(): Promise<boolean> {
   if (!registration) return false;
