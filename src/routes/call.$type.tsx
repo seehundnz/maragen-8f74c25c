@@ -360,7 +360,7 @@ function CallPage() {
                 rows={2}
                 value={input.message}
                 onChange={(e) => setInput((i) => ({ ...i, message: e.target.value }))}
-                placeholder={t("call.additionalMessagePlaceholder")}
+                placeholder={t(MESSAGE_PLACEHOLDER[type])}
               />
             </div>
           </section>
