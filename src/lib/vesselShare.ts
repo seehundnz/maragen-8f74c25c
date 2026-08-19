@@ -61,3 +61,18 @@ export function decodeVessel(raw: string): SharedVessel | null {
     return null;
   }
 }
+
+export function sharedToVessel(shared: SharedVessel, id: string): Vessel {
+  const vessel: Vessel = {
+    id,
+    name: shared.name,
+    mmsi: shared.mmsi,
+    callSign: shared.callSign,
+  };
+  if (shared.vesselType !== undefined) vessel.vesselType = shared.vesselType;
+  if (shared.length !== undefined) vessel.length = shared.length;
+  if (shared.hullColor !== undefined) vessel.hullColor = shared.hullColor;
+  if (shared.pob !== undefined) vessel.pob = shared.pob;
+  if (shared.channel !== undefined) vessel.channel = shared.channel;
+  return vessel;
+}
