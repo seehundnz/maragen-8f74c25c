@@ -3,6 +3,7 @@ import { Radio, Ship, Settings as SettingsIcon } from "lucide-react";
 import type { ReactNode } from "react";
 
 import { useT } from "@/lib/i18n";
+import { InstallButton } from "@/components/InstallButton";
 
 export function AppShell({ children }: { children: ReactNode }) {
   const { t } = useT();
@@ -15,6 +16,7 @@ export function AppShell({ children }: { children: ReactNode }) {
             <span className="text-sm font-bold tracking-[0.2em] uppercase">{t("app.name")}</span>
           </Link>
           <nav className="flex items-center gap-1">
+            <InstallButton />
             <Link
               to="/vessels"
               className="flex items-center gap-1.5 rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
