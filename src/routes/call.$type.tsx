@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { AlertTriangle, ChevronDown, Copy, Crosshair, Loader2, Maximize2, RefreshCw, Share2, Square, Volume2, X } from "lucide-react";
 import { toast } from "sonner";
 
