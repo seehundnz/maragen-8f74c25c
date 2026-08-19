@@ -71,6 +71,17 @@ export const de: Dictionary = {
   "dsc.step4": "Danach den MAYDAY-Spruch unten auf Kanal 16 sprechen.",
   "dsc.note": "Prüfe, dass die MMSI im Funkgerät programmiert und eine GPS-Position angeschlossen ist. Ohne DSC direkt MAYDAY auf Kanal 16 rufen.",
 
+  "comms.title": "Weitere Kommunikation",
+  "comms.intro": "Standard-Funkfloskeln für weitere Kommunikation, Stille-Aufforderungen, Falschalarm-Rücknahme und Beendigung eines Notrufs.",
+  "comms.h.relay": "1. Weitere Kommunikation im Notfall",
+  "comms.p.relay": "All stations, all stations, all stations. This is [Schiffsname], [Schiffsname], [Schiffsname]. Mayday relay. The following distress message was received from [Schiffsname] at [Uhrzeit] UTC in position [Position].",
+  "comms.h.silence": "2. Stille auffordern (nur Küstenfunkstelle oder notleidendes Schiff)",
+  "comms.p.silence": "All stations, all stations, all stations. This is [Name Küstenfunkstelle / notleidendes Schiff]. Stop transmitting. Mayday. Silence mayday.",
+  "comms.h.cancel": "3. Falsch ausgelösten Notalarm zurücknehmen",
+  "comms.p.cancel": "All stations, all stations, all stations. This is [Schiffsname], [Schiffsname], [Schiffsname]. Cancel my distress alert of [Uhrzeit] UTC. All stations, this is [Schiffsname]. The distress alert of [Uhrzeit] UTC is cancelled. Sorry for any inconvenience caused.",
+  "comms.h.end": "4. Notruf beenden (nur Küstenfunkstelle oder notleidendes Schiff)",
+  "comms.p.end": "All stations, all stations, all stations. This is [Name Küstenfunkstelle / notleidendes Schiff]. Mayday [Schiffsname]. The distress is finished. All ships in vicinity may resume normal navigation. This is [Name] out.",
+
   "nature.sinking": "Sinkend",
   "nature.takingOnWater": "Wassereinbruch",
   "nature.fire": "Feuer an Bord",

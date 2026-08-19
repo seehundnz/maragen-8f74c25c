@@ -69,6 +69,17 @@ export const en = {
   "dsc.step4": "Then speak the MAYDAY message below on channel 16.",
   "dsc.note": "Check that your MMSI is programmed into the radio and a GPS position is connected. Without DSC, call MAYDAY directly on channel 16.",
 
+  "comms.title": "Further communication",
+  "comms.intro": "Standard radio phrases for further communication, silence requests, false-alarm cancellation and ending a distress call.",
+  "comms.h.relay": "1. Further communication during a distress case",
+  "comms.p.relay": "All stations, all stations, all stations. This is [vessel name], [vessel name], [vessel name]. Mayday relay. The following distress message was received from [vessel name] at [time] UTC in position [position].",
+  "comms.h.silence": "2. Asking for silence (only coast radio station or vessel in distress)",
+  "comms.p.silence": "All stations, all stations, all stations. This is [coast station name / vessel in distress name]. Stop transmitting. Mayday. Silence mayday.",
+  "comms.h.cancel": "3. Revert a mistakenly issued distress alert",
+  "comms.p.cancel": "All stations, all stations, all stations. This is [vessel name], [vessel name], [vessel name]. Cancel my distress alert of [time] UTC. All stations, this is [vessel name]. The distress alert of [time] UTC is cancelled. Sorry for any inconvenience caused.",
+  "comms.h.end": "4. End a distress call (only coast station or vessel in distress)",
+  "comms.p.end": "All stations, all stations, all stations. This is [coast station name / vessel in distress name]. Mayday [vessel name]. The distress is finished. All ships in vicinity may resume normal navigation. This is [name] out.",
+
   "nature.sinking": "Sinking",
   "nature.takingOnWater": "Taking on water",
   "nature.fire": "Fire on board",
