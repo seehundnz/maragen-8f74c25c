@@ -179,7 +179,7 @@ function CallPage() {
             <p className="mt-1 text-sm text-muted-foreground">{t(`call.${type}.description`)}</p>
           </section>
 
-          <section className="grid gap-3 rounded-xl border border-border bg-card p-4 sm:grid-cols-2">
+          <section className="grid gap-3 rounded-xl border border-border bg-card p-4 sm:grid-cols-[1fr_1.5fr]">
             <div>
               <p className="text-xs tracking-widest text-muted-foreground uppercase">{t("call.utcTime")}</p>
               <p className="font-mono text-xl tabular-nums">
