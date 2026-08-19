@@ -61,6 +61,14 @@ export const en = {
   "call.disclaimer":
     "This app is an aid only. It does not replace proper radio training, a DSC distress alert, or the skipper's judgement. Always send a DSC alert first where available.",
 
+  "dsc.title": "Send a DSC distress alert first",
+  "dsc.intro": "If your radio has DSC (red distress button), send the DSC alert before speaking:",
+  "dsc.step1": "Lift the cover and press and hold the red DISTRESS button for about 5 seconds.",
+  "dsc.step2": "If time allows, select the nature of distress (e.g. sinking, fire, man overboard).",
+  "dsc.step3": "Wait for the acknowledgement; the radio switches to channel 16 automatically.",
+  "dsc.step4": "Then speak the MAYDAY message below on channel 16.",
+  "dsc.note": "Check that your MMSI is programmed into the radio and a GPS position is connected. Without DSC, call MAYDAY directly on channel 16.",
+
   "nature.sinking": "Sinking",
   "nature.takingOnWater": "Taking on water",
   "nature.fire": "Fire on board",
