@@ -190,18 +190,21 @@ function CallPage() {
               <p className="font-mono text-sm leading-6 tabular-nums whitespace-nowrap">
                 {now ? utcClockString(now) : "--:--:-- UTC"}
               </p>
-              <p className="font-mono text-sm leading-6 whitespace-nowrap">
-                {formatPositionShort(fix, settings.positionFormat)}
-              </p>
+              <div>
+                <p className="font-mono text-sm leading-6 whitespace-nowrap">
+                  {formatPositionShort(fix, settings.positionFormat)}
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  {fix?.manual
+                    ? t("call.manualEntry")
+                    : fix
+                      ? `±${Math.round(fix.accuracy ?? 0)} m · ${new Date(fix.timestamp).toUTCString().slice(17, 25)} UTC`
+                      : (error ?? t("call.waitingGps"))}
+                </p>
+              </div>
             </div>
-            <p className="text-xs text-muted-foreground">
-              {fix?.manual
-                ? t("call.manualEntry")
-                : fix
-                  ? `±${Math.round(fix.accuracy ?? 0)} m · ${new Date(fix.timestamp).toUTCString().slice(17, 25)} UTC`
-                  : (error ?? t("call.waitingGps"))}
-            </p>
             <div className="flex flex-wrap gap-2">
+
               <Button variant="secondary" size="sm" onClick={refresh} disabled={loading}>
                 <RefreshCw className={loading ? "animate-spin" : ""} /> {t("call.refreshFix")}
               </Button>
