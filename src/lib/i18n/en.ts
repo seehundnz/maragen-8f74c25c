@@ -101,7 +101,20 @@ export const en = {
   "settings.appHeading": "App & updates",
   "settings.offlineHint":
     "The app stores itself on your device so it also opens without a network connection.",
+  "settings.swStatus": "Service worker",
+  "settings.swStatus.active": "Active",
+  "settings.swStatus.waiting": "Update waiting",
+  "settings.swStatus.installing": "Installing",
+  "settings.swStatus.notRegistered": "Not registered",
+  "settings.swStatus.unsupported": "Unsupported",
+  "settings.connection": "Connection",
+  "settings.online": "Online",
+  "settings.offline": "Offline",
+  "settings.installStatus": "App install",
+  "settings.installed": "Installed",
+  "settings.notInstalled": "Browser tab",
   "settings.buildDate": "Installed version",
+  "settings.lastChecked": "Last checked",
   "settings.checkUpdate": "Check for updates",
   "settings.checking": "Checking…",
   "settings.updateAvailable": "A new version is available.",
@@ -109,6 +122,7 @@ export const en = {
   "settings.upToDate": "You are on the latest version.",
   "settings.updateHint":
     "The app updates itself automatically in the background; you can force a check here.",
+
 
   "settings.privacyHeading": "Privacy & legal",
   "settings.privacyHint":
