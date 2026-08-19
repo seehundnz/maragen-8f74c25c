@@ -76,11 +76,13 @@ export const de: Dictionary = {
   "comms.h.relay": "1. Weitere Kommunikation im Notfall",
   "comms.p.relay": "MAYDAY [name vessel in distress], [call sign vessel in distress]\nThis is [vessel name], [call sign]\n[message]\nOVER\n",
   "comms.h.silence": "2. Stille auffordern (nur Küstenfunkstelle oder notleidendes Schiff)",
-  "comms.p.silence": "All stations, all stations, all stations. This is [Name Küstenfunkstelle / notleidendes Schiff]. Stop transmitting. Mayday. Silence mayday.",
-  "comms.h.cancel": "3. Falsch ausgelösten Notalarm zurücknehmen",
-  "comms.p.cancel": "All stations, all stations, all stations. This is [Schiffsname], [Schiffsname], [Schiffsname]. Cancel my distress alert of [Uhrzeit] UTC. All stations, this is [Schiffsname]. The distress alert of [Uhrzeit] UTC is cancelled. Sorry for any inconvenience caused.",
+  "comms.p.silence": "All stations\nSilence mayday\n",
+  "comms.h.cancel": "3. Falsch ausgelösten Notalarm zurücknehmen (nur das in Not befindliche Schiff)",
+  "comms.p.cancel":
+    "All stations, all stations, all stations\nThis is [vessel name], [vessel name], [vessel name]\nCall sign [call sign], MMSI [MMSI]\nCancel my false distress alert of [time] UTC\nOVER\n",
   "comms.h.end": "4. Notruf beenden (nur Küstenfunkstelle oder notleidendes Schiff)",
-  "comms.p.end": "All stations, all stations, all stations. This is [Name Küstenfunkstelle / notleidendes Schiff]. Mayday [Schiffsname]. The distress is finished. All ships in vicinity may resume normal navigation. This is [Name] out.",
+  "comms.p.end":
+    "MAYDAY\nAll stations, all stations, all stations\nThis is [coast station name / vessel in distress name] at UTC [current UTC]\n[vessel in distress name], [vessel in distress call sign], [vessel in distress MMSI]\nSILENCE FINI\n",
 
   "nature.sinking": "Sinkend",
   "nature.takingOnWater": "Wassereinbruch",
