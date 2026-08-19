@@ -12,6 +12,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useSettings } from "@/hooks/useFleet";
+import { useT } from "@/lib/i18n";
 
 const title = "Settings — VHF Call Builder";
 const description =
@@ -31,19 +32,40 @@ export const Route = createFileRoute("/settings")({
 
 function SettingsPage() {
   const { settings, setSettings } = useSettings();
+  const { t } = useT();
   const intervalValid = settings.intervalSeconds >= 2 && settings.intervalSeconds <= 300;
 
   return (
     <AppShell>
-      <h1 className="mb-4 text-2xl font-bold">Settings</h1>
+      <h1 className="mb-4 text-2xl font-bold">{t("settings.title")}</h1>
       <div className="space-y-4">
+        <section className="space-y-4 rounded-xl border border-border bg-card p-4">
+          <div>
+            <Label htmlFor="language">{t("settings.language")}</Label>
+            <Select
+              value={settings.language ?? "auto"}
+              onValueChange={(v) =>
+                setSettings((s) => ({ ...s, language: v as "auto" | "en" | "de" }))
+              }
+            >
+              <SelectTrigger id="language" className="max-w-72">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="auto">{t("settings.language.auto")}</SelectItem>
+                <SelectItem value="en">English</SelectItem>
+                <SelectItem value="de">Deutsch</SelectItem>
+              </SelectContent>
+            </Select>
+            <p className="mt-1 text-xs text-muted-foreground">{t("settings.languageHint")}</p>
+          </div>
+        </section>
+
         <section className="space-y-4 rounded-xl border border-border bg-card p-4">
           <div className="flex items-center justify-between gap-4">
             <div>
-              <Label htmlFor="auto">Auto-update position</Label>
-              <p className="text-xs text-muted-foreground">
-                Refresh the GPS fix continuously while a call screen is open.
-              </p>
+              <Label htmlFor="auto">{t("settings.autoUpdate")}</Label>
+              <p className="text-xs text-muted-foreground">{t("settings.autoUpdateHint")}</p>
             </div>
             <Switch
               id="auto"
@@ -53,7 +75,7 @@ function SettingsPage() {
           </div>
 
           <div>
-            <Label htmlFor="interval">Refresh interval (seconds)</Label>
+            <Label htmlFor="interval">{t("settings.interval")}</Label>
             <Input
               id="interval"
               type="number"
@@ -65,20 +87,16 @@ function SettingsPage() {
               }
               className="max-w-32"
             />
-            <p className="mt-1 text-xs text-muted-foreground">
-              Default 10 seconds. Allowed range 2–300 seconds.
-            </p>
+            <p className="mt-1 text-xs text-muted-foreground">{t("settings.intervalHint")}</p>
             {!intervalValid && (
-              <p className="mt-1 text-xs text-destructive">
-                Value must be between 2 and 300 seconds.
-              </p>
+              <p className="mt-1 text-xs text-destructive">{t("settings.intervalError")}</p>
             )}
           </div>
         </section>
 
         <section className="space-y-4 rounded-xl border border-border bg-card p-4">
           <div>
-            <Label htmlFor="channel">Default VHF channel</Label>
+            <Label htmlFor="channel">{t("settings.defaultChannel")}</Label>
             <Input
               id="channel"
               inputMode="numeric"
@@ -88,7 +106,7 @@ function SettingsPage() {
             />
           </div>
           <div>
-            <Label htmlFor="format">Position format</Label>
+            <Label htmlFor="format">{t("settings.positionFormat")}</Label>
             <Select
               value={settings.positionFormat}
               onValueChange={(v) =>
@@ -99,8 +117,8 @@ function SettingsPage() {
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="ddm">Degrees and decimal minutes (54° 19.85' N)</SelectItem>
-                <SelectItem value="dd">Decimal degrees (54.33083°)</SelectItem>
+                <SelectItem value="ddm">{t("settings.positionFormat.ddm")}</SelectItem>
+                <SelectItem value="dd">{t("settings.positionFormat.dd")}</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -109,12 +127,8 @@ function SettingsPage() {
         <section className="space-y-4 rounded-xl border border-border bg-card p-4">
           <div className="flex items-center justify-between gap-4">
             <div>
-              <Label htmlFor="aivoice">Use AI voice for &quot;Speak&quot;</Label>
-              <p className="text-xs text-muted-foreground">
-                On: the script text is sent to our speech service for a clear radio-operator voice.
-                Off: only your device&apos;s built-in voice is used and no text ever leaves this
-                device.
-              </p>
+              <Label htmlFor="aivoice">{t("settings.aiVoice")}</Label>
+              <p className="text-xs text-muted-foreground">{t("settings.aiVoiceHint")}</p>
             </div>
             <Switch
               id="aivoice"
@@ -126,17 +140,14 @@ function SettingsPage() {
 
         <section className="space-y-2 rounded-xl border border-border bg-card p-4">
 
-          <h2 className="text-sm font-semibold">Privacy &amp; legal</h2>
-          <p className="text-xs text-muted-foreground">
-            All settings and vessel profiles are stored on this device only. No account, no
-            tracking, no analytics.
-          </p>
+          <h2 className="text-sm font-semibold">{t("settings.privacyHeading")}</h2>
+          <p className="text-xs text-muted-foreground">{t("settings.privacyHint")}</p>
           <Link
             to="/privacy"
             className="inline-flex items-center gap-1.5 text-sm font-medium text-primary underline-offset-4 hover:underline"
           >
             <ShieldCheck className="size-4" aria-hidden />
-            GDPR/DSGVO information &amp; imprint
+            {t("settings.privacyLink")}
           </Link>
         </section>
       </div>

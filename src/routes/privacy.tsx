@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { AppShell } from "@/components/AppShell";
+import { useT } from "@/lib/i18n";
 
 const title = "Privacy & Imprint — VHF Call Builder";
 const description =
@@ -29,77 +30,43 @@ function Section({ heading, children }: { heading: string; children: React.React
 }
 
 function PrivacyPage() {
+  const { t } = useT();
   return (
     <AppShell>
-      <h1 className="mb-1 text-2xl font-bold">Privacy &amp; Imprint</h1>
-      <p className="mb-4 text-sm text-muted-foreground">
-        Datenschutz &amp; Impressum — last updated 19 August 2026
-      </p>
+      <h1 className="mb-1 text-2xl font-bold">{t("privacy.title")}</h1>
+      <p className="mb-4 text-sm text-muted-foreground">{t("privacy.subtitle")}</p>
 
       <div className="space-y-4">
-        <Section heading="Short answer: is this app GDPR/DSGVO compliant?">
+        <Section heading={t("privacy.h.summary")}>
+          <p>{t("privacy.p.summary1")}</p>
+          <p>{t("privacy.p.summary2")}</p>
+        </Section>
+
+        <Section heading={t("privacy.h.gps")}>
+          <p>{t("privacy.p.gps")}</p>
+        </Section>
+
+        <Section heading={t("privacy.h.tts")}>
+          <p>{t("privacy.p.tts1")}</p>
           <p>
-            The app is built to be data-minimal: it works without an account, without tracking,
-            without advertising and without analytics. Everything you enter — vessel profiles,
-            MMSI, call sign, persons on board, settings — is stored only in your device&apos;s
-            local browser storage. It is never uploaded to a server and never shared.
+            <strong className="text-foreground">{t("privacy.s.ttsOn")}</strong>{" "}
+            {t("privacy.p.ttsOn")}
           </p>
           <p>
-            Because no personal data is transmitted or stored by us for these features, there is no
-            processing that would require a separate legal basis, and no data to export or erase on
-            our side. You stay in full control on your own device.
+            <strong className="text-foreground">{t("privacy.s.ttsOff")}</strong>{" "}
+            {t("privacy.p.ttsOff")}
           </p>
         </Section>
 
-        <Section heading="GPS position">
-          <p>
-            Your position is read from your device only after you grant browser permission. It is
-            used solely to fill in the position line of the radio script and is held in memory
-            while the app is open. It is not stored, logged or transmitted. You can revoke the
-            permission at any time in your browser or system settings.
-          </p>
+        <Section heading={t("privacy.h.cookies")}>
+          <p>{t("privacy.p.cookies")}</p>
         </Section>
 
-        <Section heading="Text-to-speech (Speak button)">
-          <p>
-            In Settings you can switch the AI voice for the Speak button on or off. This switch
-            controls whether any text leaves your device.
-          </p>
-          <p>
-            <strong className="text-foreground">AI voice on (default):</strong> when you press
-            &quot;Speak&quot;, the generated script text is sent to our speech service to produce
-            the spoken audio, and is then discarded — it is not stored and not used for training.
-            If no network is available, the app automatically falls back to your device&apos;s
-            built-in voice.
-          </p>
-          <p>
-            <strong className="text-foreground">AI voice off:</strong> only your device&apos;s
-            built-in speech synthesis is used. No script text and no vessel data are transmitted;
-            everything stays on your device.
-          </p>
+        <Section heading={t("privacy.h.rights")}>
+          <p>{t("privacy.p.rights")}</p>
         </Section>
 
-
-        <Section heading="Cookies, tracking and hosting">
-          <p>
-            No cookies are set for tracking, no analytics or advertising tools are used, and no
-            user profiles are created. When the app is loaded, the hosting provider processes
-            technical connection data (such as the IP address) in server logs, as is technically
-            necessary to deliver any website (Art. 6 (1)(f) GDPR).
-          </p>
-        </Section>
-
-        <Section heading="Your rights">
-          <p>
-            Under the GDPR you have the right to information, rectification, erasure, restriction,
-            data portability and objection, and the right to lodge a complaint with a supervisory
-            authority. As your data lives only on your device, you can exercise erasure directly by
-            deleting the vessel profiles in the app or clearing this site&apos;s data in your
-            browser settings.
-          </p>
-        </Section>
-
-        <Section heading="Imprint / Impressum (§ 5 DDG)">
+        <Section heading={t("privacy.h.imprint")}>
           <address className="not-italic leading-relaxed text-foreground">
             Sebastian Esch
             <br />
@@ -107,29 +74,20 @@ function PrivacyPage() {
             <br />
             41334 Nettetal
             <br />
-            Germany
+            {t("privacy.imprint.country")}
             <br />
             <br />
-            Email: info@maragen.de
+            {t("privacy.imprint.email")}: info@maragen.de
             <br />
-            Phone: 02153 9572722
+            {t("privacy.imprint.phone")}: 02153 9572722
             <br />
-            Responsible for content (§ 18 (2) MStV): Sebastian Esch
+            {t("privacy.imprint.responsible")}
           </address>
         </Section>
 
-        <Section heading="Safety notice">
-          <p>
-            This app is a support tool only. It does not replace proper radio training, a valid
-            radio operator certificate, or official procedures. In an emergency, always follow the
-            instructions of the coordinating rescue authority.
-          </p>
-          <p>
-            No liability is assumed for the use of this app. The operator and developers cannot be
-            held responsible for any incidents, damages or consequences resulting from its use.
-            You use the app entirely at your own risk and are solely responsible for your actions
-            and decisions on the water.
-          </p>
+        <Section heading={t("privacy.h.safety")}>
+          <p>{t("privacy.p.safety1")}</p>
+          <p>{t("privacy.p.safety2")}</p>
         </Section>
       </div>
     </AppShell>
