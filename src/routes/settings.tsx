@@ -142,6 +142,8 @@ function SettingsPage() {
 
         <UpdateSection />
 
+        <ClearDataSection />
+
         <section className="space-y-2 rounded-xl border border-border bg-card p-4">
 
           <h2 className="text-sm font-semibold">{t("settings.privacyHeading")}</h2>
