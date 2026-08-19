@@ -22,7 +22,7 @@ function value(raw: string | undefined, label: string): string {
 function identityBlock(ctx: TemplateContext): string[] {
   const { vessel } = ctx;
   const lines = [
-    `THIS IS ${vesselName(vessel)}, ${vesselName(vessel)}, ${vesselName(vessel)}`,
+    `This is ${vesselName(vessel)}, ${vesselName(vessel)}, ${vesselName(vessel)}`,
     `Call sign ${value(vessel?.callSign, "CALL SIGN")}, MMSI ${value(vessel?.mmsi, "MMSI")}`,
   ];
   return lines;
