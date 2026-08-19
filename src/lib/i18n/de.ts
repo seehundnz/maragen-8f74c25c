@@ -5,6 +5,23 @@ export const de: Dictionary = {
   "nav.vessels": "Schiffe",
   "nav.settings": "Einstellungen",
   "nav.privacy": "Datenschutz & Impressum",
+  "nav.install": "Installieren",
+
+  "install.title": "App installieren",
+  "install.intro":
+    "Nach der Installation liegt die App auf dem Homescreen, startet im Vollbild und funktioniert offline.",
+  "install.button": "Jetzt installieren",
+  "install.close": "Schließen",
+  "install.ios.step1": "Tippe auf das Teilen-Symbol in der Browserleiste.",
+  "install.ios.step2": 'Scrolle nach unten und wähle "Zum Home-Bildschirm".',
+  "install.ios.step3": 'Tippe oben rechts auf "Hinzufügen".',
+  "install.iosOther.note":
+    "Auf iPhone und iPad kann nur Safari Apps installieren. Öffne diese Seite zuerst in Safari und folge dann den Schritten.",
+  "install.android.step1": "Öffne das Browser-Menü (drei Punkte).",
+  "install.android.step2": 'Wähle "App installieren" oder "Zum Startbildschirm hinzufügen".',
+  "install.android.step3": "Bestätige die Installation.",
+  "install.desktop.step1": "Öffne das Browser-Menü oder das Installieren-Symbol in der Adressleiste.",
+  "install.desktop.step2": 'Wähle "Installieren" und bestätige.',
 
   "call.mayday.short": "Seenot",
   "call.panpan.short": "Dringlichkeit",

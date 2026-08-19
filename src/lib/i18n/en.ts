@@ -3,6 +3,23 @@ export const en = {
   "nav.vessels": "Vessels",
   "nav.settings": "Settings",
   "nav.privacy": "Privacy & Imprint",
+  "nav.install": "Install",
+
+  "install.title": "Install this app",
+  "install.intro":
+    "Installing adds the app to your home screen so it opens full screen and works offline.",
+  "install.button": "Install now",
+  "install.close": "Close",
+  "install.ios.step1": "Tap the Share button in the browser toolbar.",
+  "install.ios.step2": 'Scroll down and choose "Add to Home Screen".',
+  "install.ios.step3": 'Tap "Add" in the top right corner.',
+  "install.iosOther.note":
+    "On iPhone and iPad only Safari can install apps. Open this page in Safari first, then follow the steps below.",
+  "install.android.step1": "Open the browser menu (three dots).",
+  "install.android.step2": 'Choose "Install app" or "Add to Home screen".',
+  "install.android.step3": "Confirm the install.",
+  "install.desktop.step1": "Open the browser menu or the install icon in the address bar.",
+  "install.desktop.step2": 'Choose "Install" and confirm.',
 
   "call.mayday.short": "Distress",
   "call.panpan.short": "Urgency",
