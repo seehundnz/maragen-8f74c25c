@@ -374,11 +374,11 @@ function CallPage() {
           </section>
 
           <section className="rounded-xl border-2 border-primary bg-card p-4">
-            <div className="mb-3 flex items-center justify-between">
+            <div className="mb-3 grid grid-cols-[1fr_auto] items-center gap-3">
               <h2 className="text-sm font-bold tracking-widest text-primary uppercase">
                 {t("call.radioScript")}
               </h2>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap justify-end gap-2">
                 <SpeakButton />
                 <Button size="sm" variant="secondary" onClick={copy}>
                   <Copy /> {t("call.copy")}
