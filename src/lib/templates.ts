@@ -83,7 +83,7 @@ export function buildScript(type: CallType, ctx: TemplateContext): string {
     lines.push(...positionBlock(ctx));
     lines.push(`Safety message: ${value(input.nature || input.message, "SAFETY MESSAGE")}`);
     lines.push(`I am listening on VHF channel ${channel}`);
-    lines.push("OUT");
+    lines.push("OVER");
   } else {
     const station = value(input.station, "STATION CALLED");
     lines.push(`${station.toUpperCase()}, ${station.toUpperCase()}, ${station.toUpperCase()}`);
