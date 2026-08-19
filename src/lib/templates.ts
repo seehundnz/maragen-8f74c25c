@@ -47,7 +47,7 @@ function description(vessel: Vessel | null): string | null {
 export function buildScript(type: CallType, ctx: TemplateContext): string {
   const { input, vessel } = ctx;
   const channel = value(input.channel || vessel?.channel, "CHANNEL");
-  const pob = value(input.pob || vessel?.pob, "PERSONS ON BOARD");
+  const pob = (input.pob || vessel?.pob || "").trim();
   const desc = description(vessel);
   const lines: string[] = [];
 
