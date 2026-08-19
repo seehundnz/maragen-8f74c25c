@@ -56,7 +56,6 @@ export function ClearDataSection() {
               {busy ? t("settings.clearing") : t("settings.clearConfirm")}
             </AlertDialogAction>
           </AlertDialogFooter>
-        </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
     </section>
