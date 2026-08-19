@@ -141,7 +141,7 @@ function CallPage() {
       speech.stop();
       return;
     }
-    const result = await speech.speak(script);
+    const result = await speech.speak(script, { useAiVoice: settings.useAiVoice !== false });
     if (result.failed) toast.error("Speech is not available on this device");
     else if (result.fallback) toast.info("Offline — using the device voice");
   };

@@ -46,11 +46,17 @@ export function useSpeech() {
   }, []);
 
   const speak = useCallback(
-    async (text: string) => {
+    async (text: string, options?: { useAiVoice?: boolean }) => {
       cleanup();
       const spoken = text.replace(/\[([^\]]+)\]/g, "$1 unknown");
       setLoading(true);
       setSpeaking(true);
+      if (options?.useAiVoice === false) {
+        setLoading(false);
+        const okLocal = speakLocally(spoken);
+        if (!okLocal) setSpeaking(false);
+        return { fallback: false as const, failed: !okLocal, local: true } as const;
+      }
       try {
         const res = await fetch("/api/tts", {
           method: "POST",
