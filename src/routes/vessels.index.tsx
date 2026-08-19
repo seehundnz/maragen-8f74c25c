@@ -51,6 +51,13 @@ function VesselsPage() {
     setPending(vessel);
   }, []);
 
+  const confirmDelete = (vessel: Vessel) => {
+    setVessels((list) => list.filter((x) => x.id !== vessel.id));
+    if (activeId === vessel.id) setSettings((s) => ({ ...s, activeVesselId: null }));
+    toast.success(t("vessels.deleted", { name: vessel.name }));
+    setDeleteConfirm(null);
+  };
+
   const duplicate = pending ? vessels.find((v) => v.mmsi === pending.mmsi) : undefined;
 
   const commitImport = (mode: "new" | "update") => {
