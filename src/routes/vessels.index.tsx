@@ -141,11 +141,7 @@ function VesselsPage() {
                   variant="ghost"
                   size="icon"
                   aria-label={t("vessels.delete")}
-                  onClick={() => {
-                    setVessels((list) => list.filter((x) => x.id !== v.id));
-                    if (activeId === v.id) setSettings((s) => ({ ...s, activeVesselId: null }));
-                    toast.success(t("vessels.deleted", { name: v.name }));
-                  }}
+                  onClick={() => setDeleteConfirm(v)}
                 >
                   <Trash2 />
                 </Button>
