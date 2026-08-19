@@ -122,6 +122,16 @@ export const en = {
   "settings.upToDate": "You are on the latest version.",
   "settings.updateHint":
     "The app updates itself automatically in the background; you can force a check here.",
+  "settings.clearHeading": "Clear cache & stored data",
+  "settings.clearHint":
+    "Removes the offline cache and all data stored on this device: vessel profiles, settings and language choice. This cannot be undone.",
+  "settings.clearButton": "Clear cache and data",
+  "settings.clearConfirmTitle": "Clear all data?",
+  "settings.clearConfirmBody":
+    "All vessel profiles, settings and the offline cache will be permanently deleted from this device. The app will restart with factory defaults. This action cannot be undone.",
+  "settings.clearCancel": "Cancel",
+  "settings.clearConfirm": "Yes, delete everything",
+  "settings.clearing": "Deleting…",
 
 
   "settings.privacyHeading": "Privacy & legal",

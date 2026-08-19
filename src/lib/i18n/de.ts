@@ -125,6 +125,16 @@ export const de: Dictionary = {
   "settings.upToDate": "Du nutzt die neueste Version.",
   "settings.updateHint":
     "Die App aktualisiert sich automatisch im Hintergrund; hier kannst du manuell prüfen.",
+  "settings.clearHeading": "Cache & gespeicherte Daten löschen",
+  "settings.clearHint":
+    "Entfernt den Offline-Cache und alle auf diesem Gerät gespeicherten Daten: Schiffsprofile, Einstellungen und Sprachauswahl. Das lässt sich nicht rückgängig machen.",
+  "settings.clearButton": "Cache und Daten löschen",
+  "settings.clearConfirmTitle": "Wirklich alle Daten löschen?",
+  "settings.clearConfirmBody":
+    "Alle Schiffsprofile, Einstellungen und der Offline-Cache werden dauerhaft von diesem Gerät gelöscht. Die App startet mit den Werkseinstellungen neu. Diese Aktion kann nicht rückgängig gemacht werden.",
+  "settings.clearCancel": "Abbrechen",
+  "settings.clearConfirm": "Ja, alles löschen",
+  "settings.clearing": "Wird gelöscht…",
 
 
   "settings.privacyHeading": "Datenschutz & Recht",
