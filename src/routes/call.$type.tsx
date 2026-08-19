@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { AlertTriangle, ChevronDown, Copy, Crosshair, Loader2, Maximize2, RefreshCw, Share2, Square, Volume2, X } from "lucide-react";
 import { toast } from "sonner";
 
@@ -89,6 +89,15 @@ function CallPage() {
     settings.intervalSeconds,
   );
   const [readMode, setReadMode] = useState(false);
+
+  useEffect(() => {
+    if (!readMode) return;
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = previous;
+    };
+  }, [readMode]);
   const speech = useSpeech();
   const [manualOpen, setManualOpen] = useState(false);
   const [dscOpen, setDscOpen] = useState(false);
@@ -437,8 +446,16 @@ function CallPage() {
       <CallTabs active={type} />
 
       {readMode && (
-        <div className="fixed inset-0 z-50 overflow-y-auto bg-background p-5">
-          <div className="mx-auto max-w-3xl">
+        <div
+          className="fixed inset-0 z-50 flex h-[100dvh] flex-col bg-background"
+          style={{
+            paddingTop: "max(1rem, env(safe-area-inset-top))",
+            paddingLeft: "max(1rem, env(safe-area-inset-left))",
+            paddingRight: "max(1rem, env(safe-area-inset-right))",
+            paddingBottom: "max(1rem, env(safe-area-inset-bottom))",
+          }}
+        >
+          <div className="mx-auto w-full max-w-3xl shrink-0">
             <div className="mb-4 flex items-center justify-between">
               <span className="text-lg font-black tracking-widest text-primary">{meta.label}</span>
               <div className="flex gap-2">
@@ -448,9 +465,16 @@ function CallPage() {
                 </Button>
               </div>
             </div>
-            <pre className="font-mono text-2xl leading-relaxed break-words whitespace-pre-wrap sm:text-3xl">
-              {script}
-            </pre>
+          </div>
+          <div
+            className="min-h-0 w-full flex-1 overflow-y-auto overscroll-contain"
+            style={{ WebkitOverflowScrolling: "touch" }}
+          >
+            <div className="mx-auto max-w-3xl pb-16">
+              <pre className="font-mono text-2xl leading-relaxed break-words whitespace-pre-wrap sm:text-3xl">
+                {script}
+              </pre>
+            </div>
           </div>
         </div>
       )}
