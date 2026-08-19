@@ -101,6 +101,9 @@ function VesselEditPage() {
           error={errors["callSign"]}
           placeholder="DK1234"
         />
+        <p className="rounded-lg border border-border bg-muted/40 p-3 text-xs text-muted-foreground">
+          {t("vessels.englishNotice")}
+        </p>
         <div className="grid gap-3 sm:grid-cols-3">
           <Field
             id="type"
