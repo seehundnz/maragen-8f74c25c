@@ -188,7 +188,7 @@ function CallPage() {
                 className="group flex w-full cursor-pointer items-center justify-between text-left text-sm font-black tracking-widest text-primary uppercase"
                 aria-expanded={dscOpen}
               >
-                <span className="flex items-center gap-2">
+                <span className="flex items-center gap-2 whitespace-nowrap pr-2">
                   <AlertTriangle className="size-4" /> {t("dsc.title")}
                 </span>
                 <ChevronDown
