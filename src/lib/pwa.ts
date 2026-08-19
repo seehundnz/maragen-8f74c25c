@@ -225,9 +225,71 @@ export function onInstallModeChange(cb: () => void): () => void {
   const mq = window.matchMedia("(display-mode: standalone)");
   const handler = () => cb();
   mq.addEventListener("change", handler);
+  window.addEventListener("appinstalled", handler);
   if ("standalone" in navigator) {
     // iOS standalone does not change at runtime, no reliable listener available.
   }
-  return () => mq.removeEventListener("change", handler);
+  return () => {
+    mq.removeEventListener("change", handler);
+    window.removeEventListener("appinstalled", handler);
+  };
+}
+
+/* ---------------- Install prompt ---------------- */
+
+type BeforeInstallPromptEvent = Event & {
+  prompt: () => Promise<void>;
+  userChoice: Promise<{ outcome: "accepted" | "dismissed" }>;
+};
+
+let deferredPrompt: BeforeInstallPromptEvent | null = null;
+const promptListeners = new Set<(available: boolean) => void>();
+
+if (typeof window !== "undefined") {
+  window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    deferredPrompt = e as BeforeInstallPromptEvent;
+    promptListeners.forEach((cb) => cb(true));
+  });
+  window.addEventListener("appinstalled", () => {
+    deferredPrompt = null;
+    promptListeners.forEach((cb) => cb(false));
+  });
+}
+
+export function hasInstallPrompt(): boolean {
+  return deferredPrompt !== null;
+}
+
+export function onInstallPromptChange(cb: (available: boolean) => void): () => void {
+  promptListeners.add(cb);
+  cb(deferredPrompt !== null);
+  return () => promptListeners.delete(cb);
+}
+
+export async function promptInstall(): Promise<boolean> {
+  if (!deferredPrompt) return false;
+  const evt = deferredPrompt;
+  deferredPrompt = null;
+  promptListeners.forEach((cb) => cb(false));
+  await evt.prompt();
+  const choice = await evt.userChoice;
+  return choice.outcome === "accepted";
+}
+
+export type InstallPlatform = "ios-safari" | "ios-other" | "android" | "desktop";
+
+export function detectPlatform(): InstallPlatform {
+  if (typeof navigator === "undefined") return "desktop";
+  const ua = navigator.userAgent;
+  const isIos =
+    /iPad|iPhone|iPod/.test(ua) ||
+    (navigator.platform === "MacIntel" && (navigator as Navigator & { maxTouchPoints?: number }).maxTouchPoints! > 1);
+  if (isIos) {
+    const isSafari = /Safari/.test(ua) && !/CriOS|FxiOS|EdgiOS|OPiOS/.test(ua);
+    return isSafari ? "ios-safari" : "ios-other";
+  }
+  if (/Android/.test(ua)) return "android";
+  return "desktop";
 }
 
