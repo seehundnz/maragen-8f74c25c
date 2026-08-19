@@ -233,6 +233,32 @@ export const en = {
     "This app is a support tool only. It does not replace proper radio training, a valid radio operator certificate, or official procedures. In an emergency, always follow the instructions of the coordinating rescue authority.",
   "privacy.p.safety2":
     "No liability is assumed for the use of this app. The operator and developers cannot be held responsible for any incidents, damages or consequences resulting from its use. You use the app entirely at your own risk and are solely responsible for your actions and decisions on the water.",
+  "share.qrTitle": "Share vessel",
+  "share.qrHint": "Let a crew member scan this code in the app to import this vessel profile.",
+  "share.qrAlt": "QR code with the vessel data of {name}",
+  "share.copyCode": "Copy code",
+  "share.copied": "Share code copied",
+  "share.privacyNote": "The code contains only this vessel's data. Nothing is uploaded — share it only with your own crew.",
+  "share.share": "Share",
+  "share.scan": "Scan QR code",
+  "share.scanTitle": "Import vessel",
+  "share.scanHint": "Point the camera at the QR code shown on the other device.",
+  "share.cameraError": "Camera not available. Please allow camera access or paste the share code below.",
+  "share.pasteLabel": "Or paste the share code",
+  "share.pasteAction": "Import from code",
+  "share.invalidCode": "This code is not a valid vessel share code",
+  "share.confirmTitle": "Import this vessel?",
+  "share.imported": "{name} imported",
+  "share.updated": "{name} updated",
+  "share.duplicate": "A vessel with MMSI {mmsi} already exists.",
+  "share.updateExisting": "Update existing",
+  "share.addAsNew": "Add as new",
+  "share.import": "Import",
+  "share.cancel": "Cancel",
+
+  "privacy.h.qr": "Sharing a vessel by QR code",
+  "privacy.p.qr":
+    "You can share a vessel profile with your crew as a QR code. The code is generated on your device and contains only that vessel's data (name, MMSI, call sign, type, length, hull colour, persons on board, channel). Nothing is sent to a server. Scanning uses your device camera solely to decode the code in the browser; no image, video or scan result is stored or transmitted. Because MMSI and call sign can identify a vessel and its owner, only share the code with people you trust.",
 } as const;
 
 export type TranslationKey = keyof typeof en;
