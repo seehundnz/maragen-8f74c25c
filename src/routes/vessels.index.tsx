@@ -5,6 +5,7 @@ import { toast } from "sonner";
 import { AppShell } from "@/components/AppShell";
 import { Button } from "@/components/ui/button";
 import { useSettings, useVessels } from "@/hooks/useFleet";
+import { useT } from "@/lib/i18n";
 
 const title = "Vessels — VHF Call Builder";
 const description =
@@ -24,16 +25,17 @@ export const Route = createFileRoute("/vessels/")({
 
 function VesselsPage() {
   const { vessels, setVessels } = useVessels();
+  const { t } = useT();
   const { settings, setSettings } = useSettings();
   const activeId = settings.activeVesselId ?? vessels[0]?.id ?? null;
 
   return (
     <AppShell>
       <div className="mb-4 flex items-center justify-between">
-        <h1 className="text-2xl font-bold">Vessels</h1>
+        <h1 className="text-2xl font-bold">{t("vessels.title")}</h1>
         <Button asChild size="sm">
           <Link to="/vessels/$id" params={{ id: "new" }}>
-            <Plus /> Add vessel
+            <Plus /> {t("vessels.add")}
           </Link>
         </Button>
       </div>
@@ -41,9 +43,7 @@ function VesselsPage() {
       {vessels.length === 0 ? (
         <div className="rounded-xl border border-dashed border-border p-8 text-center">
           <Ship className="mx-auto mb-3 size-8 text-muted-foreground" aria-hidden />
-          <p className="text-sm text-muted-foreground">
-            No vessels yet. Add your boat so every radio call is filled in automatically.
-          </p>
+          <p className="text-sm text-muted-foreground">{t("vessels.empty")}</p>
         </div>
       ) : (
         <ul className="space-y-3">
@@ -57,7 +57,7 @@ function VesselsPage() {
                   {v.name}
                   {v.id === activeId && (
                     <span className="rounded-full bg-secondary px-2 py-0.5 text-[0.65rem] tracking-wider uppercase">
-                      Active
+                      {t("vessels.active")}
                     </span>
                   )}
                 </p>
@@ -74,12 +74,12 @@ function VesselsPage() {
                 <Button
                   variant="ghost"
                   size="icon"
-                  aria-label="Set active"
+                  aria-label={t("vessels.setActive")}
                   onClick={() => setSettings((s) => ({ ...s, activeVesselId: v.id }))}
                 >
                   <Star className={v.id === activeId ? "fill-primary text-primary" : ""} />
                 </Button>
-                <Button variant="ghost" size="icon" aria-label="Edit vessel" asChild>
+                <Button variant="ghost" size="icon" aria-label={t("vessels.edit")} asChild>
                   <Link to="/vessels/$id" params={{ id: v.id }}>
                     <Pencil />
                   </Link>
@@ -87,11 +87,11 @@ function VesselsPage() {
                 <Button
                   variant="ghost"
                   size="icon"
-                  aria-label="Delete vessel"
+                  aria-label={t("vessels.delete")}
                   onClick={() => {
                     setVessels((list) => list.filter((x) => x.id !== v.id));
                     if (activeId === v.id) setSettings((s) => ({ ...s, activeVesselId: null }));
-                    toast.success(`${v.name} deleted`);
+                    toast.success(t("vessels.deleted", { name: v.name }));
                   }}
                 >
                   <Trash2 />
