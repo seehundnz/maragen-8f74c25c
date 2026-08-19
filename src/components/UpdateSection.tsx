@@ -22,6 +22,7 @@ export function UpdateSection() {
       const found = await checkForUpdate();
       setAvailable(found);
       setChecked(true);
+      if (!found && !swAllowed()) window.location.reload();
     } finally {
       setChecking(false);
     }
@@ -36,20 +37,18 @@ export function UpdateSection() {
         <span className="font-mono">{buildLabel}</span>
       </p>
 
-      {swAllowed() && (
-        <div className="flex flex-wrap items-center gap-2">
-          <Button variant="secondary" size="sm" onClick={onCheck} disabled={checking}>
-            <RefreshCw className={`size-4 ${checking ? "animate-spin" : ""}`} aria-hidden />
-            {checking ? t("settings.checking") : t("settings.checkUpdate")}
+      <div className="flex flex-wrap items-center gap-2">
+        <Button variant="secondary" size="sm" onClick={onCheck} disabled={checking}>
+          <RefreshCw className={`size-4 ${checking ? "animate-spin" : ""}`} aria-hidden />
+          {checking ? t("settings.checking") : t("settings.checkUpdate")}
+        </Button>
+        {available && (
+          <Button size="sm" onClick={() => void applyUpdate()}>
+            <Download className="size-4" aria-hidden />
+            {t("settings.updateNow")}
           </Button>
-          {available && (
-            <Button size="sm" onClick={() => void applyUpdate()}>
-              <Download className="size-4" aria-hidden />
-              {t("settings.updateNow")}
-            </Button>
-          )}
-        </div>
-      )}
+        )}
+      </div>
 
       {available ? (
         <p className="text-xs text-primary">{t("settings.updateAvailable")}</p>
