@@ -100,7 +100,7 @@ export const en = {
     "On: the script text is sent to our speech service for a clear radio-operator voice. Off: only your device's built-in voice is used and no text ever leaves this device.",
   "settings.appHeading": "App & updates",
   "settings.offlineHint":
-    "Once installed, the app caches itself so it also opens without a network connection. Offline mode only works in the published app, not in the editor preview.",
+    "The app stores itself on your device so it also opens without a network connection.",
   "settings.buildDate": "Installed version",
   "settings.checkUpdate": "Check for updates",
   "settings.checking": "Checking…",
@@ -162,6 +162,14 @@ export const en = {
   "privacy.s.ttsOff": "AI voice off:",
   "privacy.p.ttsOff":
     "only your device's built-in speech synthesis is used. No script text and no vessel data are transmitted; everything stays on your device.",
+  "privacy.h.install": "Installing the app on your phone (PWA)",
+  "privacy.p.install1":
+    "This app can be added to your home screen so it opens like a normal app, full screen and without a browser bar. On iPhone/iPad open it in Safari, tap the share icon and choose \"Add to Home Screen\". On Android open it in Chrome and choose \"Install app\" or \"Add to Home screen\" from the menu.",
+  "privacy.p.install2":
+    "When installed, the app files (code, icons, styles) are stored in your device's browser cache so it also starts without a network connection — useful offshore. This cache stays on your device, contains no personal data and is never uploaded. Deleting the app icon or clearing the site data in your browser removes it, together with your vessel profiles and settings.",
+  "privacy.p.install3":
+    "The app updates itself in the background whenever it has a connection; in Settings you can see the installed version and check for updates manually. Note that GPS position, current UTC time and the built-in device voice all work offline, while the AI voice for the Speak button needs a connection.",
+
   "privacy.h.cookies": "Cookies, tracking and hosting",
   "privacy.p.cookies":
     "No cookies are set for tracking, no analytics or advertising tools are used, and no user profiles are created. When the app is loaded, the hosting provider processes technical connection data (such as the IP address) in server logs, as is technically necessary to deliver any website (Art. 6 (1)(f) GDPR).",

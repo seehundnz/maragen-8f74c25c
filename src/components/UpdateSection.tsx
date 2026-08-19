@@ -22,6 +22,7 @@ export function UpdateSection() {
       const found = await checkForUpdate();
       setAvailable(found);
       setChecked(true);
+      if (!found && !swAllowed()) window.location.reload();
     } finally {
       setChecking(false);
     }
@@ -36,7 +37,7 @@ export function UpdateSection() {
         <span className="font-mono">{buildLabel}</span>
       </p>
 
-      {swAllowed() && (
+      {(
         <div className="flex flex-wrap items-center gap-2">
           <Button variant="secondary" size="sm" onClick={onCheck} disabled={checking}>
             <RefreshCw className={`size-4 ${checking ? "animate-spin" : ""}`} aria-hidden />

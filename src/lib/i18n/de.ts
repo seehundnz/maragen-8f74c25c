@@ -103,7 +103,7 @@ export const de: Dictionary = {
     "Ein: Der Text des Funkspruchs wird an unseren Sprachdienst gesendet, um eine klare Funkstimme zu erzeugen. Aus: Es wird nur die eingebaute Stimme deines Geräts genutzt, es verlässt kein Text dein Gerät.",
   "settings.appHeading": "App & Updates",
   "settings.offlineHint":
-    "Nach der Installation speichert sich die App lokal und lässt sich auch ohne Netzverbindung öffnen. Der Offline-Modus funktioniert nur in der veröffentlichten App, nicht in der Editor-Vorschau.",
+    "Die App speichert sich auf deinem Gerät und lässt sich auch ohne Netzverbindung öffnen.",
   "settings.buildDate": "Installierte Version",
   "settings.checkUpdate": "Nach Updates suchen",
   "settings.checking": "Suche…",
@@ -166,6 +166,14 @@ export const de: Dictionary = {
   "privacy.s.ttsOff": "KI-Stimme aus:",
   "privacy.p.ttsOff":
     "Es wird ausschließlich die eingebaute Sprachausgabe deines Geräts verwendet. Es werden weder Text noch Schiffsdaten übertragen; alles bleibt auf deinem Gerät.",
+  "privacy.h.install": "App auf dem Handy installieren (PWA)",
+  "privacy.p.install1":
+    "Diese App kann zum Startbildschirm hinzugefügt werden und öffnet sich dann wie eine normale App im Vollbild, ohne Browserleiste. Auf iPhone/iPad in Safari öffnen, auf das Teilen-Symbol tippen und \"Zum Home-Bildschirm\" wählen. Auf Android in Chrome öffnen und im Menü \"App installieren\" bzw. \"Zum Startbildschirm hinzufügen\" wählen.",
+  "privacy.p.install2":
+    "Nach der Installation werden die App-Dateien (Code, Symbole, Styles) im Browser-Cache deines Geräts gespeichert, sodass die App auch ohne Netzverbindung startet — praktisch auf See. Dieser Cache bleibt auf deinem Gerät, enthält keine personenbezogenen Daten und wird nie hochgeladen. Löschst du das App-Symbol oder die Websitedaten im Browser, wird er zusammen mit deinen Schiffsprofilen und Einstellungen entfernt.",
+  "privacy.p.install3":
+    "Die App aktualisiert sich im Hintergrund, sobald eine Verbindung besteht; in den Einstellungen siehst du die installierte Version und kannst manuell nach Updates suchen. GPS-Position, aktuelle UTC-Zeit und die eingebaute Gerätestimme funktionieren offline, die KI-Stimme für „Vorlesen“ benötigt eine Verbindung.",
+
   "privacy.h.cookies": "Cookies, Tracking und Hosting",
   "privacy.p.cookies":
     "Es werden keine Cookies zu Tracking-Zwecken gesetzt, keine Analyse- oder Werbewerkzeuge eingesetzt und keine Nutzerprofile erstellt. Beim Laden der App verarbeitet der Hosting-Anbieter technische Verbindungsdaten (etwa die IP-Adresse) in Server-Logs, wie es zur Auslieferung jeder Website technisch erforderlich ist (Art. 6 Abs. 1 lit. f DSGVO).",
