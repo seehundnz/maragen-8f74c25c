@@ -21,6 +21,7 @@ export interface Settings {
   positionFormat: "ddm" | "dd";
   activeVesselId: string | null;
   useAiVoice: boolean;
+  language: "auto" | "en" | "de";
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -30,6 +31,7 @@ export const DEFAULT_SETTINGS: Settings = {
   positionFormat: "ddm",
   activeVesselId: null,
   useAiVoice: true,
+  language: "auto",
 };
 
 export interface CallInput {
