@@ -41,6 +41,8 @@ async function unregisterApp(): Promise<void> {
   );
 }
 
+export type SwStatus = "unsupported" | "notRegistered" | "installing" | "waiting" | "active";
+
 export type PwaHandle = {
   registration: ServiceWorkerRegistration | null;
   checkForUpdate: () => Promise<void>;
@@ -48,8 +50,19 @@ export type PwaHandle = {
 };
 
 let registration: ServiceWorkerRegistration | null = null;
+let swStatus: SwStatus = "notRegistered";
+let lastCheck: Date | null = null;
 const updateListeners = new Set<(available: boolean) => void>();
+const statusListeners = new Set<(status: SwStatus) => void>();
 let updateAvailable = false;
+
+export function getSwStatus(): SwStatus {
+  return swStatus;
+}
+
+export function getLastUpdateCheck(): Date | null {
+  return lastCheck;
+}
 
 export function onUpdateAvailable(cb: (available: boolean) => void): () => void {
   updateListeners.add(cb);
@@ -57,36 +70,70 @@ export function onUpdateAvailable(cb: (available: boolean) => void): () => void 
   return () => updateListeners.delete(cb);
 }
 
+export function onSwStatusChange(cb: (status: SwStatus) => void): () => void {
+  statusListeners.add(cb);
+  cb(swStatus);
+  return () => statusListeners.delete(cb);
+}
+
+function setSwStatus(value: SwStatus) {
+  swStatus = value;
+  statusListeners.forEach((cb) => cb(value));
+}
+
 function setUpdateAvailable(value: boolean) {
   updateAvailable = value;
   updateListeners.forEach((cb) => cb(value));
 }
 
+
 export async function registerServiceWorker(): Promise<void> {
   if (!swAllowed()) {
     await unregisterApp();
+    if (!("serviceWorker" in navigator)) {
+      setSwStatus("unsupported");
+    } else {
+      setSwStatus("notRegistered");
+    }
     return;
   }
   try {
     registration = await navigator.serviceWorker.register(SW_URL, { scope: "/" });
+    setSwStatus(registration.active ? "active" : registration.waiting ? "waiting" : registration.installing ? "installing" : "notRegistered");
     if (registration.waiting) setUpdateAvailable(true);
     registration.addEventListener("updatefound", () => {
       const installing = registration?.installing;
-      if (!installing) return;
-      installing.addEventListener("statechange", () => {
-        if (installing.state === "installed" && navigator.serviceWorker.controller) {
-          setUpdateAvailable(true);
-        }
-      });
+      if (installing) {
+        setSwStatus("installing");
+        installing.addEventListener("statechange", () => {
+          if (installing.state === "installed") {
+            if (navigator.serviceWorker.controller) {
+              setUpdateAvailable(true);
+              setSwStatus("waiting");
+            } else {
+              setSwStatus("active");
+            }
+          } else if (installing.state === "activated") {
+            setSwStatus("active");
+          }
+        });
+      }
     });
   } catch {
-    // ignore: app still works online without a service worker
+    setSwStatus("notRegistered");
   }
 }
 
 export async function checkForUpdate(): Promise<boolean> {
   if (!registration) return false;
   await registration.update();
+  lastCheck = new Date();
+  if (registration.waiting) {
+    setUpdateAvailable(true);
+    setSwStatus("waiting");
+  } else if (registration.active) {
+    setSwStatus("active");
+  }
   return Boolean(registration.waiting);
 }
 
@@ -98,3 +145,38 @@ export async function applyUpdate(): Promise<void> {
   }
   window.location.reload();
 }
+
+export function isOnline(): boolean {
+  if (typeof navigator === "undefined") return true;
+  return navigator.onLine;
+}
+
+export function isPwaInstalled(): boolean {
+  if (typeof window === "undefined") return false;
+  const nav = navigator as Navigator & { standalone?: boolean };
+  if ("standalone" in nav && nav.standalone === true) return true;
+  return window.matchMedia("(display-mode: standalone)").matches;
+}
+
+
+export function onConnectionChange(cb: () => void): () => void {
+  if (typeof window === "undefined") return () => {};
+  window.addEventListener("online", cb);
+  window.addEventListener("offline", cb);
+  return () => {
+    window.removeEventListener("online", cb);
+    window.removeEventListener("offline", cb);
+  };
+}
+
+export function onInstallModeChange(cb: () => void): () => void {
+  if (typeof window === "undefined") return () => {};
+  const mq = window.matchMedia("(display-mode: standalone)");
+  const handler = () => cb();
+  mq.addEventListener("change", handler);
+  if ("standalone" in navigator) {
+    // iOS standalone does not change at runtime, no reliable listener available.
+  }
+  return () => mq.removeEventListener("change", handler);
+}
+

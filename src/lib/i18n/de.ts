@@ -104,7 +104,20 @@ export const de: Dictionary = {
   "settings.appHeading": "App & Updates",
   "settings.offlineHint":
     "Die App speichert sich auf deinem Gerät und lässt sich auch ohne Netzverbindung öffnen.",
+  "settings.swStatus": "Service Worker",
+  "settings.swStatus.active": "Aktiv",
+  "settings.swStatus.waiting": "Update wartend",
+  "settings.swStatus.installing": "Installiert",
+  "settings.swStatus.notRegistered": "Nicht registriert",
+  "settings.swStatus.unsupported": "Nicht unterstützt",
+  "settings.connection": "Verbindung",
+  "settings.online": "Online",
+  "settings.offline": "Offline",
+  "settings.installStatus": "App-Installation",
+  "settings.installed": "Installiert",
+  "settings.notInstalled": "Browser-Tab",
   "settings.buildDate": "Installierte Version",
+  "settings.lastChecked": "Zuletzt geprüft",
   "settings.checkUpdate": "Nach Updates suchen",
   "settings.checking": "Suche…",
   "settings.updateAvailable": "Eine neue Version ist verfügbar.",
@@ -112,6 +125,7 @@ export const de: Dictionary = {
   "settings.upToDate": "Du nutzt die neueste Version.",
   "settings.updateHint":
     "Die App aktualisiert sich automatisch im Hintergrund; hier kannst du manuell prüfen.",
+
 
   "settings.privacyHeading": "Datenschutz & Recht",
   "settings.privacyHint":
