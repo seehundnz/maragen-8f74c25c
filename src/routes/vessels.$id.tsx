@@ -90,7 +90,12 @@ function VesselEditPage() {
           label={t("vessels.mmsi")}
           value={draft.mmsi}
           onChange={(v) => set("mmsi", v.replace(/\D/g, "").slice(0, 9))}
-          error={errors["mmsi"]}
+          error={
+            errors["mmsi"] ??
+            (draft.mmsi.length > 0 && draft.mmsi.length < 9
+              ? t("vessels.errMmsiShort", { count: String(9 - draft.mmsi.length) })
+              : undefined)
+          }
           placeholder="211123456"
         />
         <Field

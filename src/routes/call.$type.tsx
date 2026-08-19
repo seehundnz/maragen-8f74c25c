@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
-import { Copy, Crosshair, Loader2, Maximize2, RefreshCw, Share2, Square, Volume2, X } from "lucide-react";
+import { AlertTriangle, Copy, Crosshair, Loader2, Maximize2, RefreshCw, Share2, Square, Volume2, X } from "lucide-react";
 import { toast } from "sonner";
 
 import { AppShell } from "@/components/AppShell";
@@ -178,6 +178,24 @@ function CallPage() {
             </h1>
             <p className="mt-1 text-sm text-muted-foreground">{t(`call.${type}.description`)}</p>
           </section>
+
+          {type === "mayday" && (
+            <section className="rounded-xl border-2 border-primary bg-primary/10 p-4">
+              <h2 className="flex items-center gap-2 text-sm font-bold tracking-widest text-primary uppercase">
+                <AlertTriangle className="size-4" /> {t("dsc.title")}
+              </h2>
+              <p className="mt-2 text-sm">{t("dsc.intro")}</p>
+              <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm text-muted-foreground">
+                <li>{t("dsc.step1")}</li>
+                <li>{t("dsc.step2")}</li>
+                <li>{t("dsc.step3")}</li>
+                <li>{t("dsc.step4")}</li>
+              </ol>
+              <p className="mt-2 text-xs text-muted-foreground">{t("dsc.note")}</p>
+            </section>
+          )}
+
+
 
           <section className="grid gap-3 rounded-xl border border-border bg-card p-4">
             <div className="grid gap-4 sm:grid-cols-[1fr_1.5fr]">
