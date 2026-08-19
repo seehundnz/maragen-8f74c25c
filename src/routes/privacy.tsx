@@ -62,16 +62,23 @@ function PrivacyPage() {
 
         <Section heading="Text-to-speech (Speak button)">
           <p>
-            If you press &quot;Speak&quot;, the generated script text is sent to our speech service
-            to produce the spoken audio, and is then discarded — it is not stored or used for
-            training. If no network is available, the app falls back to your device&apos;s built-in
-            voice, and nothing leaves your device.
+            In Settings you can switch the AI voice for the Speak button on or off. This switch
+            controls whether any text leaves your device.
           </p>
           <p>
-            If you prefer that no script text ever leaves the device, simply do not use the Speak
-            button; every other function works fully offline.
+            <strong className="text-foreground">AI voice on (default):</strong> when you press
+            &quot;Speak&quot;, the generated script text is sent to our speech service to produce
+            the spoken audio, and is then discarded — it is not stored and not used for training.
+            If no network is available, the app automatically falls back to your device&apos;s
+            built-in voice.
+          </p>
+          <p>
+            <strong className="text-foreground">AI voice off:</strong> only your device&apos;s
+            built-in speech synthesis is used. No script text and no vessel data are transmitted;
+            everything stays on your device.
           </p>
         </Section>
+
 
         <Section heading="Cookies, tracking and hosting">
           <p>

@@ -20,6 +20,7 @@ export interface Settings {
   defaultChannel: string;
   positionFormat: "ddm" | "dd";
   activeVesselId: string | null;
+  useAiVoice: boolean;
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -28,6 +29,7 @@ export const DEFAULT_SETTINGS: Settings = {
   defaultChannel: "16",
   positionFormat: "ddm",
   activeVesselId: null,
+  useAiVoice: true,
 };
 
 export interface CallInput {
