@@ -163,6 +163,7 @@ export const en = {
   "vessels.defaultChannel": "Default VHF channel",
   "vessels.save": "Save vessel",
   "vessels.cancel": "Cancel",
+  "vessels.englishNotice": "Please enter vessel type, length and hull colour in English — they are inserted into the English radio script as typed.",
   "vessels.errName": "Vessel name is required",
   "vessels.errMmsi": "MMSI must be exactly 9 digits",
   "vessels.errCallSign": "Call sign is required",
