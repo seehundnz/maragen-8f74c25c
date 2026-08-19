@@ -106,7 +106,26 @@ function SettingsPage() {
           </div>
         </section>
 
+        <section className="space-y-4 rounded-xl border border-border bg-card p-4">
+          <div className="flex items-center justify-between gap-4">
+            <div>
+              <Label htmlFor="aivoice">Use AI voice for &quot;Speak&quot;</Label>
+              <p className="text-xs text-muted-foreground">
+                On: the script text is sent to our speech service for a clear radio-operator voice.
+                Off: only your device&apos;s built-in voice is used and no text ever leaves this
+                device.
+              </p>
+            </div>
+            <Switch
+              id="aivoice"
+              checked={settings.useAiVoice !== false}
+              onCheckedChange={(checked) => setSettings((s) => ({ ...s, useAiVoice: checked }))}
+            />
+          </div>
+        </section>
+
         <section className="space-y-2 rounded-xl border border-border bg-card p-4">
+
           <h2 className="text-sm font-semibold">Privacy &amp; legal</h2>
           <p className="text-xs text-muted-foreground">
             All settings and vessel profiles are stored on this device only. No account, no
