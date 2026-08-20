@@ -4,6 +4,7 @@ export const en = {
   "nav.settings": "Settings",
   "nav.privacy": "Privacy & Imprint",
   "nav.install": "Install",
+  "nav.guide": "Guide",
 
   "install.title": "Install this app",
   "install.intro":

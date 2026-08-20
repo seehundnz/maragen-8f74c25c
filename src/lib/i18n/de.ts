@@ -6,6 +6,7 @@ export const de: Dictionary = {
   "nav.settings": "Einstellungen",
   "nav.privacy": "Datenschutz & Impressum",
   "nav.install": "Installieren",
+  "nav.guide": "Anleitung",
 
   "install.title": "App installieren",
   "install.intro":
