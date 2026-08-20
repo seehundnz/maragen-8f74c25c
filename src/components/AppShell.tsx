@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Radio, Ship, Settings as SettingsIcon } from "lucide-react";
+import { Radio, Ship, Settings as SettingsIcon, BookOpen } from "lucide-react";
 import type { ReactNode } from "react";
 
 import { useT } from "@/lib/i18n";
