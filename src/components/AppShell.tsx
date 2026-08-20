@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Radio, Ship, Settings as SettingsIcon } from "lucide-react";
+import { Radio, Ship, Settings as SettingsIcon, BookOpen } from "lucide-react";
 import type { ReactNode } from "react";
 
 import { useT } from "@/lib/i18n";
@@ -24,6 +24,14 @@ export function AppShell({ children }: { children: ReactNode }) {
             >
               <Ship className="size-4" aria-hidden />
               <span className="hidden sm:inline">{t("nav.vessels")}</span>
+            </Link>
+            <Link
+              to="/guide"
+              className="flex items-center gap-1.5 rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+              activeProps={{ className: "bg-secondary text-foreground" }}
+            >
+              <BookOpen className="size-4" aria-hidden />
+              <span className="hidden sm:inline">{t("nav.guide")}</span>
             </Link>
             <Link
               to="/settings"
