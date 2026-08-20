@@ -285,6 +285,53 @@ export const en = {
   "privacy.h.qr": "Sharing a vessel by QR code",
   "privacy.p.qr":
     "You can share a vessel profile with your crew as a QR code. The code is generated on your device and contains only that vessel's data (name, MMSI, call sign, type, length, hull colour, persons on board, channel). Nothing is sent to a server. Scanning uses your device camera solely to decode the code in the browser; no image, video or scan result is stored or transmitted. Because MMSI and call sign can identify a vessel and its owner, only share the code with people you trust.",
+
+  "guide.title": "How to use this app",
+  "guide.subtitle": "A quick walkthrough of every feature — from your first vessel to a ready-to-read radio call.",
+  "guide.h.intro": "What this app does",
+  "guide.p.intro1":
+    "VHF Call Builder generates ready-to-read VHF radio call scripts — Mayday, Pan-Pan, Sécurité and routine calls — using your vessel data, the current UTC time and your GPS position. Everything stays on your device: no account, no server, no internet needed after the first load.",
+  "guide.p.intro2":
+    "The app is an aid only. It does not replace proper radio training, a valid radio operator certificate, or a DSC distress alert. Always follow the instructions of the coordinating rescue authority.",
+  "guide.h.gettingStarted": "1. Add your vessel",
+  "guide.p.started1":
+    "Go to the Vessels page and tap “Add vessel”. Enter at least the vessel name, MMSI (exactly 9 digits) and call sign — these are required. You can also add the vessel type, length and hull colour. Please enter type, length and hull colour in English, because they are inserted into the English radio script as typed.",
+  "guide.p.started2":
+    "You can save several vessels (e.g. your own boat and a chartered one). Tap “Set active” to choose which vessel is used for the next call. The active vessel's data fills into every script automatically.",
+  "guide.h.generate": "2. Generate a radio call",
+  "guide.p.generate1":
+    "On the call screen, switch between the four call types using the bottom tabs: MAYDAY (red, distress), PAN-PAN (orange, urgency), SÉCURITÉ (yellow, safety) and STANDARD (green, routine). The whole screen re-themes to the call type's colour. All entered data carries over when you switch tabs.",
+  "guide.p.generate2":
+    "The header shows the current UTC time and your GPS position. Grant location permission when asked. The position updates automatically if auto-update is on; tap “Refresh fix” for a manual update, or “Manual position” to type coordinates yourself.",
+  "guide.p.generate3":
+    "Fill in the fields above the script: nature of the situation (from the preset list or free text), persons on board, VHF channel and any additional message. Depending on the call type you may also enter the station called or a safety message. The script updates instantly as you type.",
+  "guide.p.generate4":
+    "On the Mayday page, a collapsible “Send a DSC distress alert first” section reminds you to trigger the DSC alert before speaking. Below the script, a “Further communication” section offers standard phrases for relays, silence, cancelling a false alarm and ending a distress call.",
+  "guide.h.readSpeak": "3. Read and speak",
+  "guide.p.readSpeak1":
+    "Tap “Read” to open the script full-screen in large type, ideal for reading aloud on the radio. The read mode respects safe-area padding and scrolls smoothly on mobile.",
+  "guide.p.readSpeak2":
+    "Tap “Speak” to hear the script read aloud. In Settings you can choose between an AI radio-operator voice (needs a connection) and your device's built-in voice (works offline, nothing leaves your device).",
+  "guide.p.readSpeak3":
+    "“Copy” puts the script on the clipboard; “Share” opens the system share sheet.",
+  "guide.h.shareVessel": "4. Share & import vessels",
+  "guide.p.shareVessel1":
+    "In the vessel list, tap the share icon to show a QR code with that vessel's data. A crew member can scan it with their camera to import the profile — or copy and paste the share code. If a vessel with the same MMSI already exists, you choose whether to update it or add it as new.",
+  "guide.p.shareVessel2":
+    "The code contains only that vessel's data. Nothing is uploaded — share it only with your own crew.",
+  "guide.h.settings": "5. Settings",
+  "guide.p.settings1":
+    "In Settings you can: change the interface language (scripts always stay in English), toggle auto-update of the GPS position and set the refresh interval (2–300 seconds, default 10), choose the default VHF channel and the position format (decimal degrees or degrees/decimal minutes), and switch the AI voice on or off.",
+  "guide.p.settings2":
+    "You can also check for app updates, see the installed version, and clear all cached data and vessel profiles from the device.",
+  "guide.h.pwa": "6. Install & offline use",
+  "guide.p.pwa1":
+    "This app is a Progressive Web App. On iPhone or iPad, open it in Safari, tap the share icon and choose “Add to Home Screen”. On Android, open the browser menu and choose “Install app” or “Add to Home screen”. On desktop, use the install icon in the address bar.",
+  "guide.p.pwa2":
+    "Once installed, the app opens full screen like a normal app and works offline — GPS, UTC time and the built-in voice all function without a connection. The AI voice for “Speak” needs a connection. The app updates itself in the background; you can force a check in Settings.",
+  "guide.h.privacy": "7. Privacy",
+  "guide.p.privacy":
+    "All data stays on your device. No account, no tracking, no analytics. Read the full GDPR/DSGVO notice and imprint on the Privacy page.",
 } as const;
 
 export type TranslationKey = keyof typeof en;

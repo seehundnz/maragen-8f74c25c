@@ -289,4 +289,51 @@ export const de: Dictionary = {
   "privacy.h.qr": "Schiff per QR-Code teilen",
   "privacy.p.qr":
     "Du kannst ein Schiffsprofil als QR-Code mit deiner Crew teilen. Der Code wird auf deinem Gerät erzeugt und enthält nur die Daten dieses Schiffs (Name, MMSI, Rufzeichen, Typ, Länge, Rumpffarbe, Personen an Bord, Kanal). Es werden keine Daten an einen Server gesendet. Beim Scannen wird die Kamera ausschließlich zum Dekodieren im Browser verwendet; es werden keine Bilder, Videos oder Scan-Ergebnisse gespeichert oder übertragen. Da MMSI und Rufzeichen ein Schiff und seine Eigner identifizieren können, teile den Code nur mit vertrauenswürdigen Personen.",
+
+  "guide.title": "So nutzt du die App",
+  "guide.subtitle": "Eine kurze Übersicht aller Funktionen — vom ersten Schiff bis zum fertigen Funkspruch.",
+  "guide.h.intro": "Was diese App macht",
+  "guide.p.intro1":
+    "UKW-Funkruf erzeugt fertige Funksprüche zum Ablesen — Mayday, Pan-Pan, Sécurité und Routine-Anrufe — mit deinen Schiffsdaten, der aktuellen UTC-Zeit und deiner GPS-Position. Alles bleibt auf deinem Gerät: kein Konto, kein Server, keine Internetverbindung nach dem ersten Laden nötig.",
+  "guide.p.intro2":
+    "Die App ist nur eine Hilfe. Sie ersetzt weder eine ordentliche Funkausbildung noch ein gültiges Funkbetriebszeugnis oder einen DSC-Notalarm. Folge im Notfall immer den Anweisungen der koordinierenden Rettungsleitstelle.",
+  "guide.h.gettingStarted": "1. Schiff anlegen",
+  "guide.p.started1":
+    "Gehe zur Schiffe-Seite und tippe auf „Schiff hinzufügen“. Gib mindestens Schiffsname, MMSI (genau 9 Ziffern) und Rufzeichen ein — diese sind Pflicht. Du kannst auch Schiffstyp, Länge und Rumpffarbe angeben. Bitte gib Typ, Länge und Rumpffarbe auf Englisch ein, da sie unverändert in den englischen Funkspruch übernommen werden.",
+  "guide.p.started2":
+    "Du kannst mehrere Schiffe speichern (z. B. eigenes Boot und Charteryacht). Tippe auf „Als aktiv setzen“, um auszuwählen, welches Schiff für den nächsten Ruf verwendet wird. Die Daten des aktiven Schiffs werden automatisch in jeden Funkspruch eingesetzt.",
+  "guide.h.generate": "2. Funkspruch erzeugen",
+  "guide.p.generate1":
+    "Wähle auf der Ruf-Seite über die unteren Tabs zwischen den vier Ruftypen: MAYDAY (rot, Seenot), PAN-PAN (orange, Dringlichkeit), SÉCURITÉ (gelb, Sicherheit) und STANDARD (grün, Routine). Die ganze Seite färbt sich in der Farbe des Ruftyps. Alle eingegebenen Daten bleiben beim Wechseln der Tabs erhalten.",
+  "guide.p.generate2":
+    "Der Kopfbereich zeigt die aktuelle UTC-Zeit und deine GPS-Position. Erlaube den Standortzugriff, wenn du danach gefragt wirst. Die Position aktualisiert sich automatisch, wenn die Automatik eingeschaltet ist; tippe auf „Position aktualisieren“ für eine manuelle Aktualisierung oder auf „Position manuell“, um Koordinaten selbst einzugeben.",
+  "guide.p.generate3":
+    "Fülle die Felder über dem Funkspruch aus: Art der Situation (aus der Liste oder als Freitext), Personen an Bord, UKW-Kanal und ggf. zusätzliche Angaben. Je nach Ruftyp kannst du auch die gerufene Station oder eine Sicherheitsmeldung eingeben. Der Funkspruch aktualisiert sich sofort beim Tippen.",
+  "guide.p.generate4":
+    "Auf der Mayday-Seite erinnert eine aufklappbare Sektion „Zuerst DSC-Notalarm senden“ daran, den DSC-Alarm vor dem Sprechen auszulösen. Unter dem Funkspruch bietet die Sektion „Weitere Kommunikation“ Standardtexte für Relay, Funkstille, Rücknahme eines Fehlalarms und Beendigung eines Notrufs.",
+  "guide.h.readSpeak": "3. Lesen und vorlesen",
+  "guide.p.readSpeak1":
+    "Tippe auf „Lesen“, um den Funkspruch im Vollbild mit großer Schrift anzuzeigen — ideal zum Ablesen am Funkgerät. Der Lesemodus beachtet die Safe-Area-Abstände und scrollt auf dem Handy reibungslos.",
+  "guide.p.readSpeak2":
+    "Tippe auf „Vorlesen“, um den Funkspruch gesprochen zu hören. In den Einstellungen kannst du zwischen einer KI-Funkstimme (benötigt Verbindung) und der eingebauten Gerätestimme (funktioniert offline, es verlässt kein Text dein Gerät) wählen.",
+  "guide.p.readSpeak3":
+    "„Kopieren“ legt den Funkspruch in die Zwischenablage; „Teilen“ öffnet die Teilen-Funktion des Systems.",
+  "guide.h.shareVessel": "4. Schiffe teilen & importieren",
+  "guide.p.shareVessel1":
+    "Tippe in der Schiffsliste auf das Teilen-Symbol, um einen QR-Code mit den Daten dieses Schiffs anzuzeigen. Ein Crewmitglied kann ihn mit der Kamera scannen, um das Profil zu importieren — oder den Teilen-Code kopieren und einfügen. Wenn ein Schiff mit derselben MMSI bereits existiert, kannst du es aktualisieren oder als neues hinzufügen.",
+  "guide.p.shareVessel2":
+    "Der Code enthält nur die Daten dieses Schiffs. Es wird nichts hochgeladen — teile ihn nur mit deiner eigenen Crew.",
+  "guide.h.settings": "5. Einstellungen",
+  "guide.p.settings1":
+    "In den Einstellungen kannst du: die Sprache der Oberfläche ändern (Funksprüche bleiben immer auf Englisch), die automatische GPS-Aktualisierung ein- oder ausschalten und das Aktualisierungsintervall einstellen (2–300 Sekunden, Standard 10), den Standard-UKW-Kanal und das Positionsformat (Dezimalgrad oder Grad/Dezimalminuten) wählen und die KI-Stimme ein- oder ausschalten.",
+  "guide.p.settings2":
+    "Du kannst auch nach App-Updates suchen, die installierte Version anzeigen und alle zwischengespeicherten Daten und Schiffsprofile vom Gerät löschen.",
+  "guide.h.pwa": "6. Installation & Offline-Nutzung",
+  "guide.p.pwa1":
+    "Diese App ist eine Progressive Web App. Auf iPhone oder iPad öffne sie in Safari, tippe auf das Teilen-Symbol und wähle „Zum Home-Bildschirm“. Auf Android öffne das Browser-Menü und wähle „App installieren“ oder „Zum Startbildschirm hinzufügen“. Auf dem Desktop nutze das Installieren-Symbol in der Adressleiste.",
+  "guide.p.pwa2":
+    "Nach der Installation öffnet sich die App im Vollbild wie eine normale App und funktioniert offline — GPS, UTC-Zeit und die eingebaute Gerätestimme funktionieren ohne Verbindung. Die KI-Stimme für „Vorlesen“ benötigt eine Verbindung. Die App aktualisiert sich im Hintergrund; in den Einstellungen kannst du manuell nach Updates suchen.",
+  "guide.h.privacy": "7. Datenschutz",
+  "guide.p.privacy":
+    "Alle Daten bleiben auf deinem Gerät. Kein Konto, kein Tracking, keine Analyse. Die vollständige DSGVO-Information und das Impressum findest du auf der Datenschutz-Seite.",
 };
