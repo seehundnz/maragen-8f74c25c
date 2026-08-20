@@ -21,6 +21,10 @@ export const en = {
   "install.android.step3": "Confirm the install.",
   "install.desktop.step1": "Open the browser menu or the install icon in the address bar.",
   "install.desktop.step2": 'Choose "Install" and confirm.',
+  "install.platform.ios": "iPhone / iPad",
+  "install.platform.android": "Android",
+  "install.platform.desktop": "Desktop",
+  "install.otherDevices": "Other devices",
 
   "call.mayday.short": "Distress",
   "call.panpan.short": "Urgency",

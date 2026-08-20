@@ -23,6 +23,10 @@ export const de: Dictionary = {
   "install.android.step3": "Bestätige die Installation.",
   "install.desktop.step1": "Öffne das Browser-Menü oder das Installieren-Symbol in der Adressleiste.",
   "install.desktop.step2": 'Wähle "Installieren" und bestätige.',
+  "install.platform.ios": "iPhone / iPad",
+  "install.platform.android": "Android",
+  "install.platform.desktop": "Desktop",
+  "install.otherDevices": "Weitere Geräte",
 
   "call.mayday.short": "Seenot",
   "call.panpan.short": "Dringlichkeit",
