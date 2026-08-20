@@ -24,8 +24,9 @@ Neuer Namespace `guide.*` mit folgenden Sektionen:
 10. **Datenschutz** — kurzer Verweis auf `/privacy`.
 
 ### 3. Navigation / Verlinkung
-- Footer-Link in `AppShell.tsx` neben "Datenschutz & Impressum" ergänzen (gleicher Stil).
-- Kein zusätzlicher Header-Button — die Anleitung ist über den Footer und direkt über die URL erreichbar.
+- Neuer Header-Button in `AppShell.tsx` (Icon `BookOpen` aus lucide-react) zwischen "Schiffe" und "Einstellungen".
+- Gleicher Stil wie die anderen Nav-Links: Icon immer, Text ab `sm`.
+- Zusätzlich bleibt der Footer-Link "Datenschutz & Impressum" bestehen (keine Änderung).
 
 ## Technische Umsetzung
 
