@@ -123,6 +123,7 @@ export async function registerServiceWorker(): Promise<void> {
     return;
   }
   try {
+    const hadController = Boolean(navigator.serviceWorker.controller);
     registration = await navigator.serviceWorker.register(SW_URL, { scope: "/" });
     refreshStatus();
 
@@ -135,7 +136,15 @@ export async function registerServiceWorker(): Promise<void> {
       refreshStatus();
     });
 
-    navigator.serviceWorker.addEventListener("controllerchange", refreshStatus);
+    let reloading = false;
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      refreshStatus();
+      // A new worker took over: reload once so the fresh bundle (and translations) is used.
+      if (!reloading && hadController) {
+        reloading = true;
+        window.location.reload();
+      }
+    });
 
     document.addEventListener("visibilitychange", () => {
       if (document.visibilityState === "visible") refreshStatus();

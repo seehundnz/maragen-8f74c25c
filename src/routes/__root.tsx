@@ -11,8 +11,8 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { Toaster } from "../components/ui/sonner";
-import { I18nProvider, resolveLanguage } from "@/lib/i18n";
-import { useSettings } from "@/hooks/useFleet";
+import { I18nProvider } from "@/lib/i18n";
+import { useLanguage } from "@/lib/i18n/languageStore";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { registerServiceWorker } from "@/lib/pwa";
 
@@ -133,8 +133,7 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
-  const { settings, hydrated } = useSettings();
-  const lang = hydrated ? resolveLanguage(settings.language) : "en";
+  const lang = useLanguage();
 
   useEffect(() => {
     document.documentElement.lang = lang;
@@ -146,7 +145,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <I18nProvider lang={lang}>
+      <I18nProvider key={lang} lang={lang}>
         {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
         <Outlet />
         <Toaster position="top-center" />

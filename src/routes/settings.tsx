@@ -7,6 +7,7 @@ import { Switch } from "@/components/ui/switch";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useSettings } from "@/hooks/useFleet";
 import { useT } from "@/lib/i18n";
+import { setLanguagePreference } from "@/lib/i18n/languageStore";
 import { UpdateSection } from "@/components/UpdateSection";
 import { ClearDataSection } from "@/components/ClearDataSection";
 
@@ -40,7 +41,11 @@ function SettingsPage() {
             <Label htmlFor="language">{t("settings.language")}</Label>
             <Select
               value={settings.language ?? "auto"}
-              onValueChange={(v) => setSettings((s) => ({ ...s, language: v as "auto" | "en" | "de" }))}
+              onValueChange={(v) => {
+                const pref = v as "auto" | "en" | "de";
+                setSettings((s) => ({ ...s, language: pref }));
+                setLanguagePreference(pref);
+              }}
             >
               <SelectTrigger id="language" className="max-w-72">
                 <SelectValue />
