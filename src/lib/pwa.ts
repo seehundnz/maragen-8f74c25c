@@ -123,6 +123,7 @@ export async function registerServiceWorker(): Promise<void> {
     return;
   }
   try {
+    const hadController = Boolean(navigator.serviceWorker.controller);
     registration = await navigator.serviceWorker.register(SW_URL, { scope: "/" });
     refreshStatus();
 
