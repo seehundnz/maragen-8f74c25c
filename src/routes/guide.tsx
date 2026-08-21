@@ -72,6 +72,11 @@ function GuidePage() {
 
         <Section heading={t("guide.h.pwa")}>
           <p>{t("guide.p.pwa1")}</p>
+          <ul className="list-disc space-y-1 pl-5">
+            <li>{t("guide.p.pwa.ios")}</li>
+            <li>{t("guide.p.pwa.android")}</li>
+            <li>{t("guide.p.pwa.desktop")}</li>
+          </ul>
           <p>{t("guide.p.pwa2")}</p>
         </Section>
 

@@ -329,8 +329,10 @@ export const de: Dictionary = {
   "guide.p.settings2":
     "Du kannst auch nach App-Updates suchen, die installierte Version anzeigen und alle zwischengespeicherten Daten und Schiffsprofile vom Gerät löschen.",
   "guide.h.pwa": "6. Installation & Offline-Nutzung",
-  "guide.p.pwa1":
-    "Diese App ist eine Progressive Web App. Auf iPhone oder iPad öffne sie in Safari, tippe auf das Teilen-Symbol und wähle „Zum Home-Bildschirm“. Auf Android öffne das Browser-Menü und wähle „App installieren“ oder „Zum Startbildschirm hinzufügen“. Auf dem Desktop nutze das Installieren-Symbol in der Adressleiste.",
+  "guide.p.pwa1": "Diese App ist eine Progressive Web App und lässt sich auf jedem Gerät installieren.",
+  "guide.p.pwa.ios": "iPhone/iPad: In Safari öffnen, Teilen-Symbol antippen und „Zum Home-Bildschirm“ wählen.",
+  "guide.p.pwa.android": "Android: Browser-Menü öffnen und „App installieren“ oder „Zum Startbildschirm hinzufügen“ wählen.",
+  "guide.p.pwa.desktop": "Desktop: Installieren-Symbol in der Adressleiste verwenden.",
   "guide.p.pwa2":
     "Nach der Installation öffnet sich die App im Vollbild wie eine normale App und funktioniert offline — GPS, UTC-Zeit und die eingebaute Gerätestimme funktionieren ohne Verbindung. Die KI-Stimme für „Vorlesen“ benötigt eine Verbindung. Die App aktualisiert sich im Hintergrund; in den Einstellungen kannst du manuell nach Updates suchen.",
   "guide.h.privacy": "7. Datenschutz",
