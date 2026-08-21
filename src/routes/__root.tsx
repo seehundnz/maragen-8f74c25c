@@ -11,8 +11,8 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { Toaster } from "../components/ui/sonner";
-import { I18nProvider, resolveLanguage } from "@/lib/i18n";
-import { useSettings } from "@/hooks/useFleet";
+import { I18nProvider } from "@/lib/i18n";
+import { useLanguage } from "@/lib/i18n/languageStore";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { registerServiceWorker } from "@/lib/pwa";
 
