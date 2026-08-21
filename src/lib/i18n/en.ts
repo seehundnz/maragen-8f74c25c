@@ -325,8 +325,10 @@ export const en = {
   "guide.p.settings2":
     "You can also check for app updates, see the installed version, and clear all cached data and vessel profiles from the device.",
   "guide.h.pwa": "6. Install & offline use",
-  "guide.p.pwa1":
-    "This app is a Progressive Web App. On iPhone or iPad, open it in Safari, tap the share icon and choose “Add to Home Screen”. On Android, open the browser menu and choose “Install app” or “Add to Home screen”. On desktop, use the install icon in the address bar.",
+  "guide.p.pwa1": "This app is a Progressive Web App and can be installed on any device.",
+  "guide.p.pwa.ios": "iPhone/iPad: Open in Safari, tap the share icon and choose “Add to Home Screen”.",
+  "guide.p.pwa.android": "Android: Open the browser menu and choose “Install app” or “Add to Home screen”.",
+  "guide.p.pwa.desktop": "Desktop: Use the install icon in the address bar.",
   "guide.p.pwa2":
     "Once installed, the app opens full screen like a normal app and works offline — GPS, UTC time and the built-in voice all function without a connection. The AI voice for “Speak” needs a connection. The app updates itself in the background; you can force a check in Settings.",
   "guide.h.privacy": "7. Privacy",
