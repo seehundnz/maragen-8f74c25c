@@ -133,8 +133,7 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
-  const { settings, hydrated } = useSettings();
-  const lang = hydrated ? resolveLanguage(settings.language) : "en";
+  const lang = useLanguage();
 
   useEffect(() => {
     document.documentElement.lang = lang;
@@ -146,7 +145,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <I18nProvider lang={lang}>
+      <I18nProvider key={lang} lang={lang}>
         {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
         <Outlet />
         <Toaster position="top-center" />
