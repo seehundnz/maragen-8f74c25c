@@ -69,6 +69,9 @@ export const de: Dictionary = {
   "call.additionalMessagePlaceholder.securite": "Weitere Angaben zur Sicherheitsmeldung",
   "call.additionalMessagePlaceholder.standard": "Deine Nachricht oder Anfrage",
   "call.radioScript": "Funkspruch",
+  "call.channel16Notice": "Auf UKW-Kanal 16 absetzen",
+  "call.channel16NoticeHint":
+    "Mayday, Pan-Pan und Sécurité werden auf dem internationalen Not- und Anrufrufkanal 16 gesprochen.",
   "call.scriptEnglishNote":
     "Der Funkspruch ist immer auf Englisch — der internationalen Sprache im UKW-Seefunk.",
   "call.copy": "Kopieren",

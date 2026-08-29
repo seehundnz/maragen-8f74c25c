@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
-import { AlertTriangle, ChevronDown, Copy, Crosshair, Loader2, Maximize2, RefreshCw, Share2, Square, Volume2, X } from "lucide-react";
+import { AlertTriangle, ChevronDown, Copy, Crosshair, Loader2, Maximize2, Radio, RefreshCw, Share2, Square, Volume2, X } from "lucide-react";
 import { toast } from "sonner";
 
 import { AppShell } from "@/components/AppShell";
@@ -418,6 +418,18 @@ function CallPage() {
             </div>
           </section>
 
+          {type !== "standard" && (
+            <section className="flex items-start gap-3 rounded-xl border-2 border-primary bg-primary/10 p-4">
+              <Radio className="mt-0.5 size-5 shrink-0 text-primary" />
+              <div>
+                <p className="text-sm font-black tracking-widest text-primary uppercase">
+                  {t("call.channel16Notice")}
+                </p>
+                <p className="mt-1 text-xs text-muted-foreground">{t("call.channel16NoticeHint")}</p>
+              </div>
+            </section>
+          )}
+
           <section className="rounded-xl border-2 border-primary bg-card p-4">
             <div className="mb-3 grid grid-cols-[1fr_auto] items-center gap-3">
               <h2 className="text-sm font-bold tracking-widest text-primary uppercase">
@@ -519,6 +531,17 @@ function CallPage() {
             style={{ WebkitOverflowScrolling: "touch" }}
           >
             <div className="mx-auto max-w-3xl pb-16">
+              {type !== "standard" && (
+                <div className="mb-6 flex items-start gap-3 rounded-xl border-2 border-primary bg-primary/10 p-4">
+                  <Radio className="mt-1 size-6 shrink-0 text-primary" />
+                  <div>
+                    <p className="text-base font-black tracking-widest text-primary uppercase sm:text-lg">
+                      {t("call.channel16Notice")}
+                    </p>
+                    <p className="mt-1 text-sm text-muted-foreground">{t("call.channel16NoticeHint")}</p>
+                  </div>
+                </div>
+              )}
               <pre className="font-mono text-2xl leading-relaxed break-words whitespace-pre-wrap sm:text-3xl">
                 {script}
               </pre>
