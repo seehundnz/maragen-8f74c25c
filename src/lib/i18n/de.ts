@@ -180,6 +180,11 @@ export const de: Dictionary = {
     "Wenn dir die App gefällt, freue ich mich über eine kleine Spende. Sie hilft, Hosting- und Entwicklungskosten zu decken.",
   "settings.supportLink": "Buy me a coffee",
 
+  "settings.sourceHeading": "Quellcode",
+  "settings.sourceBody":
+    "Diese App wird unter der AGPL-3.0-or-later veröffentlicht. Jeder, der die App öffentlich hostet, muss Nutzern den Quellcode der jeweils eingesetzten Version zugänglich machen.",
+  "settings.sourceLink": "Quellcode auf GitHub",
+
   "settings.privacyHeading": "Datenschutz & Recht",
   "settings.privacyHint":
     "Alle Einstellungen und Schiffsprofile werden ausschließlich auf diesem Gerät gespeichert. Kein Konto, kein Tracking, keine Analyse.",
@@ -264,6 +269,10 @@ export const de: Dictionary = {
   "privacy.imprint.email": "E-Mail",
   "privacy.imprint.phone": "Telefon",
   "privacy.imprint.country": "Deutschland",
+  "privacy.h.source": "Quellcode (AGPL)",
+  "privacy.p.source":
+    "Diese App steht unter der GNU Affero General Public License v3.0 oder später (AGPL-3.0-or-later). Weil es sich um eine Web-App handelt, gilt die Netzwerk-Klausel der AGPL: Wer diese Software öffentlich hostet, muss den Quellcode der eingesetzten Version den Nutzern zur Verfügung stellen. Der Quellcode ist auf GitHub verfügbar; der Link führt zur Version, auf der diese Installation basiert.",
+  "privacy.sourceLink": "Quellcode auf GitHub ansehen",
   "privacy.h.safety": "Sicherheitshinweis",
   "privacy.p.safety1":
     "Diese App ist lediglich ein Hilfsmittel. Sie ersetzt weder eine ordentliche Funkausbildung noch ein gültiges Funkbetriebszeugnis oder offizielle Verfahren. Folge im Notfall immer den Anweisungen der koordinierenden Rettungsleitstelle.",

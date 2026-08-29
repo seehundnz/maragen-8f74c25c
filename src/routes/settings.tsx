@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ShieldCheck, Coffee } from "lucide-react";
+import { ShieldCheck, Coffee, Github } from "lucide-react";
 import { AppShell } from "@/components/AppShell";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -158,6 +158,20 @@ function SettingsPage() {
           >
             <Coffee className="size-4" aria-hidden />
             {t("settings.supportLink")}
+          </a>
+        </section>
+
+        <section className="space-y-2 rounded-xl border border-border bg-card p-4">
+          <h2 className="text-sm font-semibold">{t("settings.sourceHeading")}</h2>
+          <p className="text-xs text-muted-foreground">{t("settings.sourceBody")}</p>
+          <a
+            href="https://github.com/seehundnz/maragen-8f74c25c.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-sm font-medium text-primary underline-offset-4 hover:underline"
+          >
+            <Github className="size-4" aria-hidden />
+            {t("settings.sourceLink")}
           </a>
         </section>
       </div>
