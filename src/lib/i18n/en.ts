@@ -139,7 +139,7 @@ export const en = {
   "settings.positionFormat.dd": "Decimal degrees (54.33083°)",
   "settings.aiVoice": 'Use AI voice for "Speak"',
   "settings.aiVoiceHint":
-    "On: the script text is sent to our speech service for a clear radio-operator voice. Off: only your device's built-in voice is used and no text ever leaves this device.",
+    "Off by default. Only if you turn this on is the script text sent to our speech service for a clear radio-operator voice. While it stays off, only your device's built-in voice is used and no text ever leaves this device.",
   "settings.appHeading": "App & updates",
   "settings.offlineHint":
     "The app stores itself on your device so it also opens without a network connection.",

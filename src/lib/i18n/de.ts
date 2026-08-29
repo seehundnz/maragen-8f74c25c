@@ -142,7 +142,7 @@ export const de: Dictionary = {
   "settings.positionFormat.dd": "Dezimalgrad (54.33083°)",
   "settings.aiVoice": "KI-Stimme für „Vorlesen“ verwenden",
   "settings.aiVoiceHint":
-    "Ein: Der Text des Funkspruchs wird an unseren Sprachdienst gesendet, um eine klare Funkstimme zu erzeugen. Aus: Es wird nur die eingebaute Stimme deines Geräts genutzt, es verlässt kein Text dein Gerät.",
+    "Standardmäßig aus. Nur wenn du dies aktivierst, wird der Text des Funkspruchs an unseren Sprachdienst gesendet, um eine klare Funkstimme zu erzeugen. Bleibt die Option aus, wird ausschließlich die eingebaute Stimme deines Geräts genutzt und es verlässt kein Text dein Gerät.",
   "settings.appHeading": "App & Updates",
   "settings.offlineHint":
     "Die App speichert sich auf deinem Gerät und lässt sich auch ohne Netzverbindung öffnen.",
