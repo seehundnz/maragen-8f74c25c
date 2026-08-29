@@ -61,7 +61,7 @@ function HomePage() {
                     <span className="block text-lg font-bold tracking-wider text-primary sm:text-xl">
                       {CALL_META[type].label}
                     </span>
-                    <span className="mt-0.5 block truncate text-xs text-muted-foreground sm:text-sm">
+                    <span className="mt-0.5 block text-xs text-muted-foreground sm:text-sm">
                       {t(`call.${type}.description`)}
                     </span>
                   </span>
