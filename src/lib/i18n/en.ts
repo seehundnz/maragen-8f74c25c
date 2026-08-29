@@ -22,6 +22,9 @@ export const en = {
   "install.desktop.step1": "Open the browser menu or the install icon in the address bar.",
   "install.desktop.step2": 'Choose "Install" and confirm.',
 
+  "home.title": "What kind of call do you need?",
+  "home.subtitle": "Choose a call type — your vessel data, position and time are inserted automatically.",
+
   "call.mayday.short": "Distress",
   "call.panpan.short": "Urgency",
   "call.securite.short": "Safety",

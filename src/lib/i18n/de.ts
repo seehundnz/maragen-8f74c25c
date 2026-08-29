@@ -24,6 +24,9 @@ export const de: Dictionary = {
   "install.desktop.step1": "Öffne das Browser-Menü oder das Installieren-Symbol in der Adressleiste.",
   "install.desktop.step2": 'Wähle "Installieren" und bestätige.',
 
+  "home.title": "Welche Art von Funkspruch brauchst du?",
+  "home.subtitle": "Wähle eine Spruchart — Schiffsdaten, Position und Uhrzeit werden automatisch eingefügt.",
+
   "call.mayday.short": "Seenot",
   "call.panpan.short": "Dringlichkeit",
   "call.securite.short": "Sicherheit",
