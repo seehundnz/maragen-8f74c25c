@@ -221,7 +221,7 @@ export const de: Dictionary = {
   "vessels.errCallSign": "Rufzeichen ist erforderlich",
 
   "privacy.title": "Datenschutz & Impressum",
-  "privacy.subtitle": "Datenschutz & Impressum — zuletzt aktualisiert am 19. August 2026",
+  "privacy.subtitle": "Datenschutz & Impressum — zuletzt aktualisiert am 29. August 2026",
   "privacy.h.summary": "Kurz gesagt: Ist diese App DSGVO-konform?",
   "privacy.p.summary1":
     "Die App ist datensparsam aufgebaut: Sie funktioniert ohne Konto, ohne Tracking, ohne Werbung und ohne Analyse. Alles, was du eingibst — Schiffsprofile, MMSI, Rufzeichen, Personen an Bord, Einstellungen — wird ausschließlich im lokalen Speicher deines Browsers abgelegt. Es wird nie auf einen Server hochgeladen und nie weitergegeben.",
