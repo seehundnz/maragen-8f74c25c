@@ -249,7 +249,13 @@ export const de: Dictionary = {
 
   "privacy.h.cookies": "Cookies, Tracking und Hosting",
   "privacy.p.cookies":
-    "Es werden keine Cookies zu Tracking-Zwecken gesetzt, keine Analyse- oder Werbewerkzeuge eingesetzt und keine Nutzerprofile erstellt. Beim Laden der App verarbeitet der Hosting-Anbieter technische Verbindungsdaten (etwa die IP-Adresse) in Server-Logs, wie es zur Auslieferung jeder Website technisch erforderlich ist (Art. 6 Abs. 1 lit. f DSGVO).",
+    "Es werden keine Cookies zu Tracking-Zwecken gesetzt, keine Analyse- oder Werbewerkzeuge eingesetzt und keine Nutzerprofile erstellt. Die App wird auf der Infrastruktur von Lovable Labs Incorporated gehostet; beim Laden verarbeitet der Hosting-Anbieter technische Verbindungsdaten (etwa die IP-Adresse) in Server-Logs, wie es zur Auslieferung jeder Website technisch erforderlich ist (Art. 6 Abs. 1 lit. f DSGVO). Dabei kann eine Verarbeitung auf Servern außerhalb der EU stattfinden; die Übermittlung ist durch Standardvertragsklauseln abgesichert.",
+  "privacy.h.noExternal": "Keine Inhalte von Dritten",
+  "privacy.p.noExternal":
+    "Die App lädt keine Schriftarten, Symbole, Skripte, Karten oder sonstigen Inhalte von fremden Servern nach. Texte werden mit den ohnehin auf deinem Gerät vorhandenen Systemschriften dargestellt, alle Symbole und App-Icons sind Teil des App-Pakets, und QR-Codes werden vollständig in deinem Browser erzeugt und gelesen. Allein durch das Öffnen der App wird deine IP-Adresse daher an keinen Dritten (etwa einen Schriftarten- oder CDN-Anbieter) übermittelt.",
+  "privacy.h.links": "Externe Links",
+  "privacy.p.links":
+    "Auf der Einstellungsseite befindet sich ein freiwilliger Spenden-Link zu Buy Me a Coffee (buymeacoffee.com). Von diesem Anbieter werden keine Inhalte geladen, und es werden keine Daten dorthin übertragen, solange du den Link nicht aktiv antippst. Tust du das, verlässt du diese App und es gelten die Datenschutzhinweise und Bedingungen des Anbieters.",
   "privacy.h.rights": "Deine Rechte",
   "privacy.p.rights":
     "Nach der DSGVO hast du das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch sowie das Recht auf Beschwerde bei einer Aufsichtsbehörde. Da deine Daten nur auf deinem Gerät liegen, kannst du die Löschung direkt vornehmen, indem du die Schiffsprofile in der App löschst oder die Daten dieser Website in den Browsereinstellungen entfernst.",
