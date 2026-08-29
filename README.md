@@ -1,29 +1,45 @@
-# Welcome to your Lovable project
+# 📻 VHF Call Builder
 
-This project was built with [Lovable](https://lovable.dev).
+**Funksprüche für Notfall, Dringlichkeit und Sicherheit – schnell, korrekt und offline verfügbar.**
 
-## Build with Lovable
+Eine Web-App (PWA) für Bootsführer, Skipper und Crew: Sie erstellt aus den gespeicherten Schiffsdaten und der aktuellen GPS-Position fertige UKW-Funksprüche – vom **MAYDAY** über **PAN-PAN** und **SÉCURITÉ** bis zu Standardanrufen.
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+> ⚠️ **Wichtiger Hinweis:** Diese App ersetzt keine Funkausbildung (SRC/LRC/UBI) und keine offiziellen Notfallprozeduren. Sie ist eine Gedankenstütze für stressige Situationen oder ungeschulte Crewmitglieder. Die Nutzung erfolgt auf eigene Gefahr.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+---
 
-## Development
+## ✨ Features
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+- 🚨 **Fertige Funksprüche** für MAYDAY, PAN-PAN, SÉCURITÉ und Standard Calls – inkl. Relay, SEELONCE MAYDAY, SILENCE FINI und Widerruf einer Fehlalarmierung
+- 🛥️ **Schiffsprofile** verwalten (Name, MMSI mit Validierung, Rufzeichen, Typ, POB …) – mehrere Schiffe anlegbar
+- 📍 **Position & UTC automatisch** aus dem Gerät (GPS), mit einstellbarem Aktualisierungsintervall und manueller Eingabe
+- 🔊 **Vorlesefunktion** – der Spruch wird langsam und deutlich vorgelesen (NATO-Alphabet für Rufzeichen, Ziffern einzeln), optional per KI-Stimme oder offline per Gerät
+- 📲 **Installierbar als PWA** – läuft offline auf iPhone, iPad, Android und Desktop
+- 🔗 **Schiffsdaten per QR-Code teilen** – Crew scannt und übernimmt das Profil
+- 🌍 **Zweisprachig** (Deutsch/Englisch) – die Funksprüche bleiben bewusst Englisch, der internationalen Sprache im Seefunk
+- 🔒 **Datenschutzfreundlich (DSGVO):** alle Daten bleiben lokal auf dem Gerät, kein Tracking, keine Cookies, keine externen Fonts oder Skripte
+
+## 🛠️ Tech-Stack
+
+- [TanStack Start](https://tanstack.com/start) (React 19, SSR)
+- TypeScript, Tailwind CSS v4, shadcn/ui
+- PWA via `vite-plugin-pwa` (Service Worker, offlinefähig)
+- QR: `qrcode` + `@zxing/browser`
+- KI-Sprachausgabe über das Lovable AI Gateway (optional, abschaltbar)
+
+## 🚀 Entwicklung
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
+git clone <repo-url>
+cd <repo>
+bun install
+bun run dev
 ```
 
-## Built with
+## 📄 Lizenz
 
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
+Dieses Projekt steht unter der [MIT-Lizenz](LICENSE).
+
+---
+
+*Built with ❤️ and [Lovable](https://lovable.dev) – fair winds and following seas! ⛵*
