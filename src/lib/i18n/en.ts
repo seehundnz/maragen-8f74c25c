@@ -245,7 +245,13 @@ export const en = {
 
   "privacy.h.cookies": "Cookies, tracking and hosting",
   "privacy.p.cookies":
-    "No cookies are set for tracking, no analytics or advertising tools are used, and no user profiles are created. When the app is loaded, the hosting provider processes technical connection data (such as the IP address) in server logs, as is technically necessary to deliver any website (Art. 6 (1)(f) GDPR).",
+    "No cookies are set for tracking, no analytics or advertising tools are used, and no user profiles are created. The app is hosted on the infrastructure of Lovable Labs Incorporated; when the app is loaded, the hosting provider processes technical connection data (such as the IP address) in server logs, as is technically necessary to deliver any website (Art. 6 (1)(f) GDPR). This may involve servers outside the EU; the transfer is safeguarded by standard contractual clauses.",
+  "privacy.h.noExternal": "No third-party content",
+  "privacy.p.noExternal":
+    "The app loads no fonts, icons, scripts, maps or other content from third-party servers. Text is rendered with the fonts already on your device, all symbols and app icons are part of the app package, and the QR code is generated and scanned entirely in your browser. Your IP address is therefore not passed to any third party (for example a font or CDN provider) simply by opening the app.",
+  "privacy.h.links": "External links",
+  "privacy.p.links":
+    "The Settings page contains a voluntary donation link to Buy Me a Coffee (buymeacoffee.com). Nothing is loaded from that provider and no data is sent there unless you actively tap the link. Once you do, you leave this app and the privacy policy and terms of that provider apply.",
   "privacy.h.rights": "Your rights",
   "privacy.p.rights":
     "Under the GDPR you have the right to information, rectification, erasure, restriction, data portability and objection, and the right to lodge a complaint with a supervisory authority. As your data lives only on your device, you can exercise erasure directly by deleting the vessel profiles in the app or clearing this site's data in your browser settings.",
