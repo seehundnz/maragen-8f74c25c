@@ -135,10 +135,15 @@ function RootShell({ children }: { children: ReactNode }) {
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
   const lang = useLanguage();
+  const { settings } = useSettings();
 
   useEffect(() => {
     document.documentElement.lang = lang;
   }, [lang]);
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("night", settings.nightMode === true);
+  }, [settings.nightMode]);
 
   useEffect(() => {
     void registerServiceWorker();
