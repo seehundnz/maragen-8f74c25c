@@ -231,7 +231,7 @@ export const en = {
     "In Settings you can switch the AI voice for the Speak button on or off. This switch controls whether any text leaves your device.",
   "privacy.s.ttsOn": "AI voice on (default):",
   "privacy.p.ttsOn":
-    "when you press \u201cSpeak\u201d, the generated script text is sent to our speech service to produce the spoken audio, and is then discarded — it is not stored and not used for training. If no network is available, the app automatically falls back to your device's built-in voice.",
+    "when you press \u201cSpeak\u201d, the generated script text — which can contain vessel name, MMSI, call sign and position — is sent from our server to the speech service we use (Lovable AI Gateway, operated by our hosting provider Lovable Labs) to produce the spoken audio, and is then discarded — it is not stored and not used for training. Processing may take place on servers outside the EU, safeguarded by the provider's standard contractual clauses. If no network is available, the app automatically falls back to your device's built-in voice.",
   "privacy.s.ttsOff": "AI voice off:",
   "privacy.p.ttsOff":
     "only your device's built-in speech synthesis is used. No script text and no vessel data are transmitted; everything stays on your device.",
