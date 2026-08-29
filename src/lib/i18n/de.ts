@@ -143,6 +143,9 @@ export const de: Dictionary = {
   "settings.positionFormat": "Positionsformat",
   "settings.positionFormat.ddm": "Grad und Dezimalminuten (54° 19.85' N)",
   "settings.positionFormat.dd": "Dezimalgrad (54.33083°)",
+  "settings.nightMode": "Rotlicht-Modus (Nachtsicht)",
+  "settings.nightModeHint":
+    "Färbt die gesamte App in gedämpftes Rot auf nahezu schwarzem Grund, damit deine Nachtsicht an Bord erhalten bleibt.",
   "settings.aiVoice": "KI-Stimme für „Vorlesen“ verwenden",
   "settings.aiVoiceHint":
     "Standardmäßig aus. Nur wenn du dies aktivierst, wird der Text des Funkspruchs an unseren Sprachdienst gesendet, um eine klare Funkstimme zu erzeugen. Bleibt die Option aus, wird ausschließlich die eingebaute Stimme deines Geräts genutzt und es verlässt kein Text dein Gerät.",

@@ -140,6 +140,9 @@ export const en = {
   "settings.positionFormat": "Position format",
   "settings.positionFormat.ddm": "Degrees and decimal minutes (54° 19.85' N)",
   "settings.positionFormat.dd": "Decimal degrees (54.33083°)",
+  "settings.nightMode": "Red-light mode (night vision)",
+  "settings.nightModeHint":
+    "Tints the whole app in dim red on a near-black background so your night vision on board is preserved.",
   "settings.aiVoice": 'Use AI voice for "Speak"',
   "settings.aiVoiceHint":
     "Off by default. Only if you turn this on is the script text sent to our speech service for a clear radio-operator voice. While it stays off, only your device's built-in voice is used and no text ever leaves this device.",
