@@ -177,6 +177,11 @@ export const en = {
     "If you like this app, I would appreciate a small donation. It helps cover hosting and development costs.",
   "settings.supportLink": "Buy me a coffee",
 
+  "settings.sourceHeading": "Source code",
+  "settings.sourceBody":
+    "This app is released under the AGPL-3.0-or-later licence. Anyone hosting the app publicly must make the source code of the version in use available to users.",
+  "settings.sourceLink": "View source on GitHub",
+
   "settings.privacyHeading": "Privacy & legal",
   "settings.privacyHint":
     "All settings and vessel profiles are stored on this device only. No account, no tracking, no analytics.",
@@ -260,6 +265,10 @@ export const en = {
   "privacy.imprint.email": "Email",
   "privacy.imprint.phone": "Phone",
   "privacy.imprint.country": "Germany",
+  "privacy.h.source": "Source code (AGPL)",
+  "privacy.p.source":
+    "This app is licensed under the GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later). Because this is a web app, the AGPL network clause applies: anyone who hosts the software publicly must provide users with the source code of the version being run. The source is available on GitHub; the link points to the version this installation is based on.",
+  "privacy.sourceLink": "View source on GitHub",
   "privacy.h.safety": "Safety notice",
   "privacy.p.safety1":
     "This app is a support tool only. It does not replace proper radio training, a valid radio operator certificate, or official procedures. In an emergency, always follow the instructions of the coordinating rescue authority.",
