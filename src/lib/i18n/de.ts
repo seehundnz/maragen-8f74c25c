@@ -142,7 +142,7 @@ export const de: Dictionary = {
   "settings.positionFormat.dd": "Dezimalgrad (54.33083°)",
   "settings.aiVoice": "KI-Stimme für „Vorlesen“ verwenden",
   "settings.aiVoiceHint":
-    "Ein: Der Text des Funkspruchs wird an unseren Sprachdienst gesendet, um eine klare Funkstimme zu erzeugen. Aus: Es wird nur die eingebaute Stimme deines Geräts genutzt, es verlässt kein Text dein Gerät.",
+    "Standardmäßig aus. Nur wenn du dies aktivierst, wird der Text des Funkspruchs an unseren Sprachdienst gesendet, um eine klare Funkstimme zu erzeugen. Bleibt die Option aus, wird ausschließlich die eingebaute Stimme deines Geräts genutzt und es verlässt kein Text dein Gerät.",
   "settings.appHeading": "App & Updates",
   "settings.offlineHint":
     "Die App speichert sich auf deinem Gerät und lässt sich auch ohne Netzverbindung öffnen.",
@@ -241,10 +241,10 @@ export const de: Dictionary = {
   "privacy.h.tts": "Sprachausgabe (Vorlesen-Taste)",
   "privacy.p.tts1":
     "In den Einstellungen kannst du die KI-Stimme für die Vorlesen-Taste ein- oder ausschalten. Dieser Schalter bestimmt, ob überhaupt Text dein Gerät verlässt.",
-  "privacy.s.ttsOn": "KI-Stimme ein (Standard):",
+  "privacy.s.ttsOn": "KI-Stimme ein (nur nach ausdrücklicher Aktivierung):",
   "privacy.p.ttsOn":
     "Beim Drücken von „Vorlesen“ wird der erzeugte Text des Funkspruchs — er kann Schiffsname, MMSI, Rufzeichen und Position enthalten — von unserem Server an den genutzten Sprachdienst (Lovable AI Gateway, betrieben vom Hosting-Anbieter Lovable Labs) gesendet, um die Audioausgabe zu erzeugen, und danach verworfen — er wird nicht gespeichert und nicht für Training verwendet. Die Verarbeitung kann auf Servern außerhalb der EU erfolgen, abgesichert durch die Standardvertragsklauseln des Anbieters. Ist kein Netz verfügbar, greift die App automatisch auf die eingebaute Stimme deines Geräts zurück.",
-  "privacy.s.ttsOff": "KI-Stimme aus:",
+  "privacy.s.ttsOff": "KI-Stimme aus (Standard):",
   "privacy.p.ttsOff":
     "Es wird ausschließlich die eingebaute Sprachausgabe deines Geräts verwendet. Es werden weder Text noch Schiffsdaten übertragen; alles bleibt auf deinem Gerät.",
   "privacy.h.install": "App auf dem Handy installieren (PWA)",

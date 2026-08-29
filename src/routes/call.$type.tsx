@@ -161,7 +161,7 @@ function CallPage() {
       speech.stop();
       return;
     }
-    const result = await speech.speak(script, { useAiVoice: settings.useAiVoice !== false });
+    const result = await speech.speak(script, { useAiVoice: settings.useAiVoice === true });
     if (result.failed) toast.error(t("call.speechUnavailable"));
     else if (result.fallback) toast.info(t("call.offlineVoice"));
   };

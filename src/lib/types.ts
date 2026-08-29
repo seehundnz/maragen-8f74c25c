@@ -30,7 +30,7 @@ export const DEFAULT_SETTINGS: Settings = {
   defaultChannel: "16",
   positionFormat: "ddm",
   activeVesselId: null,
-  useAiVoice: true,
+  useAiVoice: false,
   language: "auto",
 };
 

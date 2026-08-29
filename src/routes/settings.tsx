@@ -125,7 +125,7 @@ function SettingsPage() {
             </div>
             <Switch
               id="aivoice"
-              checked={settings.useAiVoice !== false}
+              checked={settings.useAiVoice === true}
               onCheckedChange={(checked) => setSettings((s) => ({ ...s, useAiVoice: checked }))}
             />
           </div>

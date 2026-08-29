@@ -139,7 +139,7 @@ export const en = {
   "settings.positionFormat.dd": "Decimal degrees (54.33083°)",
   "settings.aiVoice": 'Use AI voice for "Speak"',
   "settings.aiVoiceHint":
-    "On: the script text is sent to our speech service for a clear radio-operator voice. Off: only your device's built-in voice is used and no text ever leaves this device.",
+    "Off by default. Only if you turn this on is the script text sent to our speech service for a clear radio-operator voice. While it stays off, only your device's built-in voice is used and no text ever leaves this device.",
   "settings.appHeading": "App & updates",
   "settings.offlineHint":
     "The app stores itself on your device so it also opens without a network connection.",
@@ -237,10 +237,10 @@ export const en = {
   "privacy.h.tts": "Text-to-speech (Speak button)",
   "privacy.p.tts1":
     "In Settings you can switch the AI voice for the Speak button on or off. This switch controls whether any text leaves your device.",
-  "privacy.s.ttsOn": "AI voice on (default):",
+  "privacy.s.ttsOn": "AI voice on (only after you explicitly enable it):",
   "privacy.p.ttsOn":
     "when you press \u201cSpeak\u201d, the generated script text — which can contain vessel name, MMSI, call sign and position — is sent from our server to the speech service we use (Lovable AI Gateway, operated by our hosting provider Lovable Labs) to produce the spoken audio, and is then discarded — it is not stored and not used for training. Processing may take place on servers outside the EU, safeguarded by the provider's standard contractual clauses. If no network is available, the app automatically falls back to your device's built-in voice.",
-  "privacy.s.ttsOff": "AI voice off:",
+  "privacy.s.ttsOff": "AI voice off (default):",
   "privacy.p.ttsOff":
     "only your device's built-in speech synthesis is used. No script text and no vessel data are transmitted; everything stays on your device.",
   "privacy.h.install": "Installing the app on your phone (PWA)",
