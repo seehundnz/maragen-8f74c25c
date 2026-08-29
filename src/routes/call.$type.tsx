@@ -418,6 +418,18 @@ function CallPage() {
             </div>
           </section>
 
+          {type !== "standard" && (
+            <section className="flex items-start gap-3 rounded-xl border-2 border-primary bg-primary/10 p-4">
+              <Radio className="mt-0.5 size-5 shrink-0 text-primary" />
+              <div>
+                <p className="text-sm font-black tracking-widest text-primary uppercase">
+                  {t("call.channel16Notice")}
+                </p>
+                <p className="mt-1 text-xs text-muted-foreground">{t("call.channel16NoticeHint")}</p>
+              </div>
+            </section>
+          )}
+
           <section className="rounded-xl border-2 border-primary bg-card p-4">
             <div className="mb-3 grid grid-cols-[1fr_auto] items-center gap-3">
               <h2 className="text-sm font-bold tracking-widest text-primary uppercase">
