@@ -235,7 +235,7 @@ export const de: Dictionary = {
     "In den Einstellungen kannst du die KI-Stimme für die Vorlesen-Taste ein- oder ausschalten. Dieser Schalter bestimmt, ob überhaupt Text dein Gerät verlässt.",
   "privacy.s.ttsOn": "KI-Stimme ein (Standard):",
   "privacy.p.ttsOn":
-    "Beim Drücken von „Vorlesen“ wird der erzeugte Text des Funkspruchs an unseren Sprachdienst gesendet, um die Audioausgabe zu erzeugen, und danach verworfen — er wird nicht gespeichert und nicht für Training verwendet. Ist kein Netz verfügbar, greift die App automatisch auf die eingebaute Stimme deines Geräts zurück.",
+    "Beim Drücken von „Vorlesen“ wird der erzeugte Text des Funkspruchs — er kann Schiffsname, MMSI, Rufzeichen und Position enthalten — von unserem Server an den genutzten Sprachdienst (Lovable AI Gateway, betrieben vom Hosting-Anbieter Lovable Labs) gesendet, um die Audioausgabe zu erzeugen, und danach verworfen — er wird nicht gespeichert und nicht für Training verwendet. Die Verarbeitung kann auf Servern außerhalb der EU erfolgen, abgesichert durch die Standardvertragsklauseln des Anbieters. Ist kein Netz verfügbar, greift die App automatisch auf die eingebaute Stimme deines Geräts zurück.",
   "privacy.s.ttsOff": "KI-Stimme aus:",
   "privacy.p.ttsOff":
     "Es wird ausschließlich die eingebaute Sprachausgabe deines Geräts verwendet. Es werden weder Text noch Schiffsdaten übertragen; alles bleibt auf deinem Gerät.",
