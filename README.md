@@ -1,48 +1,49 @@
 # 📻 VHF Call Builder
 
-**Funksprüche für Notfall, Dringlichkeit und Sicherheit – schnell, korrekt und offline verfügbar.**
+**Instant VHF radio scripts for distress, urgency and safety — fast, correct and offline-capable.**
 
-Eine Web-App (PWA) für Bootsführer, Skipper und Crew: Sie erstellt aus den gespeicherten Schiffsdaten und der aktuellen GPS-Position fertige UKW-Funksprüche – vom **MAYDAY** über **PAN-PAN** und **SÉCURITÉ** bis zu Standardanrufen.
+A Progressive Web App for skippers, boat owners and crew: it builds ready-to-read VHF radio calls from your stored vessel data and current GPS position — from **MAYDAY** through **PAN-PAN** and **SÉCURITÉ** to routine calls.
 
-> ⚠️ **Wichtiger Hinweis:** Diese App ersetzt keine Funkausbildung (SRC/LRC/UBI) und keine offiziellen Notfallprozeduren. Sie ist eine Gedankenstütze für stressige Situationen oder ungeschulte Crewmitglieder. Die Nutzung erfolgt auf eigene Gefahr.
+> ⚠️ **Important:** This app does not replace proper radio training (SRC/LRC/UBI) or official emergency procedures. It is a memory aid for stressful situations or untrained crew members. Use it at your own risk.
 
 ---
 
 ## ✨ Features
 
-- 🚨 **Fertige Funksprüche** für MAYDAY, PAN-PAN, SÉCURITÉ und Standard Calls – inkl. Relay, SEELONCE MAYDAY, SILENCE FINI und Widerruf einer Fehlalarmierung
-- 🛥️ **Schiffsprofile** verwalten (Name, MMSI mit Validierung, Rufzeichen, Typ, POB …) – mehrere Schiffe anlegbar
-- 📍 **Position & UTC automatisch** aus dem Gerät (GPS), mit einstellbarem Aktualisierungsintervall und manueller Eingabe
-- 🔊 **Vorlesefunktion** – der Spruch wird langsam und deutlich vorgelesen (NATO-Alphabet für Rufzeichen, Ziffern einzeln), optional per KI-Stimme oder offline per Gerät
-- 📲 **Installierbar als PWA** – läuft offline auf iPhone, iPad, Android und Desktop
-- 🔗 **Schiffsdaten per QR-Code teilen** – Crew scannt und übernimmt das Profil
-- 🌍 **Zweisprachig** (Deutsch/Englisch) – die Funksprüche bleiben bewusst Englisch, der internationalen Sprache im Seefunk
-- 🔒 **Datenschutzfreundlich (DSGVO):** alle Daten bleiben lokal auf dem Gerät, kein Tracking, keine Cookies, keine externen Fonts oder Skripte
+- 🚨 **Ready-made radio scripts** for MAYDAY, PAN-PAN, SÉCURITÉ and standard calls — including relay, SEELONCE MAYDAY, SILENCE FINI and false-distress cancellation
+- 🛥️ **Vessel profiles** (name, MMSI with validation, call sign, type, POB …) — save multiple vessels
+- 📍 **Position & UTC automatically** from the device (GPS), with configurable refresh interval and manual entry
+- 🔊 **Read aloud** — the script is spoken slowly and clearly (NATO alphabet for call signs, digits read individually), optionally via AI voice or offline using the device voice
+- 📲 **Installable as a PWA** — runs offline on iPhone, iPad, Android and desktop
+- 🔗 **Share vessel data via QR code** — crew scans and imports the profile
+- 🌍 **Bilingual UI** (German/English) — radio scripts intentionally stay in English, the international language of VHF maritime communication
+- 🔒 **Privacy-friendly (GDPR/DSGVO):** all data stays locally on the device, no tracking, no cookies, no external fonts or scripts
 
-## 🛠️ Tech-Stack
+## 🛠️ Tech stack
 
 - [TanStack Start](https://tanstack.com/start) (React 19, SSR)
 - TypeScript, Tailwind CSS v4, shadcn/ui
-- PWA via `vite-plugin-pwa` (Service Worker, offlinefähig)
+- PWA via `vite-plugin-pwa` (service worker, offline-capable)
 - QR: `qrcode` + `@zxing/browser`
-- KI-Sprachausgabe über das Lovable AI Gateway (optional, abschaltbar)
+- AI speech output via the Lovable AI Gateway (optional, can be disabled)
 
-## 🚀 Entwicklung
+## 🚀 Development
 
 ```sh
-git clone <repo-url>
-cd <repo>
+git clone https://github.com/seehundnz/maragen-8f74c25c.git
+cd maragen-8f74c25c
 bun install
 bun run dev
 ```
 
-## 📄 Lizenz
+## 📄 Licence
 
-Dieses Projekt steht unter der [GNU Affero General Public License v3.0 oder später](LICENSE) (AGPL-3.0-or-later).
+This project is licensed under the [GNU Affero General Public License v3.0 or later](LICENSE) (AGPL-3.0-or-later).
 
-Da es sich um eine Web-App handelt, gilt die Netzwerk-Klausel der AGPL: Wer die Software öffentlich hostet, muss den Quellcode der genutzten Version den Nutzern zur Verfügung stellen.
+Because this is a web app, the AGPL network clause applies: anyone who publicly hosts the software must make the source code of the version in use available to users. The source code for this app is available at:
 
+**[github.com/seehundnz/maragen-8f74c25c](https://github.com/seehundnz/maragen-8f74c25c.git)**
 
 ---
 
-*Built with ❤️ and [Lovable](https://lovable.dev) – fair winds and following seas! ⛵*
+*Built with ❤️ and [Lovable](https://lovable.dev) — fair winds and following seas! ⛵*
