@@ -38,7 +38,10 @@ bun run dev
 
 ## 📄 Lizenz
 
-Dieses Projekt steht unter der [MIT-Lizenz](LICENSE).
+Dieses Projekt steht unter der [GNU Affero General Public License v3.0 oder später](LICENSE) (AGPL-3.0-or-later).
+
+Da es sich um eine Web-App handelt, gilt die Netzwerk-Klausel der AGPL: Wer die Software öffentlich hostet, muss den Quellcode der genutzten Version den Nutzern zur Verfügung stellen.
+
 
 ---
 
