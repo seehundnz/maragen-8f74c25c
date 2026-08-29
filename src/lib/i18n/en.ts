@@ -217,7 +217,7 @@ export const en = {
   "vessels.errCallSign": "Call sign is required",
 
   "privacy.title": "Privacy & Imprint",
-  "privacy.subtitle": "Datenschutz & Impressum — last updated 19 August 2026",
+  "privacy.subtitle": "Datenschutz & Impressum — last updated 29 August 2026",
   "privacy.h.summary": "Short answer: is this app GDPR/DSGVO compliant?",
   "privacy.p.summary1":
     "The app is built to be data-minimal: it works without an account, without tracking, without advertising and without analytics. Everything you enter — vessel profiles, MMSI, call sign, persons on board, settings — is stored only in your device's local browser storage. It is never uploaded to a server and never shared.",
