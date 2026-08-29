@@ -22,6 +22,7 @@ export interface Settings {
   activeVesselId: string | null;
   useAiVoice: boolean;
   language: "auto" | "en" | "de";
+  nightMode: boolean;
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -32,6 +33,7 @@ export const DEFAULT_SETTINGS: Settings = {
   activeVesselId: null,
   useAiVoice: false,
   language: "auto",
+  nightMode: false,
 };
 
 export interface CallInput {

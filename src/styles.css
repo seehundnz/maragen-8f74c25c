@@ -139,6 +139,41 @@
   --call-soft: oklch(0.72 0.19 148 / 14%);
 }
 
+/*
+ * Red-light / night-vision mode.
+ * Activated by adding the `night` class to <html>. All surfaces go near-black
+ * and every accent is shifted to red so the eyes keep their dark adaptation.
+ * Placed after the [data-call] blocks so it overrides per-call accents.
+ */
+.night,
+.night [data-call] {
+  --background: oklch(0.12 0.02 25);
+  --foreground: oklch(0.78 0.13 25);
+  --card: oklch(0.16 0.03 25);
+  --card-foreground: oklch(0.78 0.13 25);
+  --popover: oklch(0.16 0.03 25);
+  --popover-foreground: oklch(0.78 0.13 25);
+  --primary: oklch(0.62 0.22 27);
+  --primary-foreground: oklch(0.12 0.02 25);
+  --accent: oklch(0.62 0.22 27);
+  --accent-foreground: oklch(0.12 0.02 25);
+  --ring: oklch(0.62 0.22 27);
+  --secondary: oklch(0.2 0.04 25);
+  --secondary-foreground: oklch(0.78 0.13 25);
+  --muted: oklch(0.18 0.03 25);
+  --muted-foreground: oklch(0.58 0.1 25);
+  --destructive: oklch(0.62 0.22 27);
+  --destructive-foreground: oklch(0.12 0.02 25);
+  --border: oklch(0.3 0.07 25);
+  --input: oklch(0.3 0.07 25);
+  --call-soft: oklch(0.62 0.22 27 / 14%);
+  --sidebar: oklch(0.16 0.03 25);
+  --sidebar-foreground: oklch(0.78 0.13 25);
+  --sidebar-accent: oklch(0.2 0.04 25);
+  --sidebar-accent-foreground: oklch(0.78 0.13 25);
+  --sidebar-border: oklch(0.3 0.07 25);
+}
+
 @theme inline {
   --color-call-soft: var(--call-soft);
 }

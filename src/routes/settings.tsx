@@ -120,6 +120,20 @@ function SettingsPage() {
         <section className="space-y-4 rounded-xl border border-border bg-card p-4">
           <div className="flex items-center justify-between gap-4">
             <div>
+              <Label htmlFor="nightmode">{t("settings.nightMode")}</Label>
+              <p className="text-xs text-muted-foreground">{t("settings.nightModeHint")}</p>
+            </div>
+            <Switch
+              id="nightmode"
+              checked={settings.nightMode === true}
+              onCheckedChange={(checked) => setSettings((s) => ({ ...s, nightMode: checked }))}
+            />
+          </div>
+        </section>
+
+        <section className="space-y-4 rounded-xl border border-border bg-card p-4">
+          <div className="flex items-center justify-between gap-4">
+            <div>
               <Label htmlFor="aivoice">{t("settings.aiVoice")}</Label>
               <p className="text-xs text-muted-foreground">{t("settings.aiVoiceHint")}</p>
             </div>
