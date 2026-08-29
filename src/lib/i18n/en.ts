@@ -217,7 +217,7 @@ export const en = {
   "vessels.errCallSign": "Call sign is required",
 
   "privacy.title": "Privacy & Imprint",
-  "privacy.subtitle": "Datenschutz & Impressum — last updated 19 August 2026",
+  "privacy.subtitle": "Datenschutz & Impressum — last updated 29 August 2026",
   "privacy.h.summary": "Short answer: is this app GDPR/DSGVO compliant?",
   "privacy.p.summary1":
     "The app is built to be data-minimal: it works without an account, without tracking, without advertising and without analytics. Everything you enter — vessel profiles, MMSI, call sign, persons on board, settings — is stored only in your device's local browser storage. It is never uploaded to a server and never shared.",
@@ -231,7 +231,7 @@ export const en = {
     "In Settings you can switch the AI voice for the Speak button on or off. This switch controls whether any text leaves your device.",
   "privacy.s.ttsOn": "AI voice on (default):",
   "privacy.p.ttsOn":
-    "when you press \u201cSpeak\u201d, the generated script text is sent to our speech service to produce the spoken audio, and is then discarded — it is not stored and not used for training. If no network is available, the app automatically falls back to your device's built-in voice.",
+    "when you press \u201cSpeak\u201d, the generated script text — which can contain vessel name, MMSI, call sign and position — is sent from our server to the speech service we use (Lovable AI Gateway, operated by our hosting provider Lovable Labs) to produce the spoken audio, and is then discarded — it is not stored and not used for training. Processing may take place on servers outside the EU, safeguarded by the provider's standard contractual clauses. If no network is available, the app automatically falls back to your device's built-in voice.",
   "privacy.s.ttsOff": "AI voice off:",
   "privacy.p.ttsOff":
     "only your device's built-in speech synthesis is used. No script text and no vessel data are transmitted; everything stays on your device.",
@@ -245,7 +245,13 @@ export const en = {
 
   "privacy.h.cookies": "Cookies, tracking and hosting",
   "privacy.p.cookies":
-    "No cookies are set for tracking, no analytics or advertising tools are used, and no user profiles are created. When the app is loaded, the hosting provider processes technical connection data (such as the IP address) in server logs, as is technically necessary to deliver any website (Art. 6 (1)(f) GDPR).",
+    "No cookies are set for tracking, no analytics or advertising tools are used, and no user profiles are created. The app is hosted on the infrastructure of Lovable Labs Incorporated; when the app is loaded, the hosting provider processes technical connection data (such as the IP address) in server logs, as is technically necessary to deliver any website (Art. 6 (1)(f) GDPR). This may involve servers outside the EU; the transfer is safeguarded by standard contractual clauses.",
+  "privacy.h.noExternal": "No third-party content",
+  "privacy.p.noExternal":
+    "The app loads no fonts, icons, scripts, maps or other content from third-party servers. Text is rendered with the fonts already on your device, all symbols and app icons are part of the app package, and the QR code is generated and scanned entirely in your browser. Your IP address is therefore not passed to any third party (for example a font or CDN provider) simply by opening the app.",
+  "privacy.h.links": "External links",
+  "privacy.p.links":
+    "The Settings page contains a voluntary donation link to Buy Me a Coffee (buymeacoffee.com). Nothing is loaded from that provider and no data is sent there unless you actively tap the link. Once you do, you leave this app and the privacy policy and terms of that provider apply.",
   "privacy.h.rights": "Your rights",
   "privacy.p.rights":
     "Under the GDPR you have the right to information, rectification, erasure, restriction, data portability and objection, and the right to lodge a complaint with a supervisory authority. As your data lives only on your device, you can exercise erasure directly by deleting the vessel profiles in the app or clearing this site's data in your browser settings.",

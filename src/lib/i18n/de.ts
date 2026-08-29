@@ -221,7 +221,7 @@ export const de: Dictionary = {
   "vessels.errCallSign": "Rufzeichen ist erforderlich",
 
   "privacy.title": "Datenschutz & Impressum",
-  "privacy.subtitle": "Datenschutz & Impressum — zuletzt aktualisiert am 19. August 2026",
+  "privacy.subtitle": "Datenschutz & Impressum — zuletzt aktualisiert am 29. August 2026",
   "privacy.h.summary": "Kurz gesagt: Ist diese App DSGVO-konform?",
   "privacy.p.summary1":
     "Die App ist datensparsam aufgebaut: Sie funktioniert ohne Konto, ohne Tracking, ohne Werbung und ohne Analyse. Alles, was du eingibst — Schiffsprofile, MMSI, Rufzeichen, Personen an Bord, Einstellungen — wird ausschließlich im lokalen Speicher deines Browsers abgelegt. Es wird nie auf einen Server hochgeladen und nie weitergegeben.",
@@ -235,7 +235,7 @@ export const de: Dictionary = {
     "In den Einstellungen kannst du die KI-Stimme für die Vorlesen-Taste ein- oder ausschalten. Dieser Schalter bestimmt, ob überhaupt Text dein Gerät verlässt.",
   "privacy.s.ttsOn": "KI-Stimme ein (Standard):",
   "privacy.p.ttsOn":
-    "Beim Drücken von „Vorlesen“ wird der erzeugte Text des Funkspruchs an unseren Sprachdienst gesendet, um die Audioausgabe zu erzeugen, und danach verworfen — er wird nicht gespeichert und nicht für Training verwendet. Ist kein Netz verfügbar, greift die App automatisch auf die eingebaute Stimme deines Geräts zurück.",
+    "Beim Drücken von „Vorlesen“ wird der erzeugte Text des Funkspruchs — er kann Schiffsname, MMSI, Rufzeichen und Position enthalten — von unserem Server an den genutzten Sprachdienst (Lovable AI Gateway, betrieben vom Hosting-Anbieter Lovable Labs) gesendet, um die Audioausgabe zu erzeugen, und danach verworfen — er wird nicht gespeichert und nicht für Training verwendet. Die Verarbeitung kann auf Servern außerhalb der EU erfolgen, abgesichert durch die Standardvertragsklauseln des Anbieters. Ist kein Netz verfügbar, greift die App automatisch auf die eingebaute Stimme deines Geräts zurück.",
   "privacy.s.ttsOff": "KI-Stimme aus:",
   "privacy.p.ttsOff":
     "Es wird ausschließlich die eingebaute Sprachausgabe deines Geräts verwendet. Es werden weder Text noch Schiffsdaten übertragen; alles bleibt auf deinem Gerät.",
@@ -249,7 +249,13 @@ export const de: Dictionary = {
 
   "privacy.h.cookies": "Cookies, Tracking und Hosting",
   "privacy.p.cookies":
-    "Es werden keine Cookies zu Tracking-Zwecken gesetzt, keine Analyse- oder Werbewerkzeuge eingesetzt und keine Nutzerprofile erstellt. Beim Laden der App verarbeitet der Hosting-Anbieter technische Verbindungsdaten (etwa die IP-Adresse) in Server-Logs, wie es zur Auslieferung jeder Website technisch erforderlich ist (Art. 6 Abs. 1 lit. f DSGVO).",
+    "Es werden keine Cookies zu Tracking-Zwecken gesetzt, keine Analyse- oder Werbewerkzeuge eingesetzt und keine Nutzerprofile erstellt. Die App wird auf der Infrastruktur von Lovable Labs Incorporated gehostet; beim Laden verarbeitet der Hosting-Anbieter technische Verbindungsdaten (etwa die IP-Adresse) in Server-Logs, wie es zur Auslieferung jeder Website technisch erforderlich ist (Art. 6 Abs. 1 lit. f DSGVO). Dabei kann eine Verarbeitung auf Servern außerhalb der EU stattfinden; die Übermittlung ist durch Standardvertragsklauseln abgesichert.",
+  "privacy.h.noExternal": "Keine Inhalte von Dritten",
+  "privacy.p.noExternal":
+    "Die App lädt keine Schriftarten, Symbole, Skripte, Karten oder sonstigen Inhalte von fremden Servern nach. Texte werden mit den ohnehin auf deinem Gerät vorhandenen Systemschriften dargestellt, alle Symbole und App-Icons sind Teil des App-Pakets, und QR-Codes werden vollständig in deinem Browser erzeugt und gelesen. Allein durch das Öffnen der App wird deine IP-Adresse daher an keinen Dritten (etwa einen Schriftarten- oder CDN-Anbieter) übermittelt.",
+  "privacy.h.links": "Externe Links",
+  "privacy.p.links":
+    "Auf der Einstellungsseite befindet sich ein freiwilliger Spenden-Link zu Buy Me a Coffee (buymeacoffee.com). Von diesem Anbieter werden keine Inhalte geladen, und es werden keine Daten dorthin übertragen, solange du den Link nicht aktiv antippst. Tust du das, verlässt du diese App und es gelten die Datenschutzhinweise und Bedingungen des Anbieters.",
   "privacy.h.rights": "Deine Rechte",
   "privacy.p.rights":
     "Nach der DSGVO hast du das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch sowie das Recht auf Beschwerde bei einer Aufsichtsbehörde. Da deine Daten nur auf deinem Gerät liegen, kannst du die Löschung direkt vornehmen, indem du die Schiffsprofile in der App löschst oder die Daten dieser Website in den Browsereinstellungen entfernst.",

@@ -72,6 +72,14 @@ function PrivacyPage() {
           <p>{t("privacy.p.cookies")}</p>
         </Section>
 
+        <Section heading={t("privacy.h.noExternal")}>
+          <p>{t("privacy.p.noExternal")}</p>
+        </Section>
+
+        <Section heading={t("privacy.h.links")}>
+          <p>{t("privacy.p.links")}</p>
+        </Section>
+
         <Section heading={t("privacy.h.rights")}>
           <p>{t("privacy.p.rights")}</p>
         </Section>
