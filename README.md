@@ -10,10 +10,10 @@ A Progressive Web App for skippers, boat owners and crew: it builds ready-to-rea
 
 ## ✨ Features
 
-- 🚨 **Ready-made radio scripts** for MAYDAY, PAN-PAN, SÉCURITÉ and standard calls — including relay, SEELONCE MAYDAY, SILENCE FINI and false-distress cancellation
+- 🚨 **Ready-made radio scripts** for MAYDAY, PAN-PAN, SÉCURITÉ and standard calls
 - 🛥️ **Vessel profiles** (name, MMSI with validation, call sign, type, POB …) — save multiple vessels
 - 📍 **Position & UTC automatically** from the device (GPS), with configurable refresh interval and manual entry
-- 🔊 **Read aloud** — the script is spoken slowly and clearly (NATO alphabet for call signs, digits read individually), optionally via AI voice or offline using the device voice
+- 🔊 **Read aloud** — the script is spoken slowly and clearly, optionally via AI voice or offline using the device voice
 - 📲 **Installable as a PWA** — runs offline on iPhone, iPad, Android and desktop
 - 🔗 **Share vessel data via QR code** — crew scans and imports the profile
 - 🌍 **Bilingual UI** (German/English) — radio scripts intentionally stay in English, the international language of VHF maritime communication
@@ -46,4 +46,4 @@ Because this is a web app, the AGPL network clause applies: anyone who publicly 
 
 ---
 
-*Built with ❤️ and [Lovable](https://lovable.dev) — fair winds and following seas! ⛵*
+_Built with ❤️ and [Lovable](https://lovable.dev) — fair winds and following seas! ⛵_
