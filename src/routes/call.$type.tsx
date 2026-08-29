@@ -530,7 +530,7 @@ function CallPage() {
             className="min-h-0 w-full flex-1 overflow-y-auto overscroll-contain"
             style={{ WebkitOverflowScrolling: "touch" }}
           >
-          <div className="mx-auto max-w-3xl pb-16">
+            <div className="mx-auto max-w-3xl pb-16">
               {type !== "standard" && (
                 <div className="mb-6 flex items-start gap-3 rounded-xl border-2 border-primary bg-primary/10 p-4">
                   <Radio className="mt-1 size-6 shrink-0 text-primary" />
