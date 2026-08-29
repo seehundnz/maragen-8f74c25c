@@ -67,6 +67,9 @@ export const en = {
   "call.additionalMessagePlaceholder.securite": "Further details about the safety issue",
   "call.additionalMessagePlaceholder.standard": "Your message or request",
   "call.radioScript": "Radio script",
+  "call.channel16Notice": "Transmit on VHF channel 16",
+  "call.channel16NoticeHint":
+    "Mayday, Pan-Pan and Sécurité are spoken on the international distress and calling channel 16.",
   "call.scriptEnglishNote":
     "The radio script is always in English — the international language for VHF communication.",
   "call.copy": "Copy",
