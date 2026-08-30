@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useSettings } from "@/hooks/useFleet";
-import { useT } from "@/lib/i18n";
+import { useT, type LanguagePreference } from "@/lib/i18n";
 import { setLanguagePreference } from "@/lib/i18n/languageStore";
 import { UpdateSection } from "@/components/UpdateSection";
 import { ClearDataSection } from "@/components/ClearDataSection";
@@ -42,7 +42,7 @@ function SettingsPage() {
             <Select
               value={settings.language ?? "auto"}
               onValueChange={(v) => {
-                const pref = v as "auto" | "en" | "de";
+                const pref = v as LanguagePreference;
                 setSettings((s) => ({ ...s, language: pref }));
                 setLanguagePreference(pref);
               }}
@@ -54,7 +54,12 @@ function SettingsPage() {
                 <SelectItem value="auto">{t("settings.language.auto")}</SelectItem>
                 <SelectItem value="en">English</SelectItem>
                 <SelectItem value="de">Deutsch</SelectItem>
+                <SelectItem value="fr">Français</SelectItem>
+                <SelectItem value="nl">Nederlands</SelectItem>
+                <SelectItem value="es">Español</SelectItem>
+                <SelectItem value="it">Italiano</SelectItem>
               </SelectContent>
+
             </Select>
             <p className="mt-1 text-xs text-muted-foreground">{t("settings.languageHint")}</p>
           </div>

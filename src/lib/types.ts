@@ -21,7 +21,7 @@ export interface Settings {
   positionFormat: "ddm" | "dd";
   activeVesselId: string | null;
   useAiVoice: boolean;
-  language: "auto" | "en" | "de";
+  language: "auto" | "en" | "de" | "fr" | "nl" | "es" | "it";
   nightMode: boolean;
 }
 
