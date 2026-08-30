@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useSettings } from "@/hooks/useFleet";
-import { useT } from "@/lib/i18n";
+import { useT, type LanguagePreference } from "@/lib/i18n";
 import { setLanguagePreference } from "@/lib/i18n/languageStore";
 import { UpdateSection } from "@/components/UpdateSection";
 import { ClearDataSection } from "@/components/ClearDataSection";

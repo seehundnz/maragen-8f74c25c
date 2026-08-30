@@ -1,6 +1,6 @@
 import { useSyncExternalStore } from "react";
 
-import { resolveLanguage, type Language, type LanguagePreference } from "./index";
+import { isLanguage, resolveLanguage, type Language, type LanguagePreference } from "./index";
 
 const SETTINGS_KEY = "vhf.settings";
 
@@ -13,11 +13,12 @@ function readPreference(): LanguagePreference {
     if (!raw) return "auto";
     const parsed = JSON.parse(raw) as { language?: LanguagePreference };
     const pref = parsed.language;
-    return pref === "en" || pref === "de" ? pref : "auto";
+    return isLanguage(pref) ? pref : "auto";
   } catch {
     return "auto";
   }
 }
+
 
 /** Resolved synchronously at module init so the very first client render uses the right language. */
 let current: Language = typeof window === "undefined" ? "en" : resolveLanguage(readPreference());

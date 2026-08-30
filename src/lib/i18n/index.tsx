@@ -2,20 +2,34 @@ import { createContext, useCallback, useContext, useMemo, type ReactNode } from 
 
 import { en, type TranslationKey } from "./en";
 import { de } from "./de";
+import { fr } from "./fr";
+import { nl } from "./nl";
+import { es } from "./es";
+import { it } from "./it";
 
-export type Language = "en" | "de";
+export const LANGUAGES = ["en", "de", "fr", "nl", "es", "it"] as const;
+export type Language = (typeof LANGUAGES)[number];
 export type LanguagePreference = "auto" | Language;
 
-const DICTIONARIES: Record<Language, Record<TranslationKey, string>> = { en, de };
+const DICTIONARIES: Record<Language, Record<string, string>> = { en, de, fr, nl, es, it };
+
+export function isLanguage(value: unknown): value is Language {
+  return typeof value === "string" && (LANGUAGES as readonly string[]).includes(value);
+}
 
 export function resolveLanguage(preference: LanguagePreference | undefined): Language {
-  if (preference === "en" || preference === "de") return preference;
+  if (isLanguage(preference)) return preference;
   if (typeof navigator !== "undefined") {
     const langs = [navigator.language, ...(navigator.languages ?? [])];
-    if (langs.some((l) => typeof l === "string" && l.toLowerCase().startsWith("de"))) return "de";
+    for (const l of langs) {
+      if (typeof l !== "string") continue;
+      const code = l.toLowerCase().slice(0, 2);
+      if (isLanguage(code)) return code;
+    }
   }
   return "en";
 }
+
 
 export type TFunction = (key: TranslationKey, vars?: Record<string, string | number>) => string;
 
