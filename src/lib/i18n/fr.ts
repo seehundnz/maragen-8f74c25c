@@ -1,0 +1,363 @@
+export const fr = {
+  "app.name": "Appel VHF",
+  "nav.vessels": "Navires",
+  "nav.settings": "Réglages",
+  "nav.privacy": "Confidentialité & mentions légales",
+  "nav.install": "Installer",
+  "nav.guide": "Guide",
+  "nav.nightModeOn": "Activer le mode lumière rouge",
+  "nav.nightModeOff": "Désactiver le mode lumière rouge",
+
+  "install.title": "Installer cette application",
+  "install.intro":
+    "L'installation ajoute l'application à votre écran d'accueil afin qu'elle s'ouvre en plein écran et fonctionne hors ligne.",
+  "install.button": "Installer maintenant",
+  "install.close": "Fermer",
+  "install.ios.step1": "Appuyez sur le bouton Partager dans la barre d'outils du navigateur.",
+  "install.ios.step2": 'Faites défiler et choisissez "Sur l\u2019écran d\u2019accueil".',
+  "install.ios.step3": 'Appuyez sur "Ajouter" en haut à droite.',
+  "install.iosOther.note":
+    "Sur iPhone et iPad, seul Safari peut installer des applications. Ouvrez d'abord cette page dans Safari, puis suivez les étapes ci-dessous.",
+  "install.android.step1": "Ouvrez le menu du navigateur (trois points).",
+  "install.android.step2": 'Choisissez "Installer l\u2019application" ou "Ajouter à l\u2019écran d\u2019accueil".',
+  "install.android.step3": "Confirmez l'installation.",
+  "install.desktop.step1": "Ouvrez le menu du navigateur ou l'icône d'installation dans la barre d'adresse.",
+  "install.desktop.step2": 'Choisissez "Installer" et confirmez.',
+
+  "home.title": "Quel type d'appel avez-vous besoin ?",
+  "home.subtitle": "Choisissez un type d'appel — les données de votre navire, votre position et l'heure sont insérées automatiquement.",
+
+  "call.mayday.short": "Détresse",
+  "call.panpan.short": "Urgence",
+  "call.securite.short": "Sécurité",
+  "call.standard.short": "Routine",
+  "call.mayday.description":
+    "Génère un appel de détresse Mayday à lire à voix haute, avec les données de votre navire, votre position GPS en direct et l'heure UTC.",
+  "call.panpan.description":
+    "Génère un appel d'urgence Pan-Pan à lire à voix haute, avec les données du navire, la position en direct et l'heure UTC.",
+  "call.securite.description":
+    "Génère un message de sécurité Sécurité à lire à voix haute, diffusé à toutes les stations avec votre position en direct.",
+  "call.standard.description":
+    "Génère un appel VHF de routine à destination d'un port, d'une station ou d'un autre navire, avec demande de canal de travail.",
+
+  "call.utcTime": "Heure UTC",
+  "call.position": "Position",
+  "call.manualEntry": "Saisie manuelle",
+  "call.waitingGps": "En attente du GPS…",
+  "call.refreshFix": "Actualiser la position",
+  "call.manualPosition": "Position manuelle",
+  "call.autoUpdateOn": "Mise à jour automatique toutes les {seconds}s",
+  "call.autoUpdateOff": "Mise à jour automatique désactivée",
+  "call.latitude": "Latitude (décimale)",
+  "call.longitude": "Longitude (décimale)",
+  "call.usePosition": "Utiliser la position",
+  "call.manualPositionSet": "Position manuelle définie",
+  "call.invalidCoordinates": "Saisissez des coordonnées décimales valides",
+  "call.vessel": "Navire",
+  "call.selectVessel": "Sélectionner un navire",
+  "call.noVessel": "Aucun navire enregistré pour le moment.",
+  "call.addYourVessel": "Ajouter votre navire",
+  "call.stationCalled": "Station appelée",
+  "call.safetyMessage": "Message de sécurité",
+  "call.natureOfSituation": "Nature de la situation",
+  "call.assistanceRequired": "Assistance requise",
+  "call.pob": "Personnes à bord",
+  "call.channel": "Canal VHF",
+  "call.additionalMessage": "Message supplémentaire",
+  "call.additionalMessagePlaceholder": "Toute autre information utile pour la station côtière",
+  "call.additionalMessagePlaceholder.panpan": "Précisions supplémentaires sur l'urgence",
+  "call.additionalMessagePlaceholder.securite": "Précisions supplémentaires sur le problème de sécurité",
+  "call.additionalMessagePlaceholder.standard": "Votre message ou votre demande",
+  "call.radioScript": "Message radio",
+  "call.channel16Notice": "Émettre sur le canal VHF 16",
+  "call.channel16NoticeHint":
+    "Mayday, Pan-Pan et Sécurité sont diffusés sur le canal international de détresse et d'appel 16.",
+  "call.scriptEnglishNote":
+    "Le message radio est toujours en anglais — la langue internationale des communications VHF.",
+  "call.copy": "Copier",
+  "call.share": "Partager",
+  "call.read": "Lire",
+  "call.close": "Fermer",
+  "call.speak": "Énoncer",
+  "call.stop": "Arrêter",
+  "call.copied": "Message radio copié",
+  "call.copyFailed": "Impossible de copier — sélectionnez le texte manuellement",
+  "call.speechUnavailable": "La synthèse vocale n'est pas disponible sur cet appareil",
+  "call.offlineVoice": "Hors ligne — utilisation de la voix de l'appareil",
+  "call.disclaimer":
+    "Cette application est une simple aide. Elle ne remplace pas une formation radio adéquate, une alerte de détresse DSC, ni le jugement du skipper. Envoyez toujours d'abord une alerte DSC lorsque cela est possible.",
+
+  "dsc.title": "Envoyer d'abord une alerte de détresse DSC",
+  "dsc.intro": "Si votre poste dispose de la DSC (bouton de détresse rouge), envoyez l'alerte DSC avant de parler :",
+  "dsc.step1": "Si le temps le permet, sélectionnez la nature de la détresse dans le menu DSC du poste (par ex. voie d'eau, incendie, homme à la mer).",
+  "dsc.step2": "Soulevez ensuite le capot et maintenez le bouton rouge DISTRESS enfoncé pendant environ 5 secondes.",
+  "dsc.step3": "Attendez l'accusé de réception ; le poste bascule automatiquement sur le canal 16.",
+  "dsc.step4": "Prononcez ensuite le message MAYDAY ci-dessous sur le canal 16.",
+  "dsc.note": "Vérifiez que votre MMSI est programmé dans le poste et qu'une position GPS est connectée. Sans DSC, appelez directement MAYDAY sur le canal 16.",
+
+  "comms.title": "Communications complémentaires",
+  "comms.intro": "Phrases radio standard pour la suite des communications, la demande de silence, l'annulation d'une fausse alerte et la fin d'un appel de détresse.",
+  "comms.h.relay": "Communication complémentaire lors d'une situation de détresse",
+  "comms.p.relay": "MAYDAY [VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DSITRESS]\nThis is [VESSEL NAME], [CALL SIGN]\n[MESSAGE]\nOVER\n",
+  "comms.h.silence": "Demander le silence (uniquement station côtière ou navire en détresse)",
+  "comms.p.silence": "All stations\nSilence mayday\n",
+  "comms.h.cancel": "Annuler une alerte de détresse déclenchée par erreur (uniquement le navire en détresse)",
+  "comms.p.cancel":
+    "All stations, all stations, all stations\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
+  "comms.h.end": "Terminer un appel de détresse (uniquement station côtière ou navire en détresse)",
+  "comms.p.end":
+    "MAYDAY\nAll stations, all stations, all stations\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC \n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
+
+  "nature.sinking": "Naufrage",
+  "nature.takingOnWater": "Voie d'eau",
+  "nature.fire": "Incendie à bord",
+  "nature.pob": "Homme à la mer",
+  "nature.grounding": "Échouement",
+  "nature.capsized": "Chaviré",
+  "nature.collision": "Collision",
+  "nature.medical": "Urgence médicale",
+  "nature.engineFailure": "Panne moteur",
+  "nature.steeringFailure": "Panne de barre",
+  "nature.dismasted": "Démâtage",
+  "nature.adrift": "À la dérive",
+  "nature.outOfFuel": "Panne de carburant",
+  "nature.medicalAdvice": "Avis médical requis",
+  "nature.riggingDamage": "Avarie de gréement",
+  "nature.navHazard": "Danger pour la navigation observé",
+  "nature.floatingObject": "Objet flottant à la dérive",
+  "nature.unlitBuoy": "Bouée non éclairée",
+  "nature.restrictedManoeuvrability": "Capacité de manœuvre restreinte",
+  "nature.severeWeather": "Conditions météo sévères observées",
+
+  "settings.title": "Réglages",
+  "settings.language": "Langue",
+  "settings.languageHint": "Langue de l'interface. Les messages radio restent toujours en anglais.",
+  "settings.language.auto": "Automatique (langue de l'appareil)",
+  "settings.autoUpdate": "Mise à jour automatique de la position",
+  "settings.autoUpdateHint": "Actualise en continu la position GPS tant qu'un écran d'appel est ouvert.",
+  "settings.interval": "Intervalle d'actualisation (secondes)",
+  "settings.intervalHint": "Par défaut 10 secondes. Plage autorisée : 2 à 300 secondes.",
+  "settings.intervalError": "La valeur doit être comprise entre 2 et 300 secondes.",
+  "settings.defaultChannel": "Canal VHF par défaut",
+  "settings.positionFormat": "Format de position",
+  "settings.positionFormat.ddm": "Degrés et minutes décimales (54° 19,85' N)",
+  "settings.positionFormat.dd": "Degrés décimaux (54,33083°)",
+  "settings.nightMode": "Mode lumière rouge (vision nocturne)",
+  "settings.nightModeHint":
+    "Teinte toute l'application en rouge atténué sur fond quasi noir afin de préserver votre vision nocturne à bord.",
+  "settings.aiVoice": 'Utiliser une voix IA pour "Énoncer"',
+  "settings.aiVoiceHint":
+    "Désactivé par défaut. Ce n'est que si vous l'activez que le texte du message est envoyé à notre service vocal pour produire une voix d'opérateur radio claire. Tant que c'est désactivé, seule la voix intégrée de votre appareil est utilisée et aucun texte ne quitte cet appareil.",
+  "settings.appHeading": "Application & mises à jour",
+  "settings.offlineHint":
+    "L'application se stocke sur votre appareil afin de pouvoir s'ouvrir également sans connexion réseau.",
+  "settings.swStatus": "Service worker",
+  "settings.swStatus.active": "Actif",
+  "settings.swStatus.waiting": "Mise à jour en attente",
+  "settings.swStatus.installing": "Installation en cours",
+  "settings.swStatus.notRegistered": "Non enregistré",
+  "settings.swStatus.unsupported": "Non pris en charge",
+  "settings.connection": "Connexion",
+  "settings.online": "En ligne",
+  "settings.offline": "Hors ligne",
+  "settings.installStatus": "Installation de l'application",
+  "settings.installed": "Installée",
+  "settings.notInstalled": "Onglet de navigateur",
+  "settings.buildDate": "Version installée",
+  "settings.lastChecked": "Dernière vérification",
+  "settings.checkUpdate": "Vérifier les mises à jour",
+  "settings.checking": "Vérification…",
+  "settings.updateAvailable": "Une nouvelle version est disponible.",
+  "settings.updateNow": "Mettre à jour maintenant",
+  "settings.upToDate": "Vous utilisez la dernière version.",
+  "settings.updateHint":
+    "L'application se met à jour automatiquement en arrière-plan ; vous pouvez forcer une vérification ici.",
+  "settings.clearHeading": "Effacer le cache et les données stockées",
+  "settings.clearHint":
+    "Supprime le cache hors ligne et toutes les données stockées sur cet appareil : profils de navires, réglages et choix de langue. Cette action est irréversible.",
+  "settings.clearButton": "Effacer le cache et les données",
+  "settings.clearConfirmTitle": "Effacer toutes les données ?",
+  "settings.clearConfirmBody":
+    "Tous les profils de navires, les réglages et le cache hors ligne seront définitivement supprimés de cet appareil. L'application redémarrera avec les réglages d'usine. Cette action ne peut pas être annulée.",
+  "settings.clearCancel": "Annuler",
+  "settings.clearConfirm": "Oui, tout supprimer",
+  "settings.clearing": "Suppression…",
+
+  "settings.supportHeading": "Soutenir cette application",
+  "settings.supportBody":
+    "Si vous appréciez cette application, un petit don serait le bienvenu. Il aide à couvrir les frais d'hébergement et de développement.",
+  "settings.supportLink": "Buy me a coffee",
+
+  "settings.sourceHeading": "Code source",
+  "settings.sourceBody":
+    "Cette application est publiée sous licence AGPL-3.0-or-later. Toute personne hébergeant l'application publiquement doit mettre à disposition des utilisateurs le code source de la version utilisée.",
+  "settings.sourceLink": "Voir le code source sur GitHub",
+
+  "settings.privacyHeading": "Confidentialité & mentions légales",
+  "settings.privacyHint":
+    "Tous les réglages et profils de navires sont stockés uniquement sur cet appareil. Pas de compte, pas de suivi, pas d'analyse.",
+  "settings.privacyLink": "Informations RGPD/DSGVO & mentions légales",
+
+  "vessels.title": "Navires",
+  "vessels.add": "Ajouter un navire",
+  "vessels.empty": "Aucun navire pour le moment. Ajoutez votre bateau pour que chaque appel radio soit rempli automatiquement.",
+  "vessels.active": "Actif",
+  "vessels.setActive": "Définir comme actif",
+  "vessels.edit": "Modifier le navire",
+  "vessels.delete": "Supprimer le navire",
+  "vessels.deleteConfirmTitle": "Supprimer le navire ?",
+  "vessels.deleteConfirmBody": "{name} et toutes ses données seront définitivement supprimés de cet appareil.",
+  "vessels.deleteConfirm": "Supprimer",
+  "vessels.deleteCancel": "Annuler",
+  "vessels.deleted": "{name} supprimé",
+  "vessels.saved": "{name} enregistré",
+  "vessels.editTitle": "Modifier le navire",
+  "vessels.addTitle": "Ajouter un navire",
+  "vessels.name": "Nom du navire",
+  "vessels.mmsi": "MMSI (9 chiffres)",
+  "vessels.callSign": "Indicatif d'appel",
+  "vessels.type": "Type de navire",
+  "vessels.typePlaceholder": "Sailing yacht",
+  "vessels.length": "Longueur",
+  "vessels.lengthPlaceholder": "11 metre",
+  "vessels.hull": "Couleur de la coque",
+  "vessels.hullPlaceholder": "white",
+  "vessels.defaultPob": "Personnes à bord par défaut",
+  "vessels.defaultChannel": "Canal VHF par défaut",
+  "vessels.save": "Enregistrer le navire",
+  "vessels.cancel": "Annuler",
+  "vessels.englishNotice": "Veuillez saisir le type de navire, la longueur et la couleur de la coque en anglais — ils sont insérés tels quels dans le message radio en anglais.",
+  "vessels.errName": "Le nom du navire est requis",
+  "vessels.errMmsi": "Le MMSI doit comporter exactement 9 chiffres",
+  "vessels.errMmsiShort": "MMSI trop court — {count} chiffre(s) manquant(s) (9 au total)",
+  "vessels.errCallSign": "L'indicatif d'appel est requis",
+
+  "privacy.title": "Confidentialité & mentions légales",
+  "privacy.subtitle": "Confidentialité & mentions légales — dernière mise à jour le 29 août 2026",
+  "privacy.h.summary": "En bref : cette application est-elle conforme au RGPD ?",
+  "privacy.p.summary1":
+    "L'application est conçue pour être sobre en données : elle fonctionne sans compte, sans suivi, sans publicité et sans analyse. Tout ce que vous saisissez — profils de navires, MMSI, indicatif d'appel, personnes à bord, réglages — est stocké uniquement dans le stockage local du navigateur de votre appareil. Rien n'est jamais téléversé vers un serveur ni partagé.",
+  "privacy.p.summary2":
+    "Comme aucune donnée personnelle n'est transmise ou stockée par nous pour ces fonctionnalités, il n'y a pas de traitement nécessitant une base légale distincte, ni de données à exporter ou à supprimer de notre côté. Vous gardez le contrôle total sur votre propre appareil.",
+  "privacy.h.gps": "Position GPS",
+  "privacy.p.gps":
+    "Votre position n'est lue sur votre appareil qu'après votre autorisation dans le navigateur. Elle sert uniquement à remplir la ligne de position du message radio et est conservée en mémoire tant que l'application est ouverte. Elle n'est ni stockée, ni enregistrée, ni transmise. Vous pouvez révoquer l'autorisation à tout moment dans les réglages de votre navigateur ou de votre système.",
+  "privacy.h.tts": "Synthèse vocale (bouton Énoncer)",
+  "privacy.p.tts1":
+    "Dans les réglages, vous pouvez activer ou désactiver la voix IA pour le bouton Énoncer. Ce commutateur détermine si du texte quitte ou non votre appareil.",
+  "privacy.s.ttsOn": "Voix IA activée (uniquement après activation explicite) :",
+  "privacy.p.ttsOn":
+    "lorsque vous appuyez sur « Énoncer », le texte du message généré — qui peut contenir le nom du navire, le MMSI, l'indicatif d'appel et la position — est envoyé depuis notre serveur au service vocal que nous utilisons (Lovable AI Gateway, exploité par notre hébergeur Lovable Labs) pour produire l'audio, puis est immédiatement supprimé — il n'est ni stocké ni utilisé pour l'entraînement. Le traitement peut avoir lieu sur des serveurs situés hors de l'UE, encadré par les clauses contractuelles types du fournisseur. En l'absence de réseau, l'application bascule automatiquement sur la voix intégrée de votre appareil.",
+  "privacy.s.ttsOff": "Voix IA désactivée (par défaut) :",
+  "privacy.p.ttsOff":
+    "seule la synthèse vocale intégrée de votre appareil est utilisée. Aucun texte du message ni aucune donnée de navire n'est transmis ; tout reste sur votre appareil.",
+  "privacy.h.install": "Installer l'application sur votre téléphone (PWA)",
+  "privacy.p.install1":
+    "Cette application peut être ajoutée à votre écran d'accueil afin de s'ouvrir comme une application normale, en plein écran et sans barre de navigateur. Sur iPhone/iPad, ouvrez-la dans Safari, appuyez sur l'icône de partage et choisissez « Sur l'écran d'accueil ». Sur Android, ouvrez-la dans Chrome et choisissez « Installer l'application » ou « Ajouter à l'écran d'accueil » dans le menu.",
+  "privacy.p.install2":
+    "Une fois installée, les fichiers de l'application (code, icônes, styles) sont stockés dans le cache du navigateur de votre appareil afin qu'elle démarre aussi sans connexion réseau — utile en mer. Ce cache reste sur votre appareil, ne contient aucune donnée personnelle et n'est jamais téléversé. Supprimer l'icône de l'application ou effacer les données du site dans votre navigateur le supprime, ainsi que vos profils de navires et vos réglages.",
+  "privacy.p.install3":
+    "L'application se met à jour elle-même en arrière-plan dès qu'elle dispose d'une connexion ; dans les réglages, vous pouvez voir la version installée et vérifier manuellement les mises à jour. La position GPS, l'heure UTC actuelle et la voix intégrée de l'appareil fonctionnent hors ligne, tandis que la voix IA du bouton Énoncer nécessite une connexion.",
+
+  "privacy.h.cookies": "Cookies, suivi et hébergement",
+  "privacy.p.cookies":
+    "Aucun cookie n'est déposé à des fins de suivi, aucun outil d'analyse ou de publicité n'est utilisé, et aucun profil utilisateur n'est créé. L'application est hébergée sur l'infrastructure de Lovable Labs Incorporated ; lors du chargement, l'hébergeur traite des données techniques de connexion (comme l'adresse IP) dans les journaux serveur, comme requis techniquement pour la livraison de tout site web (art. 6, § 1, f) du RGPD). Cela peut impliquer des serveurs situés hors de l'UE ; le transfert est encadré par des clauses contractuelles types.",
+  "privacy.h.noExternal": "Aucun contenu tiers",
+  "privacy.p.noExternal":
+    "L'application ne charge aucune police, icône, script, carte ou autre contenu depuis des serveurs tiers. Le texte est affiché avec les polices déjà présentes sur votre appareil, tous les symboles et icônes de l'application font partie du package, et le code QR est généré et lu entièrement dans votre navigateur. Votre adresse IP n'est donc transmise à aucun tiers (par exemple un fournisseur de polices ou de CDN) par le simple fait d'ouvrir l'application.",
+  "privacy.h.links": "Liens externes",
+  "privacy.p.links":
+    "La page Réglages contient un lien de don facultatif vers Buy Me a Coffee (buymeacoffee.com). Rien n'est chargé depuis ce fournisseur et aucune donnée ne lui est envoyée tant que vous n'appuyez pas activement sur le lien. Si vous le faites, vous quittez cette application et la politique de confidentialité et les conditions de ce fournisseur s'appliquent.",
+  "privacy.h.rights": "Vos droits",
+  "privacy.p.rights":
+    "En vertu du RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, de portabilité des données et d'opposition, ainsi que du droit d'introduire une réclamation auprès d'une autorité de contrôle. Vos données ne résidant que sur votre appareil, vous pouvez exercer l'effacement directement en supprimant les profils de navires dans l'application ou en effaçant les données de ce site dans les réglages de votre navigateur.",
+  "privacy.h.imprint": "Mentions légales / Impressum (§ 5 DDG)",
+  "privacy.imprint.responsible": "Responsable du contenu (§ 18, al. 2 MStV) : Sebastian Esch",
+  "privacy.imprint.email": "E-mail",
+  "privacy.imprint.phone": "Téléphone",
+  "privacy.imprint.country": "Allemagne",
+  "privacy.h.source": "Code source (AGPL)",
+  "privacy.p.source":
+    "Cette application est publiée sous la GNU Affero General Public License v3.0 ou ultérieure (AGPL-3.0-or-later). S'agissant d'une application web, la clause réseau de l'AGPL s'applique : quiconque héberge le logiciel publiquement doit fournir aux utilisateurs le code source de la version exécutée. Le code source est disponible sur GitHub ; le lien pointe vers la version sur laquelle repose cette installation.",
+  "privacy.sourceLink": "Voir le code source sur GitHub",
+  "privacy.h.safety": "Avertissement de sécurité",
+  "privacy.p.safety1":
+    "Cette application est uniquement un outil d'aide. Elle ne remplace pas une formation radio adéquate, un certificat d'opérateur radio valide, ni les procédures officielles. En cas d'urgence, suivez toujours les instructions de l'autorité de secours coordinatrice.",
+  "privacy.p.safety2":
+    "Aucune responsabilité n'est assumée quant à l'utilisation de cette application. L'exploitant et les développeurs ne peuvent être tenus responsables des incidents, dommages ou conséquences résultant de son usage. Vous utilisez l'application entièrement à vos propres risques et vous êtes seul responsable de vos actions et décisions en mer.",
+  "share.qrTitle": "Partager le navire",
+  "share.qrHint": "Faites scanner ce code par un membre d'équipage dans l'application pour importer ce profil de navire.",
+  "share.qrAlt": "Code QR avec les données du navire {name}",
+  "share.copyCode": "Copier le code",
+  "share.copied": "Code de partage copié",
+  "share.privacyNote": "Le code ne contient que les données de ce navire. Rien n'est téléversé — partagez-le uniquement avec votre propre équipage.",
+  "share.share": "Partager",
+  "share.scan": "Scanner le code QR",
+  "share.scanTitle": "Importer un navire",
+  "share.scanHint": "Pointez la caméra vers le code QR affiché sur l'autre appareil.",
+  "share.cameraError": "Caméra non disponible. Veuillez autoriser l'accès à la caméra ou coller le code de partage ci-dessous.",
+  "share.pasteLabel": "Ou collez le code de partage",
+  "share.pasteAction": "Importer depuis le code",
+  "share.invalidCode": "Ce code n'est pas un code de partage de navire valide",
+  "share.confirmTitle": "Importer ce navire ?",
+  "share.imported": "{name} importé",
+  "share.updated": "{name} mis à jour",
+  "share.duplicate": "Un navire avec le MMSI {mmsi} existe déjà.",
+  "share.updateExisting": "Mettre à jour l'existant",
+  "share.addAsNew": "Ajouter comme nouveau",
+  "share.import": "Importer",
+  "share.cancel": "Annuler",
+
+  "privacy.h.qr": "Partager un navire par code QR",
+  "privacy.p.qr":
+    "Vous pouvez partager un profil de navire avec votre équipage sous forme de code QR. Le code est généré sur votre appareil et ne contient que les données de ce navire (nom, MMSI, indicatif d'appel, type, longueur, couleur de coque, personnes à bord, canal). Rien n'est envoyé à un serveur. Le scan utilise la caméra de votre appareil uniquement pour décoder le code dans le navigateur ; aucune image, vidéo ou résultat de scan n'est stocké ou transmis. Le MMSI et l'indicatif d'appel pouvant identifier un navire et son propriétaire, ne partagez le code qu'avec des personnes de confiance.",
+
+  "guide.title": "Comment utiliser cette application",
+  "guide.subtitle": "Un tour d'horizon rapide de toutes les fonctionnalités — de votre premier navire à un appel radio prêt à lire.",
+  "guide.h.intro": "Ce que fait cette application",
+  "guide.p.intro1":
+    "VHF Call Builder génère des messages d'appel VHF prêts à lire — Mayday, Pan-Pan, Sécurité et appels de routine — en utilisant les données de votre navire, l'heure UTC actuelle et votre position GPS. Tout reste sur votre appareil : pas de compte, pas de serveur, aucune connexion Internet nécessaire après le premier chargement.",
+  "guide.p.intro2":
+    "L'application est une simple aide. Elle ne remplace pas une formation radio adéquate, un certificat d'opérateur radio valide, ni une alerte de détresse DSC. Suivez toujours les instructions de l'autorité de secours coordinatrice.",
+  "guide.h.gettingStarted": "1. Ajoutez votre navire",
+  "guide.p.started1":
+    "Rendez-vous sur la page Navires et appuyez sur « Ajouter un navire ». Saisissez au minimum le nom du navire, le MMSI (exactement 9 chiffres) et l'indicatif d'appel — ces champs sont obligatoires. Vous pouvez également ajouter le type de navire, la longueur et la couleur de la coque. Veuillez saisir le type, la longueur et la couleur de la coque en anglais, car ils sont insérés tels quels dans le message radio en anglais.",
+  "guide.p.started2":
+    "Vous pouvez enregistrer plusieurs navires (par exemple votre propre bateau et un bateau loué). Appuyez sur « Définir comme actif » pour choisir quel navire sera utilisé pour le prochain appel. Les données du navire actif remplissent automatiquement chaque message.",
+  "guide.h.generate": "2. Générer un appel radio",
+  "guide.p.generate1":
+    "Sur l'écran d'appel, passez d'un type d'appel à l'autre grâce aux onglets en bas : MAYDAY (rouge, détresse), PAN-PAN (orange, urgence), SÉCURITÉ (jaune, sécurité) et STANDARD (vert, routine). Tout l'écran change de couleur selon le type d'appel. Toutes les données saisies sont conservées lorsque vous changez d'onglet.",
+  "guide.p.generate2":
+    "L'en-tête affiche l'heure UTC actuelle et votre position GPS. Autorisez l'accès à la localisation lorsque cela vous est demandé. La position se met à jour automatiquement si la mise à jour automatique est activée ; appuyez sur « Actualiser la position » pour une mise à jour manuelle, ou sur « Position manuelle » pour saisir vous-même des coordonnées.",
+  "guide.p.generate3":
+    "Remplissez les champs au-dessus du message : nature de la situation (dans la liste prédéfinie ou en texte libre), personnes à bord, canal VHF et éventuel message supplémentaire. Selon le type d'appel, vous pouvez aussi saisir la station appelée ou un message de sécurité. Le message se met à jour instantanément au fur et à mesure de la saisie.",
+  "guide.p.generate4":
+    "Sur la page Mayday, une section rétractable « Envoyer d'abord une alerte de détresse DSC » vous rappelle de déclencher l'alerte DSC avant de parler. Sous le message, une section « Communications complémentaires » propose des phrases standard pour les relais, la demande de silence, l'annulation d'une fausse alerte et la fin d'un appel de détresse.",
+  "guide.h.readSpeak": "3. Lire et énoncer",
+  "guide.p.readSpeak1":
+    "Appuyez sur « Lire » pour ouvrir le message en plein écran avec de grands caractères, idéal pour une lecture à voix haute à la radio. Le mode lecture respecte les marges de zone sécurisée et défile sans à-coups sur mobile.",
+  "guide.p.readSpeak2":
+    "Appuyez sur « Énoncer » pour entendre le message lu à voix haute. Dans les réglages, vous pouvez choisir entre une voix IA d'opérateur radio (nécessite une connexion) et la voix intégrée de votre appareil (fonctionne hors ligne, rien ne quitte votre appareil).",
+  "guide.p.readSpeak3":
+    "« Copier » place le message dans le presse-papiers ; « Partager » ouvre le menu de partage du système.",
+  "guide.h.shareVessel": "4. Partager et importer des navires",
+  "guide.p.shareVessel1":
+    "Dans la liste des navires, appuyez sur l'icône de partage pour afficher un code QR contenant les données de ce navire. Un membre d'équipage peut le scanner avec sa caméra pour importer le profil — ou copier et coller le code de partage. Si un navire avec le même MMSI existe déjà, vous choisissez de le mettre à jour ou de l'ajouter comme nouveau.",
+  "guide.p.shareVessel2":
+    "Le code ne contient que les données de ce navire. Rien n'est téléversé — partagez-le uniquement avec votre propre équipage.",
+  "guide.h.settings": "5. Réglages",
+  "guide.p.settings1":
+    "Dans les réglages, vous pouvez : changer la langue de l'interface (les messages restent toujours en anglais), activer ou désactiver la mise à jour automatique de la position GPS et définir l'intervalle d'actualisation (2 à 300 secondes, 10 par défaut), choisir le canal VHF par défaut et le format de position (degrés décimaux ou degrés/minutes décimales), et activer ou désactiver la voix IA.",
+  "guide.p.settings2":
+    "Vous pouvez également vérifier les mises à jour de l'application, voir la version installée, et effacer toutes les données en cache et les profils de navires de l'appareil.",
+  "guide.h.pwa": "6. Installation et utilisation hors ligne",
+  "guide.p.pwa1": "Cette application est une Progressive Web App et peut être installée sur n'importe quel appareil.",
+  "guide.p.pwa.ios": "iPhone/iPad : Ouvrez dans Safari, appuyez sur l'icône de partage et choisissez « Sur l'écran d'accueil ».",
+  "guide.p.pwa.android": "Android : Ouvrez le menu du navigateur et choisissez « Installer l'application » ou « Ajouter à l'écran d'accueil ».",
+  "guide.p.pwa.desktop": "Ordinateur : Utilisez l'icône d'installation dans la barre d'adresse.",
+  "guide.p.pwa2":
+    "Une fois installée, l'application s'ouvre en plein écran comme une application normale et fonctionne hors ligne — le GPS, l'heure UTC et la voix intégrée fonctionnent tous sans connexion. La voix IA pour « Énoncer » nécessite une connexion. L'application se met à jour elle-même en arrière-plan ; vous pouvez forcer une vérification dans les réglages.",
+  "guide.h.privacy": "7. Confidentialité",
+  "guide.p.privacy":
+    "Toutes les données restent sur votre appareil. Pas de compte, pas de suivi, pas d'analyse. Consultez l'avis RGPD/DSGVO complet et les mentions légales sur la page Confidentialité.",
+} satisfies Record<string, string>;
