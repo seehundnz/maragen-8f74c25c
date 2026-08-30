@@ -5,6 +5,8 @@ export const en = {
   "nav.privacy": "Privacy & Imprint",
   "nav.install": "Install",
   "nav.guide": "Guide",
+  "nav.nightModeOn": "Turn on red-light mode",
+  "nav.nightModeOff": "Turn off red-light mode",
 
   "install.title": "Install this app",
   "install.intro":

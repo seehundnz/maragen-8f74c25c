@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 
 import { useT } from "@/lib/i18n";
 import { InstallButton } from "@/components/InstallButton";
+import { NightModeToggle } from "@/components/NightModeToggle";
 
 export function AppShell({ children }: { children: ReactNode }) {
   const { t } = useT();
@@ -41,6 +42,7 @@ export function AppShell({ children }: { children: ReactNode }) {
               <SettingsIcon className="size-4" aria-hidden />
               <span className="hidden sm:inline">{t("nav.settings")}</span>
             </Link>
+            <NightModeToggle />
           </nav>
         </div>
       </header>

@@ -7,6 +7,8 @@ export const de: Dictionary = {
   "nav.privacy": "Datenschutz & Impressum",
   "nav.install": "Installieren",
   "nav.guide": "Anleitung",
+  "nav.nightModeOn": "Rotlicht-Modus einschalten",
+  "nav.nightModeOff": "Rotlicht-Modus ausschalten",
 
   "install.title": "App installieren",
   "install.intro":
