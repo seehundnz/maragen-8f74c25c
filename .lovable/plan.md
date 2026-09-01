@@ -1,32 +1,42 @@
-# Schiffsdaten per Foto-Scan erfassen
+# Schiffsdaten aus Foto lesen — reine On-Device-OCR
 
-Ziel: Beim Anlegen/Bearbeiten eines Schiffes ein Foto (z. B. Funklizenz, Schiffspapiere, Rumpfbeschriftung) aufnehmen oder hochladen und daraus Schiffsname, MMSI und Rufzeichen automatisch auslesen.
+Ziel: Name, MMSI und Rufzeichen aus einem Foto (Funklizenz, Schiffspapiere, Rumpfbeschriftung) auslesen — vollständig auf dem Gerät, ohne Internetverbindung, ohne KI-Dienst, ohne Datenübertragung.
 
 ## Ablauf für Nutzer
 
-1. Auf der Seite „Schiff hinzufügen/bearbeiten“ erscheint oben ein Button „Aus Foto scannen“ (Kamera-Icon).
-2. Beim ersten Klick erscheint ein Hinweis-Dialog: Das Bild wird zur Texterkennung an den KI-Dienst gesendet, dort nicht gespeichert und nicht zum Training verwendet. Nutzer muss ausdrücklich zustimmen (Opt-in, wie beim KI-Vorlesen).
-3. Danach öffnet sich die Kamera bzw. Dateiauswahl (auf dem iPhone direkt „Foto aufnehmen“).
-4. Das Bild wird analysiert; ein Ergebnis-Dialog zeigt die erkannten Werte (Name, MMSI, Rufzeichen) mit Checkboxen zum Übernehmen.
-5. Übernommene Werte füllen die Formularfelder, werden aber nicht automatisch gespeichert — Nutzer prüft und drückt „Speichern“.
-6. Fehlgeschlagene oder unvollständige Erkennung: klare Meldung, Formular bleibt unverändert, manuelle Eingabe weiterhin möglich.
+1. Auf der Seite „Schiff hinzufügen/bearbeiten“ erscheint über dem Namensfeld ein Button „Aus Foto scannen“ (Kamera-Icon), im Stil der bestehenden Buttons.
+2. Klick öffnet direkt Kamera bzw. Fotoauswahl des Geräts.
+3. Das Bild wird lokal analysiert (Fortschrittsanzeige, da die Erkennung einige Sekunden dauert).
+4. Ergebnis-Dialog zeigt die erkannten Werte für Schiffsname, MMSI und Rufzeichen, jeweils einzeln editierbar und mit Checkbox „übernehmen“. Zusätzlich der komplette erkannte Rohtext zum Nachschauen, falls ein Feld nicht getroffen wurde.
+5. Übernahme füllt nur die Formularfelder — gespeichert wird erst mit „Speichern“, die bestehende MMSI-Prüfung (genau 9 Ziffern) greift weiterhin.
+6. Hinweis im Dialog: Erkennung immer gegen die Schiffspapiere prüfen, OCR kann Ziffern und Buchstaben verwechseln.
 
-Sicherheitshinweis im Dialog: erkannte Daten immer gegen die Schiffspapiere prüfen — OCR kann Ziffern verwechseln.
+## Erkennungslogik (lokal)
+
+Aus dem erkannten Rohtext werden Kandidaten per Muster bestimmt:
+
+- MMSI: 9 zusammenhängende Ziffern, bevorzugt in einer Zeile mit „MMSI“; typische OCR-Verwechslungen (O→0, I/l→1, S→5, B→8) werden in reinen Ziffernfeldern korrigiert.
+- Rufzeichen: 3–7 Zeichen aus Buchstaben und Ziffern, bevorzugt in einer Zeile mit „Call Sign“ / „Rufzeichen“ / „Call“.
+- Schiffsname: Zeile nach „Name of vessel“ / „Schiffsname“ / „Vessel“; sonst die auffälligste Großbuchstaben-Zeile ohne Ziffernblöcke.
+- Nicht sicher erkannte Felder bleiben leer statt geraten zu werden.
 
 ## Datenschutz
 
-- Reiner Opt-in: ohne Zustimmung wird kein Bild versendet; die Zustimmung wird lokal in den Einstellungen gespeichert und ist dort auch abschaltbar.
-- Bild wird nur im Arbeitsspeicher verarbeitet, nirgends dauerhaft abgelegt (weder lokal noch serverseitig).
-- Datenschutzseite (`src/routes/privacy.tsx`) erhält einen neuen Absatz zur Foto-Erkennung: welche Daten, wohin, wie lange, mögliche Drittlandübertragung — analog zum bestehenden TTS-Absatz.
-- Ohne Internetverbindung ist die Funktion nicht verfügbar; Hinweis im UI.
+- Kein Netzwerkaufruf: Bild und Text verlassen das Gerät nicht, nichts wird gespeichert, das Bild lebt nur im Arbeitsspeicher und wird nach dem Dialog verworfen.
+- Funktioniert offline in der installierten PWA.
+- Datenschutzseite erhält einen kurzen Absatz „Foto-Erkennung (lokal)“, der genau das festhält — kein Opt-in nötig, da keine Daten übertragen werden.
 
 ## Technische Umsetzung
 
-- Neue Server-Route `src/routes/api/vessel-scan.ts` (POST, JSON mit Base64-Bild, max. Größe begrenzt, nur Bild-MIME-Typen). Ruft `https://ai.gateway.lovable.dev/v1/chat/completions` mit einem Vision-fähigen Modell auf (Modell-ID zur Implementierungszeit aus dem Modell-Listing wählen) und fordert strukturiertes JSON `{ name, mmsi, callSign }` an; nicht erkannte Felder bleiben leer.
-- Serverseitige Nachvalidierung mit Zod: MMSI auf 9 Ziffern normalisieren, Rufzeichen in Großbuchstaben, Name auf 80 Zeichen begrenzt.
-- Fehlerbehandlung nach Gateway-Semantik: 429/5xx mit kurzer Wiederholung, 402/403 mit klarer Meldung an den Nutzer, keine Endlosschleifen.
-- Neue Komponente `src/components/VesselScanPhotoDialog.tsx`: Datei-Input (`accept="image/*"`, `capture="environment"`), clientseitige Verkleinerung des Bildes über Canvas (max. ca. 1600 px, JPEG) vor dem Upload, Ladezustand, Ergebnisanzeige mit Übernahme-Auswahl.
-- Einbindung in `src/routes/vessels.$id.tsx` über dem Namensfeld; bestehender QR-Scan bleibt unverändert.
-- Neues Settings-Feld `usePhotoScan: boolean` (Standard `false`) in `src/lib/types.ts`, Schalter in `src/routes/settings.tsx`.
+- OCR-Engine: `tesseract.js` (WebAssembly, läuft im Worker im Browser). Worker-, WASM- und Sprachdatendateien werden lokal aus `public/` geladen (Pfade explizit gesetzt), nicht von einem CDN — sonst würde die Aussage „keine Inhalte von Dritten“ in den Datenschutzhinweisen verletzt. Sprachdaten: nur `eng` (Schiffspapiere/Rufzeichen sind lateinisch/englisch), ca. wenige MB.
+- Laden strikt dynamisch per `import()` erst beim Klick auf den Scan-Button, damit Startzeit und Bundle der App unverändert bleiben; keine Ausführung während SSR.
+- Service-Worker/Precaching so konfigurieren, dass die OCR-Dateien nicht ins PWA-Precache wandern (sonst wird jede Installation unnötig groß) — stattdessen Laufzeit-Caching beim ersten Gebrauch, damit die Funktion danach offline verfügbar ist.
+- Neue Datei `src/lib/vesselOcr.ts`: Bildvorverarbeitung per Canvas (Verkleinerung auf max. ca. 1600 px, Graustufen, Kontrast), OCR-Aufruf, Feld-Extraktion mit den obigen Mustern, Rückgabe `{ name, mmsi, callSign, rawText }`.
+- Neue Komponente `src/components/VesselPhotoScanDialog.tsx`: Datei-Input (`accept="image/*"`, `capture="environment"`), Fortschritt, editierbare Ergebnisfelder, Übernahme-Buttons.
+- Einbindung in `src/routes/vessels.$id.tsx`; bestehender QR-Scan und Formularlogik bleiben unverändert.
 - Neue Übersetzungsschlüssel in allen sechs Sprachdateien (`en`, `de`, `fr`, `nl`, `es`, `it`).
-- Abschluss: `bunx tsgo --noEmit` und ein Praxistest des Endpunkts mit einem Testbild.
+- Abschluss: `bunx tsgo --noEmit` und ein Praxistest mit einem Testbild im Browser.
+
+## Ehrliche Einschätzung
+
+Lokale OCR ist deutlich schwächer als Cloud-Erkennung: Bei gutem Licht, geradem Winkel und gedrucktem Text (Funklizenz) funktioniert sie gut; bei schrägen Fotos, Handschrift oder Rumpfbeschriftung mit Schatten liefert sie oft nur Teiltreffer. Deshalb sind alle Felder im Ergebnisdialog editierbar und der Rohtext wird mit angezeigt.
