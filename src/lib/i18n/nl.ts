@@ -1,0 +1,363 @@
+export const nl = {
+  "app.name": "VHF-oproep",
+  "nav.vessels": "Vaartuigen",
+  "nav.settings": "Instellingen",
+  "nav.privacy": "Privacy & colofon",
+  "nav.install": "Installeren",
+  "nav.guide": "Handleiding",
+  "nav.nightModeOn": "Rood nachtlicht inschakelen",
+  "nav.nightModeOff": "Rood nachtlicht uitschakelen",
+
+  "install.title": "Deze app installeren",
+  "install.intro":
+    "Na installatie staat de app op je beginscherm, opent hij schermvullend en werkt hij offline.",
+  "install.button": "Nu installeren",
+  "install.close": "Sluiten",
+  "install.ios.step1": "Tik op de deelknop in de browserbalk.",
+  "install.ios.step2": 'Scrol omlaag en kies "Zet op beginscherm".',
+  "install.ios.step3": 'Tik rechtsboven op "Voeg toe".',
+  "install.iosOther.note":
+    "Op iPhone en iPad kan alleen Safari apps installeren. Open deze pagina eerst in Safari en volg dan de stappen hieronder.",
+  "install.android.step1": "Open het browsermenu (drie puntjes).",
+  "install.android.step2": 'Kies "App installeren" of "Toevoegen aan startscherm".',
+  "install.android.step3": "Bevestig de installatie.",
+  "install.desktop.step1": "Open het browsermenu of het installatie-icoon in de adresbalk.",
+  "install.desktop.step2": 'Kies "Installeren" en bevestig.',
+
+  "home.title": "Welke oproep heb je nodig?",
+  "home.subtitle": "Kies een oproeptype — je vaartuiggegevens, positie en tijd worden automatisch ingevuld.",
+
+  "call.mayday.short": "Nood",
+  "call.panpan.short": "Spoed",
+  "call.securite.short": "Veiligheid",
+  "call.standard.short": "Routine",
+  "call.mayday.description":
+    "Genereer een gesproken Mayday-noodoproep met je vaartuiggegevens, actuele gps-positie en UTC-tijd.",
+  "call.panpan.description":
+    "Genereer een gesproken Pan-Pan-spoedoproep met vaartuiggegevens, actuele positie en UTC-tijd.",
+  "call.securite.description":
+    "Genereer een gesproken Sécurité-veiligheidsbericht aan alle stations met je actuele positie.",
+  "call.standard.description":
+    "Genereer een routineoproep via VHF naar een jachthaven, station of ander vaartuig met een verzoek om een werkkanaal.",
+
+  "call.utcTime": "UTC-tijd",
+  "call.position": "Positie",
+  "call.manualEntry": "Handmatige invoer",
+  "call.waitingGps": "Wachten op gps…",
+  "call.refreshFix": "Fix vernieuwen",
+  "call.manualPosition": "Handmatige positie",
+  "call.autoUpdateOn": "Automatisch bijwerken elke {seconds}s",
+  "call.autoUpdateOff": "Automatisch bijwerken uit",
+  "call.latitude": "Breedtegraad (decimaal)",
+  "call.longitude": "Lengtegraad (decimaal)",
+  "call.usePosition": "Positie gebruiken",
+  "call.manualPositionSet": "Handmatige positie ingesteld",
+  "call.invalidCoordinates": "Voer geldige decimale coördinaten in",
+  "call.vessel": "Vaartuig",
+  "call.selectVessel": "Vaartuig kiezen",
+  "call.noVessel": "Nog geen vaartuig opgeslagen.",
+  "call.addYourVessel": "Voeg je vaartuig toe",
+  "call.stationCalled": "Opgeroepen station",
+  "call.safetyMessage": "Veiligheidsbericht",
+  "call.natureOfSituation": "Aard van de situatie",
+  "call.assistanceRequired": "Benodigde hulp",
+  "call.pob": "Personen aan boord",
+  "call.channel": "VHF-kanaal",
+  "call.additionalMessage": "Aanvullend bericht",
+  "call.additionalMessagePlaceholder": "Alles wat het kuststation verder moet weten",
+  "call.additionalMessagePlaceholder.panpan": "Verdere details over de spoedsituatie",
+  "call.additionalMessagePlaceholder.securite": "Verdere details over de veiligheidskwestie",
+  "call.additionalMessagePlaceholder.standard": "Je bericht of verzoek",
+  "call.radioScript": "Radiotekst",
+  "call.channel16Notice": "Zend uit op VHF-kanaal 16",
+  "call.channel16NoticeHint":
+    "Mayday, Pan-Pan en Sécurité worden uitgesproken op het internationale nood- en oproepkanaal 16.",
+  "call.scriptEnglishNote":
+    "De radiotekst is altijd in het Engels — de internationale taal voor marifoonverkeer.",
+  "call.copy": "Kopiëren",
+  "call.share": "Delen",
+  "call.read": "Lezen",
+  "call.close": "Sluiten",
+  "call.speak": "Voorlezen",
+  "call.stop": "Stoppen",
+  "call.copied": "Radiotekst gekopieerd",
+  "call.copyFailed": "Kopiëren mislukt — selecteer de tekst handmatig",
+  "call.speechUnavailable": "Spraak is niet beschikbaar op dit apparaat",
+  "call.offlineVoice": "Offline — apparaatstem wordt gebruikt",
+  "call.disclaimer":
+    "Deze app is slechts een hulpmiddel. Hij vervangt geen goede marifoonopleiding, geen DSC-noodalarm en niet het oordeel van de schipper. Verstuur waar mogelijk altijd eerst een DSC-alarm.",
+
+  "dsc.title": "Verstuur eerst een DSC-noodalarm",
+  "dsc.intro": "Heeft je marifoon DSC (rode noodknop), verstuur dan het DSC-alarm vóór je spreekt:",
+  "dsc.step1": "Kies indien de tijd het toelaat de aard van de nood in het DSC-menu van de marifoon (bijv. zinken, brand, man overboord).",
+  "dsc.step2": "Til daarna het klepje op en houd de rode DISTRESS-knop ongeveer 5 seconden ingedrukt.",
+  "dsc.step3": "Wacht op de bevestiging; de marifoon schakelt automatisch over naar kanaal 16.",
+  "dsc.step4": "Spreek daarna het onderstaande MAYDAY-bericht uit op kanaal 16.",
+  "dsc.note": "Controleer of je MMSI in de marifoon geprogrammeerd is en of er een gps-positie is aangesloten. Zonder DSC roep je MAYDAY direct op kanaal 16.",
+
+  "comms.title": "Verdere communicatie",
+  "comms.intro": "Standaard radiozinnen voor verdere communicatie, stilteverzoeken, het annuleren van vals alarm en het beëindigen van een noodoproep.",
+  "comms.h.relay": "Verdere communicatie tijdens een noodgeval",
+  "comms.p.relay": "MAYDAY [VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DSITRESS]\nThis is [VESSEL NAME], [CALL SIGN]\n[MESSAGE]\nOVER\n",
+  "comms.h.silence": "Om stilte vragen (alleen kuststation of vaartuig in nood)",
+  "comms.p.silence": "All stations\nSilence mayday\n",
+  "comms.h.cancel": "Een per ongeluk verzonden noodalarm intrekken (alleen vaartuig in nood)",
+  "comms.p.cancel":
+    "All stations, all stations, all stations\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
+  "comms.h.end": "Een noodoproep beëindigen (alleen kuststation of vaartuig in nood)",
+  "comms.p.end":
+    "MAYDAY\nAll stations, all stations, all stations\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC \n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
+
+  "nature.sinking": "Zinkend",
+  "nature.takingOnWater": "Water maken",
+  "nature.fire": "Brand aan boord",
+  "nature.pob": "Persoon overboord",
+  "nature.grounding": "Aan de grond gelopen",
+  "nature.capsized": "Gekapseisd",
+  "nature.collision": "Aanvaring",
+  "nature.medical": "Medisch noodgeval",
+  "nature.engineFailure": "Motorstoring",
+  "nature.steeringFailure": "Stuurstoring",
+  "nature.dismasted": "Mast gebroken",
+  "nature.adrift": "Op drift",
+  "nature.outOfFuel": "Geen brandstof meer",
+  "nature.medicalAdvice": "Medisch advies nodig",
+  "nature.riggingDamage": "Schade aan het tuig",
+  "nature.navHazard": "Gevaar voor de scheepvaart waargenomen",
+  "nature.floatingObject": "Drijvend object op drift",
+  "nature.unlitBuoy": "Onverlichte boei",
+  "nature.restrictedManoeuvrability": "Beperkt manoeuvreerbaar",
+  "nature.severeWeather": "Zwaar weer waargenomen",
+
+  "settings.title": "Instellingen",
+  "settings.language": "Taal",
+  "settings.languageHint": "Taal van de interface. Radioteksten blijven altijd in het Engels.",
+  "settings.language.auto": "Automatisch (apparaattaal)",
+  "settings.autoUpdate": "Positie automatisch bijwerken",
+  "settings.autoUpdateHint": "Vernieuw de gps-fix doorlopend zolang een oproepscherm open is.",
+  "settings.interval": "Vernieuwingsinterval (seconden)",
+  "settings.intervalHint": "Standaard 10 seconden. Toegestaan bereik 2–300 seconden.",
+  "settings.intervalError": "De waarde moet tussen 2 en 300 seconden liggen.",
+  "settings.defaultChannel": "Standaard VHF-kanaal",
+  "settings.positionFormat": "Positieformaat",
+  "settings.positionFormat.ddm": "Graden en decimale minuten (54° 19.85' N)",
+  "settings.positionFormat.dd": "Decimale graden (54.33083°)",
+  "settings.nightMode": "Rood nachtlicht (nachtzicht)",
+  "settings.nightModeHint":
+    "Kleurt de hele app gedempt rood op een bijna zwarte achtergrond, zodat je nachtzicht aan boord behouden blijft.",
+  "settings.aiVoice": 'AI-stem gebruiken voor "Voorlezen"',
+  "settings.aiVoiceHint":
+    "Standaard uit. Alleen als je dit inschakelt wordt de tekst naar onze spraakdienst gestuurd voor een heldere marifonist-stem. Zolang dit uit staat wordt alleen de ingebouwde stem van je apparaat gebruikt en verlaat er geen tekst dit apparaat.",
+  "settings.appHeading": "App & updates",
+  "settings.offlineHint":
+    "De app slaat zichzelf op je apparaat op, zodat hij ook zonder netwerkverbinding opent.",
+  "settings.swStatus": "Service worker",
+  "settings.swStatus.active": "Actief",
+  "settings.swStatus.waiting": "Update wacht",
+  "settings.swStatus.installing": "Bezig met installeren",
+  "settings.swStatus.notRegistered": "Niet geregistreerd",
+  "settings.swStatus.unsupported": "Niet ondersteund",
+  "settings.connection": "Verbinding",
+  "settings.online": "Online",
+  "settings.offline": "Offline",
+  "settings.installStatus": "App-installatie",
+  "settings.installed": "Geïnstalleerd",
+  "settings.notInstalled": "Browsertabblad",
+  "settings.buildDate": "Geïnstalleerde versie",
+  "settings.lastChecked": "Laatst gecontroleerd",
+  "settings.checkUpdate": "Controleren op updates",
+  "settings.checking": "Bezig met controleren…",
+  "settings.updateAvailable": "Er is een nieuwe versie beschikbaar.",
+  "settings.updateNow": "Nu bijwerken",
+  "settings.upToDate": "Je gebruikt de nieuwste versie.",
+  "settings.updateHint":
+    "De app werkt zichzelf automatisch op de achtergrond bij; hier kun je een controle afdwingen.",
+  "settings.clearHeading": "Cache & opgeslagen gegevens wissen",
+  "settings.clearHint":
+    "Verwijdert de offlinecache en alle gegevens op dit apparaat: vaartuigprofielen, instellingen en taalkeuze. Dit kan niet ongedaan worden gemaakt.",
+  "settings.clearButton": "Cache en gegevens wissen",
+  "settings.clearConfirmTitle": "Alle gegevens wissen?",
+  "settings.clearConfirmBody":
+    "Alle vaartuigprofielen, instellingen en de offlinecache worden definitief van dit apparaat verwijderd. De app start opnieuw met de fabrieksinstellingen. Dit kan niet ongedaan worden gemaakt.",
+  "settings.clearCancel": "Annuleren",
+  "settings.clearConfirm": "Ja, alles verwijderen",
+  "settings.clearing": "Bezig met verwijderen…",
+
+  "settings.supportHeading": "Steun deze app",
+  "settings.supportBody":
+    "Als je deze app waardeert, stel ik een kleine donatie zeer op prijs. Die helpt de hosting- en ontwikkelkosten te dekken.",
+  "settings.supportLink": "Trakteer me op een koffie",
+
+  "settings.sourceHeading": "Broncode",
+  "settings.sourceBody":
+    "Deze app wordt uitgebracht onder de licentie AGPL-3.0-or-later. Wie de app openbaar host, moet de broncode van de gebruikte versie aan gebruikers beschikbaar stellen.",
+  "settings.sourceLink": "Broncode bekijken op GitHub",
+
+  "settings.privacyHeading": "Privacy & juridisch",
+  "settings.privacyHint":
+    "Alle instellingen en vaartuigprofielen worden uitsluitend op dit apparaat bewaard. Geen account, geen tracking, geen analytics.",
+  "settings.privacyLink": "AVG/GDPR-informatie & colofon",
+
+  "vessels.title": "Vaartuigen",
+  "vessels.add": "Vaartuig toevoegen",
+  "vessels.empty": "Nog geen vaartuigen. Voeg je boot toe zodat elke radio-oproep automatisch wordt ingevuld.",
+  "vessels.active": "Actief",
+  "vessels.setActive": "Als actief instellen",
+  "vessels.edit": "Vaartuig bewerken",
+  "vessels.delete": "Vaartuig verwijderen",
+  "vessels.deleteConfirmTitle": "Vaartuig verwijderen?",
+  "vessels.deleteConfirmBody": "{name} en alle gegevens worden definitief van dit apparaat verwijderd.",
+  "vessels.deleteConfirm": "Verwijderen",
+  "vessels.deleteCancel": "Annuleren",
+  "vessels.deleted": "{name} verwijderd",
+  "vessels.saved": "{name} opgeslagen",
+  "vessels.editTitle": "Vaartuig bewerken",
+  "vessels.addTitle": "Vaartuig toevoegen",
+  "vessels.name": "Naam van het vaartuig",
+  "vessels.mmsi": "MMSI (9 cijfers)",
+  "vessels.callSign": "Roepnaam",
+  "vessels.type": "Type vaartuig",
+  "vessels.typePlaceholder": "Sailing yacht",
+  "vessels.length": "Lengte",
+  "vessels.lengthPlaceholder": "11 metre",
+  "vessels.hull": "Rompkleur",
+  "vessels.hullPlaceholder": "white",
+  "vessels.defaultPob": "Standaard aantal personen aan boord",
+  "vessels.defaultChannel": "Standaard VHF-kanaal",
+  "vessels.save": "Vaartuig opslaan",
+  "vessels.cancel": "Annuleren",
+  "vessels.englishNotice": "Voer type vaartuig, lengte en rompkleur in het Engels in — ze worden letterlijk in de Engelse radiotekst overgenomen.",
+  "vessels.errName": "Naam van het vaartuig is verplicht",
+  "vessels.errMmsi": "MMSI moet precies 9 cijfers bevatten",
+  "vessels.errMmsiShort": "MMSI is te kort — nog {count} cijfer(s) nodig (9 in totaal)",
+  "vessels.errCallSign": "Roepnaam is verplicht",
+
+  "privacy.title": "Privacy & colofon",
+  "privacy.subtitle": "Datenschutz & Impressum — laatst bijgewerkt op 29 augustus 2026",
+  "privacy.h.summary": "Kort antwoord: voldoet deze app aan de AVG/GDPR?",
+  "privacy.p.summary1":
+    "De app is opgezet met dataminimalisatie: hij werkt zonder account, zonder tracking, zonder advertenties en zonder analytics. Alles wat je invoert — vaartuigprofielen, MMSI, roepnaam, personen aan boord, instellingen — wordt uitsluitend in de lokale browseropslag van je apparaat bewaard. Het wordt nooit naar een server geüpload en nooit gedeeld.",
+  "privacy.p.summary2":
+    "Omdat wij voor deze functies geen persoonsgegevens verzenden of opslaan, is er geen verwerking die een aparte rechtsgrond vereist en zijn er bij ons geen gegevens om te exporteren of te wissen. Je houdt volledige controle op je eigen apparaat.",
+  "privacy.h.gps": "Gps-positie",
+  "privacy.p.gps":
+    "Je positie wordt pas van je apparaat gelezen nadat je de browser toestemming hebt gegeven. Ze wordt alleen gebruikt om de positieregel van de radiotekst in te vullen en blijft in het geheugen zolang de app open is. Ze wordt niet opgeslagen, gelogd of verzonden. Je kunt de toestemming altijd intrekken in je browser- of systeeminstellingen.",
+  "privacy.h.tts": "Tekst-naar-spraak (knop Voorlezen)",
+  "privacy.p.tts1":
+    "In de instellingen kun je de AI-stem voor de knop Voorlezen in- of uitschakelen. Deze schakelaar bepaalt of er tekst je apparaat verlaat.",
+  "privacy.s.ttsOn": "AI-stem aan (alleen nadat je die uitdrukkelijk inschakelt):",
+  "privacy.p.ttsOn":
+    "wanneer je op \u201cVoorlezen\u201d drukt, wordt de gegenereerde tekst — die de naam van het vaartuig, MMSI, roepnaam en positie kan bevatten — vanaf onze server naar de door ons gebruikte spraakdienst gestuurd (Lovable AI Gateway, beheerd door onze hostingprovider Lovable Labs) om de audio te maken, en daarna verwijderd — hij wordt niet opgeslagen en niet gebruikt voor training. De verwerking kan plaatsvinden op servers buiten de EU, met standaardcontractbepalingen van de aanbieder als waarborg. Zonder netwerkverbinding schakelt de app automatisch over op de ingebouwde stem van je apparaat.",
+  "privacy.s.ttsOff": "AI-stem uit (standaard):",
+  "privacy.p.ttsOff":
+    "alleen de ingebouwde spraaksynthese van je apparaat wordt gebruikt. Er worden geen tekst en geen vaartuiggegevens verzonden; alles blijft op je apparaat.",
+  "privacy.h.install": "De app op je telefoon installeren (PWA)",
+  "privacy.p.install1":
+    "Deze app kan aan je beginscherm worden toegevoegd, zodat hij als een gewone app schermvullend en zonder browserbalk opent. Op iPhone/iPad open je hem in Safari, tik je op het deelicoon en kies je \"Zet op beginscherm\". Op Android open je hem in Chrome en kies je in het menu \"App installeren\" of \"Toevoegen aan startscherm\".",
+  "privacy.p.install2":
+    "Na installatie worden de appbestanden (code, iconen, stijlen) in de browsercache van je apparaat bewaard, zodat de app ook zonder netwerkverbinding start — handig op zee. Deze cache blijft op je apparaat, bevat geen persoonsgegevens en wordt nooit geüpload. Het verwijderen van het app-icoon of het wissen van de sitegegevens in je browser verwijdert hem, samen met je vaartuigprofielen en instellingen.",
+  "privacy.p.install3":
+    "De app werkt zichzelf op de achtergrond bij zodra er verbinding is; in de instellingen zie je de geïnstalleerde versie en kun je handmatig op updates controleren. Let op: gps-positie, actuele UTC-tijd en de ingebouwde apparaatstem werken offline, terwijl de AI-stem voor de knop Voorlezen een verbinding nodig heeft.",
+
+  "privacy.h.cookies": "Cookies, tracking en hosting",
+  "privacy.p.cookies":
+    "Er worden geen cookies voor tracking geplaatst, er worden geen analyse- of advertentietools gebruikt en er worden geen gebruikersprofielen aangemaakt. De app wordt gehost op de infrastructuur van Lovable Labs Incorporated; bij het laden van de app verwerkt de hostingprovider technische verbindingsgegevens (zoals het IP-adres) in serverlogboeken, wat technisch noodzakelijk is om een website te kunnen leveren (art. 6 lid 1 sub f AVG). Hierbij kunnen servers buiten de EU betrokken zijn; de doorgifte wordt gewaarborgd door standaardcontractbepalingen.",
+  "privacy.h.noExternal": "Geen inhoud van derden",
+  "privacy.p.noExternal":
+    "De app laadt geen lettertypen, iconen, scripts, kaarten of andere inhoud van servers van derden. Tekst wordt weergegeven met de lettertypen die al op je apparaat staan, alle symbolen en app-iconen maken deel uit van het app-pakket en de QR-code wordt volledig in je browser gegenereerd en gescand. Je IP-adres wordt dus niet aan derden (bijvoorbeeld een lettertype- of CDN-aanbieder) doorgegeven door de app te openen.",
+  "privacy.h.links": "Externe links",
+  "privacy.p.links":
+    "De instellingenpagina bevat een vrijwillige donatielink naar Buy Me a Coffee (buymeacoffee.com). Er wordt niets van die aanbieder geladen en er worden geen gegevens naartoe gestuurd tenzij je de link actief aantikt. Doe je dat, dan verlaat je deze app en gelden het privacybeleid en de voorwaarden van die aanbieder.",
+  "privacy.h.rights": "Jouw rechten",
+  "privacy.p.rights":
+    "Op grond van de AVG heb je recht op inzage, rectificatie, wissing, beperking, gegevensoverdraagbaarheid en bezwaar, en het recht een klacht in te dienen bij een toezichthoudende autoriteit. Omdat je gegevens alleen op je apparaat staan, kun je wissing direct uitvoeren door de vaartuigprofielen in de app te verwijderen of de sitegegevens in je browserinstellingen te wissen.",
+  "privacy.h.imprint": "Colofon / Impressum (§ 5 DDG)",
+  "privacy.imprint.responsible": "Verantwoordelijk voor de inhoud (§ 18 lid 2 MStV): Sebastian Esch",
+  "privacy.imprint.email": "E-mail",
+  "privacy.imprint.phone": "Telefoon",
+  "privacy.imprint.country": "Duitsland",
+  "privacy.h.source": "Broncode (AGPL)",
+  "privacy.p.source":
+    "Deze app is gelicentieerd onder de GNU Affero General Public License v3.0 of later (AGPL-3.0-or-later). Omdat dit een webapp is, geldt de netwerkclausule van de AGPL: wie de software openbaar host, moet gebruikers de broncode van de draaiende versie ter beschikking stellen. De broncode staat op GitHub; de link verwijst naar de versie waarop deze installatie is gebaseerd.",
+  "privacy.sourceLink": "Broncode bekijken op GitHub",
+  "privacy.h.safety": "Veiligheidsmededeling",
+  "privacy.p.safety1":
+    "Deze app is uitsluitend een hulpmiddel. Hij vervangt geen goede marifoonopleiding, geen geldig marifoonbedieningscertificaat en geen officiële procedures. Volg in een noodgeval altijd de aanwijzingen van de coördinerende reddingsautoriteit op.",
+  "privacy.p.safety2":
+    "Voor het gebruik van deze app wordt geen aansprakelijkheid aanvaard. De beheerder en de ontwikkelaars kunnen niet verantwoordelijk worden gehouden voor incidenten, schade of gevolgen die uit het gebruik voortvloeien. Je gebruikt de app volledig op eigen risico en bent zelf verantwoordelijk voor je handelingen en beslissingen op het water.",
+  "share.qrTitle": "Vaartuig delen",
+  "share.qrHint": "Laat een bemanningslid deze code in de app scannen om dit vaartuigprofiel te importeren.",
+  "share.qrAlt": "QR-code met de vaartuiggegevens van {name}",
+  "share.copyCode": "Code kopiëren",
+  "share.copied": "Deelcode gekopieerd",
+  "share.privacyNote": "De code bevat alleen de gegevens van dit vaartuig. Er wordt niets geüpload — deel hem alleen met je eigen bemanning.",
+  "share.share": "Delen",
+  "share.scan": "QR-code scannen",
+  "share.scanTitle": "Vaartuig importeren",
+  "share.scanHint": "Richt de camera op de QR-code op het andere apparaat.",
+  "share.cameraError": "Camera niet beschikbaar. Geef toegang tot de camera of plak de deelcode hieronder.",
+  "share.pasteLabel": "Of plak de deelcode",
+  "share.pasteAction": "Importeren uit code",
+  "share.invalidCode": "Deze code is geen geldige deelcode voor een vaartuig",
+  "share.confirmTitle": "Dit vaartuig importeren?",
+  "share.imported": "{name} geïmporteerd",
+  "share.updated": "{name} bijgewerkt",
+  "share.duplicate": "Er bestaat al een vaartuig met MMSI {mmsi}.",
+  "share.updateExisting": "Bestaande bijwerken",
+  "share.addAsNew": "Als nieuw toevoegen",
+  "share.import": "Importeren",
+  "share.cancel": "Annuleren",
+
+  "privacy.h.qr": "Een vaartuig delen via QR-code",
+  "privacy.p.qr":
+    "Je kunt een vaartuigprofiel als QR-code met je bemanning delen. De code wordt op je apparaat gegenereerd en bevat alleen de gegevens van dat vaartuig (naam, MMSI, roepnaam, type, lengte, rompkleur, personen aan boord, kanaal). Er wordt niets naar een server gestuurd. Bij het scannen wordt je camera uitsluitend gebruikt om de code in de browser te decoderen; er wordt geen beeld, video of scanresultaat opgeslagen of verzonden. Omdat MMSI en roepnaam een vaartuig en de eigenaar kunnen identificeren, deel je de code alleen met mensen die je vertrouwt.",
+
+  "guide.title": "Zo gebruik je deze app",
+  "guide.subtitle": "Een korte rondleiding langs alle functies — van je eerste vaartuig tot een kant-en-klare radio-oproep.",
+  "guide.h.intro": "Wat deze app doet",
+  "guide.p.intro1":
+    "VHF Call Builder genereert kant-en-klare marifoonteksten — Mayday, Pan-Pan, Sécurité en routineoproepen — op basis van je vaartuiggegevens, de actuele UTC-tijd en je gps-positie. Alles blijft op je apparaat: geen account, geen server, na de eerste keer laden geen internet nodig.",
+  "guide.p.intro2":
+    "De app is slechts een hulpmiddel. Hij vervangt geen goede marifoonopleiding, geen geldig bedieningscertificaat en geen DSC-noodalarm. Volg altijd de aanwijzingen van de coördinerende reddingsautoriteit op.",
+  "guide.h.gettingStarted": "1. Voeg je vaartuig toe",
+  "guide.p.started1":
+    "Ga naar de pagina Vaartuigen en tik op “Vaartuig toevoegen”. Voer minimaal de naam van het vaartuig, de MMSI (precies 9 cijfers) en de roepnaam in — die zijn verplicht. Je kunt ook het type, de lengte en de rompkleur toevoegen. Voer type, lengte en rompkleur in het Engels in, want ze worden letterlijk in de Engelse radiotekst overgenomen.",
+  "guide.p.started2":
+    "Je kunt meerdere vaartuigen opslaan (bijv. je eigen boot en een charterboot). Tik op “Als actief instellen” om te kiezen welk vaartuig voor de volgende oproep wordt gebruikt. De gegevens van het actieve vaartuig worden automatisch in elke tekst ingevuld.",
+  "guide.h.generate": "2. Een radio-oproep genereren",
+  "guide.p.generate1":
+    "Schakel op het oproepscherm met de tabbladen onderaan tussen de vier oproeptypen: MAYDAY (rood, nood), PAN-PAN (oranje, spoed), SÉCURITÉ (geel, veiligheid) en STANDARD (groen, routine). Het hele scherm neemt de kleur van het oproeptype aan. Alle ingevoerde gegevens blijven behouden als je van tabblad wisselt.",
+  "guide.p.generate2":
+    "De koptekst toont de actuele UTC-tijd en je gps-positie. Geef toestemming voor locatie wanneer daarom wordt gevraagd. De positie wordt automatisch bijgewerkt als automatisch bijwerken aan staat; tik op “Fix vernieuwen” voor een handmatige update of op “Handmatige positie” om zelf coördinaten in te typen.",
+  "guide.p.generate3":
+    "Vul de velden boven de tekst in: aard van de situatie (uit de lijst of vrije tekst), personen aan boord, VHF-kanaal en een eventueel aanvullend bericht. Afhankelijk van het oproeptype kun je ook het opgeroepen station of een veiligheidsbericht invoeren. De tekst wordt direct bijgewerkt terwijl je typt.",
+  "guide.p.generate4":
+    "Op de Mayday-pagina herinnert een uitklapbare sectie “Verstuur eerst een DSC-noodalarm” je eraan het DSC-alarm te versturen voordat je spreekt. Onder de tekst biedt de sectie “Verdere communicatie” standaardzinnen voor relais, stilte, het annuleren van een vals alarm en het beëindigen van een noodoproep.",
+  "guide.h.readSpeak": "3. Lezen en voorlezen",
+  "guide.p.readSpeak1":
+    "Tik op “Lezen” om de tekst schermvullend in grote letters te openen, ideaal om via de marifoon voor te lezen. De leesmodus houdt rekening met veilige schermranden en scrolt soepel op mobiel.",
+  "guide.p.readSpeak2":
+    "Tik op “Voorlezen” om de tekst hardop te laten voorlezen. In de instellingen kies je tussen een AI-marifonistenstem (verbinding nodig) en de ingebouwde stem van je apparaat (werkt offline, er verlaat niets je apparaat).",
+  "guide.p.readSpeak3":
+    "“Kopiëren” zet de tekst op het klembord; “Delen” opent het deelvenster van het systeem.",
+  "guide.h.shareVessel": "4. Vaartuigen delen & importeren",
+  "guide.p.shareVessel1":
+    "Tik in de vaartuiglijst op het deelicoon om een QR-code met de gegevens van dat vaartuig te tonen. Een bemanningslid kan die met de camera scannen om het profiel te importeren — of de deelcode kopiëren en plakken. Bestaat er al een vaartuig met dezelfde MMSI, dan kies je of je het bijwerkt of als nieuw toevoegt.",
+  "guide.p.shareVessel2":
+    "De code bevat alleen de gegevens van dat vaartuig. Er wordt niets geüpload — deel hem alleen met je eigen bemanning.",
+  "guide.h.settings": "5. Instellingen",
+  "guide.p.settings1":
+    "In de instellingen kun je: de taal van de interface wijzigen (teksten blijven altijd Engels), automatisch bijwerken van de gps-positie aan- of uitzetten en het interval instellen (2–300 seconden, standaard 10), het standaard VHF-kanaal en het positieformaat kiezen (decimale graden of graden/decimale minuten) en de AI-stem in- of uitschakelen.",
+  "guide.p.settings2":
+    "Je kunt ook op app-updates controleren, de geïnstalleerde versie bekijken en alle gecachete gegevens en vaartuigprofielen van het apparaat wissen.",
+  "guide.h.pwa": "6. Installeren & offline gebruik",
+  "guide.p.pwa1": "Deze app is een Progressive Web App en kan op elk apparaat worden geïnstalleerd.",
+  "guide.p.pwa.ios": "iPhone/iPad: Open in Safari, tik op het deelicoon en kies “Zet op beginscherm”.",
+  "guide.p.pwa.android": "Android: Open het browsermenu en kies “App installeren” of “Toevoegen aan startscherm”.",
+  "guide.p.pwa.desktop": "Desktop: Gebruik het installatie-icoon in de adresbalk.",
+  "guide.p.pwa2":
+    "Eenmaal geïnstalleerd opent de app schermvullend als een gewone app en werkt hij offline — gps, UTC-tijd en de ingebouwde stem functioneren zonder verbinding. De AI-stem voor “Voorlezen” heeft wel verbinding nodig. De app werkt zichzelf op de achtergrond bij; in de instellingen kun je een controle afdwingen.",
+  "guide.h.privacy": "7. Privacy",
+  "guide.p.privacy":
+    "Alle gegevens blijven op je apparaat. Geen account, geen tracking, geen analytics. Lees de volledige AVG/GDPR-informatie en het colofon op de privacypagina.",
+} satisfies Record<string, string>;
