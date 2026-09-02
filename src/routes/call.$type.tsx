@@ -198,8 +198,8 @@ function CallPage() {
                 className="group flex w-full cursor-pointer items-center justify-between text-left text-sm font-black tracking-widest text-primary uppercase"
                 aria-expanded={dscOpen}
               >
-                <span className="flex items-center gap-2 whitespace-nowrap pr-2">
-                  <AlertTriangle className="size-4" /> {t("dsc.title")}
+                <span className="flex min-w-0 flex-1 items-center gap-2 break-words pr-2 leading-tight">
+                  <AlertTriangle className="size-4 shrink-0" /> {t("dsc.title")}
                 </span>
                 <ChevronDown
                   className={`size-4 shrink-0 transition-transform ${dscOpen ? "rotate-180" : ""}`}
