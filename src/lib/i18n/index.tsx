@@ -7,8 +7,9 @@ import { nl } from "./nl";
 import { es } from "./es";
 import { it } from "./it";
 import { nb } from "./nb";
+import { sv } from "./sv";
 
-export const LANGUAGES = ["en", "de", "fr", "nl", "es", "it", "nb"] as const;
+export const LANGUAGES = ["en", "de", "fr", "nl", "es", "it", "sv", "nb"] as const;
 export type Language = (typeof LANGUAGES)[number];
 export type LanguagePreference = "auto" | Language;
 
