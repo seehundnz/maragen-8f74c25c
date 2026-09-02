@@ -13,7 +13,7 @@ export const LANGUAGES = ["en", "de", "fr", "nl", "es", "it", "sv", "nb"] as con
 export type Language = (typeof LANGUAGES)[number];
 export type LanguagePreference = "auto" | Language;
 
-const DICTIONARIES: Record<Language, Record<string, string>> = { en, de, fr, nl, es, it, nb };
+const DICTIONARIES: Record<Language, Record<string, string>> = { en, de, fr, nl, es, it, sv, nb };
 
 export function isLanguage(value: unknown): value is Language {
   return typeof value === "string" && (LANGUAGES as readonly string[]).includes(value);
