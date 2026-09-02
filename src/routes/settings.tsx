@@ -155,8 +155,6 @@ function SettingsPage() {
 
         <UpdateSection />
 
-        <ClearDataSection />
-
         <section className="space-y-2 rounded-xl border border-border bg-card p-4">
           <h2 className="text-sm font-semibold">{t("settings.privacyHeading")}</h2>
           <p className="text-xs text-muted-foreground">{t("settings.privacyHint")}</p>
@@ -196,6 +194,8 @@ function SettingsPage() {
             {t("settings.sourceLink")}
           </a>
         </section>
+
+        <ClearDataSection />
       </div>
     </AppShell>
   );
