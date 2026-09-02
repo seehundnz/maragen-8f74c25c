@@ -8,12 +8,13 @@ import { es } from "./es";
 import { it } from "./it";
 import { nb } from "./nb";
 import { sv } from "./sv";
+import { hr } from "./hr";
 
-export const LANGUAGES = ["en", "de", "fr", "nl", "es", "it", "sv", "nb"] as const;
+export const LANGUAGES = ["en", "de", "fr", "nl", "es", "it", "sv", "nb", "hr"] as const;
 export type Language = (typeof LANGUAGES)[number];
 export type LanguagePreference = "auto" | Language;
 
-const DICTIONARIES: Record<Language, Record<string, string>> = { en, de, fr, nl, es, it, sv, nb };
+const DICTIONARIES: Record<Language, Record<string, string>> = { en, de, fr, nl, es, it, sv, nb, hr };
 
 export function isLanguage(value: unknown): value is Language {
   return typeof value === "string" && (LANGUAGES as readonly string[]).includes(value);

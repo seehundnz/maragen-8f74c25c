@@ -1,0 +1,366 @@
+export const hr = {
+  "app.name": "VHF Poziv",
+  "nav.vessels": "Plovila",
+  "nav.settings": "Postavke",
+  "nav.privacy": "Privatnost i impresum",
+  "nav.install": "Instaliraj",
+  "nav.guide": "Vodič",
+  "nav.nightModeOn": "Uključi crveni način rada",
+  "nav.nightModeOff": "Isključi crveni način rada",
+
+  "install.title": "Instaliraj ovu aplikaciju",
+  "install.intro":
+    "Instalacija dodaje aplikaciju na vaš početni zaslon tako da se otvara preko cijelog zaslona i radi izvan mreže.",
+  "install.button": "Instaliraj sada",
+  "install.close": "Zatvori",
+  "install.ios.step1": "Dodirnite gumb Dijeli na alatnoj traci preglednika.",
+  "install.ios.step2": 'Pomaknite se dolje i odaberite "Dodaj na početni zaslon".',
+  "install.ios.step3": 'Dodirnite "Dodaj" u gornjem desnom kutu.',
+  "install.iosOther.note":
+    "Na iPhoneu i iPadu samo Safari može instalirati aplikacije. Prvo otvorite ovu stranicu u Safariju, a zatim slijedite dolje navedene korake.",
+  "install.android.step1": "Otvorite izbornik preglednika (tri točkice).",
+  "install.android.step2": 'Odaberite "Instaliraj aplikaciju" ili "Dodaj na početni zaslon".',
+  "install.android.step3": "Potvrdite instalaciju.",
+  "install.desktop.step1": "Otvorite izbornik preglednika ili ikonu za instalaciju u adresnoj traci.",
+  "install.desktop.step2": 'Odaberite "Instaliraj" i potvrdite.',
+
+  "home.title": "Koju vrstu poziva trebate?",
+  "home.subtitle": "Odaberite vrstu poziva — podaci o vašem plovilu, položaj i vrijeme automatski se unose.",
+
+  "call.mayday.short": "Pogibelj",
+  "call.panpan.short": "Hitnost",
+  "call.securite.short": "Sigurnost",
+  "call.standard.short": "Rutina",
+  "call.mayday.description":
+    "Generirajte govorni Mayday poziv pogibelji s podacima o vašem plovilu, GPS položajem uživo i UTC vremenom.",
+  "call.panpan.description":
+    "Generirajte govorni Pan-Pan poziv hitnosti s pojedinostima o plovilu, položajem uživo i UTC vremenom.",
+  "call.securite.description":
+    "Generirajte govorni Sécurité sigurnosni emitirani poziv svim postajama s vašim položajem uživo.",
+  "call.standard.description":
+    "Generirajte rutinski VHF poziv marini, postaji ili drugom plovilu sa zahtjevom za radni kanal.",
+
+  "call.utcTime": "UTC vrijeme",
+  "call.position": "Položaj",
+  "call.manualEntry": "Ručni unos",
+  "call.waitingGps": "Čekanje na GPS…",
+  "call.refreshFix": "Osvježi položaj",
+  "call.manualPosition": "Ručni položaj",
+  "call.autoUpdateOn": "Automatsko osvježavanje svakih {seconds}s",
+  "call.autoUpdateOff": "Automatsko osvježavanje isključeno",
+  "call.latitude": "Zemljopisna širina (decimalna)",
+  "call.longitude": "Zemljopisna dužina (decimalna)",
+  "call.usePosition": "Koristi položaj",
+  "call.manualPositionSet": "Ručni položaj postavljen",
+  "call.invalidCoordinates": "Unesite važeće decimalne koordinate",
+  "call.vessel": "Plovilo",
+  "call.selectVessel": "Odaberi plovilo",
+  "call.noVessel": "Još nema spremljenih plovila.",
+  "call.addYourVessel": "Dodaj svoje plovilo",
+  "call.stationCalled": "Pozvana postaja",
+  "call.safetyMessage": "Sigurnosna poruka",
+  "call.natureOfSituation": "Priroda situacije",
+  "call.assistanceRequired": "Potrebna pomoć",
+  "call.pob": "Osoba na plovilu",
+  "call.channel": "VHF kanal",
+  "call.additionalMessage": "Dodatna poruka",
+  "call.additionalMessagePlaceholder": "Sve ostalo što obalna postaja treba znati",
+  "call.additionalMessagePlaceholder.panpan": "Sve daljnje pojedinosti o hitnosti",
+  "call.additionalMessagePlaceholder.securite": "Daljnje pojedinosti o sigurnosnom pitanju",
+  "call.additionalMessagePlaceholder.standard": "Vaša poruka ili zahtjev",
+  "call.radioScript": "Radio skripta",
+  "call.channel16Notice": "Emitirajte na VHF kanalu 16",
+  "call.channel16NoticeHint":
+    "Mayday, Pan-Pan i Sécurité emitiraju se na međunarodnom kanalu za pogibelj i pozivanje 16.",
+  "call.scriptEnglishNote":
+    "Radio skripta je uvijek na engleskom jeziku — međunarodnom jeziku za VHF komunikaciju.",
+  "call.copy": "Kopiraj",
+  "call.share": "Dijeli",
+  "call.read": "Čitaj",
+  "call.close": "Zatvori",
+  "call.speak": "Izgovori",
+  "call.stop": "Zaustavi",
+  "call.copied": "Radio skripta kopirana",
+  "call.copyFailed": "Nije moguće kopirati — odaberite tekst ručno",
+  "call.speechUnavailable": "Govor nije dostupan na ovom uređaju",
+  "call.offlineVoice": "Izvan mreže — koristi se glas uređaja",
+  "call.disclaimer":
+    "Ova aplikacija je samo pomoćni alat. Ne zamjenjuje pravilnu radio obuku, DSC alarm za pogibelj ili procjenu zapovjednika. Uvijek prvo pošaljite DSC alarm gdje je dostupan.",
+
+  "dsc.title": "Prvo pošaljite DSC alarm za pogibelj",
+  "dsc.intro": "Ako vaš radio ima DSC (crveni gumb za pogibelj), pošaljite DSC alarm prije govora:",
+  "dsc.step1": "Ako vrijeme dopušta, odaberite prirodu pogibelji u DSC izborniku radija (npr. potonuće, požar, čovjek u moru).",
+  "dsc.step2": "Zatim podignite poklopac i pritisnite i držite crveni gumb DISTRESS oko 5 sekundi.",
+  "dsc.step3": "Pričekajte potvrdu; radio se automatski prebacuje na kanal 16.",
+  "dsc.step4": "Zatim izgovorite MAYDAY poruku u nastavku na kanalu 16.",
+  "dsc.note": "Provjerite je li vaš MMSI programiran u radiju i je li spojen GPS položaj. Bez DSC-a, nazovite MAYDAY izravno na kanalu 16.",
+
+  "comms.title": "Daljnja komunikacija",
+  "comms.intro": "Standardne radio fraze za daljnju komunikaciju, zahtjeve za tišinu, poništavanje lažnog alarma i završetak poziva u pogibelji.",
+  "comms.h.relay": "Daljnja komunikacija tijekom slučaja pogibelji",
+  "comms.p.relay": "MAYDAY [VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DSITRESS]\nThis is [VESSEL NAME], [CALL SIGN]\n[MESSAGE]\nOVER\n",
+  "comms.h.silence": "Traženje tišine (samo obalna radio postaja ili plovilo u pogibelji)",
+  "comms.p.silence": "All stations\nSilence mayday\n",
+  "comms.h.cancel": "Poništavanje pogrešno izdanog alarma za pogibelj (samo plovilo u pogibelji)",
+  "comms.p.cancel":
+    "All stations, all stations, all stations\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
+  "comms.h.end": "Završetak poziva u pogibelji (samo obalna postaja ili plovilo u pogibelji)",
+  "comms.p.end":
+    "MAYDAY\nAll stations, all stations, all stations\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC \n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
+
+  "nature.sinking": "Potonuće",
+  "nature.takingOnWater": "Prodiranje vode",
+  "nature.fire": "Požar na plovilu",
+  "nature.pob": "Čovjek u moru",
+  "nature.grounding": "Nasukavanje",
+  "nature.capsized": "Prevrnuće",
+  "nature.collision": "Sudar",
+  "nature.medical": "Medicinska hitnost",
+  "nature.engineFailure": "Kvar motora",
+  "nature.steeringFailure": "Kvar kormila",
+  "nature.dismasted": "Gubitak jarbola",
+  "nature.adrift": "Plovilo bez pogona",
+  "nature.outOfFuel": "Nedostatak goriva",
+  "nature.medicalAdvice": "Potreban medicinski savjet",
+  "nature.riggingDamage": "Oštećenje opreme",
+  "nature.navHazard": "Uočen navigacijski opasni objekt",
+  "nature.floatingObject": "Objekt koji pluta",
+  "nature.unlitBuoy": "Neosvijetljena plutača",
+  "nature.restrictedManoeuvrability": "Ograničena sposobnost manevriranja",
+  "nature.severeWeather": "Uočeno nevrijeme",
+
+  "settings.title": "Postavke",
+  "settings.language": "Jezik",
+  "settings.languageHint": "Jezik sučelja. Radio skripte uvijek ostaju na engleskom.",
+  "settings.language.auto": "Automatski (jezik uređaja)",
+  "settings.autoUpdate": "Automatsko osvježavanje položaja",
+  "settings.autoUpdateHint": "Kontinuirano osvježavaj GPS položaj dok je zaslon poziva otvoren.",
+  "settings.interval": "Interval osvježavanja (sekunde)",
+  "settings.intervalHint": "Zadano 10 sekundi. Dopušteni raspon 2–300 sekundi.",
+  "settings.intervalError": "Vrijednost mora biti između 2 i 300 sekundi.",
+  "settings.defaultChannel": "Zadani VHF kanal",
+  "settings.positionFormat": "Format položaja",
+  "settings.positionFormat.ddm": "Stupnjevi i decimalne minute (54° 19.85' N)",
+  "settings.positionFormat.dd": "Decimalni stupnjevi (54.33083°)",
+  "settings.nightMode": "Način rada crvenog svjetla (noćni vid)",
+  "settings.nightModeHint":
+    "Tonira cijelu aplikaciju u prigušenu crvenu boju na gotovo crnoj pozadini kako bi se očuvao vaš noćni vid na plovilu.",
+  "settings.aiVoice": 'Koristi AI glas za "Izgovori"',
+  "settings.aiVoiceHint":
+    "Isključeno prema zadanim postavkama. Tek ako ovo uključite, tekst skripte se šalje našoj govornoj službi za čist glas radio operatera. Dok je isključeno, koristi se samo ugrađeni glas vašeg uređaja i nikakav tekst ne napušta ovaj uređaj.",
+  "settings.appHeading": "Aplikacija i ažuriranja",
+  "settings.offlineHint":
+    "Aplikacija se pohranjuje na vaš uređaj tako da se otvara i bez mrežne veze.",
+  "settings.swStatus": "Servisni radnik",
+  "settings.swStatus.active": "Aktivno",
+  "settings.swStatus.waiting": "Ažuriranje čeka",
+  "settings.swStatus.installing": "Instaliranje",
+  "settings.swStatus.notRegistered": "Nije registrirano",
+  "settings.swStatus.unsupported": "Nije podržano",
+  "settings.connection": "Veza",
+  "settings.online": "Na mreži",
+  "settings.offline": "Izvan mreže",
+  "settings.installStatus": "Instalacija aplikacije",
+  "settings.installed": "Instalirano",
+  "settings.notInstalled": "Kartica preglednika",
+  "settings.buildDate": "Instalirana verzija",
+  "settings.lastChecked": "Posljednja provjera",
+  "settings.checkUpdate": "Provjeri ažuriranja",
+  "settings.checking": "Provjera…",
+  "settings.updateAvailable": "Dostupna je nova verzija.",
+  "settings.updateNow": "Ažuriraj sada",
+  "settings.upToDate": "Koristite najnoviju verziju.",
+  "settings.updateHint":
+    "Aplikacija se automatski ažurira u pozadini; ovdje možete prisiliti provjeru.",
+  "settings.clearHeading": "Očisti predmemoriju i pohranjene podatke",
+  "settings.clearHint":
+    "Uklanja izvanmrežnu predmemoriju i sve podatke pohranjene na ovom uređaju: profile plovila, postavke i odabir jezika. Ovo se ne može poništiti.",
+  "settings.clearButton": "Očisti predmemoriju i podatke",
+  "settings.clearConfirmTitle": "Očistiti sve podatke?",
+  "settings.clearConfirmBody":
+    "Svi profili plovila, postavke i izvanmrežna predmemorija bit će trajno izbrisani s ovog uređaja. Aplikacija će se ponovno pokrenuti s tvorničkim postavkama. Ova se radnja ne može poništiti.",
+  "settings.clearCancel": "Otkaži",
+  "settings.clearConfirm": "Da, izbriši sve",
+  "settings.clearing": "Brisanje…",
+
+  "settings.supportHeading": "Podržite ovu aplikaciju",
+  "settings.supportBody":
+    "Ako vam se sviđa ova aplikacija, cijenio bih malu donaciju. Pomaže pokriti troškove hostinga i razvoja.",
+  "settings.supportLink": "Kupite mi kavu",
+
+  "settings.sourceHeading": "Izvorni kod",
+  "settings.sourceBody":
+    "Ova je aplikacija izdana pod licencom AGPL-3.0-or-later. Svatko tko javno hostira aplikaciju mora korisnicima učiniti dostupnim izvorni kod verzije koja se koristi.",
+  "settings.sourceLink": "Pogledaj kod na GitHubu",
+
+  "settings.privacyHeading": "Privatnost i pravna pitanja",
+  "settings.privacyHint":
+    "Sve postavke i profili plovila pohranjeni su samo na ovom uređaju. Nema računa, nema praćenja, nema analitike.",
+  "settings.privacyLink": "GDPR/DSGVO informacije i impresum",
+
+  "vessels.title": "Plovila",
+  "vessels.add": "Dodaj plovilo",
+  "vessels.empty": "Još nema plovila. Dodajte svoj brod kako bi svaki radio poziv bio automatski popunjen.",
+  "vessels.active": "Aktivno",
+  "vessels.setActive": "Postavi aktivno",
+  "vessels.edit": "Uredi plovilo",
+  "vessels.delete": "Izbriši plovilo",
+  "vessels.deleteConfirmTitle": "Izbrisati plovilo?",
+  "vessels.deleteConfirmBody": "{name} i svi njegovi detalji bit će trajno uklonjeni s ovog uređaja.",
+  "vessels.deleteConfirm": "Izbriši",
+  "vessels.deleteCancel": "Otkaži",
+  "vessels.deleted": "{name} izbrisan",
+  "vessels.saved": "{name} spremljen",
+  "vessels.editTitle": "Uredi plovilo",
+  "vessels.addTitle": "Dodaj plovilo",
+  "vessels.name": "Ime plovila",
+  "vessels.mmsi": "MMSI (9 znamenki)",
+  "vessels.callSign": "Pozivni znak",
+  "vessels.type": "Vrsta plovila",
+  "vessels.typePlaceholder": "Jedrilica",
+  "vessels.length": "Duljina",
+  "vessels.lengthPlaceholder": "11 metara",
+  "vessels.hull": "Boja trupa",
+  "vessels.hullPlaceholder": "bijela",
+  "vessels.defaultPob": "Zadano osoba na plovilu",
+  "vessels.defaultChannel": "Zadani VHF kanal",
+  "vessels.save": "Spremi plovilo",
+  "vessels.cancel": "Otkaži",
+  "vessels.englishNotice": "Molimo unesite vrstu plovila, duljinu i boju trupa na engleskom — oni se unose u englesku radio skriptu kako su upisani.",
+  "vessels.errName": "Ime plovila je obavezno",
+  "vessels.errMmsi": "MMSI mora imati točno 9 znamenki",
+  "vessels.errMmsiShort": "MMSI je prekratak — potrebno je još {count} znamenki (ukupno 9)",
+  "vessels.errCallSign": "Pozivni znak je obavezan",
+
+  "privacy.title": "Privatnost i impresum",
+  "privacy.subtitle": "Privatnost i impresum — zadnje ažuriranje 29. kolovoza 2026.",
+  "privacy.h.summary": "Kratak odgovor: je li ova aplikacija usklađena s GDPR-om?",
+  "privacy.p.summary1":
+    "Aplikacija je napravljena da bude minimalna u pogledu podataka: radi bez računa, bez praćenja, bez oglašavanja i bez analitike. Sve što unesete — profili plovila, MMSI, pozivni znak, osobe na plovilu, postavke — pohranjeno je samo u lokalnoj pohrani preglednika vašeg uređaja. Nikada se ne učitava na poslužitelj i nikada se ne dijeli.",
+  "privacy.p.summary2":
+    "Budući da mi ne prenosimo niti pohranjujemo osobne podatke za ove značajke, ne postoji obrada koja bi zahtijevala posebnu pravnu osnovu, niti podaci za izvoz ili brisanje s naše strane. Zadržavate punu kontrolu na svom uređaju.",
+  "privacy.h.gps": "GPS položaj",
+  "privacy.p.gps":
+    "Vaš položaj se čita s vašeg uređaja tek nakon što date dopuštenje pregledniku. Koristi se isključivo za popunjavanje retka položaja u radio skripti i drži se u memoriji dok je aplikacija otvorena. Ne pohranjuje se, ne bilježi niti prenosi. Dopuštenje možete opozvati u bilo kojem trenutku u postavkama preglednika ili sustava.",
+  "privacy.h.tts": "Tekst u govor (gumb Izgovori)",
+  "privacy.p.tts1":
+    "U postavkama možete uključiti ili isključiti AI glas za gumb Izgovori. Ova sklopka kontrolira napušta li bilo kakav tekst vaš uređaj.",
+  "privacy.s.ttsOn": "AI glas uključen (samo nakon što ga izričito omogućite):",
+  "privacy.p.ttsOn":
+    "kada pritisnete „Izgovori“, generirani tekst skripte — koji može sadržavati ime plovila, MMSI, pozivni znak i položaj — šalje se s našeg poslužitelja govornoj službi koju koristimo (Lovable AI Gateway, kojom upravlja naš davatelj usluga hostinga Lovable Labs) za proizvodnju govornog zvuka, a zatim se odbacuje — ne pohranjuje se i ne koristi za obuku. Obrada se može odvijati na poslužiteljima izvan EU, zaštićena standardnim ugovornim klauzulama davatelja usluga. Ako mreža nije dostupna, aplikacija se automatski prebacuje na ugrađeni glas vašeg uređaja.",
+  "privacy.s.ttsOff": "AI glas isključen (zadano):",
+  "privacy.p.ttsOff":
+    "koristi se samo sinteza govora ugrađena u vaš uređaj. Nikakav tekst skripte i podaci o plovilu se ne prenose; sve ostaje na vašem uređaju.",
+  "privacy.h.install": "Instaliranje aplikacije na vaš telefon (PWA)",
+  "privacy.p.install1":
+    "Ova se aplikacija može dodati na vaš početni zaslon tako da se otvara kao normalna aplikacija, preko cijelog zaslona i bez trake preglednika. Na iPhoneu/iPadu otvorite je u Safariju, dodirnite ikonu dijeljenja i odaberite „Dodaj na početni zaslon“. Na Androidu otvorite je u Chromeu i odaberite „Instaliraj aplikaciju“ ili „Dodaj na početni zaslon“ iz izbornika.",
+  "privacy.p.install2":
+    "Kada je instalirana, datoteke aplikacije (kod, ikone, stilovi) pohranjuju se u predmemoriju preglednika vašeg uređaja tako da se pokreće i bez mrežne veze — korisno na moru. Ova predmemorija ostaje na vašem uređaju, ne sadrži osobne podatke i nikada se ne učitava. Brisanjem ikone aplikacije ili brisanjem podataka web-mjesta u vašem pregledniku uklanjate je, zajedno s vašim profilima plovila i postavkama.",
+  "privacy.p.install3":
+    "Aplikacija se ažurira u pozadini kad god ima vezu; u postavkama možete vidjeti instaliranu verziju i ručno provjeriti ažuriranja. Napominjemo da GPS položaj, trenutno UTC vrijeme i ugrađeni glas uređaja rade izvanmrežno, dok AI glas za gumb Izgovori treba vezu.",
+
+  "privacy.h.cookies": "Kolačići, praćenje i hosting",
+  "privacy.p.cookies":
+    "Ne postavljaju se kolačići za praćenje, ne koriste se alati za analitiku ili oglašavanje, a ne izrađuju se korisnički profili. Aplikacija je hostirana na infrastrukturi Lovable Labs Incorporated; kada se aplikacija učita, davatelj hostinga obrađuje tehničke podatke o vezi (kao što je IP adresa) u zapisnicima poslužitelja, što je tehnički potrebno za isporuku bilo koje web stranice (članak 6(1)(f) GDPR-a). To može uključivati poslužitelje izvan EU; prijenos je zaštićen standardnim ugovornim klauzulama.",
+  "privacy.h.noExternal": "Nema sadržaja trećih strana",
+  "privacy.p.noExternal":
+    "Aplikacija ne učitava fontove, ikone, skripte, karte ili drugi sadržaj s poslužitelja trećih strana. Tekst se iscrtava s fontovima koji su već na vašem uređaju, svi simboli i ikone aplikacije dio su paketa aplikacije, a QR kod se generira i skenira u potpunosti u vašem pregledniku. Vaša IP adresa stoga se ne prosljeđuje nijednoj trećoj strani (na primjer davatelju fontova ili CDN-u) jednostavnim otvaranjem aplikacije.",
+  "privacy.h.links": "Vanjske poveznice",
+  "privacy.p.links":
+    "Stranica postavki sadrži dobrovoljnu poveznicu za donaciju za Buy Me a Coffee (buymeacoffee.com). Ništa se ne učitava od tog davatelja i nikakvi se podaci tamo ne šalju osim ako aktivno ne dodirnete poveznicu. Nakon što to učinite, napuštate ovu aplikaciju i primjenjuju se pravila o privatnosti i uvjeti tog davatelja.",
+  "privacy.h.rights": "Vaša prava",
+  "privacy.p.rights":
+    "Prema GDPR-u imate pravo na informacije, ispravak, brisanje, ograničenje, prenosivost podataka i prigovor, te pravo na podnošenje pritužbe nadzornom tijelu. Budući da vaši podaci žive samo na vašem uređaju, brisanje možete izvršiti izravno brisanjem profila plovila u aplikaciji ili brisanjem podataka ove stranice u postavkama preglednika.",
+  "privacy.h.imprint": "Impresum (§ 5 DDG)",
+  "privacy.imprint.responsible": "Odgovoran za sadržaj (§ 18 (2) MStV): Sebastian Esch",
+  "privacy.imprint.email": "E-pošta",
+  "privacy.imprint.phone": "Telefon",
+  "privacy.imprint.country": "Njemačka",
+  "privacy.h.source": "Izvorni kod (AGPL)",
+  "privacy.p.source":
+    "Ova je aplikacija licencirana pod GNU Affero General Public License v3.0 ili novijom (AGPL-3.0-or-later). Budući da se radi o web aplikaciji, primjenjuje se mrežna klauzula AGPL-a: svatko tko javno hostira softver mora korisnicima pružiti izvorni kod verzije koja se pokreće. Izvor je dostupan na GitHubu; poveznica upućuje na verziju na kojoj se temelji ova instalacija.",
+  "privacy.sourceLink": "Pogledaj kod na GitHubu",
+  "privacy.h.safety": "Sigurnosna obavijest",
+  "privacy.p.safety1":
+    "Ova je aplikacija samo pomoćni alat. Ne zamjenjuje pravilnu radio obuku, važeću svjedodžbu radiooperatera ili službene postupke. U hitnim slučajevima uvijek slijedite upute koordinacijskog tijela za spašavanje.",
+  "privacy.p.safety2":
+    "Ne preuzima se nikakva odgovornost za korištenje ove aplikacije. Operater i programeri ne mogu se smatrati odgovornima za bilo kakve incidente, štete ili posljedice koje proizlaze iz njezine uporabe. Aplikaciju koristite u potpunosti na vlastiti rizik i sami ste odgovorni za svoje postupke i odluke na vodi.",
+  "share.qrTitle": "Dijeli plovilo",
+  "share.qrHint": "Neka član posade skenira ovaj kôd u aplikaciji kako bi uvozili ovaj profil plovila.",
+  "share.qrAlt": "QR kod s podacima o plovilu {name}",
+  "share.copyCode": "Kopiraj kôd",
+  "share.copied": "Kôd za dijeljenje kopiran",
+  "share.privacyNote": "Kôd sadrži samo podatke o ovom plovilu. Ništa se ne učitava — dijelite ga samo sa svojom posadom.",
+  "share.share": "Dijeli",
+  "share.scan": "Skeniraj QR kod",
+  "share.scanTitle": "Uvezi plovilo",
+  "share.scanHint": "Usmjerite kameru na QR kod prikazan na drugom uređaju.",
+  "share.cameraError": "Kamera nije dostupna. Molimo dopustite pristup kameri ili zalijepite kôd za dijeljenje u nastavku.",
+  "share.pasteLabel": "Ili zalijepite kôd za dijeljenje",
+  "share.pasteAction": "Uvezi iz kôda",
+  "share.invalidCode": "Ovaj kôd nije važeći kôd za dijeljenje plovila",
+  "share.confirmTitle": "Uvesti ovo plovilo?",
+  "share.imported": "{name} uvezen",
+  "share.updated": "{name} ažuriran",
+  "share.duplicate": "Plovilo s MMSI {mmsi} već postoji.",
+  "share.updateExisting": "Ažuriraj postojeće",
+  "share.addAsNew": "Dodaj kao novo",
+  "share.import": "Uvezi",
+  "share.cancel": "Otkaži",
+
+  "privacy.h.qr": "Dijeljenje plovila putem QR koda",
+  "privacy.p.qr":
+    "Profil plovila možete podijeliti sa svojom posadom kao QR kod. Kôd se generira na vašem uređaju i sadrži samo podatke o tom plovilu (ime, MMSI, pozivni znak, vrsta, duljina, boja trupa, osobe na plovilu, kanal). Ništa se ne šalje na poslužitelj. Skeniranje koristi kameru vašeg uređaja isključivo za dekodiranje kôda u pregledniku; nijedna slika, videozapis ili rezultat skeniranja se ne pohranjuje niti prenosi. Budući da MMSI i pozivni znak mogu identificirati plovilo i njegovog vlasnika, kôd dijelite samo s ljudima kojima vjerujete.",
+
+  "guide.title": "Kako koristiti ovu aplikaciju",
+  "guide.subtitle": "Brzi pregled svake značajke — od vašeg prvog plovila do radio poziva spremnog za čitanje.",
+  "guide.h.intro": "Što ova aplikacija radi",
+  "guide.p.intro1":
+    "VHF Call Builder generira VHF radio pozivne skripte spremne za čitanje — Mayday, Pan-Pan, Sécurité i rutinske pozive — koristeći podatke o vašem plovilu, trenutno UTC vrijeme i vaš GPS položaj. Sve ostaje na vašem uređaju: nema računa, nema poslužitelja, nema interneta nakon prvog učitavanja.",
+  "guide.p.intro2":
+    "Aplikacija je samo pomoćni alat. Ne zamjenjuje pravilnu radio obuku, važeću svjedodžbu radiooperatera ili DSC alarm za pogibelj. Uvijek slijedite upute koordinacijskog tijela za spašavanje.",
+  "guide.h.gettingStarted": "1. Dodajte svoje plovilo",
+  "guide.p.started1":
+    "Idite na stranicu Plovila i dodirnite „Dodaj plovilo“. Unesite barem ime plovila, MMSI (točno 9 znamenki) i pozivni znak — oni su obavezni. Također možete dodati vrstu plovila, duljinu i boju trupa. Molimo unesite vrstu, duljinu i boju trupa na engleskom, jer se unose u englesku radio skriptu kako su upisani.",
+  "guide.p.started2":
+    "Možete spremiti nekoliko plovila (npr. svoj brod i čarter brod). Dodirnite „Postavi aktivno“ za odabir plovila koje će se koristiti za sljedeći poziv. Podaci aktivnog plovila automatski se popunjavaju u svaku skriptu.",
+  "guide.h.generate": "2. Generirajte radio poziv",
+  "guide.p.generate1":
+    "Na zaslonu poziva prebacujte se između četiri vrste poziva pomoću donjih kartica: MAYDAY (crvena, pogibelj), PAN-PAN (narančasta, hitnost), SÉCURITÉ (žuta, sigurnost) i STANDARD (zelena, rutina). Cijeli zaslon mijenja temu prema boji vrste poziva. Svi uneseni podaci prenose se kada promijenite karticu.",
+  "guide.p.generate2":
+    "Zaglavlje prikazuje trenutno UTC vrijeme i vaš GPS položaj. Odobrite dopuštenje za lokaciju kada se to zatraži. Položaj se automatski ažurira ako je automatsko ažuriranje uključeno; dodirnite „Osvježi položaj“ za ručno ažuriranje ili „Ručni položaj“ za ručni unos koordinata.",
+  "guide.p.generate3":
+    "Ispunite polja iznad skripte: priroda situacije (s unaprijed postavljenog popisa ili slobodnim tekstom), osobe na plovilu, VHF kanal i bilo koja dodatna poruka. Ovisno o vrsti poziva, možete unijeti i pozvanu postaju ili sigurnosnu poruku. Skripta se trenutno ažurira dok tipkate.",
+  "guide.p.generate4":
+    "Na stranici Mayday, odjeljak „Prvo pošaljite DSC alarm za pogibelj“ koji se može sakriti podsjeća vas da pokrenete DSC alarm prije govora. Ispod skripte, odjeljak „Daljnja komunikacija“ nudi standardne fraze za releje, tišinu, poništavanje lažnog alarma i završetak poziva u pogibelji.",
+  "guide.h.readSpeak": "3. Čitajte i govorite",
+  "guide.p.readSpeak1":
+    "Dodirnite „Čitaj“ za otvaranje skripte preko cijelog zaslona velikim slovima, idealno za čitanje naglas na radiju. Način čitanja poštuje sigurno područje i glatko se pomiče na mobilnim uređajima.",
+  "guide.p.readSpeak2":
+    "Dodirnite „Izgovori“ da čujete skriptu naglas. U postavkama možete birati između AI glasa radio operatera (potrebna je veza) i ugrađenog glasa vašeg uređaja (radi izvan mreže, ništa ne napušta vaš uređaj).",
+  "guide.p.readSpeak3":
+    "„Kopiraj“ stavlja skriptu u međuspremnik; „Dijeli“ otvara sustav za dijeljenje.",
+  "guide.h.shareVessel": "4. Dijelite i uvozite plovila",
+  "guide.p.shareVessel1":
+    "Na popisu plovila dodirnite ikonu dijeljenja za prikaz QR koda s podacima o tom plovilu. Član posade može ga skenirati svojom kamerom kako bi uvezao profil — ili kopirati i zalijepiti kôd za dijeljenje. Ako plovilo s istim MMSI-jem već postoji, odabirete želite li ga ažurirati ili dodati kao novo.",
+  "guide.p.shareVessel2":
+    "Kôd sadrži samo podatke o tom plovilu. Ništa se ne učitava — dijelite ga samo sa svojom posadom.",
+  "guide.h.settings": "5. Postavke",
+  "guide.p.settings1":
+    "U postavkama možete: promijeniti jezik sučelja (skripte uvijek ostaju na engleskom), uključiti/isključiti automatsko ažuriranje GPS položaja i postaviti interval osvježavanja (2–300 sekundi, zadano 10), odabrati zadani VHF kanal i format položaja (decimalni stupnjevi ili stupnjevi/decimalne minute) te uključiti ili isključiti AI glas.",
+  "guide.p.settings2":
+    "Također možete provjeriti ažuriranja aplikacije, vidjeti instaliranu verziju i očistiti sve predmemorirane podatke i profile plovila s uređaja.",
+  "guide.h.pwa": "6. Instalacija i izvanmrežna upotreba",
+  "guide.p.pwa1": "Ova je aplikacija progresivna web aplikacija i može se instalirati na bilo koji uređaj.",
+  "guide.p.pwa.ios": "iPhone/iPad: Otvorite u Safariju, dodirnite ikonu dijeljenja i odaberite „Dodaj na početni zaslon“.",
+  "guide.p.pwa.android": "Android: Otvorite izbornik preglednika i odaberite „Instaliraj aplikaciju“ ili „Dodaj na početni zaslon“.",
+  "guide.p.pwa.desktop": "Stolno računalo: Koristite ikonu za instalaciju u adresnoj traci.",
+  "guide.p.pwa2":
+    "Nakon instalacije, aplikacija se otvara preko cijelog zaslona kao normalna aplikacija i radi izvan mreže — GPS, UTC vrijeme i ugrađeni glas rade bez veze. AI glas za „Izgovori“ treba vezu. Aplikacija se ažurira u pozadini; možete prisiliti provjeru u postavkama.",
+  "guide.h.privacy": "7. Privatnost",
+  "guide.p.privacy":
+    "Svi podaci ostaju na vašem uređaju. Nema računa, nema praćenja, nema analitike. Pročitajte cijelu obavijest o GDPR-u/DSGVO-u i impresum na stranici Privatnost.",
+} as const;
+
+export type TranslationKey = keyof typeof hr;
+export type Dictionary = Record<TranslationKey, string>;
