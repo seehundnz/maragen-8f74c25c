@@ -52,15 +52,15 @@ function SettingsPage() {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="auto">{t("settings.language.auto")}</SelectItem>
-                <SelectItem value="en">English</SelectItem>
                 <SelectItem value="de">Deutsch</SelectItem>
-                <SelectItem value="fr">Français</SelectItem>
-                <SelectItem value="nl">Nederlands</SelectItem>
+                <SelectItem value="en">English</SelectItem>
                 <SelectItem value="es">Español</SelectItem>
-                <SelectItem value="it">Italiano</SelectItem>
-                <SelectItem value="sv">Svenska</SelectItem>
-                <SelectItem value="nb">Norsk</SelectItem>
+                <SelectItem value="fr">Français</SelectItem>
                 <SelectItem value="hr">Hrvatski</SelectItem>
+                <SelectItem value="it">Italiano</SelectItem>
+                <SelectItem value="nl">Nederlands</SelectItem>
+                <SelectItem value="nb">Norsk</SelectItem>
+                <SelectItem value="sv">Svenska</SelectItem>
               </SelectContent>
 
             </Select>
