@@ -1,0 +1,363 @@
+export const sv = {
+  "app.name": "VHF-anrop",
+  "nav.vessels": "Fartyg",
+  "nav.settings": "Inställningar",
+  "nav.privacy": "Integritet & Info",
+  "nav.install": "Installera",
+  "nav.guide": "Guide",
+  "nav.nightModeOn": "Slå på nattläge",
+  "nav.nightModeOff": "Slå av nattläge",
+
+  "install.title": "Installera appen",
+  "install.intro":
+    "Genom att installera appen läggs den till på din hemskärm så att den öppnas i helskärm och fungerar offline.",
+  "install.button": "Installera nu",
+  "install.close": "Stäng",
+  "install.ios.step1": "Tryck på Dela-knappen i webbläsarens verktygsfält.",
+  "install.ios.step2": 'Scrolla ner och välj "Lägg till på hemskärmen".',
+  "install.ios.step3": 'Tryck på "Lägg till" i det övre högra hörnet.',
+  "install.iosOther.note":
+    "På iPhone och iPad kan endast Safari installera appar. Öppna denna sida i Safari först och följ sedan stegen nedan.",
+  "install.android.step1": "Öppna webbläsarens meny (tre prickar).",
+  "install.android.step2": 'Välj "Installera app" eller "Lägg till på hemskärmen".',
+  "install.android.step3": "Bekräfta installationen.",
+  "install.desktop.step1": "Öppna webbläsarens meny eller klicka på installationsikonen i adressfältet.",
+  "install.desktop.step2": 'Välj "Installera" och bekräfta.',
+
+  "home.title": "Vilken typ av anrop behöver du göra?",
+  "home.subtitle": "Välj anropstyp — dina fartygsuppgifter, position och tid infogas automatiskt.",
+
+  "call.mayday.short": "Nöd",
+  "call.panpan.short": "Ilarbete",
+  "call.securite.short": "Säkerhet",
+  "call.standard.short": "Rutin",
+  "call.mayday.description":
+    "Generera ett Mayday-nödanrop med dina fartygsuppgifter, live GPS-position och UTC-tid.",
+  "call.panpan.description":
+    "Generera ett Pan-Pan-ilanrop med fartygsuppgifter, live position och UTC-tid.",
+  "call.securite.description":
+    "Generera ett Sécurité-säkerhetsmeddelande till alla stationer med din live position.",
+  "call.standard.description":
+    "Generera ett rutinmässigt VHF-anrop till en marina, station eller ett annat fartyg med begäran om arbetskanal.",
+
+  "call.utcTime": "UTC-tid",
+  "call.position": "Position",
+  "call.manualEntry": "Manuell inmatning",
+  "call.waitingGps": "Väntar på GPS…",
+  "call.refreshFix": "Uppdatera position",
+  "call.manualPosition": "Manuell position",
+  "call.autoUpdateOn": "Auto-uppdatering var {seconds}:e sekund",
+  "call.autoUpdateOff": "Auto-uppdatering av",
+  "call.latitude": "Latitud (decimal)",
+  "call.longitude": "Longitud (decimal)",
+  "call.usePosition": "Använd position",
+  "call.manualPositionSet": "Manuell position inställd",
+  "call.invalidCoordinates": "Ange giltiga decimala koordinater",
+  "call.vessel": "Fartyg",
+  "call.selectVessel": "Välj fartyg",
+  "call.noVessel": "Inget fartyg sparat ännu.",
+  "call.addYourVessel": "Lägg till ditt fartyg",
+  "call.stationCalled": "Anropad station",
+  "call.safetyMessage": "Säkerhetsmeddelande",
+  "call.natureOfSituation": "Situationens art",
+  "call.assistanceRequired": "Begärd assistans",
+  "call.pob": "Personer ombord",
+  "call.channel": "VHF-kanal",
+  "call.additionalMessage": "Ytterligare meddelande",
+  "call.additionalMessagePlaceholder": "Övrigt som kuststationen bör känna till",
+  "call.additionalMessagePlaceholder.panpan": "Ytterligare detaljer om brådskan",
+  "call.additionalMessagePlaceholder.securite": "Ytterligare detaljer om säkerhetsrisken",
+  "call.additionalMessagePlaceholder.standard": "Ditt meddelande eller begäran",
+  "call.radioScript": "Radiomanuskript",
+  "call.channel16Notice": "Sänd på VHF-kanal 16",
+  "call.channel16NoticeHint":
+    "Mayday, Pan-Pan och Sécurité sänds på den internationella nöd- och anropskanalen 16.",
+  "call.scriptEnglishNote":
+    "Radiomanuskriptet är alltid på engelska — det internationella språket för VHF-kommunikation.",
+  "call.copy": "Kopiera",
+  "call.share": "Dela",
+  "call.read": "Läs",
+  "call.close": "Stäng",
+  "call.speak": "Tala",
+  "call.stop": "Stopp",
+  "call.copied": "Radiomanuskript kopierat",
+  "call.copyFailed": "Kunde inte kopiera — markera texten manuellt",
+  "call.speechUnavailable": "Talsyntes är inte tillgänglig på denna enhet",
+  "call.offlineVoice": "Offline — använder enhetens inbyggda röst",
+  "call.disclaimer":
+    "Denna app är endast ett hjälpmedel. Den ersätter inte korrekt radioutbildning, ett DSC-nödlarm eller befälhavarens omdöme. Skicka alltid ett DSC-larm först om det är möjligt.",
+
+  "dsc.title": "Skicka ett DSC-nödlarm först",
+  "dsc.intro": "Om din radio har DSC (röd nödknapp), skicka DSC-larmet innan du talar:",
+  "dsc.step1": "Om tiden tillåter, välj typ av nöd i radions DSC-meny (t.ex. sjunker, brand, man överbord).",
+  "dsc.step2": "Lyft sedan locket och håll in den röda DISTRESS-knappen i ca 5 sekunder.",
+  "dsc.step3": "Vänta på kvittens; radion växlar automatiskt till kanal 16.",
+  "dsc.step4": "Läs sedan upp MAYDAY-meddelandet nedan på kanal 16.",
+  "dsc.note": "Kontrollera att ditt MMSI är programmerat i radion och att en GPS-position är ansluten. Utan DSC, anropa MAYDAY direkt på kanal 16.",
+
+  "comms.title": "Fortsatt kommunikation",
+  "comms.intro": "Standardfraser för fortsatt kommunikation, begäran om tystnad, återkallande av falsklarm och avslutande av nödanrop.",
+  "comms.h.relay": "Fortsatt kommunikation under ett nödfall",
+  "comms.p.relay": "MAYDAY [VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DSITRESS]\nThis is [VESSEL NAME], [CALL SIGN]\n[MESSAGE]\nOVER\n",
+  "comms.h.silence": "Begäran om tystnad (endast kustradiostation eller fartyg i nöd)",
+  "comms.p.silence": "All stations\nSilence mayday\n",
+  "comms.h.cancel": "Återkalla ett felaktigt utlöst nödlarm (endast fartyg i nöd)",
+  "comms.p.cancel":
+    "All stations, all stations, all stations\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
+  "comms.h.end": "Avsluta ett nödanrop (endast kuststation eller fartyg i nöd)",
+  "comms.p.end":
+    "MAYDAY\nAll stations, all stations, all stations\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC \n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
+
+  "nature.sinking": "Sjunker",
+  "nature.takingOnWater": "Tar in vatten",
+  "nature.fire": "Brand ombord",
+  "nature.pob": "Man överbord",
+  "nature.grounding": "Grundstötning",
+  "nature.capsized": "Kantrat",
+  "nature.collision": "Kollision",
+  "nature.medical": "Medicinskt nödläge",
+  "nature.engineFailure": "Maskinhaveri",
+  "nature.steeringFailure": "Roderhaveri",
+  "nature.dismasted": "Masthaveri",
+  "nature.adrift": "Drivande",
+  "nature.outOfFuel": "Bränslebrist",
+  "nature.medicalAdvice": "Medicinsk rådgivning önskas",
+  "nature.riggingDamage": "Riggskada",
+  "nature.navHazard": "Navigeringsfara siktad",
+  "nature.floatingObject": "Flytande föremål",
+  "nature.unlitBuoy": "Osläckt boj",
+  "nature.restrictedManoeuvrability": "Begränsad manövrerbarhet",
+  "nature.severeWeather": "Hårt väder observerat",
+
+  "settings.title": "Inställningar",
+  "settings.language": "Språk",
+  "settings.languageHint": "Gränssnittets språk. Radiomanuskript förblir alltid på engelska.",
+  "settings.language.auto": "Automatiskt (enhetens språk)",
+  "settings.autoUpdate": "Auto-uppdatera position",
+  "settings.autoUpdateHint": "Uppdatera GPS-fix kontinuerligt när en anropsskärm är öppen.",
+  "settings.interval": "Uppdateringsintervall (sekunder)",
+  "settings.intervalHint": "Standard 10 sekunder. Tillåtet intervall 2–300 sekunder.",
+  "settings.intervalError": "Värdet måste vara mellan 2 och 300 sekunder.",
+  "settings.defaultChannel": "Standard VHF-kanal",
+  "settings.positionFormat": "Positionsformat",
+  "settings.positionFormat.ddm": "Grader och decimalminuter (54° 19.85' N)",
+  "settings.positionFormat.dd": "Decimalgrader (54.33083°)",
+  "settings.nightMode": "Nattläge (rött ljus)",
+  "settings.nightModeHint":
+    "Färgar hela appen i dämpat rött mot en nästan svart bakgrund för att bevara ditt mörkerseende ombord.",
+  "settings.aiVoice": 'Använd AI-röst för "Tala"',
+  "settings.aiVoiceHint":
+    "Avstängd som standard. Om du slår på detta skickas texten till vår taltjänst för en tydlig radiopratarröst. När den är avstängd används endast din enhets inbyggda röst och ingen text lämnar enheten.",
+  "settings.appHeading": "App & uppdateringar",
+  "settings.offlineHint":
+    "Appen lagras på din enhet så att den även kan öppnas utan nätverksanslutning.",
+  "settings.swStatus": "Service worker",
+  "settings.swStatus.active": "Aktiv",
+  "settings.swStatus.waiting": "Uppdatering väntar",
+  "settings.swStatus.installing": "Installerar",
+  "settings.swStatus.notRegistered": "Ej registrerad",
+  "settings.swStatus.unsupported": "Stöds ej",
+  "settings.connection": "Anslutning",
+  "settings.online": "Online",
+  "settings.offline": "Offline",
+  "settings.installStatus": "App-installation",
+  "settings.installed": "Installerad",
+  "settings.notInstalled": "Webbläsarflik",
+  "settings.buildDate": "Installerad version",
+  "settings.lastChecked": "Senast kontrollerad",
+  "settings.checkUpdate": "Sök efter uppdateringar",
+  "settings.checking": "Söker…",
+  "settings.updateAvailable": "En ny version är tillgänglig.",
+  "settings.updateNow": "Uppdatera nu",
+  "settings.upToDate": "Du har den senaste versionen.",
+  "settings.updateHint":
+    "Appen uppdateras automatiskt i bakgrunden; du kan tvinga fram en kontroll här.",
+  "settings.clearHeading": "Rensa cache & lagrad data",
+  "settings.clearHint":
+    "Tar bort offline-cachen och all data som lagrats på denna enhet: fartygsprofiler, inställningar och språkval. Detta kan inte ångras.",
+  "settings.clearButton": "Rensa cache och data",
+  "settings.clearConfirmTitle": "Rensa all data?",
+  "settings.clearConfirmBody":
+    "Alla fartygsprofiler, inställningar och offline-cachen kommer att raderas permanent från denna enhet. Appen startas om med fabriksinställningar. Denna åtgärd kan inte ångras.",
+  "settings.clearCancel": "Avbryt",
+  "settings.clearConfirm": "Ja, radera allt",
+  "settings.clearing": "Raderar…",
+
+  "settings.supportHeading": "Stöd appen",
+  "settings.supportBody":
+    "Om du gillar appen uppskattar jag ett litet bidrag. Det hjälper till att täcka kostnader för hosting och utveckling.",
+  "settings.supportLink": "Köp mig en kaffe",
+
+  "settings.sourceHeading": "Källkod",
+  "settings.sourceBody":
+    "Denna app är släppt under licensen AGPL-3.0-or-later. Alla som är värd för appen offentligt måste göra källkoden för den version som används tillgänglig för användare.",
+  "settings.sourceLink": "Visa källkod på GitHub",
+
+  "settings.privacyHeading": "Integritet & juridiskt",
+  "settings.privacyHint":
+    "Alla inställningar och fartygsprofiler lagras endast på denna enhet. Inget konto, ingen spårning, ingen analys.",
+  "settings.privacyLink": "GDPR-information & juridisk information",
+
+  "vessels.title": "Fartyg",
+  "vessels.add": "Lägg till fartyg",
+  "vessels.empty": "Inga fartyg ännu. Lägg till din båt så att varje radioanrop fylls i automatiskt.",
+  "vessels.active": "Aktivt",
+  "vessels.setActive": "Välj som aktivt",
+  "vessels.edit": "Redigera fartyg",
+  "vessels.delete": "Ta bort fartyg",
+  "vessels.deleteConfirmTitle": "Ta bort fartyg?",
+  "vessels.deleteConfirmBody": "{name} och alla dess uppgifter kommer att tas bort permanent från denna enhet.",
+  "vessels.deleteConfirm": "Ta bort",
+  "vessels.deleteCancel": "Avbryt",
+  "vessels.deleted": "{name} borttagen",
+  "vessels.saved": "{name} sparad",
+  "vessels.editTitle": "Redigera fartyg",
+  "vessels.addTitle": "Lägg till fartyg",
+  "vessels.name": "Fartygsnamn",
+  "vessels.mmsi": "MMSI (9 siffror)",
+  "vessels.callSign": "Anropssignal",
+  "vessels.type": "Fartygstyp",
+  "vessels.typePlaceholder": "Segelbåt",
+  "vessels.length": "Längd",
+  "vessels.lengthPlaceholder": "11 meter",
+  "vessels.hull": "Skrovfärg",
+  "vessels.hullPlaceholder": "vit",
+  "vessels.defaultPob": "Standardantal personer ombord",
+  "vessels.defaultChannel": "Standard VHF-kanal",
+  "vessels.save": "Spara fartyg",
+  "vessels.cancel": "Avbryt",
+  "vessels.englishNotice": "Vänligen ange fartygstyp, längd och skrovfärg på engelska — de infogas i det engelska radiomanuskriptet precis som de skrivs.",
+  "vessels.errName": "Fartygsnamn krävs",
+  "vessels.errMmsi": "MMSI måste vara exakt 9 siffror",
+  "vessels.errMmsiShort": "MMSI är för kort — {count} siffra/siffror till behövs (9 totalt)",
+  "vessels.errCallSign": "Anropssignal krävs",
+
+  "privacy.title": "Integritet & Info",
+  "privacy.subtitle": "Integritet & Juridisk information — senast uppdaterad 29 augusti 2026",
+  "privacy.h.summary": "Kort svar: följer denna app GDPR?",
+  "privacy.p.summary1":
+    "Appen är byggd för att vara dataminimalistisk: den fungerar utan konto, utan spårning, utan reklam och utan analys. Allt du matar in — fartygsprofiler, MMSI, anropssignal, personer ombord, inställningar — lagras endast i din enhets lokala webbläsarlagring. Det laddas aldrig upp till en server och delas aldrig.",
+  "privacy.p.summary2":
+    "Eftersom inga personuppgifter överförs eller lagras av oss för dessa funktioner, finns det ingen behandling som kräver en separat laglig grund, och ingen data att exportera eller radera på vår sida. Du behåller full kontroll på din egen enhet.",
+  "privacy.h.gps": "GPS-position",
+  "privacy.p.gps":
+    "Din position läses från din enhet endast efter att du gett tillstånd i webbläsaren. Den används uteslutande för att fylla i positionsraden i radiomanuskriptet och hålls i minnet medan appen är öppen. Den lagras inte, loggas inte och överförs inte. Du kan när som helst återkalla tillståndet i din webbläsares eller ditt systems inställningar.",
+  "privacy.h.tts": "Text-till-tal (Tala-knappen)",
+  "privacy.p.tts1":
+    "I inställningarna kan du slå på eller av AI-rösten för Tala-knappen. Denna inställning styr om någon text lämnar din enhet.",
+  "privacy.s.ttsOn": "AI-röst på (endast efter att du uttryckligen aktiverat det):",
+  "privacy.p.ttsOn":
+    "när du trycker på ”Tala” skickas det genererade manuskriptet — som kan innehålla fartygsnamn, MMSI, anropssignal och position — från vår server till den taltjänst vi använder (Lovable AI Gateway, driven av vår värdleverantör Lovable Labs) för att producera talet, och raderas sedan — det lagras inte och används inte för träning. Behandlingen kan ske på servrar utanför EU, skyddade av leverantörens standardavtalsklausuler. Om inget nätverk är tillgängligt faller appen automatiskt tillbaka på enhetens inbyggda röst.",
+  "privacy.s.ttsOff": "AI-röst av (standard):",
+  "privacy.p.ttsOff":
+    "endast enhetens inbyggda talsyntes används. Ingen manuskripttext och inga fartygsuppgifter överförs; allt stannar på din enhet.",
+  "privacy.h.install": "Installera appen på din telefon (PWA)",
+  "privacy.p.install1":
+    "Denna app kan läggas till på din hemskärm så att den öppnas som en vanlig app, i helskärm och utan adressfält. På iPhone/iPad öppnar du den i Safari, trycker på dela-ikonen och väljer ”Lägg till på hemskärmen”. På Android öppnar du den i Chrome och väljer ”Installera app” eller ”Lägg till på hemskärmen” i menyn.",
+  "privacy.p.install2":
+    "När den är installerad lagras appfilerna (kod, ikoner, stilar) i din enhets webbläsarcache så att den även startar utan nätverksanslutning — användbart till sjöss. Denna cache stannar på din enhet, innehåller inga personuppgifter och laddas aldrig upp. Genom att ta bort appikonen eller rensa sajtdata i din webbläsar tas den bort, tillsammans med dina fartygsprofiler och inställningar.",
+  "privacy.p.install3":
+    "Appen uppdaterar sig själv i bakgrunden när den har anslutning; i inställningarna kan du se den installerade versionen och leta efter uppdateringar manuellt. Observera att GPS-position, aktuell UTC-tid och den inbyggda rösten fungerar offline, medan AI-rösten för Tala-knappen kräver anslutning.",
+
+  "privacy.h.cookies": "Cookies, spårning och hosting",
+  "privacy.p.cookies":
+    "Inga cookies sätts för spårning, inga analys- eller reklamverktyg används och inga användarprofiler skapas. Appen ligger på Lovable Labs Incorporateds infrastruktur; när appen laddas behandlar värdleverantören tekniska anslutningsdata (såsom IP-adress) i serverloggar, vilket är tekniskt nödvändigt för att leverera en webbplats (Art. 6 (1)(f) GDPR). Detta kan innefatta servrar utanför EU; överföringen skyddas av standardavtalsklausuler.",
+  "privacy.h.noExternal": "Inget innehåll från tredje part",
+  "privacy.p.noExternal":
+    "Appen laddar inga typsnitt, ikoner, skript, kartor eller annat innehåll från tredjepartsservrar. Text renderas med de typsnitt som redan finns på din enhet, alla symboler och appikoner är en del av applikationspaketet, och QR-koden genereras och skannas helt i din webbläsare. Din IP-adress skickas därför inte till någon tredje part (t.ex. en typsnitts- eller CDN-leverantör) bara genom att du öppnar appen.",
+  "privacy.h.links": "Externa länkar",
+  "privacy.p.links":
+    "Inställningssidan innehåller en länk för frivilliga bidrag till Buy Me a Coffee (buymeacoffee.com). Inget laddas från den leverantören och ingen data skickas dit såvida du inte aktivt trycker på länken. När du gör det lämnar du denna app och den leverantörens integritetspolicy och villkor gäller.",
+  "privacy.h.rights": "Dina rättigheter",
+  "privacy.p.rights":
+    "Enligt GDPR har du rätt till information, rättelse, radering, begränsning, dataportabilitet och invändning, samt rätt att inge klagomål till en tillsynsmyndighet. Eftersom din data endast finns på din enhet kan du utöva radering direkt genom att ta bort fartygsprofilerna i appen eller rensa denna sajts data i din webbläsares inställningar.",
+  "privacy.h.imprint": "Information om leverantören (§ 5 DDG)",
+  "privacy.imprint.responsible": "Ansvarig för innehåll (§ 18 (2) MStV): Sebastian Esch",
+  "privacy.imprint.email": "E-post",
+  "privacy.imprint.phone": "Telefon",
+  "privacy.imprint.country": "Tyskland",
+  "privacy.h.source": "Källkod (AGPL)",
+  "privacy.p.source":
+    "Denna app är licensierad under GNU Affero General Public License v3.0 eller senare (AGPL-3.0-or-later). Eftersom detta är en webbapp gäller AGPL:s nätverksklausul: alla som är värd för programvaran offentligt måste tillhandahålla användarna källkoden för den version som körs. Källkoden finns på GitHub; länken pekar på den version som denna installation baseras på.",
+  "privacy.sourceLink": "Visa källkod på GitHub",
+  "privacy.h.safety": "Säkerhetsmeddelande",
+  "privacy.p.safety1":
+    "Denna app är endast ett stödinstrument. Den ersätter inte korrekt radioutbildning, ett giltigt radiocertifikat eller officiella procedurer. Följ alltid instruktionerna från den samordnande räddningsmyndigheten i en nödsituation.",
+  "privacy.p.safety2":
+    "Inget ansvar tas för användningen av denna app. Operatören och utvecklarna kan inte hållas ansvariga för incidenter, skador eller konsekvenser som följer av dess användning. Du använder appen helt på egen risk och är ensam ansvarig för dina handlingar och beslut på vattnet.",
+  "share.qrTitle": "Dela fartyg",
+  "share.qrHint": "Låt en besättningsmedlem skanna denna kod i appen för att importera fartygsprofilen.",
+  "share.qrAlt": "QR-kod med fartygsuppgifter för {name}",
+  "share.copyCode": "Kopiera kod",
+  "share.copied": "Delningskod kopierad",
+  "share.privacyNote": "Koden innehåller endast detta fartygs uppgifter. Ingenting laddas upp — dela den endast med din egen besättning.",
+  "share.share": "Dela",
+  "share.scan": "Skanna QR-kod",
+  "share.scanTitle": "Importera fartyg",
+  "share.scanHint": "Rikta kameran mot QR-koden som visas på den andra enheten.",
+  "share.cameraError": "Kameran är inte tillgänglig. Vänligen tillåt kameratillgång eller klistra in delningskoden nedan.",
+  "share.pasteLabel": "Eller klistra in delningskoden",
+  "share.pasteAction": "Importera från kod",
+  "share.invalidCode": "Denna kod är inte en giltig delningskod för fartyg",
+  "share.confirmTitle": "Importera detta fartyg?",
+  "share.imported": "{name} importerad",
+  "share.updated": "{name} uppdaterad",
+  "share.duplicate": "Ett fartyg med MMSI {mmsi} finns redan.",
+  "share.updateExisting": "Uppdatera befintligt",
+  "share.addAsNew": "Lägg till som nytt",
+  "share.import": "Importera",
+  "share.cancel": "Avbryt",
+
+  "privacy.h.qr": "Dela ett fartyg via QR-kod",
+  "privacy.p.qr":
+    "Du kan dela en fartygsprofil med din besättning som en QR-kod. Koden genereras på din enhet och innehåller endast det fartygets uppgifter (namn, MMSI, anropssignal, typ, längd, skrovfärg, personer ombord, kanal). Ingenting skickas till en server. Skanningen använder din enhets kamera uteslutande för att avkoda koden i webbläsaren; ingen bild, video eller skanningsresultat lagras eller överförs. Eftersom MMSI och anropssignal kan identifiera ett fartyg och dess ägare bör du endast dela koden med personer du litar på.",
+
+  "guide.title": "Hur man använder appen",
+  "guide.subtitle": "En snabb genomgång av alla funktioner — från ditt första fartyg till ett färdigt radioanrop.",
+  "guide.h.intro": "Vad appen gör",
+  "guide.p.intro1":
+    "VHF Call Builder genererar radiomanuskript som är redo att läsas upp — Mayday, Pan-Pan, Sécurité och rutinanrop — med hjälp av dina fartygsuppgifter, aktuell UTC-tid och din GPS-position. Allt stannar på din enhet: inget konto, ingen server och inget internet behövs efter den första laddningen.",
+  "guide.p.intro2":
+    "Appen är endast ett hjälpmedel. Den ersätter inte korrekt radioutbildning, ett giltigt radiocertifikat eller ett DSC-nödlarm. Följ alltid instruktionerna från den samordnande räddningsmyndigheten.",
+  "guide.h.gettingStarted": "1. Lägg till ditt fartyg",
+  "guide.p.started1":
+    "Gå till sidan Fartyg och tryck på ”Lägg till fartyg”. Ange minst fartygets namn, MMSI (exakt 9 siffror) och anropssignal — dessa krävs. Du kan också lägga till fartygstyp, längd och skrovfärg. Vänligen ange typ, längd och skrovfärg på engelska, eftersom de infogas i det engelska radiomanuskriptet precis som de skrivs.",
+  "guide.p.started2":
+    "Du kan spara flera fartyg (t.ex. din egen båt och en hyrd). Tryck på ”Välj som aktivt” för att välja vilket fartyg som ska användas för nästa anrop. Det aktiva fartygets uppgifter fylls automatiskt i varje manuskript.",
+  "guide.h.generate": "2. Generera ett radioanrop",
+  "guide.p.generate1":
+    "På anropsskärmen växlar du mellan de fyra anropstyperna med flikarna längst ner: MAYDAY (röd, nöd), PAN-PAN (orange, ilarbete), SÉCURITÉ (gul, säkerhet) och STANDARD (grön, rutin). Hela skärmen byter färgtema efter anropstypen. All inmatad data följer med när du byter flik.",
+  "guide.p.generate2":
+    "Sidhuvudet visar aktuell UTC-tid och din GPS-position. Ge tillstånd för platsåtkomst när du tillfrågas. Positionen uppdateras automatiskt om auto-uppdatering är på; tryck på ”Uppdatera position” för en manuell uppdatering, eller ”Manuell position” för att skriva in koordinaterna själv.",
+  "guide.p.generate3":
+    "Fyll i fälten ovanför manuskriptet: situationens art (från den förinställda listan eller fritext), personer ombord, VHF-kanal och eventuella ytterligare meddelanden. Beroende på anropstyp kan du även ange anropad station eller ett säkerhetsmeddelande. Manuskriptet uppdateras direkt medan du skriver.",
+  "guide.p.generate4":
+    "På Mayday-sidan påminner en utfällbar sektion ”Skicka ett DSC-nödlarm först” dig om att aktivera DSC-larmet innan du talar. Under manuskriptet finns en sektion för ”Fortsatt kommunikation” med standardfraser för relay, tystnad, återkallande av falsklarm och avslutande av nödanrop.",
+  "guide.h.readSpeak": "3. Läsa och tala",
+  "guide.p.readSpeak1":
+    "Tryck på ”Läs” för att öppna manuskriptet i helskärm med stor text, perfekt för att läsa upp i radion. Läsläget tar hänsyn till skärmens kanter och scrollar smidigt på mobilen.",
+  "guide.p.readSpeak2":
+    "Tryck på ”Tala” för att höra manuskriptet läsas upp. I inställningarna kan du välja mellan en AI-röst (kräver anslutning) och din enhets inbyggda röst (fungerar offline, inget lämnar din enhet).",
+  "guide.p.readSpeak3":
+    "”Kopiera” lägger manuskriptet i urklipp; ”Dela” öppnar systemets delningsmeny.",
+  "guide.h.shareVessel": "4. Dela & importera fartyg",
+  "guide.p.shareVessel1":
+    "I fartygslistan trycker du på dela-ikonen för att visa en QR-kod med fartygets uppgifter. En besättningsmedlem kan skanna den med sin kamera för att importera profilen — eller kopiera och klistra in delningskoden. Om ett fartyg med samma MMSI redan finns väljer du om du vill uppdatera det eller lägga till det som nytt.",
+  "guide.p.shareVessel2":
+    "Koden innehåller endast det fartygets uppgifter. Ingenting laddas upp — dela den endast med din egen besättning.",
+  "guide.h.settings": "5. Inställningar",
+  "guide.p.settings1":
+    "I inställningarna kan du: ändra gränssnittets språk (manuskript förblir alltid på engelska), slå på/av auto-uppdatering av GPS-positionen och ställa in uppdateringsintervall (2–300 sekunder, standard 10), välja standard VHF-kanal och positionsformat (decimalgrader eller grader/decimalminuter) samt slå på eller av AI-rösten.",
+  "guide.p.settings2":
+    "Du kan också söka efter appuppdateringar, se installerad version och rensa all cachad data och alla fartygsprofiler från enheten.",
+  "guide.h.pwa": "6. Installation & offline-användning",
+  "guide.p.pwa1": "Denna app är en Progressive Web App och kan installeras på valfri enhet.",
+  "guide.p.pwa.ios": "iPhone/iPad: Öppna i Safari, tryck på dela-ikonen och välj ”Lägg till på hemskärmen”.",
+  "guide.p.pwa.android": "Android: Öppna webbläsarmenyn och välj ”Installera app” eller ”Lägg till på hemskärmen”.",
+  "guide.p.pwa.desktop": "Desktop: Använd installationsikonen i adressfältet.",
+  "guide.p.pwa2":
+    "När den är installerad öppnas appen i helskärm som en vanlig app och fungerar offline — GPS, UTC-tid och den inbyggda rösten fungerar alla utan anslutning. AI-rösten för ”Tala” kräver anslutning. Appen uppdaterar sig själv i bakgrunden; du kan tvinga fram en kontroll i inställningarna.",
+  "guide.h.privacy": "7. Integritet",
+  "guide.p.privacy":
+    "All data stannar på din enhet. Inget konto, ingen spårning, ingen analys. Läs hela GDPR-meddelandet och informationen om leverantören på Integritetssidan.",
+} as const;

@@ -1,0 +1,363 @@
+export const nb = {
+  "app.name": "VHF-oppkall",
+  "nav.vessels": "Fartøy",
+  "nav.settings": "Innstillinger",
+  "nav.privacy": "Personvern og kontaktinfo",
+  "nav.install": "Installer",
+  "nav.guide": "Veiledning",
+  "nav.nightModeOn": "Slå på nattmodus",
+  "nav.nightModeOff": "Slå av nattmodus",
+
+  "install.title": "Installer denne appen",
+  "install.intro":
+    "Installasjon legger appen til på hjemskjermen din slik at den åpnes i fullskjerm og fungerer uten nett.",
+  "install.button": "Installer nå",
+  "install.close": "Lukk",
+  "install.ios.step1": "Trykk på Del-knappen i nettleserens verktøylinje.",
+  "install.ios.step2": 'Rull ned og velg "Legg til på hjemskjerm".',
+  "install.ios.step3": 'Trykk på "Legg til" i øverste høyre hjørne.',
+  "install.iosOther.note":
+    "På iPhone og iPad kan bare Safari installere apper. Åpne denne siden i Safari først, og følg deretter trinnene nedenfor.",
+  "install.android.step1": "Åpne nettlesermenyen (tre prikker).",
+  "install.android.step2": 'Velg "Installer app" eller "Legg til på hjemskjerm".',
+  "install.android.step3": "Bekreft installasjonen.",
+  "install.desktop.step1": "Åpne nettlesermenyen eller installasjonsikonet i adressefeltet.",
+  "install.desktop.step2": 'Velg "Installer" og bekreft.',
+
+  "home.title": "Hva slags oppkall trenger du?",
+  "home.subtitle": "Velg en type oppkall – fartøysopplysninger, posisjon og tid settes inn automatisk.",
+
+  "call.mayday.short": "Nød",
+  "call.panpan.short": "Haster",
+  "call.securite.short": "Sikkerhet",
+  "call.standard.short": "Rutine",
+  "call.mayday.description":
+    "Generer et muntlig Mayday-nødoppkall med dine fartøysopplysninger, sanntids GPS-posisjon og UTC-tid.",
+  "call.panpan.description":
+    "Generer et muntlig Pan-Pan-hastemeldings oppkall med fartøysopplysninger, sanntids posisjon og UTC-tid.",
+  "call.securite.description":
+    "Generer en muntlig Sécurité-sikkerhetsmelding til alle stasjoner med din sanntids posisjon.",
+  "call.standard.description":
+    "Generer et rutinemessig VHF-oppkall til en havn, kystradiostasjon eller et annet fartøy med forespørsel om arbeidskanal.",
+
+  "call.utcTime": "UTC-tid",
+  "call.position": "Posisjon",
+  "call.manualEntry": "Manuell inntasting",
+  "call.waitingGps": "Venter på GPS…",
+  "call.refreshFix": "Oppdater posisjon",
+  "call.manualPosition": "Manuell posisjon",
+  "call.autoUpdateOn": "Auto-oppdatering hvert {seconds}. sekund",
+  "call.autoUpdateOff": "Auto-oppdatering av",
+  "call.latitude": "Breddegrad (desimal)",
+  "call.longitude": "Lengdegrad (desimal)",
+  "call.usePosition": "Bruk posisjon",
+  "call.manualPositionSet": "Manuell posisjon satt",
+  "call.invalidCoordinates": "Oppgi gyldige desimalkoordinater",
+  "call.vessel": "Fartøy",
+  "call.selectVessel": "Velg fartøy",
+  "call.noVessel": "Ingen fartøy lagret ennå.",
+  "call.addYourVessel": "Legg til ditt fartøy",
+  "call.stationCalled": "Stasjon som kalles",
+  "call.safetyMessage": "Sikkerhetsmelding",
+  "call.natureOfSituation": "Situasjonens art",
+  "call.assistanceRequired": "Assistanse kreves",
+  "call.pob": "Personer om bord",
+  "call.channel": "VHF-kanal",
+  "call.additionalMessage": "Tilleggsmelding",
+  "call.additionalMessagePlaceholder": "Annet kystradiostasjonen bør vite",
+  "call.additionalMessagePlaceholder.panpan": "Flere detaljer om hastesituasjonen",
+  "call.additionalMessagePlaceholder.securite": "Flere detaljer om sikkerhetsproblemet",
+  "call.additionalMessagePlaceholder.standard": "Din melding eller forespørsel",
+  "call.radioScript": "Radiomanuskript",
+  "call.channel16Notice": "Send på VHF-kanal 16",
+  "call.channel16NoticeHint":
+    "Mayday, Pan-Pan og Sécurité sendes på den internasjonale nød- og kallekanalen 16.",
+  "call.scriptEnglishNote":
+    "Radiomanuskriptet er alltid på engelsk – det internasjonale språket for VHF-kommunikasjon.",
+  "call.copy": "Kopier",
+  "call.share": "Del",
+  "call.read": "Les",
+  "call.close": "Lukk",
+  "call.speak": "Les opp",
+  "call.stop": "Stopp",
+  "call.copied": "Radiomanuskript kopiert",
+  "call.copyFailed": "Kunne ikke kopiere – velg teksten manuelt",
+  "call.speechUnavailable": "Tale er ikke tilgjengelig på denne enheten",
+  "call.offlineVoice": "Frakoblet – bruker enhetens innebygde stemme",
+  "call.disclaimer":
+    "Denne appen er kun et hjelpemiddel. Den erstatter ikke formell radioopplæring, et DSC-nødanrop eller skipperens skjønn. Send alltid DSC-nødanrop først der det er tilgjengelig.",
+
+  "dsc.title": "Send et DSC-nødanrop først",
+  "dsc.intro": "Hvis radioen din har DSC (rød nødknapp), send DSC-nødanropet før du snakker:",
+  "dsc.step1": "Hvis tiden tillater det, velg nødssituasjonens art i radioens DSC-meny (f.eks. sinking, fire, man overboard).",
+  "dsc.step2": "Løft deretter dekselet og hold inne den røde DISTRESS-knappen i ca. 5 sekunder.",
+  "dsc.step3": "Vent på bekreftelse; radioen skifter automatisk til kanal 16.",
+  "dsc.step4": "Les deretter opp MAYDAY-meldingen nedenfor på kanal 16.",
+  "dsc.note": "Sjekk at MMSI er programmert i radioen og at GPS-posisjon er tilkoblet. Uten DSC, kall opp MAYDAY direkte på kanal 16.",
+
+  "comms.title": "Videre kommunikasjon",
+  "comms.intro": "Standard radiofraser for videre kommunikasjon, forespørsel om taushet, kansellering av falsk alarm og avslutning av nødsamtale.",
+  "comms.h.relay": "Videre kommunikasjon under en nødssituasjon",
+  "comms.p.relay": "MAYDAY [VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DSITRESS]\nThis is [VESSEL NAME], [CALL SIGN]\n[MESSAGE]\nOVER\n",
+  "comms.h.silence": "Be om taushet (kun kystradiostasjon eller fartøy i nød)",
+  "comms.p.silence": "All stations\nSilence mayday\n",
+  "comms.h.cancel": "Kanseller et feilaktig utløst nødanrop (kun fartøy i nød)",
+  "comms.p.cancel":
+    "All stations, all stations, all stations\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
+  "comms.h.end": "Avslutt et nødoppkall (kun kystradiostasjon eller fartøy i nød)",
+  "comms.p.end":
+    "MAYDAY\nAll stations, all stations, all stations\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC \n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
+
+  "nature.sinking": "Synker",
+  "nature.takingOnWater": "Tar inn vann",
+  "nature.fire": "Brann om bord",
+  "nature.pob": "Person over bord",
+  "nature.grounding": "Grunnstøting",
+  "nature.capsized": "Kantret",
+  "nature.collision": "Kollisjon",
+  "nature.medical": "Medisinsk nødsituasjon",
+  "nature.engineFailure": "Motorstans",
+  "nature.steeringFailure": "Styringssvikt",
+  "nature.dismasted": "Mastehavari",
+  "nature.adrift": "I drift",
+  "nature.outOfFuel": "Tom for drivstoff",
+  "nature.medicalAdvice": "Behov for medisinsk rådgivning (Mediko)",
+  "nature.riggingDamage": "Skade på rigg",
+  "nature.navHazard": "Navigasjonsfare observert",
+  "nature.floatingObject": "Flytende gjenstand i drift",
+  "nature.unlitBuoy": "Uslukket bøye",
+  "nature.restrictedManoeuvrability": "Begrenset manøvreringsevne",
+  "nature.severeWeather": "Uvær observert",
+
+  "settings.title": "Innstillinger",
+  "settings.language": "Språk",
+  "settings.languageHint": "Språk i brukergrensesnittet. Radiomanuskript forblir alltid på engelsk.",
+  "settings.language.auto": "Automatisk (enhetens språk)",
+  "settings.autoUpdate": "Auto-oppdater posisjon",
+  "settings.autoUpdateHint": "Oppdater GPS-posisjonen kontinuerlig mens en oppkallsskjerm er åpen.",
+  "settings.interval": "Oppdateringsintervall (sekunder)",
+  "settings.intervalHint": "Standard 10 sekunder. Tillatt område 2–300 sekunder.",
+  "settings.intervalError": "Verdien må være mellom 2 og 300 sekunder.",
+  "settings.defaultChannel": "Standard VHF-kanal",
+  "settings.positionFormat": "Posisjonsformat",
+  "settings.positionFormat.ddm": "Grader og desimalminutter (54° 19.85' N)",
+  "settings.positionFormat.dd": "Desimalgrader (54.33083°)",
+  "settings.nightMode": "Nattmodus (rødt lys)",
+  "settings.nightModeHint":
+    "Farger hele appen i dempet rødt på en nær svart bakgrunn for å bevare nattsynet om bord.",
+  "settings.aiVoice": 'Bruk AI-stemme for "Les opp"',
+  "settings.aiVoiceHint":
+    "Av som standard. Hvis du slår på dette, sendes manuskriptet til vår taletjeneste for å få en tydelig stemme som en radiooperatør. Mens dette er av, brukes bare enhetens innebygde stemme, og ingen tekst forlater enheten.",
+  "settings.appHeading": "App og oppdateringer",
+  "settings.offlineHint":
+    "Appen lagrer seg selv på enheten din slik at den også åpnes uten internettilgang.",
+  "settings.swStatus": "Service worker",
+  "settings.swStatus.active": "Aktiv",
+  "settings.swStatus.waiting": "Oppdatering venter",
+  "settings.swStatus.installing": "Installerer",
+  "settings.swStatus.notRegistered": "Ikke registrert",
+  "settings.swStatus.unsupported": "Støttes ikke",
+  "settings.connection": "Tilkobling",
+  "settings.online": "Tilkoblet",
+  "settings.offline": "Frakoblet",
+  "settings.installStatus": "App-installasjon",
+  "settings.installed": "Installert",
+  "settings.notInstalled": "Nettleserfane",
+  "settings.buildDate": "Installert versjon",
+  "settings.lastChecked": "Sist sjekket",
+  "settings.checkUpdate": "Sjekk etter oppdateringer",
+  "settings.checking": "Sjekker…",
+  "settings.updateAvailable": "En ny versjon er tilgjengelig.",
+  "settings.updateNow": "Oppdater nå",
+  "settings.upToDate": "Du har den nyeste versjonen.",
+  "settings.updateHint":
+    "Appen oppdaterer seg automatisk i bakgrunnen; du kan tvinge frem en sjekk her.",
+  "settings.clearHeading": "Tøm buffer og lagrede data",
+  "settings.clearHint":
+    "Fjerner frakoblet buffer og alle data lagret på denne enheten: fartøyprofiler, innstillinger og språkvalg. Dette kan ikke angres.",
+  "settings.clearButton": "Tøm buffer og data",
+  "settings.clearConfirmTitle": "Slette alle data?",
+  "settings.clearConfirmBody":
+    "Alle fartøyprofiler, innstillinger og den frakoblede bufferen vil bli permanent slettet fra denne enheten. Appen vil starte på nytt med fabrikkinnstillinger. Denne handlingen kan ikke angres.",
+  "settings.clearCancel": "Avbryt",
+  "settings.clearConfirm": "Ja, slett alt",
+  "settings.clearing": "Sletter…",
+
+  "settings.supportHeading": "Støtt denne appen",
+  "settings.supportBody":
+    "Hvis du liker denne appen, vil jeg sette pris på et lite bidrag. Det hjelper med å dekke kostnader til hosting og utvikling.",
+  "settings.supportLink": "Kjøp meg en kaffe",
+
+  "settings.sourceHeading": "Kildekode",
+  "settings.sourceBody":
+    "Denne appen er utgitt under AGPL-3.0-eller-nyere-lisensen. Alle som drifter appen offentlig må gjøre kildekoden for versjonen som er i bruk tilgjengelig for brukerne.",
+  "settings.sourceLink": "Se kildekode på GitHub",
+
+  "settings.privacyHeading": "Personvern og juridisk",
+  "settings.privacyHint":
+    "Alle innstillinger og fartøyprofiler lagres kun på denne enheten. Ingen brukerkonto, ingen sporing, ingen analyse.",
+  "settings.privacyLink": "Personvernerklæring (GDPR) og kontaktinfo",
+
+  "vessels.title": "Fartøy",
+  "vessels.add": "Legg til fartøy",
+  "vessels.empty": "Ingen fartøy ennå. Legg til båten din slik at hvert radiooppkall fylles ut automatisk.",
+  "vessels.active": "Aktiv",
+  "vessels.setActive": "Sett som aktiv",
+  "vessels.edit": "Rediger fartøy",
+  "vessels.delete": "Slett fartøy",
+  "vessels.deleteConfirmTitle": "Slette fartøy?",
+  "vessels.deleteConfirmBody": "{name} og alle tilhørende opplysninger vil bli permanent slettet fra denne enheten.",
+  "vessels.deleteConfirm": "Slett",
+  "vessels.deleteCancel": "Avbryt",
+  "vessels.deleted": "{name} slettet",
+  "vessels.saved": "{name} lagret",
+  "vessels.editTitle": "Rediger fartøy",
+  "vessels.addTitle": "Legg til fartøy",
+  "vessels.name": "Fartøynavn",
+  "vessels.mmsi": "MMSI (9 sifre)",
+  "vessels.callSign": "Kallesignal",
+  "vessels.type": "Fartøytype",
+  "vessels.typePlaceholder": "Sailing yacht",
+  "vessels.length": "Lengde",
+  "vessels.lengthPlaceholder": "11 metre",
+  "vessels.hull": "Skrogfarge",
+  "vessels.hullPlaceholder": "white",
+  "vessels.defaultPob": "Standard antall personer om bord",
+  "vessels.defaultChannel": "Standard VHF-kanal",
+  "vessels.save": "Lagre fartøy",
+  "vessels.cancel": "Avbryt",
+  "vessels.englishNotice": "Vennligst skriv inn fartøytype, lengde og skrogfarge på engelsk – de settes direkte inn i det engelske radiomanuskriptet.",
+  "vessels.errName": "Fartøynavn er påkrevd",
+  "vessels.errMmsi": "MMSI må være nøyaktig 9 sifre",
+  "vessels.errMmsiShort": "MMSI er for kort – trenger {count} siffer til (9 totalt)",
+  "vessels.errCallSign": "Kallesignal er påkrevd",
+
+  "privacy.title": "Personvern og kontaktinfo",
+  "privacy.subtitle": "Personvern og Impressum – sist oppdatert 29. august 2026",
+  "privacy.h.summary": "Kort fortalt: Er denne appen i samsvar med GDPR?",
+  "privacy.p.summary1":
+    "Appen er bygget for å være dataminimal: den fungerer uten brukerkonto, uten sporing, uten reklame og uten analyse. Alt du taster inn – fartøyprofiler, MMSI, kallesignal, personer om bord, innstillinger – lagres kun i din enhets lokale nettleserlagring. Det lastes aldri opp til en server og deles aldri.",
+  "privacy.p.summary2":
+    "Siden ingen personopplysninger overføres eller lagres av oss for disse funksjonene, er det ingen behandling som krever et separat rettslig grunnlag, og ingen data å eksportere eller slette på vår side. Du har full kontroll på din egen enhet.",
+  "privacy.h.gps": "GPS-posisjon",
+  "privacy.p.gps":
+    "Din posisjon leses fra enheten din kun etter at du har gitt tillatelse i nettleseren. Den brukes utelukkende til å fylle ut posisjonslinjen i radiomanuskriptet og holdes i minnet mens appen er åpen. Den blir ikke lagret, logget eller overført. Du kan når som helst trekke tilbake tillatelsen i nettleser- eller systeminnstillingene.",
+  "privacy.h.tts": "Tekst-til-tale (Les opp-knappen)",
+  "privacy.p.tts1":
+    "I Innstillinger kan du slå AI-stemmen for Les opp-knappen på eller av. Denne bryteren styrer om tekst forlater enheten din.",
+  "privacy.s.ttsOn": "AI-stemme på (kun etter at du har aktivert det):",
+  "privacy.p.ttsOn":
+    "Når du trykker på «Les opp», sendes den genererte manuskriptteksten – som kan inneholde fartøynavn, MMSI, kallesignal og posisjon – fra vår server til taletjenesten vi bruker (Lovable AI Gateway, drevet av vår hosting-leverandør Lovable Labs) for å produsere lyd, og slettes deretter umiddelbart. Den blir ikke lagret eller brukt til trening. Behandlingen kan finne sted på servere utenfor EU, sikret av leverandørens standard kontraktsbestemmelser. Hvis nettverk ikke er tilgjengelig, faller appen automatisk tilbake til enhetens innebygde stemme.",
+  "privacy.s.ttsOff": "AI-stemme av (standard):",
+  "privacy.p.ttsOff":
+    "Kun enhetens innebygde talesyntese brukes. Ingen manuskripttekst eller fartøydata overføres; alt forblir på din enhet.",
+  "privacy.h.install": "Installere appen på telefonen din (PWA)",
+  "privacy.p.install1":
+    "Denne appen kan legges til på hjemskjermen din slik at den åpnes som en vanlig app, i fullskjerm og uten nettleserlinje. På iPhone/iPad: Åpne den i Safari, trykk på delingsikonet og velg «Legg til på hjemskjerm». På Android: Åpne den i Chrome og velg «Installer app» eller «Legg til på hjemskjerm» fra menyen.",
+  "privacy.p.install2":
+    "Når appen er installert, lagres appfilene (kode, ikoner, stiler) i enhetens nettleserbuffer slik at den også starter uten nettforbindelse – nyttig til sjøs. Denne bufferen forblir på enheten din, inneholder ingen personopplysninger og lastes aldri opp. Sletting av appikonet eller tømming av nettsteddata i nettleseren fjerner den, sammen med dine fartøyprofiler og innstillinger.",
+  "privacy.p.install3":
+    "Appen oppdaterer seg selv i bakgrunnen når den har tilkobling; i Innstillinger kan du se installert versjon og sjekke etter oppdateringer manuelt. Merk at GPS-posisjon, gjeldende UTC-tid og den innebygde stemmen fungerer uten nett, mens AI-stemmen for Les opp-knappen krever tilkobling.",
+
+  "privacy.h.cookies": "Informasjonskapsler, sporing og hosting",
+  "privacy.p.cookies":
+    "Ingen informasjonskapsler settes for sporing, ingen analyse- eller reklameverktøy brukes, og ingen brukerprofiler opprettes. Appen hostes på infrastrukturen til Lovable Labs Incorporated; når appen lastes inn, behandler hosting-leverandøren tekniske tilkoblingsdata (som IP-adressen) i serverlogger, slik det er teknisk nødvendig for å levere ethvert nettsted (Art. 6 (1)(f) GDPR). Dette kan involvere servere utenfor EU; overføringen er sikret av standard kontraktsbestemmelser.",
+  "privacy.h.noExternal": "Innhold fra tredjeparter",
+  "privacy.p.noExternal":
+    "Appen laster ingen fonter, ikoner, skript, kart eller annet innhold fra tredjepartsservere. Tekst vises med fontene som allerede finnes på enheten din, alle symboler og appikoner er en del av app-pakken, og QR-koder genereres og skannes i sin helhet i nettleseren din. Din IP-adresse blir derfor ikke sendt til noen tredjepart (for eksempel en font- eller CDN-leverandør) bare ved å åpne appen.",
+  "privacy.h.links": "Eksterne lenker",
+  "privacy.p.links":
+    "Innstillingssiden inneholder en frivillig donasjonslenke til Buy Me a Coffee (buymeacoffee.com). Ingenting lastes fra den leverandøren og ingen data sendes dit med mindre du trykker på lenken. Når du gjør det, forlater du denne appen, og den leverandørens personvernregler og vilkår gjelder.",
+  "privacy.h.rights": "Dine rettigheter",
+  "privacy.p.rights":
+    "Under GDPR har du rett til informasjon, innsyn, retting, sletting, begrensning, dataportabilitet og innsigelse, samt rett til å klage til en tilsynsmyndighet. Siden dine data kun finnes på din enhet, kan du utøve sletting direkte ved å slette fartøyprofilene i appen eller tømme nettstedets data i nettleserinnstillingene.",
+  "privacy.h.imprint": "Kontaktinformasjon / Impressum (§ 5 DDG)",
+  "privacy.imprint.responsible": "Ansvarlig for innhold (§ 18 (2) MStV): Sebastian Esch",
+  "privacy.imprint.email": "E-post",
+  "privacy.imprint.phone": "Telefon",
+  "privacy.imprint.country": "Tyskland",
+  "privacy.h.source": "Kildekode (AGPL)",
+  "privacy.p.source":
+    "Denne appen er lisensiert under GNU Affero General Public License v3.0 eller nyere (AGPL-3.0-eller-nyere). Siden dette er en nett-app, gjelder AGPLs nettverksklausul: Alle som drifter programvaren offentlig må gi brukere tilgang til kildekoden for versjonen som kjøres. Kildekoden er tilgjengelig på GitHub; lenken peker til versjonen denne installasjonen er basert på.",
+  "privacy.sourceLink": "Se kildekode på GitHub",
+  "privacy.h.safety": "Sikkerhetsmerknad",
+  "privacy.p.safety1":
+    "Denne appen er kun et støtteverktøy. Den erstatter ikke formell radioopplæring, et gyldig radiooperatørsertifikat eller offisielle prosedyrer. I en nødsituasjon må du alltid følge instruksjonene fra den koordinerende redningsmyndigheten.",
+  "privacy.p.safety2":
+    "Det tas intet ansvar for bruken av denne appen. Operatøren og utviklerne kan ikke holdes ansvarlige for hendelser, skader eller konsekvenser som følge av bruken. Du bruker appen helt på egen risiko og er selv ansvarlig for dine handlinger og beslutninger på vannet.",
+  "share.qrTitle": "Del fartøy",
+  "share.qrHint": "La et besetningsmedlem skanne denne koden i appen for å importere denne fartøyprofilen.",
+  "share.qrAlt": "QR-kode med fartøydata for {name}",
+  "share.copyCode": "Kopier kode",
+  "share.copied": "Delingskode kopiert",
+  "share.privacyNote": "Koden inneholder kun dette fartøyets data. Ingenting lastes opp – del den kun med din egen besetning.",
+  "share.share": "Del",
+  "share.scan": "Skann QR-kode",
+  "share.scanTitle": "Importer fartøy",
+  "share.scanHint": "Rett kameraet mot QR-koden som vises på den andre enheten.",
+  "share.cameraError": "Kamera er ikke tilgjengelig. Gi kameratillatelse eller lim inn delingskoden nedenfor.",
+  "share.pasteLabel": "Eller lim inn delingskoden",
+  "share.pasteAction": "Importer fra kode",
+  "share.invalidCode": "Denne koden er ikke en gyldig delingskode for fartøy",
+  "share.confirmTitle": "Importer dette fartøyet?",
+  "share.imported": "{name} importert",
+  "share.updated": "{name} oppdatert",
+  "share.duplicate": "Et fartøy med MMSI {mmsi} finnes allerede.",
+  "share.updateExisting": "Oppdater eksisterende",
+  "share.addAsNew": "Legg til som nytt",
+  "share.import": "Importer",
+  "share.cancel": "Avbryt",
+
+  "privacy.h.qr": "Deling av fartøy med QR-kode",
+  "privacy.p.qr":
+    "Du kan dele en fartøyprofil med besetningen din som en QR-kode. Koden genereres på din enhet og inneholder kun det fartøyets data (navn, MMSI, kallesignal, type, lengde, skrogfarge, personer om bord, kanal). Ingenting sendes til en server. Skanning bruker enhetens kamera kun til å dekode koden i nettleseren; ingen bilder, videoer eller skanneresultater lagres eller overføres. Siden MMSI og kallesignal kan identifisere et fartøy og dets eier, bør du kun dele koden med folk du stoler på.",
+
+  "guide.title": "Slik bruker du appen",
+  "guide.subtitle": "En rask gjennomgang av alle funksjoner – fra ditt første fartøy til et ferdig radiomanuskript.",
+  "guide.h.intro": "Hva denne appen gjør",
+  "guide.p.intro1":
+    "VHF Call Builder genererer ferdige radiomanuskripter – Mayday, Pan-Pan, Sécurité og rutineoppkall – ved hjelp av dine fartøydata, gjeldende UTC-tid og din GPS-posisjon. Alt forblir på din enhet: ingen brukerkonto, ingen server, og ikke behov for internett etter første innlasting.",
+  "guide.p.intro2":
+    "Appen er kun et hjelpemiddel. Den erstatter ikke formell radioopplæring, et gyldig radiooperatørsertifikat eller et DSC-nødanrop. Følg alltid instruksjonene fra den koordinerende redningsmyndigheten.",
+  "guide.h.gettingStarted": "1. Legg til fartøyet ditt",
+  "guide.p.started1":
+    "Gå til Fartøy-siden og trykk på «Legg til fartøy». Skriv inn minst fartøynavn, MMSI (nøyaktig 9 sifre) og kallesignal – disse er påkrevd. Du kan også legge til fartøytype, lengde og skrogfarge. Vennligst skriv inn type, lengde og skrogfarge på engelsk, da de settes direkte inn i det engelske radiomanuskriptet.",
+  "guide.p.started2":
+    "Du kan lagre flere fartøy (f.eks. din egen båt og en leid båt). Trykk på «Sett som aktiv» for å velge hvilket fartøy som skal brukes til neste oppkall. Dataene for det aktive fartøyet fylles automatisk inn i hvert manuskript.",
+  "guide.h.generate": "2. Generer et radiooppkall",
+  "guide.p.generate1":
+    "På oppkallsskjermen kan du veksle mellom de fire oppkallstypene ved å bruke fanene nederst: MAYDAY (rød, nød), PAN-PAN (oransje, hast), SÉCURITÉ (gul, sikkerhet) og STANDARD (grønn, rutine). Hele skjermen skifter farge etter oppkallstypen. Alle inntastede data følger med når du bytter fane.",
+  "guide.p.generate2":
+    "Overskriften viser gjeldende UTC-tid og din GPS-posisjon. Gi posisjonstilgang når du blir spurt. Posisjonen oppdateres automatisk hvis auto-oppdatering er på; trykk på «Oppdater posisjon» for manuell oppdatering, eller «Manuell posisjon» for å skrive inn koordinater selv.",
+  "guide.p.generate3":
+    "Fyll ut feltene over manuskriptet: situasjonens art (fra listen eller fritekst), personer om bord, VHF-kanal og eventuell tilleggsmelding. Avhengig av oppkallstypen kan du også skrive inn stasjonen du kaller eller en sikkerhetsmelding. Manuskriptet oppdateres fortløpende mens du skriver.",
+  "guide.p.generate4":
+    "På Mayday-siden minner en utfellbar del «Send et DSC-nødanrop først» deg på å utløse DSC-alarmen før du snakker. Under manuskriptet tilbyr delen «Videre kommunikasjon» standardfraser for relé, taushet, kansellering av falsk alarm og avslutning av nødsamtale.",
+  "guide.h.readSpeak": "3. Les og lytt",
+  "guide.p.readSpeak1":
+    "Trykk på «Les» for å åpne manuskriptet i fullskjerm med stor skrift, ideelt for å lese opp på radioen. Lesemodus tar hensyn til skjermkanter og ruller jevnt på mobil.",
+  "guide.p.readSpeak2":
+    "Trykk på «Les opp» for å høre manuskriptet lest høyt. I Innstillinger kan du velge mellom en AI-stemme (krever tilkobling) og enhetens innebygde stemme (fungerer uten nett, ingenting forlater enheten).",
+  "guide.p.readSpeak3":
+    "«Kopier» legger manuskriptet til i utklippstavlen; «Del» åpner systemets delingsmeny.",
+  "guide.h.shareVessel": "4. Del og importer fartøy",
+  "guide.p.shareVessel1":
+    "I fartøylisten trykker du på delingsikonet for å vise en QR-kode med det fartøyets data. Et besetningsmedlem kan skanne koden med sitt kamera for å importere profilen – eller kopiere og lime inn delingskoden. Hvis et fartøy med samme MMSI allerede finnes, velger du om du vil oppdatere det eller legge det til som nytt.",
+  "guide.p.shareVessel2":
+    "Koden inneholder kun det fartøyets data. Ingenting lastes opp – del den kun med din egen besetning.",
+  "guide.h.settings": "5. Innstillinger",
+  "guide.p.settings1":
+    "I Innstillinger kan du: endre språket i brukergrensesnittet (manuskripter forblir alltid på engelsk), slå av/på auto-oppdatering av GPS-posisjon og sette oppdateringsintervallen (2–300 sekunder, standard 10), velge standard VHF-kanal og posisjonsformat (desimalgrader eller grader/desimalminutter), og slå AI-stemmen på eller av.",
+  "guide.p.settings2":
+    "Du kan også sjekke etter app-oppdateringer, se installert versjon, og slette alle mellomlagrede data og fartøyprofiler fra enheten.",
+  "guide.h.pwa": "6. Installasjon og bruk uten nett",
+  "guide.p.pwa1": "Denne appen er en Progressive Web App (PWA) og kan installeres på alle enheter.",
+  "guide.p.pwa.ios": "iPhone/iPad: Åpne i Safari, trykk på delingsikonet og velg «Legg til på hjemskjerm».",
+  "guide.p.pwa.android": "Android: Åpne nettlesermenyen og velg «Installer app» eller «Legg til på hjemskjerm».",
+  "guide.p.pwa.desktop": "PC/Mac: Bruk installasjonsikonet i adressefeltet.",
+  "guide.p.pwa2":
+    "Når appen er installert, åpnes den i fullskjerm som en vanlig app og fungerer uten nett – GPS, UTC-tid og den innebygde stemmen fungerer alle uten tilkobling. AI-stemmen for «Les opp» trenger tilkobling. Appen oppdaterer seg selv i bakgrunnen; du kan tvinge frem en sjekk i Innstillinger.",
+  "guide.h.privacy": "7. Personvern",
+  "guide.p.privacy":
+    "Alle data forblir på din enhet. Ingen brukerkonto, ingen sporing, ingen analyse. Les fullstendig personvernerklæring og kontaktinfo på Personvern-siden.",
+} as const;
