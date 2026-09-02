@@ -6,12 +6,13 @@ import { fr } from "./fr";
 import { nl } from "./nl";
 import { es } from "./es";
 import { it } from "./it";
+import { nb } from "./nb";
 
-export const LANGUAGES = ["en", "de", "fr", "nl", "es", "it"] as const;
+export const LANGUAGES = ["en", "de", "fr", "nl", "es", "it", "nb"] as const;
 export type Language = (typeof LANGUAGES)[number];
 export type LanguagePreference = "auto" | Language;
 
-const DICTIONARIES: Record<Language, Record<string, string>> = { en, de, fr, nl, es, it };
+const DICTIONARIES: Record<Language, Record<string, string>> = { en, de, fr, nl, es, it, nb };
 
 export function isLanguage(value: unknown): value is Language {
   return typeof value === "string" && (LANGUAGES as readonly string[]).includes(value);
