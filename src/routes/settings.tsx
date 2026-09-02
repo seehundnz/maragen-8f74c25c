@@ -58,6 +58,9 @@ function SettingsPage() {
                 <SelectItem value="nl">Nederlands</SelectItem>
                 <SelectItem value="es">Español</SelectItem>
                 <SelectItem value="it">Italiano</SelectItem>
+                <SelectItem value="sv">Svenska</SelectItem>
+                <SelectItem value="nb">Norsk</SelectItem>
+                <SelectItem value="hr">Hrvatski</SelectItem>
               </SelectContent>
 
             </Select>
