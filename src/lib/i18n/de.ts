@@ -5,6 +5,7 @@ export const de: Dictionary = {
   "nav.vessels": "Schiffe",
   "nav.settings": "Einstellungen",
   "nav.privacy": "Datenschutz & Impressum",
+  "nav.terms": "Nutzungsbedingungen",
   "nav.install": "Installieren",
   "nav.guide": "Anleitung",
   "nav.nightModeOn": "Rotlicht-Modus einschalten",
@@ -284,10 +285,10 @@ export const de: Dictionary = {
   "privacy.p.source":
     "Diese App steht unter der GNU Affero General Public License v3.0 oder später (AGPL-3.0-or-later). Weil es sich um eine Web-App handelt, gilt die Netzwerk-Klausel der AGPL: Wer diese Software öffentlich hostet, muss den Quellcode der eingesetzten Version den Nutzern zur Verfügung stellen. Der Quellcode ist auf GitHub verfügbar; der Link führt zur Version, auf der diese Installation basiert.",
   "privacy.sourceLink": "Quellcode auf GitHub ansehen",
-  "privacy.h.safety": "Sicherheitshinweis",
-  "privacy.p.safety1":
+  "terms.h.safety": "Sicherheitshinweis",
+  "terms.p.safety1":
     "Diese App ist lediglich ein Hilfsmittel. Sie ersetzt weder eine ordentliche Funkausbildung noch ein gültiges Funkbetriebszeugnis oder offizielle Verfahren. Folge im Notfall immer den Anweisungen der koordinierenden Rettungsleitstelle.",
-  "privacy.p.safety2":
+  "terms.p.safety2":
     "Für die Nutzung dieser App wird keine Haftung übernommen. Betreiber und Entwickler können nicht für Vorfälle, Schäden oder Folgen verantwortlich gemacht werden, die aus der Nutzung entstehen. Die Nutzung erfolgt vollständig auf eigenes Risiko; für dein Handeln und deine Entscheidungen auf dem Wasser bist du allein verantwortlich.",
   "share.qrTitle": "Schiff teilen",
   "share.qrHint": "Ein Crewmitglied kann diesen Code in der App scannen, um das Schiffsprofil zu übernehmen.",
@@ -364,4 +365,15 @@ export const de: Dictionary = {
   "guide.h.privacy": "7. Datenschutz",
   "guide.p.privacy":
     "Alle Daten bleiben auf deinem Gerät. Kein Konto, kein Tracking, keine Analyse. Die vollständige DSGVO-Information und das Impressum findest du auf der Datenschutz-Seite.",
+  "terms.title": "Nutzungsbedingungen",
+  "terms.subtitle": "Die Regeln für die Nutzung dieser App.",
+  "terms.h.scope": "Geltungsbereich & Zweck",
+  "terms.p.scope": "Diese App hilft dir, VHF-Funksprüche (Mayday, Pan-Pan, Sécurité und Standardanrufe) aus deinen Schiffsdaten, Position und Uhrzeit zu erstellen. Sie ist ein Hilfsmittel für die private, nicht-kommerzielle Nutzung.",
+  "terms.h.liability": "Haftungsausschluss",
+  "terms.p.liability": "Die App wird „wie besehen“ ohne jegliche Gewährleistung bereitgestellt. Sie ersetzt weder einen DSC-Notalarm noch eine ordentliche Funkausbildung oder das Urteilsvermögen des Skippers. Sende nach Möglichkeit immer zuerst einen DSC-Alarm. Für Vorfälle, Schäden oder Folgen aus der Nutzung oder Nichtverfügbarkeit der App wird keine Haftung übernommen; die Nutzung erfolgt vollständig auf eigenes Risiko.",
+  "terms.h.availability": "Verfügbarkeit & Richtigkeit",
+  "terms.p.availability": "Es wird keine Garantie für unterbrechungsfreie Verfügbarkeit, Offline-Funktionalität, GPS-Genauigkeit oder die Fehlerfreiheit der generierten Texte und Sprachausgabe übernommen.",
+  "terms.h.changes": "Änderungen dieser Bedingungen",
+  "terms.p.changes": "Diese Bedingungen können mit zukünftigen Versionen der App angepasst werden. Es gilt die in der App angezeigte Version.",
+  "privacy.p.termsLink": "Der Sicherheitshinweis und die Nutzungsbedingungen findest du jetzt auf der Seite Nutzungsbedingungen.",
 };

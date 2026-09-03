@@ -3,6 +3,7 @@ export const nb = {
   "nav.vessels": "Fartøy",
   "nav.settings": "Innstillinger",
   "nav.privacy": "Personvern og kontaktinfo",
+  "nav.terms": "Vilkår",
   "nav.install": "Installer",
   "nav.guide": "Veiledning",
   "nav.nightModeOn": "Slå på nattmodus",
@@ -280,10 +281,10 @@ export const nb = {
   "privacy.p.source":
     "Denne appen er lisensiert under GNU Affero General Public License v3.0 eller nyere (AGPL-3.0-eller-nyere). Siden dette er en nett-app, gjelder AGPLs nettverksklausul: Alle som drifter programvaren offentlig må gi brukere tilgang til kildekoden for versjonen som kjøres. Kildekoden er tilgjengelig på GitHub; lenken peker til versjonen denne installasjonen er basert på.",
   "privacy.sourceLink": "Se kildekode på GitHub",
-  "privacy.h.safety": "Sikkerhetsmerknad",
-  "privacy.p.safety1":
+  "terms.h.safety": "Sikkerhetsmerknad",
+  "terms.p.safety1":
     "Denne appen er kun et støtteverktøy. Den erstatter ikke formell radioopplæring, et gyldig radiooperatørsertifikat eller offisielle prosedyrer. I en nødsituasjon må du alltid følge instruksjonene fra den koordinerende redningsmyndigheten.",
-  "privacy.p.safety2":
+  "terms.p.safety2":
     "Det tas intet ansvar for bruken av denne appen. Operatøren og utviklerne kan ikke holdes ansvarlige for hendelser, skader eller konsekvenser som følge av bruken. Du bruker appen helt på egen risiko og er selv ansvarlig for dine handlinger og beslutninger på vannet.",
   "share.qrTitle": "Del fartøy",
   "share.qrHint": "La et besetningsmedlem skanne denne koden i appen for å importere denne fartøyprofilen.",
@@ -360,4 +361,15 @@ export const nb = {
   "guide.h.privacy": "7. Personvern",
   "guide.p.privacy":
     "Alle data forblir på din enhet. Ingen brukerkonto, ingen sporing, ingen analyse. Les fullstendig personvernerklæring og kontaktinfo på Personvern-siden.",
+  "terms.title": "Bruksvilkår",
+  "terms.subtitle": "Reglene for bruk av denne appen.",
+  "terms.h.scope": "Omfang og formål",
+  "terms.p.scope": "Denne appen hjelper deg med å lage VHF-radioanrop (Mayday, Pan-Pan, Sécurité og rutineanrop) basert på fartøydata, posisjon og tid. Den er et hjelpemiddel for privat, ikke-kommersiell bruk.",
+  "terms.h.liability": "Ansvarsfraskrivelse",
+  "terms.p.liability": "Appen leveres «som den er» uten noen form for garanti. Den erstatter verken et DSC-nødsignal, ordentlig radioutdanning eller skipperens skjønn. Send alltid et DSC-varsel først der det er tilgjengelig. Det tas ikke ansvar for hendelser, skader eller følger av bruk eller utilgjengelighet av appen; bruken skjer helt på egen risiko.",
+  "terms.h.availability": "Tilgjengelighet og nøyaktighet",
+  "terms.p.availability": "Det gis ingen garanti for uavbrutt tilgjengelighet, offline-funksjonalitet, GPS-nøyaktighet eller korrektheten av de genererte tekstene og taleutgangen.",
+  "terms.h.changes": "Endringer av disse vilkårene",
+  "terms.p.changes": "Disse vilkårene kan oppdateres med fremtidige versjoner av appen. Versjonen som vises i appen gjelder.",
+  "privacy.p.termsLink": "Sikkerhetsmerknaden og bruksvilkårene finner du nå på siden Vilkår.",
 } as const;

@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { AppShell } from "@/components/AppShell";
 import { useT } from "@/lib/i18n";
 
@@ -118,9 +118,14 @@ function PrivacyPage() {
           </address>
         </Section>
 
-        <Section heading={t("privacy.h.safety")}>
-          <p>{t("privacy.p.safety1")}</p>
-          <p>{t("privacy.p.safety2")}</p>
+        <Section heading={t("terms.h.safety")}>
+          <p>{t("privacy.p.termsLink")}</p>
+          <Link
+            to="/terms"
+            className="inline-flex items-center gap-1.5 text-sm font-medium text-primary underline-offset-4 hover:underline"
+          >
+            {t("nav.terms")}
+          </Link>
         </Section>
       </div>
     </AppShell>

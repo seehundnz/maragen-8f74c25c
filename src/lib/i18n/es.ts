@@ -3,6 +3,7 @@ export const es = {
   "nav.vessels": "Embarcaciones",
   "nav.settings": "Ajustes",
   "nav.privacy": "Privacidad y aviso legal",
+  "nav.terms": "Condiciones",
   "nav.install": "Instalar",
   "nav.guide": "Guía",
   "nav.nightModeOn": "Activar modo luz roja",
@@ -280,10 +281,10 @@ export const es = {
   "privacy.p.source":
     "Esta app está licenciada bajo la GNU Affero General Public License v3.0 o posterior (AGPL-3.0-or-later). Al tratarse de una aplicación web, se aplica la cláusula de red de la AGPL: quien aloje el software públicamente debe proporcionar a los usuarios el código fuente de la versión que se está ejecutando. El código fuente está disponible en GitHub; el enlace apunta a la versión en la que se basa esta instalación.",
   "privacy.sourceLink": "Ver código fuente en GitHub",
-  "privacy.h.safety": "Aviso de seguridad",
-  "privacy.p.safety1":
+  "terms.h.safety": "Aviso de seguridad",
+  "terms.p.safety1":
     "Esta app es solo una herramienta de apoyo. No sustituye una formación radiotelefónica adecuada, un certificado válido de operador de radio ni los procedimientos oficiales. En una emergencia, sigue siempre las instrucciones de la autoridad de rescate coordinadora.",
-  "privacy.p.safety2":
+  "terms.p.safety2":
     "No se asume ninguna responsabilidad por el uso de esta app. El operador y los desarrolladores no pueden ser considerados responsables de ningún incidente, daño o consecuencia derivada de su uso. Usas la app enteramente bajo tu propia responsabilidad y eres el único responsable de tus acciones y decisiones en el agua.",
   "share.qrTitle": "Compartir embarcación",
   "share.qrHint": "Haz que un miembro de la tripulación escanee este código en la app para importar este perfil de embarcación.",
@@ -360,4 +361,15 @@ export const es = {
   "guide.h.privacy": "7. Privacidad",
   "guide.p.privacy":
     "Todos los datos permanecen en tu dispositivo. Sin cuenta, sin seguimiento, sin analítica. Lee el aviso completo de RGPD/DSGVO y el aviso legal en la página de Privacidad.",
+  "terms.title": "Condiciones de uso",
+  "terms.subtitle": "Las reglas para usar esta aplicación.",
+  "terms.h.scope": "Ámbito y finalidad",
+  "terms.p.scope": "Esta aplicación te ayuda a componer llamadas de radio VHF (Mayday, Pan-Pan, Sécurité y llamadas rutinarias) a partir de los datos de tu embarcación, tu posición y la hora. Es una herramienta de apoyo para uso privado y no comercial.",
+  "terms.h.liability": "Exención de responsabilidad",
+  "terms.p.liability": "La aplicación se proporciona «tal cual», sin garantía alguna. No sustituye una alerta de socorro DSC, una formación radioeléctrica adecuada ni el juicio del patrón. Envía siempre primero una alerta DSC si es posible. No se asume ninguna responsabilidad por incidentes, daños o consecuencias derivados del uso o la indisponibilidad de la aplicación; la utilizas enteramente bajo tu propio riesgo.",
+  "terms.h.availability": "Disponibilidad y exactitud",
+  "terms.p.availability": "No se garantiza la disponibilidad ininterrumpida, la funcionalidad sin conexión, la precisión del GPS ni la corrección de los textos generados y la síntesis de voz.",
+  "terms.h.changes": "Cambios en estas condiciones",
+  "terms.p.changes": "Estas condiciones pueden actualizarse con futuras versiones de la aplicación. Rige la versión mostrada en la aplicación.",
+  "privacy.p.termsLink": "El aviso de seguridad y las condiciones de uso se encuentran ahora en la página Condiciones.",
 } satisfies Record<string, string>;

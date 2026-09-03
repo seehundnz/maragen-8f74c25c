@@ -3,6 +3,7 @@ export const fr = {
   "nav.vessels": "Navires",
   "nav.settings": "Réglages",
   "nav.privacy": "Confidentialité & mentions légales",
+  "nav.terms": "Conditions",
   "nav.install": "Installer",
   "nav.guide": "Guide",
   "nav.nightModeOn": "Activer le mode lumière rouge",
@@ -280,10 +281,10 @@ export const fr = {
   "privacy.p.source":
     "Cette application est publiée sous la GNU Affero General Public License v3.0 ou ultérieure (AGPL-3.0-or-later). S'agissant d'une application web, la clause réseau de l'AGPL s'applique : quiconque héberge le logiciel publiquement doit fournir aux utilisateurs le code source de la version exécutée. Le code source est disponible sur GitHub ; le lien pointe vers la version sur laquelle repose cette installation.",
   "privacy.sourceLink": "Voir le code source sur GitHub",
-  "privacy.h.safety": "Avertissement de sécurité",
-  "privacy.p.safety1":
+  "terms.h.safety": "Avertissement de sécurité",
+  "terms.p.safety1":
     "Cette application est uniquement un outil d'aide. Elle ne remplace pas une formation radio adéquate, un certificat d'opérateur radio valide, ni les procédures officielles. En cas d'urgence, suivez toujours les instructions de l'autorité de secours coordinatrice.",
-  "privacy.p.safety2":
+  "terms.p.safety2":
     "Aucune responsabilité n'est assumée quant à l'utilisation de cette application. L'exploitant et les développeurs ne peuvent être tenus responsables des incidents, dommages ou conséquences résultant de son usage. Vous utilisez l'application entièrement à vos propres risques et vous êtes seul responsable de vos actions et décisions en mer.",
   "share.qrTitle": "Partager le navire",
   "share.qrHint": "Faites scanner ce code par un membre d'équipage dans l'application pour importer ce profil de navire.",
@@ -360,4 +361,15 @@ export const fr = {
   "guide.h.privacy": "7. Confidentialité",
   "guide.p.privacy":
     "Toutes les données restent sur votre appareil. Pas de compte, pas de suivi, pas d'analyse. Consultez l'avis RGPD/DSGVO complet et les mentions légales sur la page Confidentialité.",
+  "terms.title": "Conditions d'utilisation",
+  "terms.subtitle": "Les règles d'utilisation de cette application.",
+  "terms.h.scope": "Portée et objectif",
+  "terms.p.scope": "Cette application vous aide à composer des appels radio VHF (Mayday, Pan-Pan, Sécurité et appels de routine) à partir des données de votre navire, de votre position et de l'heure. C'est un outil d'aide à usage privé et non commercial.",
+  "terms.h.liability": "Exclusion de responsabilité",
+  "terms.p.liability": "L'application est fournie « telle quelle », sans aucune garantie. Elle ne remplace ni une alerte de détresse DSC, ni une formation radio appropriée, ni le jugement du skipper. Envoyez toujours d'abord une alerte DSC si possible. Aucune responsabilité n'est assumée pour les incidents, dommages ou conséquences résultant de l'utilisation ou de l'indisponibilité de l'application ; vous l'utilisez entièrement à vos propres risques.",
+  "terms.h.availability": "Disponibilité et exactitude",
+  "terms.p.availability": "Aucune garantie n'est donnée quant à la disponibilité ininterrompue, au fonctionnement hors ligne, à la précision du GPS ou à l'exactitude des textes générés et de la synthèse vocale.",
+  "terms.h.changes": "Modifications des présentes conditions",
+  "terms.p.changes": "Ces conditions peuvent être mises à jour avec les futures versions de l'application. La version affichée dans l'application fait foi.",
+  "privacy.p.termsLink": "L'avertissement de sécurité et les conditions d'utilisation se trouvent désormais sur la page Conditions.",
 } satisfies Record<string, string>;

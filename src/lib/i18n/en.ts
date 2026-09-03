@@ -3,6 +3,7 @@ export const en = {
   "nav.vessels": "Vessels",
   "nav.settings": "Settings",
   "nav.privacy": "Privacy & Imprint",
+  "nav.terms": "Terms",
   "nav.install": "Install",
   "nav.guide": "Guide",
   "nav.nightModeOn": "Turn on red-light mode",
@@ -280,10 +281,10 @@ export const en = {
   "privacy.p.source":
     "This app is licensed under the GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later). Because this is a web app, the AGPL network clause applies: anyone who hosts the software publicly must provide users with the source code of the version being run. The source is available on GitHub; the link points to the version this installation is based on.",
   "privacy.sourceLink": "View source on GitHub",
-  "privacy.h.safety": "Safety notice",
-  "privacy.p.safety1":
+  "terms.h.safety": "Safety notice",
+  "terms.p.safety1":
     "This app is a support tool only. It does not replace proper radio training, a valid radio operator certificate, or official procedures. In an emergency, always follow the instructions of the coordinating rescue authority.",
-  "privacy.p.safety2":
+  "terms.p.safety2":
     "No liability is assumed for the use of this app. The operator and developers cannot be held responsible for any incidents, damages or consequences resulting from its use. You use the app entirely at your own risk and are solely responsible for your actions and decisions on the water.",
   "share.qrTitle": "Share vessel",
   "share.qrHint": "Let a crew member scan this code in the app to import this vessel profile.",
@@ -360,6 +361,17 @@ export const en = {
   "guide.h.privacy": "7. Privacy",
   "guide.p.privacy":
     "All data stays on your device. No account, no tracking, no analytics. Read the full GDPR/DSGVO notice and imprint on the Privacy page.",
+  "terms.title": "Terms of Use",
+  "terms.subtitle": "The rules for using this app.",
+  "terms.h.scope": "Scope & purpose",
+  "terms.p.scope": "This app helps you compose VHF radio calls (Mayday, Pan-Pan, Sécurité and routine calls) from your vessel data, position and time. It is a support tool for private, non-commercial use.",
+  "terms.h.liability": "No liability",
+  "terms.p.liability": "The app is provided “as is” without any warranty. It does not replace a DSC distress alert, proper radio training or the skipper's judgement. Always send a DSC alert first where available. No liability is assumed for incidents, damages or consequences arising from the use or unavailability of this app; you use it entirely at your own risk.",
+  "terms.h.availability": "Availability & accuracy",
+  "terms.p.availability": "No guarantee is given for uninterrupted availability, offline functionality, GPS accuracy or the correctness of the generated scripts and speech output.",
+  "terms.h.changes": "Changes to these terms",
+  "terms.p.changes": "These terms may be updated with future versions of the app. The version shown in the app always applies.",
+  "privacy.p.termsLink": "The safety notice and terms of use have moved to the Terms page.",
 } as const;
 
 export type TranslationKey = keyof typeof en;

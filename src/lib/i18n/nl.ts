@@ -3,6 +3,7 @@ export const nl = {
   "nav.vessels": "Vaartuigen",
   "nav.settings": "Instellingen",
   "nav.privacy": "Privacy & colofon",
+  "nav.terms": "Voorwaarden",
   "nav.install": "Installeren",
   "nav.guide": "Handleiding",
   "nav.nightModeOn": "Rood nachtlicht inschakelen",
@@ -280,10 +281,10 @@ export const nl = {
   "privacy.p.source":
     "Deze app is gelicentieerd onder de GNU Affero General Public License v3.0 of later (AGPL-3.0-or-later). Omdat dit een webapp is, geldt de netwerkclausule van de AGPL: wie de software openbaar host, moet gebruikers de broncode van de draaiende versie ter beschikking stellen. De broncode staat op GitHub; de link verwijst naar de versie waarop deze installatie is gebaseerd.",
   "privacy.sourceLink": "Broncode bekijken op GitHub",
-  "privacy.h.safety": "Veiligheidsmededeling",
-  "privacy.p.safety1":
+  "terms.h.safety": "Veiligheidsmededeling",
+  "terms.p.safety1":
     "Deze app is uitsluitend een hulpmiddel. Hij vervangt geen goede marifoonopleiding, geen geldig marifoonbedieningscertificaat en geen officiële procedures. Volg in een noodgeval altijd de aanwijzingen van de coördinerende reddingsautoriteit op.",
-  "privacy.p.safety2":
+  "terms.p.safety2":
     "Voor het gebruik van deze app wordt geen aansprakelijkheid aanvaard. De beheerder en de ontwikkelaars kunnen niet verantwoordelijk worden gehouden voor incidenten, schade of gevolgen die uit het gebruik voortvloeien. Je gebruikt de app volledig op eigen risico en bent zelf verantwoordelijk voor je handelingen en beslissingen op het water.",
   "share.qrTitle": "Vaartuig delen",
   "share.qrHint": "Laat een bemanningslid deze code in de app scannen om dit vaartuigprofiel te importeren.",
@@ -360,4 +361,15 @@ export const nl = {
   "guide.h.privacy": "7. Privacy",
   "guide.p.privacy":
     "Alle gegevens blijven op je apparaat. Geen account, geen tracking, geen analytics. Lees de volledige AVG/GDPR-informatie en het colofon op de privacypagina.",
+  "terms.title": "Gebruiksvoorwaarden",
+  "terms.subtitle": "De regels voor het gebruik van deze app.",
+  "terms.h.scope": "Reikwijdte en doel",
+  "terms.p.scope": "Deze app helpt je VHF-radiooproepen (Mayday, Pan-Pan, Sécurité en routineoproepen) samen te stellen uit je vaartuiggegevens, positie en tijd. Het is een hulpmiddel voor privé, niet-commercieel gebruik.",
+  "terms.h.liability": "Aansprakelijkheidsuitsluiting",
+  "terms.p.liability": "De app wordt 'as is' geleverd, zonder enige garantie. Hij vervangt geen DSC-noodalarm, degelijke radiotraining of het oordeel van de schipper. Stuur waar mogelijk altijd eerst een DSC-alarm. Er wordt geen aansprakelijkheid aanvaard voor incidenten, schade of gevolgen die voortvloeien uit het gebruik of de onbeschikbaarheid van deze app; het gebruik is volledig op eigen risico.",
+  "terms.h.availability": "Beschikbaarheid en juistheid",
+  "terms.p.availability": "Er wordt geen garantie gegeven voor ononderbroken beschikbaarheid, offline-functionaliteit, GPS-nauwkeurigheid of de juistheid van de gegenereerde teksten en spraakuitvoer.",
+  "terms.h.changes": "Wijzigingen van deze voorwaarden",
+  "terms.p.changes": "Deze voorwaarden kunnen met toekomstige versies van de app worden aangepast. De in de app getoonde versie is leidend.",
+  "privacy.p.termsLink": "De veiligheidsmededeling en gebruiksvoorwaarden vind je nu op de pagina Voorwaarden.",
 } satisfies Record<string, string>;
