@@ -3,6 +3,7 @@ export const hr = {
   "nav.vessels": "Plovila",
   "nav.settings": "Postavke",
   "nav.privacy": "Privatnost i impresum",
+  "nav.terms": "Uvjeti",
   "nav.install": "Instaliraj",
   "nav.guide": "Vodič",
   "nav.nightModeOn": "Uključi crveni način rada",
@@ -360,6 +361,17 @@ export const hr = {
   "guide.h.privacy": "7. Privatnost",
   "guide.p.privacy":
     "Svi podaci ostaju na vašem uređaju. Nema računa, nema praćenja, nema analitike. Pročitajte cijelu obavijest o GDPR-u/DSGVO-u i impresum na stranici Privatnost.",
+  "terms.title": "Uvjeti korištenja",
+  "terms.subtitle": "Pravila za korištenje ove aplikacije.",
+  "terms.h.scope": "Opseg i svrha",
+  "terms.p.scope": "Ova aplikacija pomaže ti sastaviti VHF radio pozive (Mayday, Pan-Pan, Sécurité i redovne pozive) iz podataka o plovilu, pozicije i vremena. To je pomagalo za privatnu, nekomercijalnu upotrebu.",
+  "terms.h.liability": "Odricanje od odgovornosti",
+  "terms.p.liability": "Aplikacija se pruža „kakva jest“, bez ikakvog jamstva. Ne zamjenjuje DSC poziv u nuždi, odgovarajuću radio obuku ni prosudbu skipera. Po mogućnosti uvijek prvo pošalji DSC alarm. Ne preuzima se odgovornost za incidente, štete ili posljedice koje proizlaze iz korištenja ili nedostupnosti aplikacije; koristiš je u potpunosti na vlastitu odgovornost.",
+  "terms.h.availability": "Dostupnost i točnost",
+  "terms.p.availability": "Ne jamči se neprekidna dostupnost, rad bez interneta, točnost GPS-a ni ispravnost generiranih tekstova i govorne sinteze.",
+  "terms.h.changes": "Izmjene ovih uvjeta",
+  "terms.p.changes": "Ovi se uvjeti mogu ažurirati s budućim verzijama aplikacije. Vrijedi verzija prikazana u aplikaciji.",
+  "privacy.p.termsLink": "Sigurnosnu obavijest i uvjete korištenja sada pronađi na stranici Uvjeti.",
 } as const;
 
 export type TranslationKey = keyof typeof hr;
