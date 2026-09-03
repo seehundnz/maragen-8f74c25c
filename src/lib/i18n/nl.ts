@@ -280,10 +280,10 @@ export const nl = {
   "privacy.p.source":
     "Deze app is gelicentieerd onder de GNU Affero General Public License v3.0 of later (AGPL-3.0-or-later). Omdat dit een webapp is, geldt de netwerkclausule van de AGPL: wie de software openbaar host, moet gebruikers de broncode van de draaiende versie ter beschikking stellen. De broncode staat op GitHub; de link verwijst naar de versie waarop deze installatie is gebaseerd.",
   "privacy.sourceLink": "Broncode bekijken op GitHub",
-  "privacy.h.safety": "Veiligheidsmededeling",
-  "privacy.p.safety1":
+  "terms.h.safety": "Veiligheidsmededeling",
+  "terms.p.safety1":
     "Deze app is uitsluitend een hulpmiddel. Hij vervangt geen goede marifoonopleiding, geen geldig marifoonbedieningscertificaat en geen officiële procedures. Volg in een noodgeval altijd de aanwijzingen van de coördinerende reddingsautoriteit op.",
-  "privacy.p.safety2":
+  "terms.p.safety2":
     "Voor het gebruik van deze app wordt geen aansprakelijkheid aanvaard. De beheerder en de ontwikkelaars kunnen niet verantwoordelijk worden gehouden voor incidenten, schade of gevolgen die uit het gebruik voortvloeien. Je gebruikt de app volledig op eigen risico en bent zelf verantwoordelijk voor je handelingen en beslissingen op het water.",
   "share.qrTitle": "Vaartuig delen",
   "share.qrHint": "Laat een bemanningslid deze code in de app scannen om dit vaartuigprofiel te importeren.",

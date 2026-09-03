@@ -280,10 +280,10 @@ export const nb = {
   "privacy.p.source":
     "Denne appen er lisensiert under GNU Affero General Public License v3.0 eller nyere (AGPL-3.0-eller-nyere). Siden dette er en nett-app, gjelder AGPLs nettverksklausul: Alle som drifter programvaren offentlig må gi brukere tilgang til kildekoden for versjonen som kjøres. Kildekoden er tilgjengelig på GitHub; lenken peker til versjonen denne installasjonen er basert på.",
   "privacy.sourceLink": "Se kildekode på GitHub",
-  "privacy.h.safety": "Sikkerhetsmerknad",
-  "privacy.p.safety1":
+  "terms.h.safety": "Sikkerhetsmerknad",
+  "terms.p.safety1":
     "Denne appen er kun et støtteverktøy. Den erstatter ikke formell radioopplæring, et gyldig radiooperatørsertifikat eller offisielle prosedyrer. I en nødsituasjon må du alltid følge instruksjonene fra den koordinerende redningsmyndigheten.",
-  "privacy.p.safety2":
+  "terms.p.safety2":
     "Det tas intet ansvar for bruken av denne appen. Operatøren og utviklerne kan ikke holdes ansvarlige for hendelser, skader eller konsekvenser som følge av bruken. Du bruker appen helt på egen risiko og er selv ansvarlig for dine handlinger og beslutninger på vannet.",
   "share.qrTitle": "Del fartøy",
   "share.qrHint": "La et besetningsmedlem skanne denne koden i appen for å importere denne fartøyprofilen.",

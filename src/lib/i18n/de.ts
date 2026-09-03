@@ -284,10 +284,10 @@ export const de: Dictionary = {
   "privacy.p.source":
     "Diese App steht unter der GNU Affero General Public License v3.0 oder später (AGPL-3.0-or-later). Weil es sich um eine Web-App handelt, gilt die Netzwerk-Klausel der AGPL: Wer diese Software öffentlich hostet, muss den Quellcode der eingesetzten Version den Nutzern zur Verfügung stellen. Der Quellcode ist auf GitHub verfügbar; der Link führt zur Version, auf der diese Installation basiert.",
   "privacy.sourceLink": "Quellcode auf GitHub ansehen",
-  "privacy.h.safety": "Sicherheitshinweis",
-  "privacy.p.safety1":
+  "terms.h.safety": "Sicherheitshinweis",
+  "terms.p.safety1":
     "Diese App ist lediglich ein Hilfsmittel. Sie ersetzt weder eine ordentliche Funkausbildung noch ein gültiges Funkbetriebszeugnis oder offizielle Verfahren. Folge im Notfall immer den Anweisungen der koordinierenden Rettungsleitstelle.",
-  "privacy.p.safety2":
+  "terms.p.safety2":
     "Für die Nutzung dieser App wird keine Haftung übernommen. Betreiber und Entwickler können nicht für Vorfälle, Schäden oder Folgen verantwortlich gemacht werden, die aus der Nutzung entstehen. Die Nutzung erfolgt vollständig auf eigenes Risiko; für dein Handeln und deine Entscheidungen auf dem Wasser bist du allein verantwortlich.",
   "share.qrTitle": "Schiff teilen",
   "share.qrHint": "Ein Crewmitglied kann diesen Code in der App scannen, um das Schiffsprofil zu übernehmen.",

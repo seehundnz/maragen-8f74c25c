@@ -280,10 +280,10 @@ export const hr = {
   "privacy.p.source":
     "Ova je aplikacija licencirana pod GNU Affero General Public License v3.0 ili novijom (AGPL-3.0-or-later). Budući da se radi o web aplikaciji, primjenjuje se mrežna klauzula AGPL-a: svatko tko javno hostira softver mora korisnicima pružiti izvorni kod verzije koja se pokreće. Izvor je dostupan na GitHubu; poveznica upućuje na verziju na kojoj se temelji ova instalacija.",
   "privacy.sourceLink": "Pogledaj kod na GitHubu",
-  "privacy.h.safety": "Sigurnosna obavijest",
-  "privacy.p.safety1":
+  "terms.h.safety": "Sigurnosna obavijest",
+  "terms.p.safety1":
     "Ova je aplikacija samo pomoćni alat. Ne zamjenjuje pravilnu radio obuku, važeću svjedodžbu radiooperatera ili službene postupke. U hitnim slučajevima uvijek slijedite upute koordinacijskog tijela za spašavanje.",
-  "privacy.p.safety2":
+  "terms.p.safety2":
     "Ne preuzima se nikakva odgovornost za korištenje ove aplikacije. Operater i programeri ne mogu se smatrati odgovornima za bilo kakve incidente, štete ili posljedice koje proizlaze iz njezine uporabe. Aplikaciju koristite u potpunosti na vlastiti rizik i sami ste odgovorni za svoje postupke i odluke na vodi.",
   "share.qrTitle": "Dijeli plovilo",
   "share.qrHint": "Neka član posade skenira ovaj kôd u aplikaciji kako bi uvozili ovaj profil plovila.",

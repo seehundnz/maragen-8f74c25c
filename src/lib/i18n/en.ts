@@ -280,10 +280,10 @@ export const en = {
   "privacy.p.source":
     "This app is licensed under the GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later). Because this is a web app, the AGPL network clause applies: anyone who hosts the software publicly must provide users with the source code of the version being run. The source is available on GitHub; the link points to the version this installation is based on.",
   "privacy.sourceLink": "View source on GitHub",
-  "privacy.h.safety": "Safety notice",
-  "privacy.p.safety1":
+  "terms.h.safety": "Safety notice",
+  "terms.p.safety1":
     "This app is a support tool only. It does not replace proper radio training, a valid radio operator certificate, or official procedures. In an emergency, always follow the instructions of the coordinating rescue authority.",
-  "privacy.p.safety2":
+  "terms.p.safety2":
     "No liability is assumed for the use of this app. The operator and developers cannot be held responsible for any incidents, damages or consequences resulting from its use. You use the app entirely at your own risk and are solely responsible for your actions and decisions on the water.",
   "share.qrTitle": "Share vessel",
   "share.qrHint": "Let a crew member scan this code in the app to import this vessel profile.",

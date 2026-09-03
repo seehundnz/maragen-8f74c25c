@@ -280,10 +280,10 @@ export const fr = {
   "privacy.p.source":
     "Cette application est publiée sous la GNU Affero General Public License v3.0 ou ultérieure (AGPL-3.0-or-later). S'agissant d'une application web, la clause réseau de l'AGPL s'applique : quiconque héberge le logiciel publiquement doit fournir aux utilisateurs le code source de la version exécutée. Le code source est disponible sur GitHub ; le lien pointe vers la version sur laquelle repose cette installation.",
   "privacy.sourceLink": "Voir le code source sur GitHub",
-  "privacy.h.safety": "Avertissement de sécurité",
-  "privacy.p.safety1":
+  "terms.h.safety": "Avertissement de sécurité",
+  "terms.p.safety1":
     "Cette application est uniquement un outil d'aide. Elle ne remplace pas une formation radio adéquate, un certificat d'opérateur radio valide, ni les procédures officielles. En cas d'urgence, suivez toujours les instructions de l'autorité de secours coordinatrice.",
-  "privacy.p.safety2":
+  "terms.p.safety2":
     "Aucune responsabilité n'est assumée quant à l'utilisation de cette application. L'exploitant et les développeurs ne peuvent être tenus responsables des incidents, dommages ou conséquences résultant de son usage. Vous utilisez l'application entièrement à vos propres risques et vous êtes seul responsable de vos actions et décisions en mer.",
   "share.qrTitle": "Partager le navire",
   "share.qrHint": "Faites scanner ce code par un membre d'équipage dans l'application pour importer ce profil de navire.",
