@@ -3,6 +3,7 @@ export const sv = {
   "nav.vessels": "Fartyg",
   "nav.settings": "Inställningar",
   "nav.privacy": "Integritet & Info",
+  "nav.terms": "Villkor",
   "nav.install": "Installera",
   "nav.guide": "Guide",
   "nav.nightModeOn": "Slå på nattläge",
@@ -360,4 +361,15 @@ export const sv = {
   "guide.h.privacy": "7. Integritet",
   "guide.p.privacy":
     "All data stannar på din enhet. Inget konto, ingen spårning, ingen analys. Läs hela GDPR-meddelandet och informationen om leverantören på Integritetssidan.",
+  "terms.title": "Användarvillkor",
+  "terms.subtitle": "Reglerna för att använda den här appen.",
+  "terms.h.scope": "Omfattning och syfte",
+  "terms.p.scope": "Den här appen hjälper dig att sätta samman VHF-radiomeddelanden (Mayday, Pan-Pan, Sécurité och rutinanrop) utifrån dina fartygsuppgifter, position och tid. Det är ett hjälpmedel för privat, icke-kommersiellt bruk.",
+  "terms.h.liability": "Ansvarsfriskrivning",
+  "terms.p.liability": "Appen tillhandahålls ”i befintligt skick” utan någon garanti. Den ersätter inte ett DSC-nödlarm, ordentlig radioutbildning eller skepparens omdöme. Skicka alltid ett DSC-larm först om möjligt. Inget ansvar tas för incidenter, skador eller följder av användningen eller otillgängligheten av appen; du använder den helt på egen risk.",
+  "terms.h.availability": "Tillgänglighet och korrekthet",
+  "terms.p.availability": "Ingen garanti ges för oavbruten tillgänglighet, offlinefunktion, GPS-noggrannhet eller korrektheten hos de genererade texterna och taluppläsningen.",
+  "terms.h.changes": "Ändringar av dessa villkor",
+  "terms.p.changes": "Dessa villkor kan uppdateras med framtida versioner av appen. Den version som visas i appen gäller.",
+  "privacy.p.termsLink": "Säkerhetsmeddelandet och användarvillkoren finns nu på sidan Villkor.",
 } as const;

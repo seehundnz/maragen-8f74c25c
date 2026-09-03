@@ -5,6 +5,7 @@ export const de: Dictionary = {
   "nav.vessels": "Schiffe",
   "nav.settings": "Einstellungen",
   "nav.privacy": "Datenschutz & Impressum",
+  "nav.terms": "Nutzungsbedingungen",
   "nav.install": "Installieren",
   "nav.guide": "Anleitung",
   "nav.nightModeOn": "Rotlicht-Modus einschalten",
@@ -364,4 +365,15 @@ export const de: Dictionary = {
   "guide.h.privacy": "7. Datenschutz",
   "guide.p.privacy":
     "Alle Daten bleiben auf deinem Gerät. Kein Konto, kein Tracking, keine Analyse. Die vollständige DSGVO-Information und das Impressum findest du auf der Datenschutz-Seite.",
+  "terms.title": "Nutzungsbedingungen",
+  "terms.subtitle": "Die Regeln für die Nutzung dieser App.",
+  "terms.h.scope": "Geltungsbereich & Zweck",
+  "terms.p.scope": "Diese App hilft dir, VHF-Funksprüche (Mayday, Pan-Pan, Sécurité und Standardanrufe) aus deinen Schiffsdaten, Position und Uhrzeit zu erstellen. Sie ist ein Hilfsmittel für die private, nicht-kommerzielle Nutzung.",
+  "terms.h.liability": "Haftungsausschluss",
+  "terms.p.liability": "Die App wird „wie besehen“ ohne jegliche Gewährleistung bereitgestellt. Sie ersetzt weder einen DSC-Notalarm noch eine ordentliche Funkausbildung oder das Urteilsvermögen des Skippers. Sende nach Möglichkeit immer zuerst einen DSC-Alarm. Für Vorfälle, Schäden oder Folgen aus der Nutzung oder Nichtverfügbarkeit der App wird keine Haftung übernommen; die Nutzung erfolgt vollständig auf eigenes Risiko.",
+  "terms.h.availability": "Verfügbarkeit & Richtigkeit",
+  "terms.p.availability": "Es wird keine Garantie für unterbrechungsfreie Verfügbarkeit, Offline-Funktionalität, GPS-Genauigkeit oder die Fehlerfreiheit der generierten Texte und Sprachausgabe übernommen.",
+  "terms.h.changes": "Änderungen dieser Bedingungen",
+  "terms.p.changes": "Diese Bedingungen können mit zukünftigen Versionen der App angepasst werden. Es gilt die in der App angezeigte Version.",
+  "privacy.p.termsLink": "Der Sicherheitshinweis und die Nutzungsbedingungen findest du jetzt auf der Seite Nutzungsbedingungen.",
 };

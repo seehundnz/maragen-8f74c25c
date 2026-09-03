@@ -3,6 +3,7 @@ export const it = {
   "nav.vessels": "Imbarcazioni",
   "nav.settings": "Impostazioni",
   "nav.privacy": "Privacy e note legali",
+  "nav.terms": "Condizioni",
   "nav.install": "Installa",
   "nav.guide": "Guida",
   "nav.nightModeOn": "Attiva la luce rossa notturna",
@@ -360,4 +361,15 @@ export const it = {
   "guide.h.privacy": "7. Privacy",
   "guide.p.privacy":
     "Tutti i dati restano sul tuo dispositivo. Nessun account, nessun tracciamento, nessuna analisi. Leggi l'informativa GDPR completa e le note legali nella pagina Privacy.",
+  "terms.title": "Condizioni d'uso",
+  "terms.subtitle": "Le regole per l'uso di questa app.",
+  "terms.h.scope": "Ambito e scopo",
+  "terms.p.scope": "Questa app ti aiuta a comporre chiamate radio VHF (Mayday, Pan-Pan, Sécurité e chiamate di routine) dai dati della tua imbarcazione, dalla posizione e dall'ora. È uno strumento di supporto per uso privato e non commerciale.",
+  "terms.h.liability": "Esclusione di responsabilità",
+  "terms.p.liability": "L'app è fornita «così com'è», senza alcuna garanzia. Non sostituisce un allarme di soccorso DSC, una formazione radio adeguata o il giudizio dello skipper. Invia sempre prima un allarme DSC ove disponibile. Non si assume alcuna responsabilità per incidenti, danni o conseguenze derivanti dall'uso o dall'indisponibilità dell'app; la utilizzi interamente a tuo rischio.",
+  "terms.h.availability": "Disponibilità e accuratezza",
+  "terms.p.availability": "Non viene fornita alcuna garanzia di disponibilità ininterrotta, funzionalità offline, accuratezza del GPS o correttezza dei testi generati e della sintesi vocale.",
+  "terms.h.changes": "Modifiche alle presenti condizioni",
+  "terms.p.changes": "Queste condizioni possono essere aggiornate con le future versioni dell'app. Vale la versione mostrata nell'app.",
+  "privacy.p.termsLink": "L'avviso di sicurezza e le condizioni d'uso si trovano ora nella pagina Condizioni.",
 } satisfies Record<string, string>;

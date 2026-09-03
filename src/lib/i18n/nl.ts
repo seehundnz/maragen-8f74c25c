@@ -3,6 +3,7 @@ export const nl = {
   "nav.vessels": "Vaartuigen",
   "nav.settings": "Instellingen",
   "nav.privacy": "Privacy & colofon",
+  "nav.terms": "Voorwaarden",
   "nav.install": "Installeren",
   "nav.guide": "Handleiding",
   "nav.nightModeOn": "Rood nachtlicht inschakelen",
@@ -360,4 +361,15 @@ export const nl = {
   "guide.h.privacy": "7. Privacy",
   "guide.p.privacy":
     "Alle gegevens blijven op je apparaat. Geen account, geen tracking, geen analytics. Lees de volledige AVG/GDPR-informatie en het colofon op de privacypagina.",
+  "terms.title": "Gebruiksvoorwaarden",
+  "terms.subtitle": "De regels voor het gebruik van deze app.",
+  "terms.h.scope": "Reikwijdte en doel",
+  "terms.p.scope": "Deze app helpt je VHF-radiooproepen (Mayday, Pan-Pan, Sécurité en routineoproepen) samen te stellen uit je vaartuiggegevens, positie en tijd. Het is een hulpmiddel voor privé, niet-commercieel gebruik.",
+  "terms.h.liability": "Aansprakelijkheidsuitsluiting",
+  "terms.p.liability": "De app wordt 'as is' geleverd, zonder enige garantie. Hij vervangt geen DSC-noodalarm, degelijke radiotraining of het oordeel van de schipper. Stuur waar mogelijk altijd eerst een DSC-alarm. Er wordt geen aansprakelijkheid aanvaard voor incidenten, schade of gevolgen die voortvloeien uit het gebruik of de onbeschikbaarheid van deze app; het gebruik is volledig op eigen risico.",
+  "terms.h.availability": "Beschikbaarheid en juistheid",
+  "terms.p.availability": "Er wordt geen garantie gegeven voor ononderbroken beschikbaarheid, offline-functionaliteit, GPS-nauwkeurigheid of de juistheid van de gegenereerde teksten en spraakuitvoer.",
+  "terms.h.changes": "Wijzigingen van deze voorwaarden",
+  "terms.p.changes": "Deze voorwaarden kunnen met toekomstige versies van de app worden aangepast. De in de app getoonde versie is leidend.",
+  "privacy.p.termsLink": "De veiligheidsmededeling en gebruiksvoorwaarden vind je nu op de pagina Voorwaarden.",
 } satisfies Record<string, string>;

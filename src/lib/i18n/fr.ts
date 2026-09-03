@@ -3,6 +3,7 @@ export const fr = {
   "nav.vessels": "Navires",
   "nav.settings": "Réglages",
   "nav.privacy": "Confidentialité & mentions légales",
+  "nav.terms": "Conditions",
   "nav.install": "Installer",
   "nav.guide": "Guide",
   "nav.nightModeOn": "Activer le mode lumière rouge",
@@ -360,4 +361,15 @@ export const fr = {
   "guide.h.privacy": "7. Confidentialité",
   "guide.p.privacy":
     "Toutes les données restent sur votre appareil. Pas de compte, pas de suivi, pas d'analyse. Consultez l'avis RGPD/DSGVO complet et les mentions légales sur la page Confidentialité.",
+  "terms.title": "Conditions d'utilisation",
+  "terms.subtitle": "Les règles d'utilisation de cette application.",
+  "terms.h.scope": "Portée et objectif",
+  "terms.p.scope": "Cette application vous aide à composer des appels radio VHF (Mayday, Pan-Pan, Sécurité et appels de routine) à partir des données de votre navire, de votre position et de l'heure. C'est un outil d'aide à usage privé et non commercial.",
+  "terms.h.liability": "Exclusion de responsabilité",
+  "terms.p.liability": "L'application est fournie « telle quelle », sans aucune garantie. Elle ne remplace ni une alerte de détresse DSC, ni une formation radio appropriée, ni le jugement du skipper. Envoyez toujours d'abord une alerte DSC si possible. Aucune responsabilité n'est assumée pour les incidents, dommages ou conséquences résultant de l'utilisation ou de l'indisponibilité de l'application ; vous l'utilisez entièrement à vos propres risques.",
+  "terms.h.availability": "Disponibilité et exactitude",
+  "terms.p.availability": "Aucune garantie n'est donnée quant à la disponibilité ininterrompue, au fonctionnement hors ligne, à la précision du GPS ou à l'exactitude des textes générés et de la synthèse vocale.",
+  "terms.h.changes": "Modifications des présentes conditions",
+  "terms.p.changes": "Ces conditions peuvent être mises à jour avec les futures versions de l'application. La version affichée dans l'application fait foi.",
+  "privacy.p.termsLink": "L'avertissement de sécurité et les conditions d'utilisation se trouvent désormais sur la page Conditions.",
 } satisfies Record<string, string>;
