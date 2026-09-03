@@ -52,6 +52,10 @@ export function AppShell({ children }: { children: ReactNode }) {
           <Link to="/privacy" className="underline-offset-4 hover:underline">
             {t("nav.privacy")}
           </Link>
+          <span aria-hidden>·</span>
+          <Link to="/terms" className="underline-offset-4 hover:underline">
+            {t("nav.terms")}
+          </Link>
         </footer>
       </main>
     </div>
