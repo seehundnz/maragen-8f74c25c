@@ -372,4 +372,15 @@ export const nl = {
   "terms.h.changes": "Wijzigingen van deze voorwaarden",
   "terms.p.changes": "Deze voorwaarden kunnen met toekomstige versies van de app worden aangepast. De in de app getoonde versie is leidend.",
   "privacy.p.termsLink": "De veiligheidsmededeling en gebruiksvoorwaarden vind je nu op de pagina Voorwaarden.",
+
+  "gate.title": "Voordat je begint",
+  "gate.intro": "Lees de belangrijkste punten van de gebruiksvoorwaarden voordat je de app gebruikt.",
+  "gate.p1": "Deze app vervangt geen radiotelefonie-opleiding of marifooncertificaat.",
+  "gate.p2": "Je gebruikt de app volledig op eigen risico — geen aansprakelijkheid voor schade of gevolgen.",
+  "gate.p3": "Geen garantie voor beschikbaarheid, GPS-nauwkeurigheid of juistheid van de gegenereerde teksten.",
+  "gate.p4": "Volg in een noodgeval altijd het reddingscoördinatiecentrum; een DSC-noodsignaal heeft voorrang.",
+  "gate.readTerms": "Lees de volledige gebruiksvoorwaarden",
+  "gate.checkbox": "Ik heb de gebruiksvoorwaarden gelezen en ga ermee akkoord.",
+  "gate.accept": "Begrepen — doorgaan",
+  "privacy.p.gate": "Je akkoord met de gebruiksvoorwaarden wordt alleen lokaal op dit apparaat opgeslagen en nooit verzonden. Het wissen van de app-gegevens in de instellingen zet dit terug.",
 } satisfies Record<string, string>;

@@ -372,4 +372,15 @@ export const it = {
   "terms.h.changes": "Modifiche alle presenti condizioni",
   "terms.p.changes": "Queste condizioni possono essere aggiornate con le future versioni dell'app. Vale la versione mostrata nell'app.",
   "privacy.p.termsLink": "L'avviso di sicurezza e le condizioni d'uso si trovano ora nella pagina Condizioni.",
+
+  "gate.title": "Prima di iniziare",
+  "gate.intro": "Prendi visione dei punti principali delle condizioni d'uso prima di utilizzare l'app.",
+  "gate.p1": "Questa app non sostituisce la formazione radiofonica né un certificato di operatore radio.",
+  "gate.p2": "Usi l'app interamente a tuo rischio — nessuna responsabilità per danni o conseguenze.",
+  "gate.p3": "Nessuna garanzia di disponibilità, accuratezza GPS o correttezza dei testi generati.",
+  "gate.p4": "In caso di emergenza segui sempre le istruzioni del centro di coordinamento del soccorso; un allarme di pericolo DSC ha la priorità.",
+  "gate.readTerms": "Leggi le condizioni d'uso complete",
+  "gate.checkbox": "Ho letto le condizioni d'uso e le accetto.",
+  "gate.accept": "Capito — continua",
+  "privacy.p.gate": "La tua accettazione delle condizioni d'uso è memorizzata solo nella memoria locale di questo dispositivo e non viene mai trasmessa. Cancellando i dati dell'app nelle impostazioni viene ripristinata.",
 } satisfies Record<string, string>;

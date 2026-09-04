@@ -372,6 +372,17 @@ export const en = {
   "terms.h.changes": "Changes to these terms",
   "terms.p.changes": "These terms may be updated with future versions of the app. The version shown in the app always applies.",
   "privacy.p.termsLink": "The safety notice and terms of use have moved to the Terms page.",
+
+  "gate.title": "Before you start",
+  "gate.intro": "Please note the key points of the terms of use before using this app.",
+  "gate.p1": "This app does not replace radio training or a radio operator certificate.",
+  "gate.p2": "You use the app entirely at your own risk — no liability for damages or consequences.",
+  "gate.p3": "No guarantee for availability, GPS accuracy or the correctness of the generated scripts.",
+  "gate.p4": "In an emergency always follow the rescue coordination centre; a DSC distress alert takes priority.",
+  "gate.readTerms": "Read the full terms of use",
+  "gate.checkbox": "I have read the terms of use and agree to them.",
+  "gate.accept": "Understood — continue",
+  "privacy.p.gate": "Your acceptance of the terms of use is stored only in this device's local storage and is never transmitted. Clearing the app data in Settings resets it.",
 } as const;
 
 export type TranslationKey = keyof typeof en;

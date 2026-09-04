@@ -372,4 +372,15 @@ export const nb = {
   "terms.h.changes": "Endringer av disse vilkårene",
   "terms.p.changes": "Disse vilkårene kan oppdateres med fremtidige versjoner av appen. Versjonen som vises i appen gjelder.",
   "privacy.p.termsLink": "Sikkerhetsmerknaden og bruksvilkårene finner du nå på siden Vilkår.",
+
+  "gate.title": "Før du begynner",
+  "gate.intro": "Vær oppmerksom på de viktigste punktene i bruksvilkårene før du bruker appen.",
+  "gate.p1": "Denne appen erstatter verken radioutdanning eller et radiosertifikat.",
+  "gate.p2": "Du bruker appen helt på egen risiko — intet ansvar for skader eller følger.",
+  "gate.p3": "Ingen garanti for tilgjengelighet, GPS-nøyaktighet eller korrektheten av de genererte tekstene.",
+  "gate.p4": "Følg alltid redningsledelsens instruksjoner i en nødsituasjon; et DSC-nødsignal har prioritet.",
+  "gate.readTerms": "Les hele bruksvilkårene",
+  "gate.checkbox": "Jeg har lest bruksvilkårene og godtar dem.",
+  "gate.accept": "Forstått — fortsett",
+  "privacy.p.gate": "Ditt samtykke til bruksvilkårene lagres kun lokalt på denne enheten og overføres aldri. Det tilbakestilles når du sletter appdata i innstillingene.",
 } as const;

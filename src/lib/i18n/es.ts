@@ -372,4 +372,15 @@ export const es = {
   "terms.h.changes": "Cambios en estas condiciones",
   "terms.p.changes": "Estas condiciones pueden actualizarse con futuras versiones de la aplicación. Rige la versión mostrada en la aplicación.",
   "privacy.p.termsLink": "El aviso de seguridad y las condiciones de uso se encuentran ahora en la página Condiciones.",
+
+  "gate.title": "Antes de empezar",
+  "gate.intro": "Ten en cuenta los puntos clave de las condiciones de uso antes de utilizar la aplicación.",
+  "gate.p1": "Esta aplicación no sustituye la formación radiofónica ni un certificado de operador de radio.",
+  "gate.p2": "Utilizas la aplicación completamente bajo tu propia responsabilidad — sin responsabilidad por daños o consecuencias.",
+  "gate.p3": "No se garantiza la disponibilidad, la precisión del GPS ni la exactitud de los textos generados.",
+  "gate.p4": "En una emergencia sigue siempre las instrucciones del centro de coordinación de salvamento; una alerta de socorro DSC tiene prioridad.",
+  "gate.readTerms": "Leer las condiciones de uso completas",
+  "gate.checkbox": "He leído las condiciones de uso y las acepto.",
+  "gate.accept": "Entendido — continuar",
+  "privacy.p.gate": "Tu aceptación de las condiciones de uso se almacena únicamente en la memoria local de este dispositivo y nunca se transmite. Borrar los datos de la app en Ajustes la restablece.",
 } satisfies Record<string, string>;
