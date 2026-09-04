@@ -372,6 +372,17 @@ export const hr = {
   "terms.h.changes": "Izmjene ovih uvjeta",
   "terms.p.changes": "Ovi se uvjeti mogu ažurirati s budućim verzijama aplikacije. Vrijedi verzija prikazana u aplikaciji.",
   "privacy.p.termsLink": "Sigurnosnu obavijest i uvjete korištenja sada pronađi na stranici Uvjeti.",
+
+  "gate.title": "Prije početka",
+  "gate.intro": "Prije korištenja aplikacije pročitajte ključne točke uvjeta korištenja.",
+  "gate.p1": "Ova aplikacija ne zamjenjuje radijsku obuku ni svjedodžbu radio-operatera.",
+  "gate.p2": "Aplikaciju koristite isključivo na vlastiti rizik — bez odgovornosti za štete ili posljedice.",
+  "gate.p3": "Nema jamstva za dostupnost, točnost GPS-a ili ispravnost generiranih tekstova.",
+  "gate.p4": "U hitnom slučaju uvijek slijedite upute centra za koordinaciju spašavanja; DSC poziv u nevolji ima prednost.",
+  "gate.readTerms": "Pročitajte cijele uvjete korištenja",
+  "gate.checkbox": "Pročitao/la sam uvjete korištenja i slažem se s njima.",
+  "gate.accept": "Razumijem — nastavi",
+  "privacy.p.gate": "Vaše prihvaćanje uvjeta korištenja pohranjuje se samo u lokalnoj memoriji ovog uređaja i nikada se ne prenosi. Brisanjem podataka aplikacije u postavkama poništava se.",
 } as const;
 
 export type TranslationKey = keyof typeof hr;

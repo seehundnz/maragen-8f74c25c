@@ -372,4 +372,15 @@ export const sv = {
   "terms.h.changes": "Ändringar av dessa villkor",
   "terms.p.changes": "Dessa villkor kan uppdateras med framtida versioner av appen. Den version som visas i appen gäller.",
   "privacy.p.termsLink": "Säkerhetsmeddelandet och användarvillkoren finns nu på sidan Villkor.",
+
+  "gate.title": "Innan du börjar",
+  "gate.intro": "Ta del av de viktigaste punkterna i användarvillkoren innan du använder appen.",
+  "gate.p1": "Den här appen ersätter varken radioutbildning eller ett radiocertifikat.",
+  "gate.p2": "Du använder appen helt på egen risk — inget ansvar för skador eller följder.",
+  "gate.p3": "Ingen garanti för tillgänglighet, GPS-noggrannhet eller riktigheten i de genererade texterna.",
+  "gate.p4": "Följ alltid räddningsledningscentralens anvisningar vid en nödsituation; ett DSC-nödlarm har företräde.",
+  "gate.readTerms": "Läs hela användarvillkoren",
+  "gate.checkbox": "Jag har läst användarvillkoren och godkänner dem.",
+  "gate.accept": "Förstått — fortsätt",
+  "privacy.p.gate": "Ditt godkännande av användarvillkoren lagras endast lokalt på den här enheten och överförs aldrig. Det återställs när du raderar appdata i inställningarna.",
 } as const;

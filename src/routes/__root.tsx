@@ -16,6 +16,7 @@ import { useLanguage } from "@/lib/i18n/languageStore";
 import { useSettings } from "@/hooks/useFleet";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { registerServiceWorker } from "@/lib/pwa";
+import { TermsGate } from "@/components/TermsGate";
 
 function NotFoundComponent() {
   return (
@@ -152,8 +153,10 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <I18nProvider key={lang} lang={lang}>
-        {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-        <Outlet />
+        <TermsGate>
+          {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+          <Outlet />
+        </TermsGate>
         <Toaster position="top-center" />
       </I18nProvider>
     </QueryClientProvider>

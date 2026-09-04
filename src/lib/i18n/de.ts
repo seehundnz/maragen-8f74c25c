@@ -376,4 +376,15 @@ export const de: Dictionary = {
   "terms.h.changes": "Änderungen dieser Bedingungen",
   "terms.p.changes": "Diese Bedingungen können mit zukünftigen Versionen der App angepasst werden. Es gilt die in der App angezeigte Version.",
   "privacy.p.termsLink": "Der Sicherheitshinweis und die Nutzungsbedingungen findest du jetzt auf der Seite Nutzungsbedingungen.",
+
+  "gate.title": "Bevor es losgeht",
+  "gate.intro": "Bitte beachte die wichtigsten Punkte der Nutzungsbedingungen, bevor du die App nutzt.",
+  "gate.p1": "Die App ersetzt keine Funkausbildung und kein Funkbetriebszeugnis.",
+  "gate.p2": "Die Nutzung erfolgt vollständig auf eigenes Risiko — keine Haftung für Schäden oder Folgen.",
+  "gate.p3": "Keine Garantie für Verfügbarkeit, GPS-Genauigkeit oder Fehlerfreiheit der generierten Texte.",
+  "gate.p4": "Folge im Notfall immer der Rettungsleitstelle; ein DSC-Notalarm hat Vorrang.",
+  "gate.readTerms": "Vollständige Nutzungsbedingungen lesen",
+  "gate.checkbox": "Ich habe die Nutzungsbedingungen gelesen und stimme ihnen zu.",
+  "gate.accept": "Verstanden — weiter",
+  "privacy.p.gate": "Deine Zustimmung zu den Nutzungsbedingungen wird nur im lokalen Speicher dieses Geräts gespeichert und niemals übertragen. Über „Daten löschen“ in den Einstellungen wird sie zurückgesetzt.",
 };
