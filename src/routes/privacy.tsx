@@ -40,6 +40,7 @@ function PrivacyPage() {
         <Section heading={t("privacy.h.summary")}>
           <p>{t("privacy.p.summary1")}</p>
           <p>{t("privacy.p.summary2")}</p>
+          <p>{t("privacy.p.gate")}</p>
         </Section>
 
         <Section heading={t("privacy.h.gps")}>
