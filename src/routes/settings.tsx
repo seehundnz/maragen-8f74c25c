@@ -128,18 +128,25 @@ function SettingsPage() {
         </section>
 
         <section className="space-y-4 rounded-xl border border-border bg-card p-4">
-          <div className="flex items-center justify-between gap-4">
-            <div>
-              <Label htmlFor="nightmode">{t("settings.nightMode")}</Label>
-              <p className="text-xs text-muted-foreground">{t("settings.nightModeHint")}</p>
-            </div>
-            <Switch
-              id="nightmode"
-              checked={settings.nightMode === true}
-              onCheckedChange={(checked) => setSettings((s) => ({ ...s, nightMode: checked }))}
-            />
+          <div>
+            <Label htmlFor="theme">{t("settings.theme")}</Label>
+            <Select
+              value={resolveTheme(settings)}
+              onValueChange={(v) => setSettings((s) => ({ ...s, theme: v as ThemeMode }))}
+            >
+              <SelectTrigger id="theme" className="max-w-72">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="dark">{t("settings.theme.dark")}</SelectItem>
+                <SelectItem value="light">{t("settings.theme.light")}</SelectItem>
+                <SelectItem value="night">{t("settings.theme.night")}</SelectItem>
+              </SelectContent>
+            </Select>
+            <p className="mt-1 text-xs text-muted-foreground">{t("settings.themeHint")}</p>
           </div>
         </section>
+
 
         <section className="space-y-4 rounded-xl border border-border bg-card p-4">
           <div className="flex items-center justify-between gap-4">
