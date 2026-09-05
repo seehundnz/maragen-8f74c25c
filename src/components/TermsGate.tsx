@@ -44,6 +44,33 @@ export function TermsGate({ children }: { children: React.ReactNode }) {
   return (
     <div className="fixed inset-0 z-50 flex h-[100dvh] flex-col overflow-y-auto bg-background pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)] pl-[env(safe-area-inset-left)] pr-[env(safe-area-inset-right)]">
       <div className="mx-auto flex w-full max-w-md flex-1 flex-col justify-center px-6 py-8">
+        <div className="mb-6 flex justify-end">
+          <Select
+            value={settings.language ?? "auto"}
+            onValueChange={(v) => {
+              const pref = v as LanguagePreference;
+              setSettings((s) => ({ ...s, language: pref }));
+              setLanguagePreference(pref);
+            }}
+          >
+            <SelectTrigger className="w-auto gap-2" aria-label={t("settings.language")}>
+              <Languages className="size-4 shrink-0" aria-hidden />
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent align="end">
+              <SelectItem value="auto">{t("settings.language.auto")}</SelectItem>
+              <SelectItem value="de">Deutsch</SelectItem>
+              <SelectItem value="en">English</SelectItem>
+              <SelectItem value="es">Español</SelectItem>
+              <SelectItem value="fr">Français</SelectItem>
+              <SelectItem value="hr">Hrvatski</SelectItem>
+              <SelectItem value="it">Italiano</SelectItem>
+              <SelectItem value="nl">Nederlands</SelectItem>
+              <SelectItem value="nb">Norsk</SelectItem>
+              <SelectItem value="sv">Svenska</SelectItem>
+            </SelectContent>
+          </Select>
+        </div>
         <div className="flex items-center gap-3">
           <span className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-primary text-primary-foreground">
             <Radio className="size-6" aria-hidden />
