@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { RefreshCw, Download, Wifi, WifiOff, MonitorSmartphone, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useT } from "@/lib/i18n";
-import { BUILD_DATE, checkForUpdate, applyUpdate, onUpdateAvailable, swAllowed, getSwStatus, onSwStatusChange, isOnline, isPwaInstalled, onConnectionChange, onInstallModeChange, getLastUpdateCheck, type SwStatus } from "@/lib/pwa";
+import { APP_VERSION, BUILD_DATE, checkForUpdate, applyUpdate, onUpdateAvailable, swAllowed, getSwStatus, onSwStatusChange, isOnline, isPwaInstalled, onConnectionChange, onInstallModeChange, getLastUpdateCheck, type SwStatus } from "@/lib/pwa";
 
 function statusIcon(status: SwStatus) {
   switch (status) {
@@ -79,6 +79,10 @@ export function UpdateSection() {
             <MonitorSmartphone className={`size-4 ${installed ? "text-emerald-500" : "text-muted-foreground"}`} aria-hidden />
             <span>{installed ? t("settings.installed") : t("settings.notInstalled")}</span>
           </div>
+        </div>
+        <div className="rounded-lg border border-border p-2">
+          <p className="text-[10px] uppercase tracking-wider text-muted-foreground">{t("settings.version")}</p>
+          <p className="mt-1 font-mono text-xs">v{APP_VERSION}</p>
         </div>
         <div className="rounded-lg border border-border p-2">
           <p className="text-[10px] uppercase tracking-wider text-muted-foreground">{t("settings.buildDate")}</p>
