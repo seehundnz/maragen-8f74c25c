@@ -6,6 +6,9 @@
 export const BUILD_DATE: string =
   typeof __BUILD_DATE__ === "string" ? __BUILD_DATE__ : new Date().toISOString();
 
+export const APP_VERSION: string =
+  typeof __APP_VERSION__ === "string" ? __APP_VERSION__ : "0.0.0";
+
 const SW_URL = "/sw.js";
 
 function isBlockedHost(hostname: string): boolean {
