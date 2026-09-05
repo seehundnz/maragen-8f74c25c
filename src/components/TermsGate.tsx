@@ -1,10 +1,19 @@
 import { useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
-import { Radio, ScrollText } from "lucide-react";
+import { Languages, Radio, ScrollText } from "lucide-react";
 
-import { useT } from "@/lib/i18n";
+import { useT, type LanguagePreference } from "@/lib/i18n";
+import { setLanguagePreference } from "@/lib/i18n/languageStore";
 import { useLocalState } from "@/hooks/useLocalState";
+import { useSettings } from "@/hooks/useFleet";
 import { Button } from "@/components/ui/button";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 /** Bump when the terms change materially so users are asked again. */
 export const TERMS_VERSION = 1;
