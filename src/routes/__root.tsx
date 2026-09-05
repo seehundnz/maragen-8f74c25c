@@ -121,8 +121,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 });
 
 function RootShell({ children }: { children: ReactNode }) {
+  const lang = useLanguage();
   return (
-    <html lang="en">
+    <html lang={lang} suppressHydrationWarning>
       <head>
         <HeadContent />
       </head>
