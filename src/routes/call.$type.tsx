@@ -42,7 +42,11 @@ export const Route = createFileRoute("/call/$type")({
         { name: "description", content: description },
         { property: "og:title", content: title },
         { property: "og:description", content: description },
+        { property: "og:type", content: "website" },
+        ...(meta ? [{ property: "og:url", content: `https://app.maragen.de/call/${params.type}` }] : []),
+        { name: "twitter:card", content: "summary" },
       ],
+      links: meta ? [{ rel: "canonical", href: `https://app.maragen.de/call/${params.type}` }] : [],
     };
   },
   component: CallPage,

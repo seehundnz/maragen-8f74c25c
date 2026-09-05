@@ -23,6 +23,7 @@ export const Route = createFileRoute("/settings")({
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
+      { name: "robots", content: "noindex, follow" },
     ],
   }),
   component: SettingsPage,

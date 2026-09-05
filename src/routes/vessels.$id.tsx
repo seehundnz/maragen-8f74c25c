@@ -23,6 +23,7 @@ export const Route = createFileRoute("/vessels/$id")({
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
+      { name: "robots", content: "noindex, follow" },
     ],
   }),
   component: VesselEditPage,
