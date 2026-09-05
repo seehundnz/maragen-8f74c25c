@@ -31,6 +31,7 @@ export function TermsGate({ children }: { children: React.ReactNode }) {
   const { value, setValue, hydrated } = useLocalState<TermsAcceptance>("vhf-terms-accepted", {
     version: 0,
   });
+  const { settings, setSettings } = useSettings();
   const [checked, setChecked] = useState(false);
 
   const accepted = value.version >= TERMS_VERSION;
