@@ -145,8 +145,11 @@ function RootComponent() {
   }, [lang]);
 
   useEffect(() => {
-    document.documentElement.classList.toggle("night", settings.nightMode === true);
-  }, [settings.nightMode]);
+    const theme = resolveTheme(settings);
+    document.documentElement.classList.toggle("night", theme === "night");
+    document.documentElement.classList.toggle("light", theme === "light");
+  }, [settings]);
+
 
   useEffect(() => {
     void registerServiceWorker();
