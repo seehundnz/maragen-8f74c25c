@@ -14,6 +14,8 @@ export interface Vessel {
   channel?: string;
 }
 
+export type ThemeMode = "dark" | "light" | "night";
+
 export interface Settings {
   autoUpdate: boolean;
   intervalSeconds: number;
@@ -22,7 +24,8 @@ export interface Settings {
   activeVesselId: string | null;
   useAiVoice: boolean;
   language: "auto" | "en" | "de" | "fr" | "nl" | "es" | "it" | "sv" | "nb" | "hr";
-  nightMode: boolean;
+  nightMode?: boolean;
+  theme?: ThemeMode;
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -34,6 +37,7 @@ export const DEFAULT_SETTINGS: Settings = {
   useAiVoice: false,
   language: "auto",
   nightMode: false,
+  theme: "dark",
 };
 
 export interface CallInput {
