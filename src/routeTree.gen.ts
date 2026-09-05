@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as GuideRouteImport } from './routes/guide'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as SettingsRouteImport } from './routes/settings'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as ApiTtsRouteImport } from './routes/api/tts'
 import { Route as CallTypeRouteImport } from './routes/call.$type'
@@ -37,6 +38,11 @@ const PrivacyRoute = PrivacyRouteImport.update({
 const SettingsRoute = SettingsRouteImport.update({
   id: '/settings',
   path: '/settings',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TermsRoute = TermsRouteImport.update({
@@ -70,6 +76,7 @@ export interface FileRoutesByFullPath {
   '/guide': typeof GuideRoute
   '/privacy': typeof PrivacyRoute
   '/settings': typeof SettingsRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/api/tts': typeof ApiTtsRoute
   '/call/$type': typeof CallTypeRoute
@@ -81,6 +88,7 @@ export interface FileRoutesByTo {
   '/guide': typeof GuideRoute
   '/privacy': typeof PrivacyRoute
   '/settings': typeof SettingsRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/api/tts': typeof ApiTtsRoute
   '/call/$type': typeof CallTypeRoute
@@ -93,6 +101,7 @@ export interface FileRoutesById {
   '/guide': typeof GuideRoute
   '/privacy': typeof PrivacyRoute
   '/settings': typeof SettingsRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/api/tts': typeof ApiTtsRoute
   '/call/$type': typeof CallTypeRoute
@@ -106,6 +115,7 @@ export interface FileRouteTypes {
     | '/guide'
     | '/privacy'
     | '/settings'
+    | '/sitemap.xml'
     | '/terms'
     | '/api/tts'
     | '/call/$type'
@@ -117,6 +127,7 @@ export interface FileRouteTypes {
     | '/guide'
     | '/privacy'
     | '/settings'
+    | '/sitemap.xml'
     | '/terms'
     | '/api/tts'
     | '/call/$type'
@@ -128,6 +139,7 @@ export interface FileRouteTypes {
     | '/guide'
     | '/privacy'
     | '/settings'
+    | '/sitemap.xml'
     | '/terms'
     | '/api/tts'
     | '/call/$type'
@@ -140,6 +152,7 @@ export interface RootRouteChildren {
   GuideRoute: typeof GuideRoute
   PrivacyRoute: typeof PrivacyRoute
   SettingsRoute: typeof SettingsRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsRoute: typeof TermsRoute
   ApiTtsRoute: typeof ApiTtsRoute
   CallTypeRoute: typeof CallTypeRoute
@@ -175,6 +188,13 @@ declare module '@tanstack/react-router' {
       path: '/settings'
       fullPath: '/settings'
       preLoaderRoute: typeof SettingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/terms': {
@@ -220,6 +240,7 @@ const rootRouteChildren: RootRouteChildren = {
   GuideRoute: GuideRoute,
   PrivacyRoute: PrivacyRoute,
   SettingsRoute: SettingsRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsRoute: TermsRoute,
   ApiTtsRoute: ApiTtsRoute,
   CallTypeRoute: CallTypeRoute,

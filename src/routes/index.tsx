@@ -13,6 +13,7 @@ const CALL_ICONS: Record<CallType, typeof AlertTriangle> = {
 };
 
 export const Route = createFileRoute("/")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { title: "VHF Call Builder — Emergency & Routine Radio Calls" },
@@ -28,7 +29,25 @@ export const Route = createFileRoute("/")({
           "Mayday, Pan-Pan, Sécurité and routine VHF call scripts with vessel data, live GPS and UTC time.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://app.maragen.de/" },
       { name: "twitter:card", content: "summary" },
+    ],
+    links: [{ rel: "canonical", href: "https://app.maragen.de/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          name: "VHF Call Builder",
+          applicationCategory: "UtilitiesApplication",
+          operatingSystem: "Web, iOS, Android",
+          url: "https://app.maragen.de/",
+          description:
+            "Build spoken VHF radio calls for sailors: Mayday, Pan-Pan, Sécurité and routine calls with vessel data, live GPS position and UTC time.",
+          offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+        }),
+      },
     ],
   }),
   component: HomePage,
