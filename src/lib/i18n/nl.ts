@@ -8,6 +8,12 @@ export const nl = {
   "nav.guide": "Handleiding",
   "nav.nightModeOn": "Rood nachtlicht inschakelen",
   "nav.nightModeOff": "Rood nachtlicht uitschakelen",
+  "nav.themeNext": "volgende:",
+  "settings.theme": "Weergavemodus",
+  "settings.themeHint": "Kies hoe de app eruitziet. De apparaatinstelling wordt niet automatisch overgenomen.",
+  "settings.theme.dark": "Donker",
+  "settings.theme.light": "Licht",
+  "settings.theme.night": "Nacht (rood licht)",
 
   "install.title": "Deze app installeren",
   "install.intro":

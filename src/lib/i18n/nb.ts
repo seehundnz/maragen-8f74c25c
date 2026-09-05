@@ -8,6 +8,12 @@ export const nb = {
   "nav.guide": "Veiledning",
   "nav.nightModeOn": "Slå på nattmodus",
   "nav.nightModeOff": "Slå av nattmodus",
+  "nav.themeNext": "neste:",
+  "settings.theme": "Visningsmodus",
+  "settings.themeHint": "Velg hvordan appen ser ut. Enhetens innstilling brukes ikke automatisk.",
+  "settings.theme.dark": "Mørk",
+  "settings.theme.light": "Lys",
+  "settings.theme.night": "Natt (rødt lys)",
 
   "install.title": "Installer denne appen",
   "install.intro":

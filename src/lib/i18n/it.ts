@@ -8,6 +8,12 @@ export const it = {
   "nav.guide": "Guida",
   "nav.nightModeOn": "Attiva la luce rossa notturna",
   "nav.nightModeOff": "Disattiva la luce rossa notturna",
+  "nav.themeNext": "successivo:",
+  "settings.theme": "Modalità di visualizzazione",
+  "settings.themeHint": "Scegli l'aspetto dell'app. L'impostazione del dispositivo non viene applicata automaticamente.",
+  "settings.theme.dark": "Scuro",
+  "settings.theme.light": "Chiaro",
+  "settings.theme.night": "Notte (luce rossa)",
 
   "install.title": "Installa questa app",
   "install.intro":
