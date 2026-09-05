@@ -10,6 +10,8 @@ import { useT, type LanguagePreference } from "@/lib/i18n";
 import { setLanguagePreference } from "@/lib/i18n/languageStore";
 import { UpdateSection } from "@/components/UpdateSection";
 import { ClearDataSection } from "@/components/ClearDataSection";
+import { resolveTheme, type ThemeMode } from "@/lib/types";
+
 
 const title = "Settings — VHF Call Builder";
 const description =
