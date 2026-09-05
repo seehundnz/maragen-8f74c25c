@@ -7,6 +7,7 @@ const description =
   "How VHF Call Builder handles your data under GDPR/DSGVO: local-only storage, GPS use, text-to-speech, plus the legal imprint.";
 
 export const Route = createFileRoute("/privacy")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { title },
@@ -14,8 +15,10 @@ export const Route = createFileRoute("/privacy")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://app.maragen.de/privacy" },
       { name: "twitter:card", content: "summary" },
     ],
+    links: [{ rel: "canonical", href: "https://app.maragen.de/privacy" }],
   }),
   component: PrivacyPage,
 });

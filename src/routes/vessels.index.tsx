@@ -24,12 +24,14 @@ const description =
   "Manage your saved vessel profiles: name, MMSI, call sign, description and default persons on board.";
 
 export const Route = createFileRoute("/vessels/")({
+  staticData: { sitemap: false },
   head: () => ({
     meta: [
       { title },
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
+      { name: "robots", content: "noindex, follow" },
     ],
   }),
   component: VesselsPage,

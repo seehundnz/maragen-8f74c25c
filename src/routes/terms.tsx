@@ -7,6 +7,7 @@ const description =
   "Terms of use for VHF Call Builder: scope, safety notice, liability, availability and changes.";
 
 export const Route = createFileRoute("/terms")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { title },
@@ -14,8 +15,10 @@ export const Route = createFileRoute("/terms")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://app.maragen.de/terms" },
       { name: "twitter:card", content: "summary" },
     ],
+    links: [{ rel: "canonical", href: "https://app.maragen.de/terms" }],
   }),
   component: TermsPage,
 });

@@ -25,6 +25,7 @@ import { CALL_META, isCallType, type CallInput, type CallType } from "@/lib/type
 import { useT, type TranslationKey } from "@/lib/i18n";
 
 export const Route = createFileRoute("/call/$type")({
+  staticData: { sitemap: true },
   loader: ({ params }) => {
     if (!isCallType(params.type)) throw notFound();
     return { type: params.type as CallType };
@@ -41,7 +42,11 @@ export const Route = createFileRoute("/call/$type")({
         { name: "description", content: description },
         { property: "og:title", content: title },
         { property: "og:description", content: description },
+        { property: "og:type", content: "website" },
+        ...(meta ? [{ property: "og:url", content: `https://app.maragen.de/call/${params.type}` }] : []),
+        { name: "twitter:card", content: "summary" },
       ],
+      links: meta ? [{ rel: "canonical", href: `https://app.maragen.de/call/${params.type}` }] : [],
     };
   },
   component: CallPage,

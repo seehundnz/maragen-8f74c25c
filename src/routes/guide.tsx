@@ -7,14 +7,29 @@ const description =
   "How to use VHF Call Builder: add vessels, generate Mayday, Pan-Pan, Sécurité and routine VHF call scripts, use GPS and UTC, read aloud, share vessels, and install the app offline.";
 
 export const Route = createFileRoute("/guide")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { title },
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
-      { property: "og:type", content: "website" },
+      { property: "og:type", content: "article" },
+      { property: "og:url", content: "https://app.maragen.de/guide" },
       { name: "twitter:card", content: "summary" },
+    ],
+    links: [{ rel: "canonical", href: "https://app.maragen.de/guide" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: "How to use VHF Call Builder",
+          description,
+          mainEntityOfPage: "https://app.maragen.de/guide",
+        }),
+      },
     ],
   }),
   component: GuidePage,
