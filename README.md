@@ -47,3 +47,13 @@ Because this is a web app, the AGPL network clause applies: anyone who publicly 
 ---
 
 _Built with ❤️ and [Lovable](https://lovable.dev) — fair winds and following seas! ⛵_
+
+## Versioning
+
+This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html) (`MAJOR.MINOR.PATCH`):
+
+- **MAJOR** — breaking changes or fundamental reworks
+- **MINOR** — new features, backwards-compatible
+- **PATCH** — bug fixes, text corrections, small improvements
+
+The version lives in `package.json`, is injected at build time and shown in the app under **Settings → App & updates**. Every change is recorded in [CHANGELOG.md](CHANGELOG.md).
