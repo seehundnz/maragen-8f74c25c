@@ -17,6 +17,8 @@ import { useSettings } from "@/hooks/useFleet";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { registerServiceWorker } from "@/lib/pwa";
 import { TermsGate } from "@/components/TermsGate";
+import { resolveTheme } from "@/lib/types";
+
 
 function NotFoundComponent() {
   return (
