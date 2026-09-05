@@ -7,6 +7,7 @@ const description =
   "Terms of use for VHF Call Builder: scope, safety notice, liability, availability and changes.";
 
 export const Route = createFileRoute("/terms")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { title },

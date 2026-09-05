@@ -7,6 +7,7 @@ const description =
   "How to use VHF Call Builder: add vessels, generate Mayday, Pan-Pan, Sécurité and routine VHF call scripts, use GPS and UTC, read aloud, share vessels, and install the app offline.";
 
 export const Route = createFileRoute("/guide")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { title },

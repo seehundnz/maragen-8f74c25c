@@ -25,6 +25,7 @@ import { CALL_META, isCallType, type CallInput, type CallType } from "@/lib/type
 import { useT, type TranslationKey } from "@/lib/i18n";
 
 export const Route = createFileRoute("/call/$type")({
+  staticData: { sitemap: true },
   loader: ({ params }) => {
     if (!isCallType(params.type)) throw notFound();
     return { type: params.type as CallType };

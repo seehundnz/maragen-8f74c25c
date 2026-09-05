@@ -16,6 +16,7 @@ const description =
   "Configure automatic GPS position updates, refresh interval, default VHF channel and position format.";
 
 export const Route = createFileRoute("/settings")({
+  staticData: { sitemap: false },
   head: () => ({
     meta: [
       { title },

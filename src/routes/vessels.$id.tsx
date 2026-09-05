@@ -16,6 +16,7 @@ const title = "Edit vessel — VHF Call Builder";
 const description = "Add or edit a vessel profile with name, MMSI, call sign and default details.";
 
 export const Route = createFileRoute("/vessels/$id")({
+  staticData: { sitemap: false },
   head: () => ({
     meta: [
       { title },

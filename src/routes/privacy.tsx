@@ -7,6 +7,7 @@ const description =
   "How VHF Call Builder handles your data under GDPR/DSGVO: local-only storage, GPS use, text-to-speech, plus the legal imprint.";
 
 export const Route = createFileRoute("/privacy")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { title },
