@@ -58,7 +58,7 @@ export function UpdateSection() {
       <h2 className="text-sm font-semibold">{t("settings.appHeading")}</h2>
       <p className="text-xs text-muted-foreground">{t("settings.offlineHint")}</p>
 
-      <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+      <div className="grid grid-cols-2 gap-2 sm:grid-cols-5">
         <div className="rounded-lg border border-border p-2">
           <p className="text-[10px] uppercase tracking-wider text-muted-foreground">{t("settings.swStatus")}</p>
           <div className="mt-1 flex items-center gap-1.5 text-xs">
