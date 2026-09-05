@@ -264,6 +264,11 @@
     color-scheme: dark;
   }
 
+  html.light {
+    color-scheme: light;
+  }
+
+
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
