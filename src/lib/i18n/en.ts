@@ -8,6 +8,12 @@ export const en = {
   "nav.guide": "Guide",
   "nav.nightModeOn": "Turn on red-light mode",
   "nav.nightModeOff": "Turn off red-light mode",
+  "nav.themeNext": "next:",
+  "settings.theme": "Display mode",
+  "settings.themeHint": "Choose how the app looks. The device setting is not applied automatically.",
+  "settings.theme.dark": "Dark",
+  "settings.theme.light": "Light",
+  "settings.theme.night": "Night (red light)",
 
   "install.title": "Install this app",
   "install.intro":

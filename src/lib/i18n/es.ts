@@ -8,6 +8,12 @@ export const es = {
   "nav.guide": "Guía",
   "nav.nightModeOn": "Activar modo luz roja",
   "nav.nightModeOff": "Desactivar modo luz roja",
+  "nav.themeNext": "siguiente:",
+  "settings.theme": "Modo de visualización",
+  "settings.themeHint": "Elige el aspecto de la aplicación. El ajuste del dispositivo no se aplica automáticamente.",
+  "settings.theme.dark": "Oscuro",
+  "settings.theme.light": "Claro",
+  "settings.theme.night": "Noche (luz roja)",
 
   "install.title": "Instalar esta app",
   "install.intro":

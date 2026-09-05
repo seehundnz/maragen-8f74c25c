@@ -8,6 +8,12 @@ export const fr = {
   "nav.guide": "Guide",
   "nav.nightModeOn": "Activer le mode lumière rouge",
   "nav.nightModeOff": "Désactiver le mode lumière rouge",
+  "nav.themeNext": "suivant :",
+  "settings.theme": "Mode d'affichage",
+  "settings.themeHint": "Choisissez l'apparence de l'application. Le réglage de l'appareil n'est pas repris automatiquement.",
+  "settings.theme.dark": "Sombre",
+  "settings.theme.light": "Clair",
+  "settings.theme.night": "Nuit (lumière rouge)",
 
   "install.title": "Installer cette application",
   "install.intro":

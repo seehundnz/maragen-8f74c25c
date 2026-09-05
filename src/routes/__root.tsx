@@ -17,6 +17,8 @@ import { useSettings } from "@/hooks/useFleet";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { registerServiceWorker } from "@/lib/pwa";
 import { TermsGate } from "@/components/TermsGate";
+import { resolveTheme } from "@/lib/types";
+
 
 function NotFoundComponent() {
   return (
@@ -145,8 +147,11 @@ function RootComponent() {
   }, [lang]);
 
   useEffect(() => {
-    document.documentElement.classList.toggle("night", settings.nightMode === true);
-  }, [settings.nightMode]);
+    const theme = resolveTheme(settings);
+    document.documentElement.classList.toggle("night", theme === "night");
+    document.documentElement.classList.toggle("light", theme === "light");
+  }, [settings]);
+
 
   useEffect(() => {
     void registerServiceWorker();

@@ -14,6 +14,8 @@ export interface Vessel {
   channel?: string;
 }
 
+export type ThemeMode = "dark" | "light" | "night";
+
 export interface Settings {
   autoUpdate: boolean;
   intervalSeconds: number;
@@ -22,7 +24,8 @@ export interface Settings {
   activeVesselId: string | null;
   useAiVoice: boolean;
   language: "auto" | "en" | "de" | "fr" | "nl" | "es" | "it" | "sv" | "nb" | "hr";
-  nightMode: boolean;
+  nightMode?: boolean;
+  theme?: ThemeMode;
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -34,6 +37,7 @@ export const DEFAULT_SETTINGS: Settings = {
   useAiVoice: false,
   language: "auto",
   nightMode: false,
+  theme: "dark",
 };
 
 export interface CallInput {
@@ -81,4 +85,15 @@ export const CALL_META: Record<
 
 export function isCallType(value: string): value is CallType {
   return (CALL_TYPES as string[]).includes(value);
+}
+
+export function resolveTheme(settings: { theme?: ThemeMode; nightMode?: boolean }): ThemeMode {
+  if (settings.theme) return settings.theme;
+  return settings.nightMode ? "night" : "dark";
+}
+
+export const THEME_ORDER: ThemeMode[] = ["dark", "light", "night"];
+
+export function nextTheme(current: ThemeMode): ThemeMode {
+  return THEME_ORDER[(THEME_ORDER.indexOf(current) + 1) % THEME_ORDER.length]!;
 }

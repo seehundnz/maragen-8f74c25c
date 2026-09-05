@@ -8,6 +8,12 @@ export const sv = {
   "nav.guide": "Guide",
   "nav.nightModeOn": "Slå på nattläge",
   "nav.nightModeOff": "Slå av nattläge",
+  "nav.themeNext": "nästa:",
+  "settings.theme": "Visningsläge",
+  "settings.themeHint": "Välj hur appen ser ut. Enhetens inställning används inte automatiskt.",
+  "settings.theme.dark": "Mörkt",
+  "settings.theme.light": "Ljust",
+  "settings.theme.night": "Natt (rött ljus)",
 
   "install.title": "Installera appen",
   "install.intro":

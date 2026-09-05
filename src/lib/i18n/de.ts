@@ -10,6 +10,12 @@ export const de: Dictionary = {
   "nav.guide": "Anleitung",
   "nav.nightModeOn": "Rotlicht-Modus einschalten",
   "nav.nightModeOff": "Rotlicht-Modus ausschalten",
+  "nav.themeNext": "weiter:",
+  "settings.theme": "Anzeige-Modus",
+  "settings.themeHint": "Lege fest, wie die App aussieht. Die Geräteeinstellung wird nicht automatisch übernommen.",
+  "settings.theme.dark": "Dunkel",
+  "settings.theme.light": "Hell",
+  "settings.theme.night": "Nacht (Rotlicht)",
 
   "install.title": "App installieren",
   "install.intro":

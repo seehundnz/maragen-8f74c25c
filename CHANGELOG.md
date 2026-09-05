@@ -9,6 +9,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **MINOR** — new features, backwards-compatible
 - **PATCH** — bug fixes, text corrections, small improvements
 
+## [1.1.0] - 2026-09-05
+
+### Added
+
+- Light display mode alongside the existing dark and red-light night modes
+- Header icon now cycles through all three display modes (dark, light, night)
+- Display mode selector in Settings replaces the red-light on/off switch
+
+### Changed
+
+- Display mode is always explicit; the device colour-scheme preference is never applied automatically (default: dark)
+
 ## [1.0.0] - 2026-09-05
 
 First public release.

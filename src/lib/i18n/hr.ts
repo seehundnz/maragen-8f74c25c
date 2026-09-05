@@ -8,6 +8,12 @@ export const hr = {
   "nav.guide": "Vodič",
   "nav.nightModeOn": "Uključi crveni način rada",
   "nav.nightModeOff": "Isključi crveni način rada",
+  "nav.themeNext": "sljedeće:",
+  "settings.theme": "Način prikaza",
+  "settings.themeHint": "Odaberite izgled aplikacije. Postavka uređaja ne primjenjuje se automatski.",
+  "settings.theme.dark": "Tamno",
+  "settings.theme.light": "Svijetlo",
+  "settings.theme.night": "Noć (crveno svjetlo)",
 
   "install.title": "Instaliraj ovu aplikaciju",
   "install.intro":
