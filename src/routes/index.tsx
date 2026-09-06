@@ -29,10 +29,10 @@ export const Route = createFileRoute("/")({
           "Mayday, Pan-Pan, Sécurité and routine VHF call scripts with vessel data, live GPS and UTC time.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://app.maragen.de/" },
+      { property: "og:url", content: "https://app.vhfcall.eu/" },
       { name: "twitter:card", content: "summary" },
     ],
-    links: [{ rel: "canonical", href: "https://app.maragen.de/" }],
+    links: [{ rel: "canonical", href: "https://app.vhfcall.eu/" }],
     scripts: [
       {
         type: "application/ld+json",
@@ -42,7 +42,7 @@ export const Route = createFileRoute("/")({
           name: "VHF Call Builder",
           applicationCategory: "UtilitiesApplication",
           operatingSystem: "Web, iOS, Android",
-          url: "https://app.maragen.de/",
+          url: "https://app.vhfcall.eu/",
           description:
             "Build spoken VHF radio calls for sailors: Mayday, Pan-Pan, Sécurité and routine calls with vessel data, live GPS position and UTC time.",
           offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },

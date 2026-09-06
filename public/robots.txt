@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://app.maragen.de/sitemap.xml
+Sitemap: https://app.vhfcall.eu/sitemap.xml
