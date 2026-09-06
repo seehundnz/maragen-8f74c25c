@@ -15,10 +15,10 @@ export const Route = createFileRoute("/privacy")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://app.maragen.de/privacy" },
+      { property: "og:url", content: "https://app.vhfcall.eu/privacy" },
       { name: "twitter:card", content: "summary" },
     ],
-    links: [{ rel: "canonical", href: "https://app.maragen.de/privacy" }],
+    links: [{ rel: "canonical", href: "https://app.vhfcall.eu/privacy" }],
   }),
   component: PrivacyPage,
 });
@@ -114,7 +114,7 @@ function PrivacyPage() {
             {t("privacy.imprint.country")}
             <br />
             <br />
-            {t("privacy.imprint.email")}: info@maragen.de
+            {t("privacy.imprint.email")}: info@vhfcall.eu
             <br />
             {t("privacy.imprint.phone")}: 02153 9572722
             <br />

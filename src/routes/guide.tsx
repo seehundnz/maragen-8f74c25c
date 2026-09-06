@@ -15,10 +15,10 @@ export const Route = createFileRoute("/guide")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "article" },
-      { property: "og:url", content: "https://app.maragen.de/guide" },
+      { property: "og:url", content: "https://app.vhfcall.eu/guide" },
       { name: "twitter:card", content: "summary" },
     ],
-    links: [{ rel: "canonical", href: "https://app.maragen.de/guide" }],
+    links: [{ rel: "canonical", href: "https://app.vhfcall.eu/guide" }],
     scripts: [
       {
         type: "application/ld+json",
@@ -27,7 +27,7 @@ export const Route = createFileRoute("/guide")({
           "@type": "Article",
           headline: "How to use VHF Call Builder",
           description,
-          mainEntityOfPage: "https://app.maragen.de/guide",
+          mainEntityOfPage: "https://app.vhfcall.eu/guide",
         }),
       },
     ],
