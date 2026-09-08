@@ -1,7 +1,7 @@
 {
   "name": "VHF Call Builder",
   "short_name": "VHF Call",
-  "start_url": "/call/mayday",
+  "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "background_color": "#0b1622",

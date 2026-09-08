@@ -110,7 +110,7 @@ export const sv = {
   "comms.p.silence": "ALL STATIONS, ALL STATIONS, ALL STATIONS\nSEELONCE MAYDAY\n",
   "comms.h.cancel": "Återkalla ett felaktigt utlöst nödlarm (endast fartyg i nöd)",
   "comms.p.cancel":
-    "All stations, all stations, all stations\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
+    "ALL STATIONS, ALL STATIONS, ALL STATIONS\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
   "comms.h.end": "Avsluta ett nödanrop (endast kuststation eller fartyg i nöd)",
   "comms.p.end":
     "MAYDAY\nAll stations, all stations, all stations\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC\n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
