@@ -105,15 +105,15 @@ export const en = {
   "comms.title": "Further communication",
   "comms.intro": "Standard radio phrases for further communication, silence requests, false-alarm cancellation and ending a distress call.",
   "comms.h.relay": "Further communication during a distress case",
-  "comms.p.relay": "MAYDAY [VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DSITRESS]\nThis is [VESSEL NAME], [CALL SIGN]\n[MESSAGE]\nOVER\n",
+  "comms.p.relay": "MAYDAY [VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS]\nThis is [VESSEL NAME], [CALL SIGN]\n[MESSAGE]\nOVER\n",
   "comms.h.silence": "Asking for silence (only coast radio station or vessel in distress)",
-  "comms.p.silence": "All stations\nSilence mayday\n",
+  "comms.p.silence": "ALL STATIONS, ALL STATIONS, ALL STATIONS\nSEELONCE MAYDAY\n",
   "comms.h.cancel": "Revert a mistakenly issued distress alert (only vessel in distress)",
   "comms.p.cancel":
     "All stations, all stations, all stations\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
   "comms.h.end": "End a distress call (only coast station or vessel in distress)",
   "comms.p.end":
-    "MAYDAY\nAll stations, all stations, all stations\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC \n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
+    "MAYDAY\nAll stations, all stations, all stations\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC\n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
 
   "nature.sinking": "Sinking",
   "nature.takingOnWater": "Taking on water",

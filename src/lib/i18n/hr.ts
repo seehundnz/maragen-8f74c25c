@@ -105,15 +105,15 @@ export const hr = {
   "comms.title": "Daljnja komunikacija",
   "comms.intro": "Standardne radio fraze za daljnju komunikaciju, zahtjeve za tišinu, poništavanje lažnog alarma i završetak poziva u pogibelji.",
   "comms.h.relay": "Daljnja komunikacija tijekom slučaja pogibelji",
-  "comms.p.relay": "MAYDAY [VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DSITRESS]\nThis is [VESSEL NAME], [CALL SIGN]\n[MESSAGE]\nOVER\n",
+  "comms.p.relay": "MAYDAY [VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS]\nThis is [VESSEL NAME], [CALL SIGN]\n[MESSAGE]\nOVER\n",
   "comms.h.silence": "Traženje tišine (samo obalna radio postaja ili plovilo u pogibelji)",
-  "comms.p.silence": "All stations\nSilence mayday\n",
+  "comms.p.silence": "ALL STATIONS, ALL STATIONS, ALL STATIONS\nSEELONCE MAYDAY\n",
   "comms.h.cancel": "Poništavanje pogrešno izdanog alarma za pogibelj (samo plovilo u pogibelji)",
   "comms.p.cancel":
     "All stations, all stations, all stations\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
   "comms.h.end": "Završetak poziva u pogibelji (samo obalna postaja ili plovilo u pogibelji)",
   "comms.p.end":
-    "MAYDAY\nAll stations, all stations, all stations\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC \n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
+    "MAYDAY\nAll stations, all stations, all stations\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC\n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
 
   "nature.sinking": "Potonuće",
   "nature.takingOnWater": "Prodiranje vode",
