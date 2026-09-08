@@ -9,6 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **MINOR** — new features, backwards-compatible
 - **PATCH** — bug fixes, text corrections, small improvements
 
+## [1.1.1] - 2026-09-08
+
+### Fixed
+
+- Typo in the distress relay script placeholder (`DSITRESS` → `DISTRESS`) in all languages
+- Silence request now uses the standard phrase `ALL STATIONS, ALL STATIONS, ALL STATIONS / SEELONCE MAYDAY`
+- Removed a stray trailing space in the "end of distress" script and unified procedure-word capitalisation
+- German wording unified to "UKW"; German guide now uses the product name "VHF Call Builder" like all other languages
+- Installed app now opens the home screen with all call types instead of jumping straight to Mayday
+
 ## [1.1.0] - 2026-09-05
 
 ### Added

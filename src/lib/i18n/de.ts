@@ -107,15 +107,15 @@ export const de: Dictionary = {
   "comms.title": "Weitere Kommunikation",
   "comms.intro": "Standard-Funktexte für weitere Kommunikation, Funkstille anordnen, Rücknahme Fehlalarm und Beendigung eines Notrufs.",
   "comms.h.relay": "Weitere Kommunikation im Notfall",
-  "comms.p.relay": "MAYDAY [VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DSITRESS]\nThis is [VESSEL NAME], [CALL SIGN]\n[MESSAGE]\nOVER\n",
+  "comms.p.relay": "MAYDAY [VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS]\nThis is [VESSEL NAME], [CALL SIGN]\n[MESSAGE]\nOVER\n",
   "comms.h.silence": "STILLE AUFFORDERN (NUR KÜSTENFUNKSTELLE ODER HAVARIST)",
-  "comms.p.silence": "All stations\nSilence mayday\n",
+  "comms.p.silence": "ALL STATIONS, ALL STATIONS, ALL STATIONS\nSEELONCE MAYDAY\n",
   "comms.h.cancel": "FALSCH AUSGELÖSTEN NOTALARM ZURÜCKNEHMEN (NUR HAVARIST)",
   "comms.p.cancel":
-    "All stations, all stations, all stations\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
+    "ALL STATIONS, ALL STATIONS, ALL STATIONS\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
   "comms.h.end": "NOTRUF BEENDEN (NUR KÜSTENFUNKSTELLE ODER HAVARIST)",
   "comms.p.end":
-    "MAYDAY\nAll stations, all stations, all stations\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC \n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
+    "MAYDAY\nAll stations, all stations, all stations\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC\n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
 
   "nature.sinking": "Sinkend",
   "nature.takingOnWater": "Wassereinbruch",
@@ -328,7 +328,7 @@ export const de: Dictionary = {
   "guide.subtitle": "Eine kurze Übersicht aller Funktionen — vom ersten Schiff bis zum fertigen Funkspruch.",
   "guide.h.intro": "Was diese App macht",
   "guide.p.intro1":
-    "UKW-Funkruf erzeugt fertige Funksprüche zum Ablesen — Mayday, Pan-Pan, Sécurité und Routine-Anrufe — mit deinen Schiffsdaten, der aktuellen UTC-Zeit und deiner GPS-Position. Alles bleibt auf deinem Gerät: kein Konto, kein Server, keine Internetverbindung nach dem ersten Laden nötig.",
+    "VHF Call Builder erzeugt fertige Funksprüche zum Ablesen — Mayday, Pan-Pan, Sécurité und Routine-Anrufe — mit deinen Schiffsdaten, der aktuellen UTC-Zeit und deiner GPS-Position. Alles bleibt auf deinem Gerät: kein Konto, kein Server, keine Internetverbindung nach dem ersten Laden nötig.",
   "guide.p.intro2":
     "Die App ist nur eine Hilfe. Sie ersetzt weder eine ordentliche Funkausbildung noch ein gültiges Funkbetriebszeugnis oder einen DSC-Notalarm. Folge im Notfall immer den Anweisungen der koordinierenden Rettungsleitstelle.",
   "guide.h.gettingStarted": "1. Schiff anlegen",
@@ -375,7 +375,7 @@ export const de: Dictionary = {
   "terms.title": "Nutzungsbedingungen",
   "terms.subtitle": "Die Regeln für die Nutzung dieser App.",
   "terms.h.scope": "Geltungsbereich & Zweck",
-  "terms.p.scope": "Diese App hilft dir, VHF-Funksprüche (Mayday, Pan-Pan, Sécurité und Standardanrufe) aus deinen Schiffsdaten, Position und Uhrzeit zu erstellen. Sie ist ein Hilfsmittel für die private, nicht-kommerzielle Nutzung.",
+  "terms.p.scope": "Diese App hilft dir, UKW-Funksprüche (Mayday, Pan-Pan, Sécurité und Standardanrufe) aus deinen Schiffsdaten, Position und Uhrzeit zu erstellen. Sie ist ein Hilfsmittel für die private, nicht-kommerzielle Nutzung.",
   "terms.h.liability": "Haftungsausschluss",
   "terms.p.liability": "Die App wird „wie besehen“ ohne jegliche Gewährleistung bereitgestellt. Sie ersetzt weder einen DSC-Notalarm noch eine ordentliche Funkausbildung oder das Urteilsvermögen des Skippers. Sende nach Möglichkeit immer zuerst einen DSC-Alarm. Für Vorfälle, Schäden oder Folgen aus der Nutzung oder Nichtverfügbarkeit der App wird keine Haftung übernommen; die Nutzung erfolgt vollständig auf eigenes Risiko.",
   "terms.h.availability": "Verfügbarkeit & Richtigkeit",
