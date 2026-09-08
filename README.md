@@ -16,7 +16,7 @@ A Progressive Web App for skippers, boat owners and crew: it builds ready-to-rea
 - 🔊 **Read aloud** — the script is spoken slowly and clearly, optionally via AI voice or offline using the device voice
 - 📲 **Installable as a PWA** — runs offline on iPhone, iPad, Android and desktop
 - 🔗 **Share vessel data via QR code** — crew scans and imports the profile
-- 🌍 **Bilingual UI** (German/English) — radio scripts intentionally stay in English, the international language of VHF maritime communication
+- 🌍 **UI in 9 languages** (English, German, Spanish, French, Italian, Dutch, Swedish, Norwegian, Croatian — plus automatic device-language detection) — radio scripts intentionally stay in English, the international language of VHF maritime communication
 - 🔒 **Privacy-friendly (GDPR/DSGVO):** all data stays locally on the device, no tracking, no cookies, no external fonts or scripts
 
 ## 🛠️ Tech stack
