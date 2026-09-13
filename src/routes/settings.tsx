@@ -118,7 +118,7 @@ function SettingsPage() {
               value={settings.positionFormat}
               onValueChange={(v) => setSettings((s) => ({ ...s, positionFormat: v as "ddm" | "dd" }))}
             >
-              <SelectTrigger id="format" className="max-w-72">
+              <SelectTrigger id="format" className="w-full max-w-md">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
