@@ -166,6 +166,8 @@ function RootComponent() {
     void registerServiceWorker();
   }, []);
 
+  useEffect(() => installChunkErrorRecovery(), []);
+
   return (
     <QueryClientProvider client={queryClient}>
       <I18nProvider key={lang} lang={lang}>
