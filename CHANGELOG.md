@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **MINOR** — new features, backwards-compatible
 - **PATCH** — bug fixes, text corrections, small improvements
 
+## [1.1.2] - 2026-09-13
+
+### Fixed
+
+- Position format dropdown in Settings is now wide enough for long labels while staying within the screen on small phones (`w-full max-w-md`)
+
 ## [1.1.1] - 2026-09-08
 
 ### Fixed
