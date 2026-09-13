@@ -9,11 +9,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **MINOR** — new features, backwards-compatible
 - **PATCH** — bug fixes, text corrections, small improvements
 
+## [1.1.3] - 2026-09-13
+
+### Fixed
+
+- App now automatically recovers from stale cached module imports after a version update by clearing the service-worker cache and reloading once
+
 ## [1.1.2] - 2026-09-13
 
 ### Fixed
 
 - Position format dropdown in Settings is now wide enough for long labels while staying within the screen on small phones (`w-full max-w-md`)
+
 
 ## [1.1.1] - 2026-09-08
 
