@@ -16,6 +16,11 @@ import { useLanguage } from "@/lib/i18n/languageStore";
 import { useSettings } from "@/hooks/useFleet";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { registerServiceWorker } from "@/lib/pwa";
+import {
+  installChunkErrorRecovery,
+  isChunkLoadError,
+  recoverFromChunkError,
+} from "@/lib/chunk-reload";
 import { TermsGate } from "@/components/TermsGate";
 import { resolveTheme } from "@/lib/types";
 
@@ -46,6 +51,10 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
   useEffect(() => {
+    if (isChunkLoadError(error)) {
+      void recoverFromChunkError();
+      return;
+    }
     reportLovableError(error, { boundary: "tanstack_root_error_component" });
   }, [error]);
 
@@ -156,6 +165,8 @@ function RootComponent() {
   useEffect(() => {
     void registerServiceWorker();
   }, []);
+
+  useEffect(() => installChunkErrorRecovery(), []);
 
   return (
     <QueryClientProvider client={queryClient}>
