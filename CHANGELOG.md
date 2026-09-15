@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **MINOR** — new features, backwards-compatible
 - **PATCH** — bug fixes, text corrections, small improvements
 
+## [1.2.0] - 2026-09-14
+
+### Added
+
+- Czech as a new interface language (10 languages total); selectable in Settings and on the first-start terms screen — radio scripts remain in English
+
 ## [1.1.3] - 2026-09-13
 
 ### Fixed
