@@ -59,6 +59,7 @@ export function TermsGate({ children }: { children: React.ReactNode }) {
             </SelectTrigger>
             <SelectContent align="end">
               <SelectItem value="auto">{t("settings.language.auto")}</SelectItem>
+              <SelectItem value="cs">Čeština</SelectItem>
               <SelectItem value="de">Deutsch</SelectItem>
               <SelectItem value="en">English</SelectItem>
               <SelectItem value="es">Español</SelectItem>
