@@ -23,7 +23,7 @@ export interface Settings {
   positionFormat: "ddm" | "dd";
   activeVesselId: string | null;
   useAiVoice: boolean;
-  language: "auto" | "en" | "de" | "fr" | "nl" | "es" | "it" | "sv" | "nb" | "hr";
+  language: "auto" | "en" | "de" | "fr" | "nl" | "es" | "it" | "sv" | "nb" | "hr" | "cs";
   nightMode?: boolean;
   theme?: ThemeMode;
 }
