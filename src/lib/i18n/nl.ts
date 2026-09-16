@@ -107,13 +107,13 @@ export const nl = {
   "comms.h.relay": "Verdere communicatie tijdens een noodgeval",
   "comms.p.relay": "MAYDAY [VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS]\nThis is [VESSEL NAME], [CALL SIGN]\n[MESSAGE]\nOVER\n",
   "comms.h.silence": "Om stilte vragen (alleen kuststation of vaartuig in nood)",
-  "comms.p.silence": "ALL STATIONS, ALL STATIONS, ALL STATIONS\nSEELONCE MAYDAY\n",
+  "comms.p.silence": "ALL STATIONS, ALL STATIONS, ALL STATIONS\nSILENCE MAYDAY\n",
   "comms.h.cancel": "Een per ongeluk verzonden noodalarm intrekken (alleen vaartuig in nood)",
   "comms.p.cancel":
     "ALL STATIONS, ALL STATIONS, ALL STATIONS\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
   "comms.h.end": "Een noodoproep beëindigen (alleen kuststation of vaartuig in nood)",
   "comms.p.end":
-    "MAYDAY\nAll stations, all stations, all stations\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC\n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
+    "MAYDAY\nAll STATIONS, ALL STATIONS, ALL STATIONS\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC\n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
 
   "nature.sinking": "Zinkend",
   "nature.takingOnWater": "Water maken",
