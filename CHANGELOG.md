@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **MINOR** — new features, backwards-compatible
 - **PATCH** — bug fixes, text corrections, small improvements
 
+## [1.2.3] - 2026-10-03
+
+### Changed
+- Repository ignore list now excludes environment files, TypeScript cache and workspace cache.
+
 ## [1.2.2] - 2026-10-03
 
 ### Fixed
