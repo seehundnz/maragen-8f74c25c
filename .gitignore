@@ -33,3 +33,13 @@ dist-ssr
 
 # Lovable internal metadata
 .lovable/
+
+# Environment files
+.env
+.env.*
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Lovable workspace cache
+.workspace/
