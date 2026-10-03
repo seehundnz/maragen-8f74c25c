@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **MINOR** — new features, backwards-compatible
 - **PATCH** — bug fixes, text corrections, small improvements
 
+## [1.2.2] - 2026-10-03
+
+### Fixed
+- Header spacing below the status bar on iPad; solid header background so the top row no longer looks blurred.
+
 ## [1.2.1] - 2026-09-16
 
 ### Fixed
