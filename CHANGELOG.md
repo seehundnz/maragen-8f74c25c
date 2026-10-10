@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **MINOR** — new features, backwards-compatible
 - **PATCH** — bug fixes, text corrections, small improvements
 
+## [1.3.1] - 2026-10-10
+
+### Fixed
+- Published app showed "This page didn't load" after the 1.3.0 update: pinned the bundler to a working version.
+
 ## [1.3.0] - 2026-10-10
 
 ### Changed

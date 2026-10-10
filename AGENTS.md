@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep `rolldown` pinned via `resolutions`/`overrides` in package.json (currently 1.2.0); newer versions emitted a server bundle that crashed in production (`__exportAll is not a function`). Verify with a production build before unpinning.
