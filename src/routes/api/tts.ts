@@ -18,7 +18,7 @@ export const Route = createFileRoute("/api/tts")({
           return new Response("Invalid request body", { status: 400 });
         }
         if (!text) return new Response("Missing text", { status: 400 });
-        if (text.length > 4000) text = text.slice(0, 4000);
+        if (text.length > 2000) return new Response("Text too long", { status: 413 });
 
         const response = await fetch("https://ai.gateway.lovable.dev/v1/audio/speech", {
           method: "POST",
