@@ -9,6 +9,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **MINOR** — new features, backwards-compatible
 - **PATCH** — bug fixes, text corrections, small improvements
 
+## [1.3.0] - 2026-10-10
+
+### Changed
+- Updated all app packages to their latest compatible versions; resolved three known security advisories in build tools
+- Status icons in Settings now use theme colours that adapt to dark, light and night mode
+- AI voice requests are now limited to 2,000 characters
+
+### Fixed
+- Translated remaining English status labels (offline service, online/offline) in several languages
+
+### Removed
+- Unused interface building blocks
+
 ## [1.2.3] - 2026-10-03
 
 ### Changed

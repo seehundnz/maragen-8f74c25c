@@ -158,7 +158,7 @@ export const fr = {
   "settings.appHeading": "Application & mises à jour",
   "settings.offlineHint":
     "L'application se stocke sur votre appareil afin de pouvoir s'ouvrir également sans connexion réseau.",
-  "settings.swStatus": "Service worker",
+  "settings.swStatus": "Service hors ligne",
   "settings.swStatus.active": "Actif",
   "settings.swStatus.waiting": "Mise à jour en attente",
   "settings.swStatus.installing": "Installation en cours",

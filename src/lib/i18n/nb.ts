@@ -158,7 +158,7 @@ export const nb = {
   "settings.appHeading": "App og oppdateringer",
   "settings.offlineHint":
     "Appen lagrer seg selv på enheten din slik at den også åpnes uten internettilgang.",
-  "settings.swStatus": "Service worker",
+  "settings.swStatus": "Frakoblet tjeneste",
   "settings.swStatus.active": "Aktiv",
   "settings.swStatus.waiting": "Oppdatering venter",
   "settings.swStatus.installing": "Installerer",

@@ -158,7 +158,7 @@ export const es = {
   "settings.appHeading": "App y actualizaciones",
   "settings.offlineHint":
     "La app se almacena en tu dispositivo para que también se abra sin conexión de red.",
-  "settings.swStatus": "Service worker",
+  "settings.swStatus": "Servicio sin conexión",
   "settings.swStatus.active": "Activo",
   "settings.swStatus.waiting": "Actualización en espera",
   "settings.swStatus.installing": "Instalando",
