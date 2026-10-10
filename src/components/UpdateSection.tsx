@@ -7,10 +7,10 @@ import { APP_VERSION, BUILD_DATE, checkForUpdate, applyUpdate, onUpdateAvailable
 function statusIcon(status: SwStatus) {
   switch (status) {
     case "active":
-      return <CheckCircle2 className="size-4 text-emerald-500" aria-hidden />;
+      return <CheckCircle2 className="size-4 text-success" aria-hidden />;
     case "waiting":
     case "installing":
-      return <Loader2 className="size-4 animate-spin text-amber-500" aria-hidden />;
+      return <Loader2 className="size-4 animate-spin text-warning" aria-hidden />;
     case "unsupported":
     case "notRegistered":
       return <AlertCircle className="size-4 text-muted-foreground" aria-hidden />;
@@ -69,14 +69,14 @@ export function UpdateSection() {
         <div className="rounded-lg border border-border p-2">
           <p className="text-[10px] uppercase tracking-wider text-muted-foreground">{t("settings.connection")}</p>
           <div className="mt-1 flex items-center gap-1.5 text-xs">
-            {online ? <Wifi className="size-4 text-emerald-500" aria-hidden /> : <WifiOff className="size-4 text-destructive" aria-hidden />}
+            {online ? <Wifi className="size-4 text-success" aria-hidden /> : <WifiOff className="size-4 text-destructive" aria-hidden />}
             <span>{online ? t("settings.online") : t("settings.offline")}</span>
           </div>
         </div>
         <div className="rounded-lg border border-border p-2">
           <p className="text-[10px] uppercase tracking-wider text-muted-foreground">{t("settings.installStatus")}</p>
           <div className="mt-1 flex items-center gap-1.5 text-xs">
-            <MonitorSmartphone className={`size-4 ${installed ? "text-emerald-500" : "text-muted-foreground"}`} aria-hidden />
+            <MonitorSmartphone className={`size-4 ${installed ? "text-success" : "text-muted-foreground"}`} aria-hidden />
             <span>{installed ? t("settings.installed") : t("settings.notInstalled")}</span>
           </div>
         </div>

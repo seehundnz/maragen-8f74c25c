@@ -158,7 +158,7 @@ export const sv = {
   "settings.appHeading": "App & uppdateringar",
   "settings.offlineHint":
     "Appen lagras på din enhet så att den även kan öppnas utan nätverksanslutning.",
-  "settings.swStatus": "Service worker",
+  "settings.swStatus": "Offlinetjänst",
   "settings.swStatus.active": "Aktiv",
   "settings.swStatus.waiting": "Uppdatering väntar",
   "settings.swStatus.installing": "Installerar",

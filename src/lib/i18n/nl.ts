@@ -158,7 +158,7 @@ export const nl = {
   "settings.appHeading": "App & updates",
   "settings.offlineHint":
     "De app slaat zichzelf op je apparaat op, zodat hij ook zonder netwerkverbinding opent.",
-  "settings.swStatus": "Service worker",
+  "settings.swStatus": "Offline-service",
   "settings.swStatus.active": "Actief",
   "settings.swStatus.waiting": "Update wacht",
   "settings.swStatus.installing": "Bezig met installeren",
