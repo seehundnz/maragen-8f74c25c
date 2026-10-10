@@ -94,5 +94,8 @@
     "source-map-js": "^1.2.2",
     "js-yaml": "^4.3.2",
     "rolldown": "1.2.0"
+  },
+  "resolutions": {
+    "rolldown": "1.2.0"
   }
 }
