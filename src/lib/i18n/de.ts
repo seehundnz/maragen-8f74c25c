@@ -10,7 +10,8 @@ export const de: Dictionary = {
   "nav.guide": "Anleitung",
   "nav.themeNext": "weiter:",
   "settings.theme": "Anzeige-Modus",
-  "settings.themeHint": "Lege fest, wie die App aussieht. Die Geräteeinstellung wird nicht automatisch übernommen.",
+  "settings.themeHint":
+    "Lege fest, wie die App aussieht. Die Geräteeinstellung wird nicht automatisch übernommen.",
   "settings.theme.dark": "Dunkel",
   "settings.theme.light": "Hell",
   "settings.theme.night": "Nacht (Rotlicht)",
@@ -28,11 +29,13 @@ export const de: Dictionary = {
   "install.android.step1": "Öffne das Browser-Menü (drei Punkte).",
   "install.android.step2": 'Wähle "App installieren" oder "Zum Startbildschirm hinzufügen".',
   "install.android.step3": "Bestätige die Installation.",
-  "install.desktop.step1": "Öffne das Browser-Menü oder das Installieren-Symbol in der Adressleiste.",
+  "install.desktop.step1":
+    "Öffne das Browser-Menü oder das Installieren-Symbol in der Adressleiste.",
   "install.desktop.step2": 'Wähle "Installieren" und bestätige.',
 
   "home.title": "Welche Art von Funkspruch brauchst du?",
-  "home.subtitle": "Wähle eine Spruchart — Schiffsdaten, Position und Uhrzeit werden automatisch eingefügt.",
+  "home.subtitle":
+    "Wähle eine Spruchart — Schiffsdaten, Position und Uhrzeit werden automatisch eingefügt.",
 
   "call.mayday.short": "Seenot",
   "call.panpan.short": "Dringlichkeit",
@@ -52,7 +55,8 @@ export const de: Dictionary = {
   "call.manualEntry": "Manuelle Eingabe",
   "call.waitingGps": "Warte auf GPS…",
   "call.gpsError.unsupported": "GPS ist auf diesem Gerät nicht verfügbar",
-  "call.gpsError.denied": "Standortzugriff verweigert – bitte in den Browser- oder Geräteeinstellungen erlauben",
+  "call.gpsError.denied":
+    "Standortzugriff verweigert – bitte in den Browser- oder Geräteeinstellungen erlauben",
   "call.gpsError.unavailable": "Position derzeit nicht verfügbar",
   "call.gpsError.timeout": "Keine GPS-Position rechtzeitig empfangen",
   "call.refreshFix": "Position aktualisieren",
@@ -99,15 +103,20 @@ export const de: Dictionary = {
     "Diese App ist nur eine Hilfe. Sie ersetzt weder eine ordentliche Funkausbildung noch einen DSC-Notalarm oder die Entscheidung des Skippers. Setze wenn möglich immer zuerst einen DSC-Alarm ab.",
 
   "dsc.title": "Zuerst DSC-Notalarm senden",
-  "dsc.intro": "Wenn dein Funkgerät DSC hat (roter Notruf-Knopf), sende den DSC-Alarm vor dem Sprechfunkspruch:",
-  "dsc.step1": "Wenn Zeit bleibt, die Art der Notlage im DSC-Menü des Funkgeräts wählen (z. B. sinkend, Feuer, Person über Bord).",
-  "dsc.step2": "Danach die Klappe öffnen und die rote DISTRESS-Taste ca. 5 Sekunden gedrückt halten.",
+  "dsc.intro":
+    "Wenn dein Funkgerät DSC hat (roter Notruf-Knopf), sende den DSC-Alarm vor dem Sprechfunkspruch:",
+  "dsc.step1":
+    "Wenn Zeit bleibt, die Art der Notlage im DSC-Menü des Funkgeräts wählen (z. B. sinkend, Feuer, Person über Bord).",
+  "dsc.step2":
+    "Danach die Klappe öffnen und die rote DISTRESS-Taste ca. 5 Sekunden gedrückt halten.",
   "dsc.step3": "Auf die Bestätigung warten; das Gerät schaltet automatisch auf Kanal 16.",
   "dsc.step4": "Danach den MAYDAY-Spruch unten auf Kanal 16 sprechen.",
-  "dsc.note": "Prüfe, dass die MMSI im Funkgerät programmiert und eine GPS-Position angeschlossen ist. Ohne DSC direkt MAYDAY auf Kanal 16 rufen.",
+  "dsc.note":
+    "Prüfe, dass die MMSI im Funkgerät programmiert und eine GPS-Position angeschlossen ist. Ohne DSC direkt MAYDAY auf Kanal 16 rufen.",
 
   "comms.title": "Weitere Kommunikation",
-  "comms.intro": "Standard-Funktexte für weitere Kommunikation, Funkstille anordnen, Rücknahme Fehlalarm und Beendigung eines Notrufs.",
+  "comms.intro":
+    "Standard-Funktexte für weitere Kommunikation, Funkstille anordnen, Rücknahme Fehlalarm und Beendigung eines Notrufs.",
   "comms.h.relay": "Weitere Kommunikation im Notfall",
   "comms.h.silence": "STILLE AUFFORDERN (NUR KÜSTENFUNKSTELLE ODER HAVARIST)",
   "comms.h.cancel": "FALSCH AUSGELÖSTEN NOTALARM ZURÜCKNEHMEN (NUR HAVARIST)",
@@ -212,7 +221,8 @@ export const de: Dictionary = {
   "vessels.edit": "Schiff bearbeiten",
   "vessels.delete": "Schiff löschen",
   "vessels.deleteConfirmTitle": "Schiff löschen?",
-  "vessels.deleteConfirmBody": "{name} und alle Details werden dauerhaft von diesem Gerät entfernt.",
+  "vessels.deleteConfirmBody":
+    "{name} und alle Details werden dauerhaft von diesem Gerät entfernt.",
   "vessels.deleteConfirm": "Löschen",
   "vessels.deleteCancel": "Abbrechen",
   "vessels.deleted": "{name} gelöscht",
@@ -232,7 +242,8 @@ export const de: Dictionary = {
   "vessels.defaultChannel": "Standard-UKW-Kanal",
   "vessels.save": "Schiff speichern",
   "vessels.cancel": "Abbrechen",
-  "vessels.englishNotice": "Bitte Schiffstyp, Länge und Rumpffarbe auf Englisch eingeben — sie werden unverändert in den englischen Funkspruch übernommen.",
+  "vessels.englishNotice":
+    "Bitte Schiffstyp, Länge und Rumpffarbe auf Englisch eingeben — sie werden unverändert in den englischen Funkspruch übernommen.",
   "vessels.errName": "Schiffsname ist erforderlich",
   "vessels.errMmsi": "Die MMSI muss genau 9 Ziffern haben",
   "vessels.errMmsiShort": "MMSI ist zu kurz — noch {count} Ziffer(n) nötig (insgesamt 9)",
@@ -259,7 +270,7 @@ export const de: Dictionary = {
     "Es wird ausschließlich die eingebaute Sprachausgabe deines Geräts verwendet. Es werden weder Text noch Schiffsdaten übertragen; alles bleibt auf deinem Gerät.",
   "privacy.h.install": "App auf dem Handy installieren (PWA)",
   "privacy.p.install1":
-    "Diese App kann zum Startbildschirm hinzugefügt werden und öffnet sich dann wie eine normale App im Vollbild, ohne Browserleiste. Auf iPhone/iPad in Safari öffnen, auf das Teilen-Symbol tippen und \"Zum Home-Bildschirm\" wählen. Auf Android in Chrome öffnen und im Menü \"App installieren\" bzw. \"Zum Startbildschirm hinzufügen\" wählen.",
+    'Diese App kann zum Startbildschirm hinzugefügt werden und öffnet sich dann wie eine normale App im Vollbild, ohne Browserleiste. Auf iPhone/iPad in Safari öffnen, auf das Teilen-Symbol tippen und "Zum Home-Bildschirm" wählen. Auf Android in Chrome öffnen und im Menü "App installieren" bzw. "Zum Startbildschirm hinzufügen" wählen.',
   "privacy.p.install2":
     "Nach der Installation werden die App-Dateien (Code, Symbole, Styles) im Browser-Cache deines Geräts gespeichert, sodass die App auch ohne Netzverbindung startet — praktisch auf See. Dieser Cache bleibt auf deinem Gerät, enthält keine personenbezogenen Daten und wird nie hochgeladen. Löschst du das App-Symbol oder die Websitedaten im Browser, wird er zusammen mit deinen Schiffsprofilen und Einstellungen entfernt.",
   "privacy.p.install3":
@@ -292,16 +303,19 @@ export const de: Dictionary = {
   "terms.p.safety2":
     "Für die Nutzung dieser App wird keine Haftung übernommen. Betreiber und Entwickler können nicht für Vorfälle, Schäden oder Folgen verantwortlich gemacht werden, die aus der Nutzung entstehen. Die Nutzung erfolgt vollständig auf eigenes Risiko; für dein Handeln und deine Entscheidungen auf dem Wasser bist du allein verantwortlich.",
   "share.qrTitle": "Schiff teilen",
-  "share.qrHint": "Ein Crewmitglied kann diesen Code in der App scannen, um das Schiffsprofil zu übernehmen.",
+  "share.qrHint":
+    "Ein Crewmitglied kann diesen Code in der App scannen, um das Schiffsprofil zu übernehmen.",
   "share.qrAlt": "QR-Code mit den Schiffsdaten von {name}",
   "share.copyCode": "Code kopieren",
   "share.copied": "Teilen-Code kopiert",
-  "share.privacyNote": "Der Code enthält nur die Daten dieses Schiffs. Es wird nichts hochgeladen — teile ihn nur mit deiner eigenen Crew.",
+  "share.privacyNote":
+    "Der Code enthält nur die Daten dieses Schiffs. Es wird nichts hochgeladen — teile ihn nur mit deiner eigenen Crew.",
   "share.share": "Teilen",
   "share.scan": "QR-Code scannen",
   "share.scanTitle": "Schiff importieren",
   "share.scanHint": "Richte die Kamera auf den QR-Code auf dem anderen Gerät.",
-  "share.cameraError": "Kamera nicht verfügbar. Bitte Kamerazugriff erlauben oder den Teilen-Code unten einfügen.",
+  "share.cameraError":
+    "Kamera nicht verfügbar. Bitte Kamerazugriff erlauben oder den Teilen-Code unten einfügen.",
   "share.pasteLabel": "Oder Teilen-Code einfügen",
   "share.pasteAction": "Aus Code importieren",
   "share.invalidCode": "Dieser Code ist kein gültiger Schiffs-Teilen-Code",
@@ -319,7 +333,8 @@ export const de: Dictionary = {
     "Du kannst ein Schiffsprofil als QR-Code mit deiner Crew teilen. Der Code wird auf deinem Gerät erzeugt und enthält nur die Daten dieses Schiffs (Name, MMSI, Rufzeichen, Typ, Länge, Rumpffarbe, Personen an Bord, Kanal). Es werden keine Daten an einen Server gesendet. Beim Scannen wird die Kamera ausschließlich zum Dekodieren im Browser verwendet; es werden keine Bilder, Videos oder Scan-Ergebnisse gespeichert oder übertragen. Da MMSI und Rufzeichen ein Schiff und seine Eigner identifizieren können, teile den Code nur mit vertrauenswürdigen Personen.",
 
   "guide.title": "So nutzt du die App",
-  "guide.subtitle": "Eine kurze Übersicht aller Funktionen — vom ersten Schiff bis zum fertigen Funkspruch.",
+  "guide.subtitle":
+    "Eine kurze Übersicht aller Funktionen — vom ersten Schiff bis zum fertigen Funkspruch.",
   "guide.h.intro": "Was diese App macht",
   "guide.p.intro1":
     "VHF Call Builder erzeugt fertige Funksprüche zum Ablesen — Mayday, Pan-Pan, Sécurité und Routine-Anrufe — mit deinen Schiffsdaten, der aktuellen UTC-Zeit und deiner GPS-Position. Alles bleibt auf deinem Gerät: kein Konto, kein Server, keine Internetverbindung nach dem ersten Laden nötig.",
@@ -357,9 +372,12 @@ export const de: Dictionary = {
   "guide.p.settings2":
     "Du kannst auch nach App-Updates suchen, die installierte Version anzeigen und alle zwischengespeicherten Daten und Schiffsprofile vom Gerät löschen.",
   "guide.h.pwa": "6. Installation & Offline-Nutzung",
-  "guide.p.pwa1": "Diese App ist eine Progressive Web App und lässt sich auf jedem Gerät installieren.",
-  "guide.p.pwa.ios": "iPhone/iPad: In Safari öffnen, Teilen-Symbol antippen und „Zum Home-Bildschirm“ wählen.",
-  "guide.p.pwa.android": "Android: Browser-Menü öffnen und „App installieren“ oder „Zum Startbildschirm hinzufügen“ wählen.",
+  "guide.p.pwa1":
+    "Diese App ist eine Progressive Web App und lässt sich auf jedem Gerät installieren.",
+  "guide.p.pwa.ios":
+    "iPhone/iPad: In Safari öffnen, Teilen-Symbol antippen und „Zum Home-Bildschirm“ wählen.",
+  "guide.p.pwa.android":
+    "Android: Browser-Menü öffnen und „App installieren“ oder „Zum Startbildschirm hinzufügen“ wählen.",
   "guide.p.pwa.desktop": "Desktop: Installieren-Symbol in der Adressleiste verwenden.",
   "guide.p.pwa2":
     "Nach der Installation öffnet sich die App im Vollbild wie eine normale App und funktioniert offline — GPS, UTC-Zeit und die eingebaute Gerätestimme funktionieren ohne Verbindung. Die KI-Stimme für „Vorlesen“ benötigt eine Verbindung. Die App aktualisiert sich im Hintergrund; in den Einstellungen kannst du manuell nach Updates suchen.",
@@ -369,23 +387,32 @@ export const de: Dictionary = {
   "terms.title": "Nutzungsbedingungen",
   "terms.subtitle": "Die Regeln für die Nutzung dieser App.",
   "terms.h.scope": "Geltungsbereich & Zweck",
-  "terms.p.scope": "Diese App hilft dir, UKW-Funksprüche (Mayday, Pan-Pan, Sécurité und Standardanrufe) aus deinen Schiffsdaten, Position und Uhrzeit zu erstellen. Sie ist ein Hilfsmittel für die private, nicht-kommerzielle Nutzung.",
+  "terms.p.scope":
+    "Diese App hilft dir, UKW-Funksprüche (Mayday, Pan-Pan, Sécurité und Standardanrufe) aus deinen Schiffsdaten, Position und Uhrzeit zu erstellen. Sie ist ein Hilfsmittel für die private, nicht-kommerzielle Nutzung.",
   "terms.h.liability": "Haftungsausschluss",
-  "terms.p.liability": "Die App wird „wie besehen“ ohne jegliche Gewährleistung bereitgestellt. Sie ersetzt weder einen DSC-Notalarm noch eine ordentliche Funkausbildung oder das Urteilsvermögen des Skippers. Sende nach Möglichkeit immer zuerst einen DSC-Alarm. Für Vorfälle, Schäden oder Folgen aus der Nutzung oder Nichtverfügbarkeit der App wird keine Haftung übernommen; die Nutzung erfolgt vollständig auf eigenes Risiko.",
+  "terms.p.liability":
+    "Die App wird „wie besehen“ ohne jegliche Gewährleistung bereitgestellt. Sie ersetzt weder einen DSC-Notalarm noch eine ordentliche Funkausbildung oder das Urteilsvermögen des Skippers. Sende nach Möglichkeit immer zuerst einen DSC-Alarm. Für Vorfälle, Schäden oder Folgen aus der Nutzung oder Nichtverfügbarkeit der App wird keine Haftung übernommen; die Nutzung erfolgt vollständig auf eigenes Risiko.",
   "terms.h.availability": "Verfügbarkeit & Richtigkeit",
-  "terms.p.availability": "Es wird keine Garantie für unterbrechungsfreie Verfügbarkeit, Offline-Funktionalität, GPS-Genauigkeit oder die Fehlerfreiheit der generierten Texte und Sprachausgabe übernommen.",
+  "terms.p.availability":
+    "Es wird keine Garantie für unterbrechungsfreie Verfügbarkeit, Offline-Funktionalität, GPS-Genauigkeit oder die Fehlerfreiheit der generierten Texte und Sprachausgabe übernommen.",
   "terms.h.changes": "Änderungen dieser Bedingungen",
-  "terms.p.changes": "Diese Bedingungen können mit zukünftigen Versionen der App angepasst werden. Es gilt die in der App angezeigte Version.",
-  "privacy.p.termsLink": "Der Sicherheitshinweis und die Nutzungsbedingungen findest du jetzt auf der Seite Nutzungsbedingungen.",
+  "terms.p.changes":
+    "Diese Bedingungen können mit zukünftigen Versionen der App angepasst werden. Es gilt die in der App angezeigte Version.",
+  "privacy.p.termsLink":
+    "Der Sicherheitshinweis und die Nutzungsbedingungen findest du jetzt auf der Seite Nutzungsbedingungen.",
 
   "gate.title": "Bevor es losgeht",
-  "gate.intro": "Bitte beachte die wichtigsten Punkte der Nutzungsbedingungen, bevor du die App nutzt.",
+  "gate.intro":
+    "Bitte beachte die wichtigsten Punkte der Nutzungsbedingungen, bevor du die App nutzt.",
   "gate.p1": "Die App ersetzt keine Funkausbildung und kein Funkbetriebszeugnis.",
-  "gate.p2": "Die Nutzung erfolgt vollständig auf eigenes Risiko — keine Haftung für Schäden oder Folgen.",
-  "gate.p3": "Keine Garantie für Verfügbarkeit, GPS-Genauigkeit oder Fehlerfreiheit der generierten Texte.",
+  "gate.p2":
+    "Die Nutzung erfolgt vollständig auf eigenes Risiko — keine Haftung für Schäden oder Folgen.",
+  "gate.p3":
+    "Keine Garantie für Verfügbarkeit, GPS-Genauigkeit oder Fehlerfreiheit der generierten Texte.",
   "gate.p4": "Folge im Notfall immer der Rettungsleitstelle; ein DSC-Notalarm hat Vorrang.",
   "gate.readTerms": "Vollständige Nutzungsbedingungen lesen",
   "gate.checkbox": "Ich habe die Nutzungsbedingungen gelesen und stimme ihnen zu.",
   "gate.accept": "Verstanden — weiter",
-  "privacy.p.gate": "Deine Zustimmung zu den Nutzungsbedingungen wird nur im lokalen Speicher dieses Geräts gespeichert und niemals übertragen. Über „Daten löschen“ in den Einstellungen wird sie zurückgesetzt.",
+  "privacy.p.gate":
+    "Deine Zustimmung zu den Nutzungsbedingungen wird nur im lokalen Speicher dieses Geräts gespeichert und niemals übertragen. Über „Daten löschen“ in den Einstellungen wird sie zurückgesetzt.",
 };

@@ -8,7 +8,8 @@ export const hr = {
   "nav.guide": "Vodič",
   "nav.themeNext": "sljedeće:",
   "settings.theme": "Način prikaza",
-  "settings.themeHint": "Odaberite izgled aplikacije. Postavka uređaja ne primjenjuje se automatski.",
+  "settings.themeHint":
+    "Odaberite izgled aplikacije. Postavka uređaja ne primjenjuje se automatski.",
   "settings.theme.dark": "Tamno",
   "settings.theme.light": "Svijetlo",
   "settings.theme.night": "Noć (crveno svjetlo)",
@@ -26,11 +27,13 @@ export const hr = {
   "install.android.step1": "Otvorite izbornik preglednika (tri točkice).",
   "install.android.step2": 'Odaberite "Instaliraj aplikaciju" ili "Dodaj na početni zaslon".',
   "install.android.step3": "Potvrdite instalaciju.",
-  "install.desktop.step1": "Otvorite izbornik preglednika ili ikonu za instalaciju u adresnoj traci.",
+  "install.desktop.step1":
+    "Otvorite izbornik preglednika ili ikonu za instalaciju u adresnoj traci.",
   "install.desktop.step2": 'Odaberite "Instaliraj" i potvrdite.',
 
   "home.title": "Koju vrstu poziva trebate?",
-  "home.subtitle": "Odaberite vrstu poziva — podaci o vašem plovilu, položaj i vrijeme automatski se unose.",
+  "home.subtitle":
+    "Odaberite vrstu poziva — podaci o vašem plovilu, položaj i vrijeme automatski se unose.",
 
   "call.mayday.short": "Pogibelj",
   "call.panpan.short": "Hitnost",
@@ -50,7 +53,8 @@ export const hr = {
   "call.manualEntry": "Ručni unos",
   "call.waitingGps": "Čekanje na GPS…",
   "call.gpsError.unsupported": "GPS nije dostupan na ovom uređaju",
-  "call.gpsError.denied": "Pristup lokaciji je odbijen – dopustite ga u postavkama preglednika ili uređaja",
+  "call.gpsError.denied":
+    "Pristup lokaciji je odbijen – dopustite ga u postavkama preglednika ili uređaja",
   "call.gpsError.unavailable": "Pozicija trenutačno nije dostupna",
   "call.gpsError.timeout": "GPS pozicija nije primljena na vrijeme",
   "call.refreshFix": "Osvježi položaj",
@@ -98,14 +102,17 @@ export const hr = {
 
   "dsc.title": "Prvo pošaljite DSC alarm za pogibelj",
   "dsc.intro": "Ako vaš radio ima DSC (crveni gumb za pogibelj), pošaljite DSC alarm prije govora:",
-  "dsc.step1": "Ako vrijeme dopušta, odaberite prirodu pogibelji u DSC izborniku radija (npr. potonuće, požar, čovjek u moru).",
+  "dsc.step1":
+    "Ako vrijeme dopušta, odaberite prirodu pogibelji u DSC izborniku radija (npr. potonuće, požar, čovjek u moru).",
   "dsc.step2": "Zatim podignite poklopac i pritisnite i držite crveni gumb DISTRESS oko 5 sekundi.",
   "dsc.step3": "Pričekajte potvrdu; radio se automatski prebacuje na kanal 16.",
   "dsc.step4": "Zatim izgovorite MAYDAY poruku u nastavku na kanalu 16.",
-  "dsc.note": "Provjerite je li vaš MMSI programiran u radiju i je li spojen GPS položaj. Bez DSC-a, nazovite MAYDAY izravno na kanalu 16.",
+  "dsc.note":
+    "Provjerite je li vaš MMSI programiran u radiju i je li spojen GPS položaj. Bez DSC-a, nazovite MAYDAY izravno na kanalu 16.",
 
   "comms.title": "Daljnja komunikacija",
-  "comms.intro": "Standardne radio fraze za daljnju komunikaciju, zahtjeve za tišinu, poništavanje lažnog alarma i završetak poziva u pogibelji.",
+  "comms.intro":
+    "Standardne radio fraze za daljnju komunikaciju, zahtjeve za tišinu, poništavanje lažnog alarma i završetak poziva u pogibelji.",
   "comms.h.relay": "Daljnja komunikacija tijekom slučaja pogibelji",
   "comms.h.silence": "Traženje tišine (samo obalna radio postaja ili plovilo u pogibelji)",
   "comms.h.cancel": "Poništavanje pogrešno izdanog alarma za pogibelj (samo plovilo u pogibelji)",
@@ -202,13 +209,15 @@ export const hr = {
 
   "vessels.title": "Plovila",
   "vessels.add": "Dodaj plovilo",
-  "vessels.empty": "Još nema plovila. Dodajte svoj brod kako bi svaki radio poziv bio automatski popunjen.",
+  "vessels.empty":
+    "Još nema plovila. Dodajte svoj brod kako bi svaki radio poziv bio automatski popunjen.",
   "vessels.active": "Aktivno",
   "vessels.setActive": "Postavi aktivno",
   "vessels.edit": "Uredi plovilo",
   "vessels.delete": "Izbriši plovilo",
   "vessels.deleteConfirmTitle": "Izbrisati plovilo?",
-  "vessels.deleteConfirmBody": "{name} i svi njegovi detalji bit će trajno uklonjeni s ovog uređaja.",
+  "vessels.deleteConfirmBody":
+    "{name} i svi njegovi detalji bit će trajno uklonjeni s ovog uređaja.",
   "vessels.deleteConfirm": "Izbriši",
   "vessels.deleteCancel": "Otkaži",
   "vessels.deleted": "{name} izbrisan",
@@ -228,7 +237,8 @@ export const hr = {
   "vessels.defaultChannel": "Zadani VHF kanal",
   "vessels.save": "Spremi plovilo",
   "vessels.cancel": "Otkaži",
-  "vessels.englishNotice": "Molimo unesite vrstu plovila, duljinu i boju trupa na engleskom — oni se unose u englesku radio skriptu kako su upisani.",
+  "vessels.englishNotice":
+    "Molimo unesite vrstu plovila, duljinu i boju trupa na engleskom — oni se unose u englesku radio skriptu kako su upisani.",
   "vessels.errName": "Ime plovila je obavezno",
   "vessels.errMmsi": "MMSI mora imati točno 9 znamenki",
   "vessels.errMmsiShort": "MMSI je prekratak — potrebno je još {count} znamenki (ukupno 9)",
@@ -288,16 +298,19 @@ export const hr = {
   "terms.p.safety2":
     "Ne preuzima se nikakva odgovornost za korištenje ove aplikacije. Operater i programeri ne mogu se smatrati odgovornima za bilo kakve incidente, štete ili posljedice koje proizlaze iz njezine uporabe. Aplikaciju koristite u potpunosti na vlastiti rizik i sami ste odgovorni za svoje postupke i odluke na vodi.",
   "share.qrTitle": "Dijeli plovilo",
-  "share.qrHint": "Neka član posade skenira ovaj kôd u aplikaciji kako bi uvozili ovaj profil plovila.",
+  "share.qrHint":
+    "Neka član posade skenira ovaj kôd u aplikaciji kako bi uvozili ovaj profil plovila.",
   "share.qrAlt": "QR kod s podacima o plovilu {name}",
   "share.copyCode": "Kopiraj kôd",
   "share.copied": "Kôd za dijeljenje kopiran",
-  "share.privacyNote": "Kôd sadrži samo podatke o ovom plovilu. Ništa se ne učitava — dijelite ga samo sa svojom posadom.",
+  "share.privacyNote":
+    "Kôd sadrži samo podatke o ovom plovilu. Ništa se ne učitava — dijelite ga samo sa svojom posadom.",
   "share.share": "Dijeli",
   "share.scan": "Skeniraj QR kod",
   "share.scanTitle": "Uvezi plovilo",
   "share.scanHint": "Usmjerite kameru na QR kod prikazan na drugom uređaju.",
-  "share.cameraError": "Kamera nije dostupna. Molimo dopustite pristup kameri ili zalijepite kôd za dijeljenje u nastavku.",
+  "share.cameraError":
+    "Kamera nije dostupna. Molimo dopustite pristup kameri ili zalijepite kôd za dijeljenje u nastavku.",
   "share.pasteLabel": "Ili zalijepite kôd za dijeljenje",
   "share.pasteAction": "Uvezi iz kôda",
   "share.invalidCode": "Ovaj kôd nije važeći kôd za dijeljenje plovila",
@@ -315,7 +328,8 @@ export const hr = {
     "Profil plovila možete podijeliti sa svojom posadom kao QR kod. Kôd se generira na vašem uređaju i sadrži samo podatke o tom plovilu (ime, MMSI, pozivni znak, vrsta, duljina, boja trupa, osobe na plovilu, kanal). Ništa se ne šalje na poslužitelj. Skeniranje koristi kameru vašeg uređaja isključivo za dekodiranje kôda u pregledniku; nijedna slika, videozapis ili rezultat skeniranja se ne pohranjuje niti prenosi. Budući da MMSI i pozivni znak mogu identificirati plovilo i njegovog vlasnika, kôd dijelite samo s ljudima kojima vjerujete.",
 
   "guide.title": "Kako koristiti ovu aplikaciju",
-  "guide.subtitle": "Brzi pregled svake značajke — od vašeg prvog plovila do radio poziva spremnog za čitanje.",
+  "guide.subtitle":
+    "Brzi pregled svake značajke — od vašeg prvog plovila do radio poziva spremnog za čitanje.",
   "guide.h.intro": "Što ova aplikacija radi",
   "guide.p.intro1":
     "VHF Call Builder generira VHF radio pozivne skripte spremne za čitanje — Mayday, Pan-Pan, Sécurité i rutinske pozive — koristeći podatke o vašem plovilu, trenutno UTC vrijeme i vaš GPS položaj. Sve ostaje na vašem uređaju: nema računa, nema poslužitelja, nema interneta nakon prvog učitavanja.",
@@ -353,9 +367,12 @@ export const hr = {
   "guide.p.settings2":
     "Također možete provjeriti ažuriranja aplikacije, vidjeti instaliranu verziju i očistiti sve predmemorirane podatke i profile plovila s uređaja.",
   "guide.h.pwa": "6. Instalacija i izvanmrežna upotreba",
-  "guide.p.pwa1": "Ova je aplikacija progresivna web aplikacija i može se instalirati na bilo koji uređaj.",
-  "guide.p.pwa.ios": "iPhone/iPad: Otvorite u Safariju, dodirnite ikonu dijeljenja i odaberite „Dodaj na početni zaslon“.",
-  "guide.p.pwa.android": "Android: Otvorite izbornik preglednika i odaberite „Instaliraj aplikaciju“ ili „Dodaj na početni zaslon“.",
+  "guide.p.pwa1":
+    "Ova je aplikacija progresivna web aplikacija i može se instalirati na bilo koji uređaj.",
+  "guide.p.pwa.ios":
+    "iPhone/iPad: Otvorite u Safariju, dodirnite ikonu dijeljenja i odaberite „Dodaj na početni zaslon“.",
+  "guide.p.pwa.android":
+    "Android: Otvorite izbornik preglednika i odaberite „Instaliraj aplikaciju“ ili „Dodaj na početni zaslon“.",
   "guide.p.pwa.desktop": "Stolno računalo: Koristite ikonu za instalaciju u adresnoj traci.",
   "guide.p.pwa2":
     "Nakon instalacije, aplikacija se otvara preko cijelog zaslona kao normalna aplikacija i radi izvan mreže — GPS, UTC vrijeme i ugrađeni glas rade bez veze. AI glas za „Izgovori“ treba vezu. Aplikacija se ažurira u pozadini; možete prisiliti provjeru u postavkama.",
@@ -365,25 +382,33 @@ export const hr = {
   "terms.title": "Uvjeti korištenja",
   "terms.subtitle": "Pravila za korištenje ove aplikacije.",
   "terms.h.scope": "Opseg i svrha",
-  "terms.p.scope": "Ova aplikacija pomaže ti sastaviti VHF radio pozive (Mayday, Pan-Pan, Sécurité i redovne pozive) iz podataka o plovilu, pozicije i vremena. To je pomagalo za privatnu, nekomercijalnu upotrebu.",
+  "terms.p.scope":
+    "Ova aplikacija pomaže ti sastaviti VHF radio pozive (Mayday, Pan-Pan, Sécurité i redovne pozive) iz podataka o plovilu, pozicije i vremena. To je pomagalo za privatnu, nekomercijalnu upotrebu.",
   "terms.h.liability": "Odricanje od odgovornosti",
-  "terms.p.liability": "Aplikacija se pruža „kakva jest“, bez ikakvog jamstva. Ne zamjenjuje DSC poziv u nuždi, odgovarajuću radio obuku ni prosudbu skipera. Po mogućnosti uvijek prvo pošalji DSC alarm. Ne preuzima se odgovornost za incidente, štete ili posljedice koje proizlaze iz korištenja ili nedostupnosti aplikacije; koristiš je u potpunosti na vlastitu odgovornost.",
+  "terms.p.liability":
+    "Aplikacija se pruža „kakva jest“, bez ikakvog jamstva. Ne zamjenjuje DSC poziv u nuždi, odgovarajuću radio obuku ni prosudbu skipera. Po mogućnosti uvijek prvo pošalji DSC alarm. Ne preuzima se odgovornost za incidente, štete ili posljedice koje proizlaze iz korištenja ili nedostupnosti aplikacije; koristiš je u potpunosti na vlastitu odgovornost.",
   "terms.h.availability": "Dostupnost i točnost",
-  "terms.p.availability": "Ne jamči se neprekidna dostupnost, rad bez interneta, točnost GPS-a ni ispravnost generiranih tekstova i govorne sinteze.",
+  "terms.p.availability":
+    "Ne jamči se neprekidna dostupnost, rad bez interneta, točnost GPS-a ni ispravnost generiranih tekstova i govorne sinteze.",
   "terms.h.changes": "Izmjene ovih uvjeta",
-  "terms.p.changes": "Ovi se uvjeti mogu ažurirati s budućim verzijama aplikacije. Vrijedi verzija prikazana u aplikaciji.",
-  "privacy.p.termsLink": "Sigurnosnu obavijest i uvjete korištenja sada pronađi na stranici Uvjeti.",
+  "terms.p.changes":
+    "Ovi se uvjeti mogu ažurirati s budućim verzijama aplikacije. Vrijedi verzija prikazana u aplikaciji.",
+  "privacy.p.termsLink":
+    "Sigurnosnu obavijest i uvjete korištenja sada pronađi na stranici Uvjeti.",
 
   "gate.title": "Prije početka",
   "gate.intro": "Prije korištenja aplikacije pročitajte ključne točke uvjeta korištenja.",
   "gate.p1": "Ova aplikacija ne zamjenjuje radijsku obuku ni svjedodžbu radio-operatera.",
-  "gate.p2": "Aplikaciju koristite isključivo na vlastiti rizik — bez odgovornosti za štete ili posljedice.",
+  "gate.p2":
+    "Aplikaciju koristite isključivo na vlastiti rizik — bez odgovornosti za štete ili posljedice.",
   "gate.p3": "Nema jamstva za dostupnost, točnost GPS-a ili ispravnost generiranih tekstova.",
-  "gate.p4": "U hitnom slučaju uvijek slijedite upute centra za koordinaciju spašavanja; DSC poziv u nevolji ima prednost.",
+  "gate.p4":
+    "U hitnom slučaju uvijek slijedite upute centra za koordinaciju spašavanja; DSC poziv u nevolji ima prednost.",
   "gate.readTerms": "Pročitajte cijele uvjete korištenja",
   "gate.checkbox": "Pročitao/la sam uvjete korištenja i slažem se s njima.",
   "gate.accept": "Razumijem — nastavi",
-  "privacy.p.gate": "Vaše prihvaćanje uvjeta korištenja pohranjuje se samo u lokalnoj memoriji ovog uređaja i nikada se ne prenosi. Brisanjem podataka aplikacije u postavkama poništava se.",
+  "privacy.p.gate":
+    "Vaše prihvaćanje uvjeta korištenja pohranjuje se samo u lokalnoj memoriji ovog uređaja i nikada se ne prenosi. Brisanjem podataka aplikacije u postavkama poništava se.",
 } as const;
 
 export type TranslationKey = keyof typeof hr;

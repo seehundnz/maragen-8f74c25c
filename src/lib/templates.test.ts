@@ -41,7 +41,9 @@ describe("Mayday script", () => {
   });
 
   it("includes position and UTC time", () => {
-    expect(lines).toContain("My position is 54 degrees 30.00 minutes North, 010 degrees 15.00 minutes East");
+    expect(lines).toContain(
+      "My position is 54 degrees 30.00 minutes North, 010 degrees 15.00 minutes East",
+    );
     expect(lines).toContain("Time 1407 UTC");
   });
 });

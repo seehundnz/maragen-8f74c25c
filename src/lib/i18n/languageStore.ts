@@ -19,7 +19,6 @@ function readPreference(): LanguagePreference {
   }
 }
 
-
 /** Resolved synchronously at module init so the very first client render uses the right language. */
 let current: Language = typeof window === "undefined" ? "en" : resolveLanguage(readPreference());
 

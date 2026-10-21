@@ -72,8 +72,7 @@ function CallPage() {
     message: "",
   });
 
-  const activeVessel =
-    vessels.find((v) => v.id === settings.activeVesselId) ?? vessels[0] ?? null;
+  const activeVessel = vessels.find((v) => v.id === settings.activeVesselId) ?? vessels[0] ?? null;
 
   const script = useMemo(
     () =>

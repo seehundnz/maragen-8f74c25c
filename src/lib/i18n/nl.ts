@@ -8,7 +8,8 @@ export const nl = {
   "nav.guide": "Handleiding",
   "nav.themeNext": "volgende:",
   "settings.theme": "Weergavemodus",
-  "settings.themeHint": "Kies hoe de app eruitziet. De apparaatinstelling wordt niet automatisch overgenomen.",
+  "settings.themeHint":
+    "Kies hoe de app eruitziet. De apparaatinstelling wordt niet automatisch overgenomen.",
   "settings.theme.dark": "Donker",
   "settings.theme.light": "Licht",
   "settings.theme.night": "Nacht (rood licht)",
@@ -30,7 +31,8 @@ export const nl = {
   "install.desktop.step2": 'Kies "Installeren" en bevestig.',
 
   "home.title": "Welke oproep heb je nodig?",
-  "home.subtitle": "Kies een oproeptype — je vaartuiggegevens, positie en tijd worden automatisch ingevuld.",
+  "home.subtitle":
+    "Kies een oproeptype — je vaartuiggegevens, positie en tijd worden automatisch ingevuld.",
 
   "call.mayday.short": "Nood",
   "call.panpan.short": "Spoed",
@@ -50,7 +52,8 @@ export const nl = {
   "call.manualEntry": "Handmatige invoer",
   "call.waitingGps": "Wachten op gps…",
   "call.gpsError.unsupported": "Gps is niet beschikbaar op dit apparaat",
-  "call.gpsError.denied": "Locatietoegang geweigerd – sta deze toe in de browser- of apparaatinstellingen",
+  "call.gpsError.denied":
+    "Locatietoegang geweigerd – sta deze toe in de browser- of apparaatinstellingen",
   "call.gpsError.unavailable": "Positie momenteel niet beschikbaar",
   "call.gpsError.timeout": "Geen gps-positie op tijd ontvangen",
   "call.refreshFix": "Fix vernieuwen",
@@ -98,14 +101,18 @@ export const nl = {
 
   "dsc.title": "Verstuur eerst een DSC-noodalarm",
   "dsc.intro": "Heeft je marifoon DSC (rode noodknop), verstuur dan het DSC-alarm vóór je spreekt:",
-  "dsc.step1": "Kies indien de tijd het toelaat de aard van de nood in het DSC-menu van de marifoon (bijv. zinken, brand, man overboord).",
-  "dsc.step2": "Til daarna het klepje op en houd de rode DISTRESS-knop ongeveer 5 seconden ingedrukt.",
+  "dsc.step1":
+    "Kies indien de tijd het toelaat de aard van de nood in het DSC-menu van de marifoon (bijv. zinken, brand, man overboord).",
+  "dsc.step2":
+    "Til daarna het klepje op en houd de rode DISTRESS-knop ongeveer 5 seconden ingedrukt.",
   "dsc.step3": "Wacht op de bevestiging; de marifoon schakelt automatisch over naar kanaal 16.",
   "dsc.step4": "Spreek daarna het onderstaande MAYDAY-bericht uit op kanaal 16.",
-  "dsc.note": "Controleer of je MMSI in de marifoon geprogrammeerd is en of er een gps-positie is aangesloten. Zonder DSC roep je MAYDAY direct op kanaal 16.",
+  "dsc.note":
+    "Controleer of je MMSI in de marifoon geprogrammeerd is en of er een gps-positie is aangesloten. Zonder DSC roep je MAYDAY direct op kanaal 16.",
 
   "comms.title": "Verdere communicatie",
-  "comms.intro": "Standaard radiozinnen voor verdere communicatie, stilteverzoeken, het annuleren van vals alarm en het beëindigen van een noodoproep.",
+  "comms.intro":
+    "Standaard radiozinnen voor verdere communicatie, stilteverzoeken, het annuleren van vals alarm en het beëindigen van een noodoproep.",
   "comms.h.relay": "Verdere communicatie tijdens een noodgeval",
   "comms.h.silence": "Om stilte vragen (alleen kuststation of vaartuig in nood)",
   "comms.h.cancel": "Een per ongeluk verzonden noodalarm intrekken (alleen vaartuig in nood)",
@@ -202,13 +209,15 @@ export const nl = {
 
   "vessels.title": "Vaartuigen",
   "vessels.add": "Vaartuig toevoegen",
-  "vessels.empty": "Nog geen vaartuigen. Voeg je boot toe zodat elke radio-oproep automatisch wordt ingevuld.",
+  "vessels.empty":
+    "Nog geen vaartuigen. Voeg je boot toe zodat elke radio-oproep automatisch wordt ingevuld.",
   "vessels.active": "Actief",
   "vessels.setActive": "Als actief instellen",
   "vessels.edit": "Vaartuig bewerken",
   "vessels.delete": "Vaartuig verwijderen",
   "vessels.deleteConfirmTitle": "Vaartuig verwijderen?",
-  "vessels.deleteConfirmBody": "{name} en alle gegevens worden definitief van dit apparaat verwijderd.",
+  "vessels.deleteConfirmBody":
+    "{name} en alle gegevens worden definitief van dit apparaat verwijderd.",
   "vessels.deleteConfirm": "Verwijderen",
   "vessels.deleteCancel": "Annuleren",
   "vessels.deleted": "{name} verwijderd",
@@ -228,7 +237,8 @@ export const nl = {
   "vessels.defaultChannel": "Standaard VHF-kanaal",
   "vessels.save": "Vaartuig opslaan",
   "vessels.cancel": "Annuleren",
-  "vessels.englishNotice": "Voer type vaartuig, lengte en rompkleur in het Engels in — ze worden letterlijk in de Engelse radiotekst overgenomen.",
+  "vessels.englishNotice":
+    "Voer type vaartuig, lengte en rompkleur in het Engels in — ze worden letterlijk in de Engelse radiotekst overgenomen.",
   "vessels.errName": "Naam van het vaartuig is verplicht",
   "vessels.errMmsi": "MMSI moet precies 9 cijfers bevatten",
   "vessels.errMmsiShort": "MMSI is te kort — nog {count} cijfer(s) nodig (9 in totaal)",
@@ -255,7 +265,7 @@ export const nl = {
     "alleen de ingebouwde spraaksynthese van je apparaat wordt gebruikt. Er worden geen tekst en geen vaartuiggegevens verzonden; alles blijft op je apparaat.",
   "privacy.h.install": "De app op je telefoon installeren (PWA)",
   "privacy.p.install1":
-    "Deze app kan aan je beginscherm worden toegevoegd, zodat hij als een gewone app schermvullend en zonder browserbalk opent. Op iPhone/iPad open je hem in Safari, tik je op het deelicoon en kies je \"Zet op beginscherm\". Op Android open je hem in Chrome en kies je in het menu \"App installeren\" of \"Toevoegen aan startscherm\".",
+    'Deze app kan aan je beginscherm worden toegevoegd, zodat hij als een gewone app schermvullend en zonder browserbalk opent. Op iPhone/iPad open je hem in Safari, tik je op het deelicoon en kies je "Zet op beginscherm". Op Android open je hem in Chrome en kies je in het menu "App installeren" of "Toevoegen aan startscherm".',
   "privacy.p.install2":
     "Na installatie worden de appbestanden (code, iconen, stijlen) in de browsercache van je apparaat bewaard, zodat de app ook zonder netwerkverbinding start — handig op zee. Deze cache blijft op je apparaat, bevat geen persoonsgegevens en wordt nooit geüpload. Het verwijderen van het app-icoon of het wissen van de sitegegevens in je browser verwijdert hem, samen met je vaartuigprofielen en instellingen.",
   "privacy.p.install3":
@@ -274,7 +284,8 @@ export const nl = {
   "privacy.p.rights":
     "Op grond van de AVG heb je recht op inzage, rectificatie, wissing, beperking, gegevensoverdraagbaarheid en bezwaar, en het recht een klacht in te dienen bij een toezichthoudende autoriteit. Omdat je gegevens alleen op je apparaat staan, kun je wissing direct uitvoeren door de vaartuigprofielen in de app te verwijderen of de sitegegevens in je browserinstellingen te wissen.",
   "privacy.h.imprint": "Colofon / Impressum (§ 5 DDG)",
-  "privacy.imprint.responsible": "Verantwoordelijk voor de inhoud (§ 18 lid 2 MStV): Sebastian Esch",
+  "privacy.imprint.responsible":
+    "Verantwoordelijk voor de inhoud (§ 18 lid 2 MStV): Sebastian Esch",
   "privacy.imprint.email": "E-mail",
   "privacy.imprint.phone": "Telefoon",
   "privacy.imprint.country": "Duitsland",
@@ -288,16 +299,19 @@ export const nl = {
   "terms.p.safety2":
     "Voor het gebruik van deze app wordt geen aansprakelijkheid aanvaard. De beheerder en de ontwikkelaars kunnen niet verantwoordelijk worden gehouden voor incidenten, schade of gevolgen die uit het gebruik voortvloeien. Je gebruikt de app volledig op eigen risico en bent zelf verantwoordelijk voor je handelingen en beslissingen op het water.",
   "share.qrTitle": "Vaartuig delen",
-  "share.qrHint": "Laat een bemanningslid deze code in de app scannen om dit vaartuigprofiel te importeren.",
+  "share.qrHint":
+    "Laat een bemanningslid deze code in de app scannen om dit vaartuigprofiel te importeren.",
   "share.qrAlt": "QR-code met de vaartuiggegevens van {name}",
   "share.copyCode": "Code kopiëren",
   "share.copied": "Deelcode gekopieerd",
-  "share.privacyNote": "De code bevat alleen de gegevens van dit vaartuig. Er wordt niets geüpload — deel hem alleen met je eigen bemanning.",
+  "share.privacyNote":
+    "De code bevat alleen de gegevens van dit vaartuig. Er wordt niets geüpload — deel hem alleen met je eigen bemanning.",
   "share.share": "Delen",
   "share.scan": "QR-code scannen",
   "share.scanTitle": "Vaartuig importeren",
   "share.scanHint": "Richt de camera op de QR-code op het andere apparaat.",
-  "share.cameraError": "Camera niet beschikbaar. Geef toegang tot de camera of plak de deelcode hieronder.",
+  "share.cameraError":
+    "Camera niet beschikbaar. Geef toegang tot de camera of plak de deelcode hieronder.",
   "share.pasteLabel": "Of plak de deelcode",
   "share.pasteAction": "Importeren uit code",
   "share.invalidCode": "Deze code is geen geldige deelcode voor een vaartuig",
@@ -315,7 +329,8 @@ export const nl = {
     "Je kunt een vaartuigprofiel als QR-code met je bemanning delen. De code wordt op je apparaat gegenereerd en bevat alleen de gegevens van dat vaartuig (naam, MMSI, roepnaam, type, lengte, rompkleur, personen aan boord, kanaal). Er wordt niets naar een server gestuurd. Bij het scannen wordt je camera uitsluitend gebruikt om de code in de browser te decoderen; er wordt geen beeld, video of scanresultaat opgeslagen of verzonden. Omdat MMSI en roepnaam een vaartuig en de eigenaar kunnen identificeren, deel je de code alleen met mensen die je vertrouwt.",
 
   "guide.title": "Zo gebruik je deze app",
-  "guide.subtitle": "Een korte rondleiding langs alle functies — van je eerste vaartuig tot een kant-en-klare radio-oproep.",
+  "guide.subtitle":
+    "Een korte rondleiding langs alle functies — van je eerste vaartuig tot een kant-en-klare radio-oproep.",
   "guide.h.intro": "Wat deze app doet",
   "guide.p.intro1":
     "VHF Call Builder genereert kant-en-klare marifoonteksten — Mayday, Pan-Pan, Sécurité en routineoproepen — op basis van je vaartuiggegevens, de actuele UTC-tijd en je gps-positie. Alles blijft op je apparaat: geen account, geen server, na de eerste keer laden geen internet nodig.",
@@ -353,9 +368,12 @@ export const nl = {
   "guide.p.settings2":
     "Je kunt ook op app-updates controleren, de geïnstalleerde versie bekijken en alle gecachete gegevens en vaartuigprofielen van het apparaat wissen.",
   "guide.h.pwa": "6. Installeren & offline gebruik",
-  "guide.p.pwa1": "Deze app is een Progressive Web App en kan op elk apparaat worden geïnstalleerd.",
-  "guide.p.pwa.ios": "iPhone/iPad: Open in Safari, tik op het deelicoon en kies “Zet op beginscherm”.",
-  "guide.p.pwa.android": "Android: Open het browsermenu en kies “App installeren” of “Toevoegen aan startscherm”.",
+  "guide.p.pwa1":
+    "Deze app is een Progressive Web App en kan op elk apparaat worden geïnstalleerd.",
+  "guide.p.pwa.ios":
+    "iPhone/iPad: Open in Safari, tik op het deelicoon en kies “Zet op beginscherm”.",
+  "guide.p.pwa.android":
+    "Android: Open het browsermenu en kies “App installeren” of “Toevoegen aan startscherm”.",
   "guide.p.pwa.desktop": "Desktop: Gebruik het installatie-icoon in de adresbalk.",
   "guide.p.pwa2":
     "Eenmaal geïnstalleerd opent de app schermvullend als een gewone app en werkt hij offline — gps, UTC-tijd en de ingebouwde stem functioneren zonder verbinding. De AI-stem voor “Voorlezen” heeft wel verbinding nodig. De app werkt zichzelf op de achtergrond bij; in de instellingen kun je een controle afdwingen.",
@@ -365,23 +383,33 @@ export const nl = {
   "terms.title": "Gebruiksvoorwaarden",
   "terms.subtitle": "De regels voor het gebruik van deze app.",
   "terms.h.scope": "Reikwijdte en doel",
-  "terms.p.scope": "Deze app helpt je VHF-radiooproepen (Mayday, Pan-Pan, Sécurité en routineoproepen) samen te stellen uit je vaartuiggegevens, positie en tijd. Het is een hulpmiddel voor privé, niet-commercieel gebruik.",
+  "terms.p.scope":
+    "Deze app helpt je VHF-radiooproepen (Mayday, Pan-Pan, Sécurité en routineoproepen) samen te stellen uit je vaartuiggegevens, positie en tijd. Het is een hulpmiddel voor privé, niet-commercieel gebruik.",
   "terms.h.liability": "Aansprakelijkheidsuitsluiting",
-  "terms.p.liability": "De app wordt 'as is' geleverd, zonder enige garantie. Hij vervangt geen DSC-noodalarm, degelijke radiotraining of het oordeel van de schipper. Stuur waar mogelijk altijd eerst een DSC-alarm. Er wordt geen aansprakelijkheid aanvaard voor incidenten, schade of gevolgen die voortvloeien uit het gebruik of de onbeschikbaarheid van deze app; het gebruik is volledig op eigen risico.",
+  "terms.p.liability":
+    "De app wordt 'as is' geleverd, zonder enige garantie. Hij vervangt geen DSC-noodalarm, degelijke radiotraining of het oordeel van de schipper. Stuur waar mogelijk altijd eerst een DSC-alarm. Er wordt geen aansprakelijkheid aanvaard voor incidenten, schade of gevolgen die voortvloeien uit het gebruik of de onbeschikbaarheid van deze app; het gebruik is volledig op eigen risico.",
   "terms.h.availability": "Beschikbaarheid en juistheid",
-  "terms.p.availability": "Er wordt geen garantie gegeven voor ononderbroken beschikbaarheid, offline-functionaliteit, GPS-nauwkeurigheid of de juistheid van de gegenereerde teksten en spraakuitvoer.",
+  "terms.p.availability":
+    "Er wordt geen garantie gegeven voor ononderbroken beschikbaarheid, offline-functionaliteit, GPS-nauwkeurigheid of de juistheid van de gegenereerde teksten en spraakuitvoer.",
   "terms.h.changes": "Wijzigingen van deze voorwaarden",
-  "terms.p.changes": "Deze voorwaarden kunnen met toekomstige versies van de app worden aangepast. De in de app getoonde versie is leidend.",
-  "privacy.p.termsLink": "De veiligheidsmededeling en gebruiksvoorwaarden vind je nu op de pagina Voorwaarden.",
+  "terms.p.changes":
+    "Deze voorwaarden kunnen met toekomstige versies van de app worden aangepast. De in de app getoonde versie is leidend.",
+  "privacy.p.termsLink":
+    "De veiligheidsmededeling en gebruiksvoorwaarden vind je nu op de pagina Voorwaarden.",
 
   "gate.title": "Voordat je begint",
-  "gate.intro": "Lees de belangrijkste punten van de gebruiksvoorwaarden voordat je de app gebruikt.",
+  "gate.intro":
+    "Lees de belangrijkste punten van de gebruiksvoorwaarden voordat je de app gebruikt.",
   "gate.p1": "Deze app vervangt geen radiotelefonie-opleiding of marifooncertificaat.",
-  "gate.p2": "Je gebruikt de app volledig op eigen risico — geen aansprakelijkheid voor schade of gevolgen.",
-  "gate.p3": "Geen garantie voor beschikbaarheid, GPS-nauwkeurigheid of juistheid van de gegenereerde teksten.",
-  "gate.p4": "Volg in een noodgeval altijd het reddingscoördinatiecentrum; een DSC-noodsignaal heeft voorrang.",
+  "gate.p2":
+    "Je gebruikt de app volledig op eigen risico — geen aansprakelijkheid voor schade of gevolgen.",
+  "gate.p3":
+    "Geen garantie voor beschikbaarheid, GPS-nauwkeurigheid of juistheid van de gegenereerde teksten.",
+  "gate.p4":
+    "Volg in een noodgeval altijd het reddingscoördinatiecentrum; een DSC-noodsignaal heeft voorrang.",
   "gate.readTerms": "Lees de volledige gebruiksvoorwaarden",
   "gate.checkbox": "Ik heb de gebruiksvoorwaarden gelezen en ga ermee akkoord.",
   "gate.accept": "Begrepen — doorgaan",
-  "privacy.p.gate": "Je akkoord met de gebruiksvoorwaarden wordt alleen lokaal op dit apparaat opgeslagen en nooit verzonden. Het wissen van de app-gegevens in de instellingen zet dit terug.",
+  "privacy.p.gate":
+    "Je akkoord met de gebruiksvoorwaarden wordt alleen lokaal op dit apparaat opgeslagen en nooit verzonden. Het wissen van de app-gegevens in de instellingen zet dit terug.",
 } satisfies Record<string, string>;

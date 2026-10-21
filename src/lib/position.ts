@@ -54,10 +54,7 @@ const COORDINATE_LIMITS = { latitude: 90, longitude: 180 } as const;
  * Parses a manually typed decimal coordinate. Accepts a comma as decimal separator.
  * Returns null for empty input, non-numbers and values outside ±90° / ±180°.
  */
-export function parseCoordinate(
-  raw: string,
-  kind: keyof typeof COORDINATE_LIMITS,
-): number | null {
+export function parseCoordinate(raw: string, kind: keyof typeof COORDINATE_LIMITS): number | null {
   const cleaned = raw.trim().replace(",", ".");
   if (!cleaned || !/^[+-]?(\d+(\.\d*)?|\.\d+)$/.test(cleaned)) return null;
   const value = Number(cleaned);

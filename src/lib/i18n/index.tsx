@@ -15,7 +15,18 @@ export const LANGUAGES = ["en", "de", "fr", "nl", "es", "it", "sv", "nb", "hr", 
 export type Language = (typeof LANGUAGES)[number];
 export type LanguagePreference = "auto" | Language;
 
-const DICTIONARIES: Record<Language, Record<string, string>> = { en, de, fr, nl, es, it, sv, nb, hr, cs };
+const DICTIONARIES: Record<Language, Record<string, string>> = {
+  en,
+  de,
+  fr,
+  nl,
+  es,
+  it,
+  sv,
+  nb,
+  hr,
+  cs,
+};
 
 export function isLanguage(value: unknown): value is Language {
   return typeof value === "string" && (LANGUAGES as readonly string[]).includes(value);
@@ -33,7 +44,6 @@ export function resolveLanguage(preference: LanguagePreference | undefined): Lan
   }
   return "en";
 }
-
 
 export type TFunction = (key: TranslationKey, vars?: Record<string, string | number>) => string;
 

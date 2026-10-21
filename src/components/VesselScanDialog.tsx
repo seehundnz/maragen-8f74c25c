@@ -40,18 +40,14 @@ export function VesselScanDialog({
         const reader = new BrowserQRCodeReader();
         const video = videoRef.current;
         if (!video) return;
-        const result = await reader.decodeFromVideoDevice(
-          undefined,
-          video,
-          (res) => {
-            if (stopped || !res) return;
-            const vessel = decodeVessel(res.getText());
-            if (!vessel) return;
-            stopped = true;
-            controls?.stop();
-            onDetected(vessel);
-          },
-        );
+        const result = await reader.decodeFromVideoDevice(undefined, video, (res) => {
+          if (stopped || !res) return;
+          const vessel = decodeVessel(res.getText());
+          if (!vessel) return;
+          stopped = true;
+          controls?.stop();
+          onDetected(vessel);
+        });
         controls = result;
         if (stopped) result.stop();
       } catch {

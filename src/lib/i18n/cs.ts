@@ -19,15 +19,15 @@ export const cs = {
   "install.button": "Instalovat nyní",
   "install.close": "Zavřít",
   "install.ios.step1": "Klepněte na tlačítko Sdílet na liště prohlížeče.",
-  "install.ios.step2": 'Sjeďte dolů a zvolte „Přidat na plochu“.',
-  "install.ios.step3": 'Klepněte vpravo nahoře na „Přidat“.',
+  "install.ios.step2": "Sjeďte dolů a zvolte „Přidat na plochu“.",
+  "install.ios.step3": "Klepněte vpravo nahoře na „Přidat“.",
   "install.iosOther.note":
     "Na iPhonu a iPadu mohou aplikace instalovat pouze Safari. Otevřete tuto stránku nejprve v Safari a poté postupujte podle kroků níže.",
   "install.android.step1": "Otevřete nabídku prohlížeče (tři tečky).",
-  "install.android.step2": 'Zvolte „Instalovat aplikaci“ nebo „Přidat na plochu“.',
+  "install.android.step2": "Zvolte „Instalovat aplikaci“ nebo „Přidat na plochu“.",
   "install.android.step3": "Potvrďte instalaci.",
   "install.desktop.step1": "Otevřete nabídku prohlížeče nebo ikonu instalace v adresním řádku.",
-  "install.desktop.step2": 'Zvolte „Instalovat“ a potvrďte.',
+  "install.desktop.step2": "Zvolte „Instalovat“ a potvrďte.",
 
   "home.title": "Jaký typ volání potřebujete?",
   "home.subtitle": "Zvolte typ volání — údaje o plavidle, pozice a čas se doplní automaticky.",
@@ -50,7 +50,8 @@ export const cs = {
   "call.manualEntry": "Ruční zadání",
   "call.waitingGps": "Čeká se na GPS…",
   "call.gpsError.unsupported": "GPS není na tomto zařízení k dispozici",
-  "call.gpsError.denied": "Přístup k poloze byl zamítnut – povolte jej v nastavení prohlížeče nebo zařízení",
+  "call.gpsError.denied":
+    "Přístup k poloze byl zamítnut – povolte jej v nastavení prohlížeče nebo zařízení",
   "call.gpsError.unavailable": "Poloha není momentálně k dispozici",
   "call.gpsError.timeout": "Poloha GPS nebyla přijata včas",
   "call.refreshFix": "Obnovit pozici",
@@ -97,15 +98,19 @@ export const cs = {
     "Tato aplikace je pouze pomůcka. Nenahrazuje řádný radiokomunikační výcvik, tísňové volání DSC ani úsudek velitele plavidla. Je-li DSC k dispozici, vždy jej odešlete jako první.",
 
   "dsc.title": "Nejprve odešlete tísňový poplach DSC",
-  "dsc.intro": "Pokud má vaše vysílačka DSC (červené tísňové tlačítko), odešlete poplach DSC ještě před hlasovým voláním:",
-  "dsc.step1": "Dovolí-li to čas, zvolte v nabídce DSC povahu tísně (např. potápění, požár, muž přes palubu).",
+  "dsc.intro":
+    "Pokud má vaše vysílačka DSC (červené tísňové tlačítko), odešlete poplach DSC ještě před hlasovým voláním:",
+  "dsc.step1":
+    "Dovolí-li to čas, zvolte v nabídce DSC povahu tísně (např. potápění, požár, muž přes palubu).",
   "dsc.step2": "Poté odklopte kryt a podržte červené tlačítko DISTRESS asi 5 sekund.",
   "dsc.step3": "Vyčkejte na potvrzení; vysílačka se automaticky přepne na kanál 16.",
   "dsc.step4": "Následně přečtěte níže uvedenou zprávu MAYDAY na kanálu 16.",
-  "dsc.note": "Ověřte, že je ve vysílačce naprogramováno vaše MMSI a připojena GPS pozice. Bez DSC volejte MAYDAY přímo na kanálu 16.",
+  "dsc.note":
+    "Ověřte, že je ve vysílačce naprogramováno vaše MMSI a připojena GPS pozice. Bez DSC volejte MAYDAY přímo na kanálu 16.",
 
   "comms.title": "Další komunikace",
-  "comms.intro": "Standardní fráze pro další komunikaci, vyžádání rádiového klidu, zrušení falešného poplachu a ukončení tísňového provozu.",
+  "comms.intro":
+    "Standardní fráze pro další komunikaci, vyžádání rádiového klidu, zrušení falešného poplachu a ukončení tísňového provozu.",
   "comms.h.relay": "Další komunikace během tísňové situace",
   "comms.h.silence": "Vyžádání rádiového klidu (pouze pobřežní stanice nebo plavidlo v tísni)",
   "comms.h.cancel": "Zrušení omylem vyslaného tísňového poplachu (pouze plavidlo v tísni)",
@@ -137,7 +142,8 @@ export const cs = {
   "settings.languageHint": "Jazyk rozhraní. Texty pro vysílačku zůstávají vždy anglicky.",
   "settings.language.auto": "Automaticky (jazyk zařízení)",
   "settings.autoUpdate": "Automatická aktualizace pozice",
-  "settings.autoUpdateHint": "Průběžně aktualizovat GPS pozici, dokud je obrazovka volání otevřená.",
+  "settings.autoUpdateHint":
+    "Průběžně aktualizovat GPS pozici, dokud je obrazovka volání otevřená.",
   "settings.interval": "Interval aktualizace (sekundy)",
   "settings.intervalHint": "Výchozí 10 sekund. Povolený rozsah 2–300 sekund.",
   "settings.intervalError": "Hodnota musí být mezi 2 a 300 sekundami.",
@@ -145,12 +151,11 @@ export const cs = {
   "settings.positionFormat": "Formát pozice",
   "settings.positionFormat.ddm": "Stupně a desetinné minuty (54° 19.85' N)",
   "settings.positionFormat.dd": "Desetinné stupně (54.33083°)",
-  "settings.aiVoice": 'Použít hlas AI pro „Přečíst nahlas“',
+  "settings.aiVoice": "Použít hlas AI pro „Přečíst nahlas“",
   "settings.aiVoiceHint":
     "Ve výchozím stavu vypnuto. Teprve po zapnutí se text odešle naší hlasové službě pro čistý hlas radiooperátora. Dokud je vypnuto, používá se pouze vestavěný hlas zařízení a žádný text jej neopouští.",
   "settings.appHeading": "Aplikace a aktualizace",
-  "settings.offlineHint":
-    "Aplikace se ukládá do zařízení, takže se otevře i bez připojení k síti.",
+  "settings.offlineHint": "Aplikace se ukládá do zařízení, takže se otevře i bez připojení k síti.",
   "settings.swStatus": "Offline služba",
   "settings.swStatus.active": "Aktivní",
   "settings.swStatus.waiting": "Aktualizace čeká",
@@ -202,13 +207,15 @@ export const cs = {
 
   "vessels.title": "Plavidla",
   "vessels.add": "Přidat plavidlo",
-  "vessels.empty": "Zatím žádná plavidla. Přidejte svou loď, aby se každé volání vyplnilo automaticky.",
+  "vessels.empty":
+    "Zatím žádná plavidla. Přidejte svou loď, aby se každé volání vyplnilo automaticky.",
   "vessels.active": "Aktivní",
   "vessels.setActive": "Nastavit jako aktivní",
   "vessels.edit": "Upravit plavidlo",
   "vessels.delete": "Smazat plavidlo",
   "vessels.deleteConfirmTitle": "Smazat plavidlo?",
-  "vessels.deleteConfirmBody": "{name} a všechny jeho údaje budou z tohoto zařízení trvale odstraněny.",
+  "vessels.deleteConfirmBody":
+    "{name} a všechny jeho údaje budou z tohoto zařízení trvale odstraněny.",
   "vessels.deleteConfirm": "Smazat",
   "vessels.deleteCancel": "Zrušit",
   "vessels.deleted": "{name} smazáno",
@@ -228,7 +235,8 @@ export const cs = {
   "vessels.defaultChannel": "Výchozí kanál VHF",
   "vessels.save": "Uložit plavidlo",
   "vessels.cancel": "Zrušit",
-  "vessels.englishNotice": "Typ plavidla, délku a barvu trupu zadávejte prosím anglicky — do anglického textu pro vysílačku se přebírají přesně tak, jak je napíšete.",
+  "vessels.englishNotice":
+    "Typ plavidla, délku a barvu trupu zadávejte prosím anglicky — do anglického textu pro vysílačku se přebírají přesně tak, jak je napíšete.",
   "vessels.errName": "Název plavidla je povinný",
   "vessels.errMmsi": "MMSI musí mít přesně 9 číslic",
   "vessels.errMmsiShort": "MMSI je příliš krátké — chybí ještě {count} číslic (celkem 9)",
@@ -288,16 +296,19 @@ export const cs = {
   "terms.p.safety2":
     "Za používání této aplikace se nepřebírá žádná odpovědnost. Provozovatel ani vývojáři neodpovídají za jakékoli incidenty, škody nebo následky vzniklé jejím používáním. Aplikaci používáte zcela na vlastní riziko a za své jednání a rozhodnutí na vodě odpovídáte sami.",
   "share.qrTitle": "Sdílet plavidlo",
-  "share.qrHint": "Nechte člena posádky naskenovat tento kód v aplikaci, aby profil plavidla importoval.",
+  "share.qrHint":
+    "Nechte člena posádky naskenovat tento kód v aplikaci, aby profil plavidla importoval.",
   "share.qrAlt": "QR kód s údaji plavidla {name}",
   "share.copyCode": "Kopírovat kód",
   "share.copied": "Kód pro sdílení zkopírován",
-  "share.privacyNote": "Kód obsahuje pouze údaje tohoto plavidla. Nic se nikam neodesílá — sdílejte jej jen se svou posádkou.",
+  "share.privacyNote":
+    "Kód obsahuje pouze údaje tohoto plavidla. Nic se nikam neodesílá — sdílejte jej jen se svou posádkou.",
   "share.share": "Sdílet",
   "share.scan": "Naskenovat QR kód",
   "share.scanTitle": "Importovat plavidlo",
   "share.scanHint": "Namiřte kameru na QR kód zobrazený na druhém zařízení.",
-  "share.cameraError": "Kamera není dostupná. Povolte prosím přístup ke kameře nebo vložte kód pro sdílení níže.",
+  "share.cameraError":
+    "Kamera není dostupná. Povolte prosím přístup ke kameře nebo vložte kód pro sdílení níže.",
   "share.pasteLabel": "Nebo vložte kód pro sdílení",
   "share.pasteAction": "Importovat z kódu",
   "share.invalidCode": "Tento kód není platný kód pro sdílení plavidla",
@@ -315,7 +326,8 @@ export const cs = {
     "Profil plavidla můžete sdílet se svou posádkou jako QR kód. Kód se generuje ve vašem zařízení a obsahuje pouze údaje daného plavidla (název, MMSI, volací znak, typ, délku, barvu trupu, osoby na palubě, kanál). Nic se neodesílá na server. Skenování používá kameru vašeho zařízení výhradně k dekódování kódu v prohlížeči; žádný snímek, video ani výsledek skenování se neukládá ani nepřenáší. Protože MMSI a volací znak mohou identifikovat plavidlo a jeho vlastníka, sdílejte kód pouze s lidmi, kterým důvěřujete.",
 
   "guide.title": "Jak tuto aplikaci používat",
-  "guide.subtitle": "Rychlý přehled všech funkcí — od prvního plavidla po text připravený k přečtení do vysílačky.",
+  "guide.subtitle":
+    "Rychlý přehled všech funkcí — od prvního plavidla po text připravený k přečtení do vysílačky.",
   "guide.h.intro": "Co tato aplikace dělá",
   "guide.p.intro1":
     "VHF Call Builder vytváří texty VHF volání připravené k přečtení — Mayday, Pan-Pan, Sécurité a běžná volání — z údajů o vašem plavidle, aktuálního času UTC a vaší GPS pozice. Vše zůstává ve vašem zařízení: žádné účty, žádný server, po prvním načtení ani internet.",
@@ -340,8 +352,7 @@ export const cs = {
     "Klepnutím na „Číst“ otevřete text na celou obrazovku velkým písmem, ideální pro předčítání do vysílačky. Režim čtení respektuje bezpečnou oblast a na mobilech plynule roluje.",
   "guide.p.readSpeak2":
     "Klepnutím na „Přečíst nahlas“ si text poslechnete. V nastavení volíte mezi hlasem AI radiooperátora (vyžaduje připojení) a vestavěným hlasem zařízení (funguje offline, nic zařízení neopouští).",
-  "guide.p.readSpeak3":
-    "„Kopírovat“ vloží text do schránky; „Sdílet“ otevře systémové sdílení.",
+  "guide.p.readSpeak3": "„Kopírovat“ vloží text do schránky; „Sdílet“ otevře systémové sdílení.",
   "guide.h.shareVessel": "4. Sdílení a import plavidel",
   "guide.p.shareVessel1":
     "V seznamu plavidel klepněte na ikonu sdílení a zobrazí se QR kód s údaji daného plavidla. Člen posádky jej může naskenovat kamerou a profil importovat — nebo zkopírovat a vložit kód pro sdílení. Pokud plavidlo se stejným MMSI již existuje, zvolíte, zda jej aktualizovat nebo přidat jako nové.",
@@ -353,9 +364,12 @@ export const cs = {
   "guide.p.settings2":
     "Rovněž můžete zkontrolovat aktualizace, zobrazit nainstalovanou verzi a vymazat ze zařízení všechna data v mezipaměti i profily plavidel.",
   "guide.h.pwa": "6. Instalace a offline použití",
-  "guide.p.pwa1": "Tato aplikace je progresivní webová aplikace a lze ji nainstalovat na jakékoli zařízení.",
-  "guide.p.pwa.ios": "iPhone/iPad: Otevřete v Safari, klepněte na ikonu sdílení a zvolte „Přidat na plochu“.",
-  "guide.p.pwa.android": "Android: Otevřete nabídku prohlížeče a zvolte „Instalovat aplikaci“ nebo „Přidat na plochu“.",
+  "guide.p.pwa1":
+    "Tato aplikace je progresivní webová aplikace a lze ji nainstalovat na jakékoli zařízení.",
+  "guide.p.pwa.ios":
+    "iPhone/iPad: Otevřete v Safari, klepněte na ikonu sdílení a zvolte „Přidat na plochu“.",
+  "guide.p.pwa.android":
+    "Android: Otevřete nabídku prohlížeče a zvolte „Instalovat aplikaci“ nebo „Přidat na plochu“.",
   "guide.p.pwa.desktop": "Počítač: Použijte ikonu instalace v adresním řádku.",
   "guide.p.pwa2":
     "Po instalaci se aplikace otevírá na celou obrazovku jako běžná aplikace a funguje offline — GPS, čas UTC a vestavěný hlas fungují bez připojení. Hlas AI pro „Přečíst nahlas“ připojení vyžaduje. Aplikace se aktualizuje na pozadí; kontrolu můžete vynutit v nastavení.",
@@ -365,23 +379,31 @@ export const cs = {
   "terms.title": "Podmínky používání",
   "terms.subtitle": "Pravidla pro používání této aplikace.",
   "terms.h.scope": "Rozsah a účel",
-  "terms.p.scope": "Tato aplikace ti pomáhá sestavit VHF volání (Mayday, Pan-Pan, Sécurité a běžná volání) z údajů o plavidle, pozice a času. Je to pomůcka pro soukromé, nekomerční použití.",
+  "terms.p.scope":
+    "Tato aplikace ti pomáhá sestavit VHF volání (Mayday, Pan-Pan, Sécurité a běžná volání) z údajů o plavidle, pozice a času. Je to pomůcka pro soukromé, nekomerční použití.",
   "terms.h.liability": "Vyloučení odpovědnosti",
-  "terms.p.liability": "Aplikace je poskytována „tak, jak je“, bez jakékoli záruky. Nenahrazuje tísňové volání DSC, řádný radiokomunikační výcvik ani úsudek velitele plavidla. Je-li to možné, vždy nejprve odešli poplach DSC. Nepřebírá se odpovědnost za incidenty, škody ani následky vzniklé používáním nebo nedostupností aplikace; používáš ji zcela na vlastní odpovědnost.",
+  "terms.p.liability":
+    "Aplikace je poskytována „tak, jak je“, bez jakékoli záruky. Nenahrazuje tísňové volání DSC, řádný radiokomunikační výcvik ani úsudek velitele plavidla. Je-li to možné, vždy nejprve odešli poplach DSC. Nepřebírá se odpovědnost za incidenty, škody ani následky vzniklé používáním nebo nedostupností aplikace; používáš ji zcela na vlastní odpovědnost.",
   "terms.h.availability": "Dostupnost a přesnost",
-  "terms.p.availability": "Nezaručuje se nepřetržitá dostupnost, provoz bez internetu, přesnost GPS ani správnost generovaných textů a hlasové syntézy.",
+  "terms.p.availability":
+    "Nezaručuje se nepřetržitá dostupnost, provoz bez internetu, přesnost GPS ani správnost generovaných textů a hlasové syntézy.",
   "terms.h.changes": "Změny těchto podmínek",
-  "terms.p.changes": "Tyto podmínky mohou být s budoucími verzemi aplikace aktualizovány. Platí verze zobrazená v aplikaci.",
-  "privacy.p.termsLink": "Bezpečnostní upozornění a podmínky používání najdeš nyní na stránce Podmínky.",
+  "terms.p.changes":
+    "Tyto podmínky mohou být s budoucími verzemi aplikace aktualizovány. Platí verze zobrazená v aplikaci.",
+  "privacy.p.termsLink":
+    "Bezpečnostní upozornění a podmínky používání najdeš nyní na stránce Podmínky.",
 
   "gate.title": "Než začneš",
   "gate.intro": "Před použitím aplikace si prosím přečti klíčové body podmínek používání.",
   "gate.p1": "Tato aplikace nenahrazuje radiokomunikační výcvik ani průkaz radiooperátora.",
-  "gate.p2": "Aplikaci používáš výhradně na vlastní riziko — bez odpovědnosti za škody či následky.",
+  "gate.p2":
+    "Aplikaci používáš výhradně na vlastní riziko — bez odpovědnosti za škody či následky.",
   "gate.p3": "Neexistuje záruka dostupnosti, přesnosti GPS ani správnosti generovaných textů.",
-  "gate.p4": "V nouzi se vždy řiď pokyny koordinačního záchranného střediska; tísňové volání DSC má přednost.",
+  "gate.p4":
+    "V nouzi se vždy řiď pokyny koordinačního záchranného střediska; tísňové volání DSC má přednost.",
   "gate.readTerms": "Přečíst celé podmínky používání",
   "gate.checkbox": "Přečetl/a jsem si podmínky používání a souhlasím s nimi.",
   "gate.accept": "Rozumím — pokračovat",
-  "privacy.p.gate": "Tvůj souhlas s podmínkami používání se ukládá pouze do místního úložiště tohoto zařízení a nikdy se nepřenáší. Vymazáním dat aplikace v nastavení se zruší.",
+  "privacy.p.gate":
+    "Tvůj souhlas s podmínkami používání se ukládá pouze do místního úložiště tohoto zařízení a nikdy se nepřenáší. Vymazáním dat aplikace v nastavení se zruší.",
 } as const;
