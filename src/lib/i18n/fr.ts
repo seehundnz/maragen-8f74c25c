@@ -6,8 +6,6 @@ export const fr = {
   "nav.terms": "Conditions",
   "nav.install": "Installer",
   "nav.guide": "Guide",
-  "nav.nightModeOn": "Activer le mode lumière rouge",
-  "nav.nightModeOff": "Désactiver le mode lumière rouge",
   "nav.themeNext": "suivant :",
   "settings.theme": "Mode d'affichage",
   "settings.themeHint": "Choisissez l'apparence de l'application. Le réglage de l'appareil n'est pas repris automatiquement.",
@@ -51,6 +49,10 @@ export const fr = {
   "call.position": "Position",
   "call.manualEntry": "Saisie manuelle",
   "call.waitingGps": "En attente du GPS…",
+  "call.gpsError.unsupported": "Le GPS n'est pas disponible sur cet appareil",
+  "call.gpsError.denied": "Accès à la position refusé – autorisez-le dans les réglages du navigateur ou de l'appareil",
+  "call.gpsError.unavailable": "Position actuellement indisponible",
+  "call.gpsError.timeout": "Aucune position GPS reçue à temps",
   "call.refreshFix": "Actualiser la position",
   "call.manualPosition": "Position manuelle",
   "call.autoUpdateOn": "Mise à jour automatique toutes les {seconds}s",
@@ -105,15 +107,9 @@ export const fr = {
   "comms.title": "Communications complémentaires",
   "comms.intro": "Phrases radio standard pour la suite des communications, la demande de silence, l'annulation d'une fausse alerte et la fin d'un appel de détresse.",
   "comms.h.relay": "Communication complémentaire lors d'une situation de détresse",
-  "comms.p.relay": "MAYDAY [VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS]\nThis is [VESSEL NAME], [CALL SIGN]\n[MESSAGE]\nOVER\n",
   "comms.h.silence": "Demander le silence (uniquement station côtière ou navire en détresse)",
-  "comms.p.silence": "ALL STATIONS, ALL STATIONS, ALL STATIONS\nSILENCE MAYDAY\n",
   "comms.h.cancel": "Annuler une alerte de détresse déclenchée par erreur (uniquement le navire en détresse)",
-  "comms.p.cancel":
-    "ALL STATIONS, ALL STATIONS, ALL STATIONS\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
   "comms.h.end": "Terminer un appel de détresse (uniquement station côtière ou navire en détresse)",
-  "comms.p.end":
-    "MAYDAY\nAll STATIONS, ALL STATIONS, ALL STATIONS\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC\n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
 
   "nature.sinking": "Naufrage",
   "nature.takingOnWater": "Voie d'eau",
@@ -149,9 +145,6 @@ export const fr = {
   "settings.positionFormat": "Format de position",
   "settings.positionFormat.ddm": "Degrés et minutes décimales (54° 19,85' N)",
   "settings.positionFormat.dd": "Degrés décimaux (54,33083°)",
-  "settings.nightMode": "Mode lumière rouge (vision nocturne)",
-  "settings.nightModeHint":
-    "Teinte toute l'application en rouge atténué sur fond quasi noir afin de préserver votre vision nocturne à bord.",
   "settings.aiVoice": 'Utiliser une voix IA pour "Énoncer"',
   "settings.aiVoiceHint":
     "Désactivé par défaut. Ce n'est que si vous l'activez que le texte du message est envoyé à notre service vocal pour produire une voix d'opérateur radio claire. Tant que c'est désactivé, seule la voix intégrée de votre appareil est utilisée et aucun texte ne quitte cet appareil.",
@@ -174,6 +167,7 @@ export const fr = {
   "settings.buildDate": "Date de build",
   "settings.lastChecked": "Dernière vérification",
   "settings.checkUpdate": "Vérifier les mises à jour",
+  "settings.updateCheckFailed": "Impossible de vérifier les mises à jour. Pas de connexion Internet ?",
   "settings.checking": "Vérification…",
   "settings.updateAvailable": "Une nouvelle version est disponible.",
   "settings.updateNow": "Mettre à jour maintenant",

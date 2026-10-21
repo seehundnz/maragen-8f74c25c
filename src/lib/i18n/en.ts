@@ -6,8 +6,6 @@ export const en = {
   "nav.terms": "Terms",
   "nav.install": "Install",
   "nav.guide": "Guide",
-  "nav.nightModeOn": "Turn on red-light mode",
-  "nav.nightModeOff": "Turn off red-light mode",
   "nav.themeNext": "next:",
   "settings.theme": "Display mode",
   "settings.themeHint": "Choose how the app looks. The device setting is not applied automatically.",
@@ -51,6 +49,10 @@ export const en = {
   "call.position": "Position",
   "call.manualEntry": "Manual entry",
   "call.waitingGps": "Waiting for GPS…",
+  "call.gpsError.unsupported": "GPS is not available on this device",
+  "call.gpsError.denied": "Location access was denied — allow it in your browser or device settings",
+  "call.gpsError.unavailable": "Position currently unavailable",
+  "call.gpsError.timeout": "No GPS position received in time",
   "call.refreshFix": "Refresh fix",
   "call.manualPosition": "Manual position",
   "call.autoUpdateOn": "Auto-update every {seconds}s",
@@ -105,15 +107,9 @@ export const en = {
   "comms.title": "Further communication",
   "comms.intro": "Standard radio phrases for further communication, silence requests, false-alarm cancellation and ending a distress call.",
   "comms.h.relay": "Further communication during a distress case",
-  "comms.p.relay": "MAYDAY [VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS]\nThis is [VESSEL NAME], [CALL SIGN]\n[MESSAGE]\nOVER\n",
   "comms.h.silence": "Asking for silence (only coast radio station or vessel in distress)",
-  "comms.p.silence": "ALL STATIONS, ALL STATIONS, ALL STATIONS\nSILENCE MAYDAY\n",
   "comms.h.cancel": "Revert a mistakenly issued distress alert (only vessel in distress)",
-  "comms.p.cancel":
-    "ALL STATIONS, ALL STATIONS, ALL STATIONS\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
   "comms.h.end": "End a distress call (only coast station or vessel in distress)",
-  "comms.p.end":
-    "MAYDAY\nAll STATIONS, ALL STATIONS, ALL STATIONS\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC\n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
 
   "nature.sinking": "Sinking",
   "nature.takingOnWater": "Taking on water",
@@ -149,9 +145,6 @@ export const en = {
   "settings.positionFormat": "Position format",
   "settings.positionFormat.ddm": "Degrees and decimal minutes (54° 19.85' N)",
   "settings.positionFormat.dd": "Decimal degrees (54.33083°)",
-  "settings.nightMode": "Red-light mode (night vision)",
-  "settings.nightModeHint":
-    "Tints the whole app in dim red on a near-black background so your night vision on board is preserved.",
   "settings.aiVoice": 'Use AI voice for "Speak"',
   "settings.aiVoiceHint":
     "Off by default. Only if you turn this on is the script text sent to our speech service for a clear radio-operator voice. While it stays off, only your device's built-in voice is used and no text ever leaves this device.",
@@ -174,6 +167,7 @@ export const en = {
   "settings.buildDate": "Build date",
   "settings.lastChecked": "Last checked",
   "settings.checkUpdate": "Check for updates",
+  "settings.updateCheckFailed": "Could not check for updates. No internet connection?",
   "settings.checking": "Checking…",
   "settings.updateAvailable": "A new version is available.",
   "settings.updateNow": "Update now",

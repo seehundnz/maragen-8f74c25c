@@ -8,8 +8,6 @@ export const de: Dictionary = {
   "nav.terms": "Nutzungsbedingungen",
   "nav.install": "Installieren",
   "nav.guide": "Anleitung",
-  "nav.nightModeOn": "Rotlicht-Modus einschalten",
-  "nav.nightModeOff": "Rotlicht-Modus ausschalten",
   "nav.themeNext": "weiter:",
   "settings.theme": "Anzeige-Modus",
   "settings.themeHint": "Lege fest, wie die App aussieht. Die Geräteeinstellung wird nicht automatisch übernommen.",
@@ -53,6 +51,10 @@ export const de: Dictionary = {
   "call.position": "Position",
   "call.manualEntry": "Manuelle Eingabe",
   "call.waitingGps": "Warte auf GPS…",
+  "call.gpsError.unsupported": "GPS ist auf diesem Gerät nicht verfügbar",
+  "call.gpsError.denied": "Standortzugriff verweigert – bitte in den Browser- oder Geräteeinstellungen erlauben",
+  "call.gpsError.unavailable": "Position derzeit nicht verfügbar",
+  "call.gpsError.timeout": "Keine GPS-Position rechtzeitig empfangen",
   "call.refreshFix": "Position aktualisieren",
   "call.manualPosition": "Position manuell",
   "call.autoUpdateOn": "Automatisch alle {seconds}s",
@@ -107,15 +109,9 @@ export const de: Dictionary = {
   "comms.title": "Weitere Kommunikation",
   "comms.intro": "Standard-Funktexte für weitere Kommunikation, Funkstille anordnen, Rücknahme Fehlalarm und Beendigung eines Notrufs.",
   "comms.h.relay": "Weitere Kommunikation im Notfall",
-  "comms.p.relay": "MAYDAY [VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS]\nThis is [VESSEL NAME], [CALL SIGN]\n[MESSAGE]\nOVER\n",
   "comms.h.silence": "STILLE AUFFORDERN (NUR KÜSTENFUNKSTELLE ODER HAVARIST)",
-  "comms.p.silence": "ALL STATIONS, ALL STATIONS, ALL STATIONS\nSILENCE MAYDAY\n",
   "comms.h.cancel": "FALSCH AUSGELÖSTEN NOTALARM ZURÜCKNEHMEN (NUR HAVARIST)",
-  "comms.p.cancel":
-    "ALL STATIONS, ALL STATIONS, ALL STATIONS\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
   "comms.h.end": "NOTRUF BEENDEN (NUR KÜSTENFUNKSTELLE ODER HAVARIST)",
-  "comms.p.end":
-    "MAYDAY\nAll STATIONS, ALL STATIONS, ALL STATIONS\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC\n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
 
   "nature.sinking": "Sinkend",
   "nature.takingOnWater": "Wassereinbruch",
@@ -152,9 +148,6 @@ export const de: Dictionary = {
   "settings.positionFormat": "Positionsformat",
   "settings.positionFormat.ddm": "Grad und Dezimalminuten (54° 19.85' N)",
   "settings.positionFormat.dd": "Dezimalgrad (54.33083°)",
-  "settings.nightMode": "Rotlicht-Modus (Nachtsicht)",
-  "settings.nightModeHint":
-    "Färbt die gesamte App in gedämpftes Rot auf nahezu schwarzem Grund, damit deine Nachtsicht an Bord erhalten bleibt.",
   "settings.aiVoice": "KI-Stimme für „Vorlesen“ verwenden",
   "settings.aiVoiceHint":
     "Standardmäßig aus. Nur wenn du dies aktivierst, wird der Text des Funkspruchs an unseren Sprachdienst gesendet, um eine klare Funkstimme zu erzeugen. Bleibt die Option aus, wird ausschließlich die eingebaute Stimme deines Geräts genutzt und es verlässt kein Text dein Gerät.",
@@ -177,6 +170,7 @@ export const de: Dictionary = {
   "settings.buildDate": "Build-Datum",
   "settings.lastChecked": "Zuletzt geprüft",
   "settings.checkUpdate": "Nach Updates suchen",
+  "settings.updateCheckFailed": "Update-Prüfung fehlgeschlagen. Keine Internetverbindung?",
   "settings.checking": "Suche…",
   "settings.updateAvailable": "Eine neue Version ist verfügbar.",
   "settings.updateNow": "Jetzt aktualisieren",

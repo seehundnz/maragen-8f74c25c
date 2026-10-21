@@ -6,8 +6,6 @@ export const cs = {
   "nav.terms": "Podmínky",
   "nav.install": "Instalovat",
   "nav.guide": "Návod",
-  "nav.nightModeOn": "Zapnout červený režim",
-  "nav.nightModeOff": "Vypnout červený režim",
   "nav.themeNext": "další:",
   "settings.theme": "Režim zobrazení",
   "settings.themeHint": "Zvolte vzhled aplikace. Nastavení zařízení se nepoužije automaticky.",
@@ -51,6 +49,10 @@ export const cs = {
   "call.position": "Pozice",
   "call.manualEntry": "Ruční zadání",
   "call.waitingGps": "Čeká se na GPS…",
+  "call.gpsError.unsupported": "GPS není na tomto zařízení k dispozici",
+  "call.gpsError.denied": "Přístup k poloze byl zamítnut – povolte jej v nastavení prohlížeče nebo zařízení",
+  "call.gpsError.unavailable": "Poloha není momentálně k dispozici",
+  "call.gpsError.timeout": "Poloha GPS nebyla přijata včas",
   "call.refreshFix": "Obnovit pozici",
   "call.manualPosition": "Ruční pozice",
   "call.autoUpdateOn": "Automatická aktualizace každých {seconds} s",
@@ -105,15 +107,9 @@ export const cs = {
   "comms.title": "Další komunikace",
   "comms.intro": "Standardní fráze pro další komunikaci, vyžádání rádiového klidu, zrušení falešného poplachu a ukončení tísňového provozu.",
   "comms.h.relay": "Další komunikace během tísňové situace",
-  "comms.p.relay": "MAYDAY [VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS]\nThis is [VESSEL NAME], [CALL SIGN]\n[MESSAGE]\nOVER\n",
   "comms.h.silence": "Vyžádání rádiového klidu (pouze pobřežní stanice nebo plavidlo v tísni)",
-  "comms.p.silence": "ALL STATIONS, ALL STATIONS, ALL STATIONS\nSILENCE MAYDAY\n",
   "comms.h.cancel": "Zrušení omylem vyslaného tísňového poplachu (pouze plavidlo v tísni)",
-  "comms.p.cancel":
-    "ALL STATIONS, ALL STATIONS, ALL STATIONS\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
   "comms.h.end": "Ukončení tísňového provozu (pouze pobřežní stanice nebo plavidlo v tísni)",
-  "comms.p.end":
-    "MAYDAY\nAll STATIONS, ALL STATIONS, ALL STATIONS\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC\n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
 
   "nature.sinking": "Potápění",
   "nature.takingOnWater": "Vnikání vody",
@@ -149,9 +145,6 @@ export const cs = {
   "settings.positionFormat": "Formát pozice",
   "settings.positionFormat.ddm": "Stupně a desetinné minuty (54° 19.85' N)",
   "settings.positionFormat.dd": "Desetinné stupně (54.33083°)",
-  "settings.nightMode": "Režim červeného světla (noční vidění)",
-  "settings.nightModeHint":
-    "Zbarví celou aplikaci do tlumené červené na téměř černém pozadí, aby se na palubě zachovalo noční vidění.",
   "settings.aiVoice": 'Použít hlas AI pro „Přečíst nahlas“',
   "settings.aiVoiceHint":
     "Ve výchozím stavu vypnuto. Teprve po zapnutí se text odešle naší hlasové službě pro čistý hlas radiooperátora. Dokud je vypnuto, používá se pouze vestavěný hlas zařízení a žádný text jej neopouští.",
@@ -174,6 +167,7 @@ export const cs = {
   "settings.buildDate": "Datum sestavení",
   "settings.lastChecked": "Poslední kontrola",
   "settings.checkUpdate": "Zkontrolovat aktualizace",
+  "settings.updateCheckFailed": "Kontrola aktualizací selhala. Chybí připojení k internetu?",
   "settings.checking": "Kontrola…",
   "settings.updateAvailable": "Je dostupná nová verze.",
   "settings.updateNow": "Aktualizovat nyní",

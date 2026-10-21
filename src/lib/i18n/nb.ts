@@ -6,8 +6,6 @@ export const nb = {
   "nav.terms": "Vilkår",
   "nav.install": "Installer",
   "nav.guide": "Veiledning",
-  "nav.nightModeOn": "Slå på nattmodus",
-  "nav.nightModeOff": "Slå av nattmodus",
   "nav.themeNext": "neste:",
   "settings.theme": "Visningsmodus",
   "settings.themeHint": "Velg hvordan appen ser ut. Enhetens innstilling brukes ikke automatisk.",
@@ -51,6 +49,10 @@ export const nb = {
   "call.position": "Posisjon",
   "call.manualEntry": "Manuell inntasting",
   "call.waitingGps": "Venter på GPS…",
+  "call.gpsError.unsupported": "GPS er ikke tilgjengelig på denne enheten",
+  "call.gpsError.denied": "Posisjonstilgang ble avvist – tillat den i nettleser- eller enhetsinnstillingene",
+  "call.gpsError.unavailable": "Posisjonen er ikke tilgjengelig akkurat nå",
+  "call.gpsError.timeout": "Ingen GPS-posisjon mottatt i tide",
   "call.refreshFix": "Oppdater posisjon",
   "call.manualPosition": "Manuell posisjon",
   "call.autoUpdateOn": "Auto-oppdatering hvert {seconds}. sekund",
@@ -105,15 +107,9 @@ export const nb = {
   "comms.title": "Videre kommunikasjon",
   "comms.intro": "Standard radiofraser for videre kommunikasjon, forespørsel om taushet, kansellering av falsk alarm og avslutning av nødsamtale.",
   "comms.h.relay": "Videre kommunikasjon under en nødssituasjon",
-  "comms.p.relay": "MAYDAY [VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS]\nThis is [VESSEL NAME], [CALL SIGN]\n[MESSAGE]\nOVER\n",
   "comms.h.silence": "Be om taushet (kun kystradiostasjon eller fartøy i nød)",
-  "comms.p.silence": "ALL STATIONS, ALL STATIONS, ALL STATIONS\nSILENCE MAYDAY\n",
   "comms.h.cancel": "Kanseller et feilaktig utløst nødanrop (kun fartøy i nød)",
-  "comms.p.cancel":
-    "ALL STATIONS, ALL STATIONS, ALL STATIONS\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
   "comms.h.end": "Avslutt et nødoppkall (kun kystradiostasjon eller fartøy i nød)",
-  "comms.p.end":
-    "MAYDAY\nAll STATIONS, ALL STATIONS, ALL STATIONS\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC\n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
 
   "nature.sinking": "Synker",
   "nature.takingOnWater": "Tar inn vann",
@@ -149,9 +145,6 @@ export const nb = {
   "settings.positionFormat": "Posisjonsformat",
   "settings.positionFormat.ddm": "Grader og desimalminutter (54° 19.85' N)",
   "settings.positionFormat.dd": "Desimalgrader (54.33083°)",
-  "settings.nightMode": "Nattmodus (rødt lys)",
-  "settings.nightModeHint":
-    "Farger hele appen i dempet rødt på en nær svart bakgrunn for å bevare nattsynet om bord.",
   "settings.aiVoice": 'Bruk AI-stemme for "Les opp"',
   "settings.aiVoiceHint":
     "Av som standard. Hvis du slår på dette, sendes manuskriptet til vår taletjeneste for å få en tydelig stemme som en radiooperatør. Mens dette er av, brukes bare enhetens innebygde stemme, og ingen tekst forlater enheten.",
@@ -174,6 +167,7 @@ export const nb = {
   "settings.buildDate": "Byggdato",
   "settings.lastChecked": "Sist sjekket",
   "settings.checkUpdate": "Sjekk etter oppdateringer",
+  "settings.updateCheckFailed": "Kunne ikke se etter oppdateringer. Ingen internettforbindelse?",
   "settings.checking": "Sjekker…",
   "settings.updateAvailable": "En ny versjon er tilgjengelig.",
   "settings.updateNow": "Oppdater nå",

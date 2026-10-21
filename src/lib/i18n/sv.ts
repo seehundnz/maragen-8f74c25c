@@ -6,8 +6,6 @@ export const sv = {
   "nav.terms": "Villkor",
   "nav.install": "Installera",
   "nav.guide": "Guide",
-  "nav.nightModeOn": "Slå på nattläge",
-  "nav.nightModeOff": "Slå av nattläge",
   "nav.themeNext": "nästa:",
   "settings.theme": "Visningsläge",
   "settings.themeHint": "Välj hur appen ser ut. Enhetens inställning används inte automatiskt.",
@@ -51,6 +49,10 @@ export const sv = {
   "call.position": "Position",
   "call.manualEntry": "Manuell inmatning",
   "call.waitingGps": "Väntar på GPS…",
+  "call.gpsError.unsupported": "GPS är inte tillgänglig på den här enheten",
+  "call.gpsError.denied": "Platsåtkomst nekades – tillåt den i webbläsarens eller enhetens inställningar",
+  "call.gpsError.unavailable": "Positionen är inte tillgänglig just nu",
+  "call.gpsError.timeout": "Ingen GPS-position mottogs i tid",
   "call.refreshFix": "Uppdatera position",
   "call.manualPosition": "Manuell position",
   "call.autoUpdateOn": "Auto-uppdatering var {seconds}:e sekund",
@@ -105,15 +107,9 @@ export const sv = {
   "comms.title": "Fortsatt kommunikation",
   "comms.intro": "Standardfraser för fortsatt kommunikation, begäran om tystnad, återkallande av falsklarm och avslutande av nödanrop.",
   "comms.h.relay": "Fortsatt kommunikation under ett nödfall",
-  "comms.p.relay": "MAYDAY [VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS]\nThis is [VESSEL NAME], [CALL SIGN]\n[MESSAGE]\nOVER\n",
   "comms.h.silence": "Begäran om tystnad (endast kustradiostation eller fartyg i nöd)",
-  "comms.p.silence": "ALL STATIONS, ALL STATIONS, ALL STATIONS\nSILENCE MAYDAY\n",
   "comms.h.cancel": "Återkalla ett felaktigt utlöst nödlarm (endast fartyg i nöd)",
-  "comms.p.cancel":
-    "ALL STATIONS, ALL STATIONS, ALL STATIONS\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
   "comms.h.end": "Avsluta ett nödanrop (endast kuststation eller fartyg i nöd)",
-  "comms.p.end":
-    "MAYDAY\nAll STATIONS, ALL STATIONS, ALL STATIONS\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC\n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
 
   "nature.sinking": "Sjunker",
   "nature.takingOnWater": "Tar in vatten",
@@ -149,9 +145,6 @@ export const sv = {
   "settings.positionFormat": "Positionsformat",
   "settings.positionFormat.ddm": "Grader och decimalminuter (54° 19.85' N)",
   "settings.positionFormat.dd": "Decimalgrader (54.33083°)",
-  "settings.nightMode": "Nattläge (rött ljus)",
-  "settings.nightModeHint":
-    "Färgar hela appen i dämpat rött mot en nästan svart bakgrund för att bevara ditt mörkerseende ombord.",
   "settings.aiVoice": 'Använd AI-röst för "Tala"',
   "settings.aiVoiceHint":
     "Avstängd som standard. Om du slår på detta skickas texten till vår taltjänst för en tydlig radiopratarröst. När den är avstängd används endast din enhets inbyggda röst och ingen text lämnar enheten.",
@@ -174,6 +167,7 @@ export const sv = {
   "settings.buildDate": "Byggdatum",
   "settings.lastChecked": "Senast kontrollerad",
   "settings.checkUpdate": "Sök efter uppdateringar",
+  "settings.updateCheckFailed": "Kunde inte söka efter uppdateringar. Ingen internetanslutning?",
   "settings.checking": "Söker…",
   "settings.updateAvailable": "En ny version är tillgänglig.",
   "settings.updateNow": "Uppdatera nu",

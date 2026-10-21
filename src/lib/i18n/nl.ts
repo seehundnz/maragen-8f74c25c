@@ -6,8 +6,6 @@ export const nl = {
   "nav.terms": "Voorwaarden",
   "nav.install": "Installeren",
   "nav.guide": "Handleiding",
-  "nav.nightModeOn": "Rood nachtlicht inschakelen",
-  "nav.nightModeOff": "Rood nachtlicht uitschakelen",
   "nav.themeNext": "volgende:",
   "settings.theme": "Weergavemodus",
   "settings.themeHint": "Kies hoe de app eruitziet. De apparaatinstelling wordt niet automatisch overgenomen.",
@@ -51,6 +49,10 @@ export const nl = {
   "call.position": "Positie",
   "call.manualEntry": "Handmatige invoer",
   "call.waitingGps": "Wachten op gps…",
+  "call.gpsError.unsupported": "Gps is niet beschikbaar op dit apparaat",
+  "call.gpsError.denied": "Locatietoegang geweigerd – sta deze toe in de browser- of apparaatinstellingen",
+  "call.gpsError.unavailable": "Positie momenteel niet beschikbaar",
+  "call.gpsError.timeout": "Geen gps-positie op tijd ontvangen",
   "call.refreshFix": "Fix vernieuwen",
   "call.manualPosition": "Handmatige positie",
   "call.autoUpdateOn": "Automatisch bijwerken elke {seconds}s",
@@ -105,15 +107,9 @@ export const nl = {
   "comms.title": "Verdere communicatie",
   "comms.intro": "Standaard radiozinnen voor verdere communicatie, stilteverzoeken, het annuleren van vals alarm en het beëindigen van een noodoproep.",
   "comms.h.relay": "Verdere communicatie tijdens een noodgeval",
-  "comms.p.relay": "MAYDAY [VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS]\nThis is [VESSEL NAME], [CALL SIGN]\n[MESSAGE]\nOVER\n",
   "comms.h.silence": "Om stilte vragen (alleen kuststation of vaartuig in nood)",
-  "comms.p.silence": "ALL STATIONS, ALL STATIONS, ALL STATIONS\nSILENCE MAYDAY\n",
   "comms.h.cancel": "Een per ongeluk verzonden noodalarm intrekken (alleen vaartuig in nood)",
-  "comms.p.cancel":
-    "ALL STATIONS, ALL STATIONS, ALL STATIONS\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
   "comms.h.end": "Een noodoproep beëindigen (alleen kuststation of vaartuig in nood)",
-  "comms.p.end":
-    "MAYDAY\nAll STATIONS, ALL STATIONS, ALL STATIONS\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC\n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
 
   "nature.sinking": "Zinkend",
   "nature.takingOnWater": "Water maken",
@@ -149,9 +145,6 @@ export const nl = {
   "settings.positionFormat": "Positieformaat",
   "settings.positionFormat.ddm": "Graden en decimale minuten (54° 19.85' N)",
   "settings.positionFormat.dd": "Decimale graden (54.33083°)",
-  "settings.nightMode": "Rood nachtlicht (nachtzicht)",
-  "settings.nightModeHint":
-    "Kleurt de hele app gedempt rood op een bijna zwarte achtergrond, zodat je nachtzicht aan boord behouden blijft.",
   "settings.aiVoice": 'AI-stem gebruiken voor "Voorlezen"',
   "settings.aiVoiceHint":
     "Standaard uit. Alleen als je dit inschakelt wordt de tekst naar onze spraakdienst gestuurd voor een heldere marifonist-stem. Zolang dit uit staat wordt alleen de ingebouwde stem van je apparaat gebruikt en verlaat er geen tekst dit apparaat.",
@@ -174,6 +167,7 @@ export const nl = {
   "settings.buildDate": "Builddatum",
   "settings.lastChecked": "Laatst gecontroleerd",
   "settings.checkUpdate": "Controleren op updates",
+  "settings.updateCheckFailed": "Controleren op updates mislukt. Geen internetverbinding?",
   "settings.checking": "Bezig met controleren…",
   "settings.updateAvailable": "Er is een nieuwe versie beschikbaar.",
   "settings.updateNow": "Nu bijwerken",

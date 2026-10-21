@@ -6,8 +6,6 @@ export const it = {
   "nav.terms": "Condizioni",
   "nav.install": "Installa",
   "nav.guide": "Guida",
-  "nav.nightModeOn": "Attiva la luce rossa notturna",
-  "nav.nightModeOff": "Disattiva la luce rossa notturna",
   "nav.themeNext": "successivo:",
   "settings.theme": "Modalità di visualizzazione",
   "settings.themeHint": "Scegli l'aspetto dell'app. L'impostazione del dispositivo non viene applicata automaticamente.",
@@ -51,6 +49,10 @@ export const it = {
   "call.position": "Posizione",
   "call.manualEntry": "Inserimento manuale",
   "call.waitingGps": "In attesa del GPS…",
+  "call.gpsError.unsupported": "Il GPS non è disponibile su questo dispositivo",
+  "call.gpsError.denied": "Accesso alla posizione negato: consentilo nelle impostazioni del browser o del dispositivo",
+  "call.gpsError.unavailable": "Posizione al momento non disponibile",
+  "call.gpsError.timeout": "Nessuna posizione GPS ricevuta in tempo",
   "call.refreshFix": "Aggiorna fix",
   "call.manualPosition": "Posizione manuale",
   "call.autoUpdateOn": "Aggiornamento automatico ogni {seconds}s",
@@ -105,15 +107,9 @@ export const it = {
   "comms.title": "Comunicazioni successive",
   "comms.intro": "Frasi radio standard per le comunicazioni successive, la richiesta di silenzio, l'annullamento di un falso allarme e la chiusura di una chiamata di soccorso.",
   "comms.h.relay": "Comunicazioni successive in caso di pericolo",
-  "comms.p.relay": "MAYDAY [VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS]\nThis is [VESSEL NAME], [CALL SIGN]\n[MESSAGE]\nOVER\n",
   "comms.h.silence": "Richiedere il silenzio (solo stazione costiera o imbarcazione in pericolo)",
-  "comms.p.silence": "ALL STATIONS, ALL STATIONS, ALL STATIONS\nSILENCE MAYDAY\n",
   "comms.h.cancel": "Annullare un allarme di soccorso inviato per errore (solo imbarcazione in pericolo)",
-  "comms.p.cancel":
-    "ALL STATIONS, ALL STATIONS, ALL STATIONS\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
   "comms.h.end": "Chiudere una chiamata di soccorso (solo stazione costiera o imbarcazione in pericolo)",
-  "comms.p.end":
-    "MAYDAY\nAll STATIONS, ALL STATIONS, ALL STATIONS\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC\n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
 
   "nature.sinking": "Sta affondando",
   "nature.takingOnWater": "Imbarca acqua",
@@ -149,9 +145,6 @@ export const it = {
   "settings.positionFormat": "Formato posizione",
   "settings.positionFormat.ddm": "Gradi e minuti decimali (54° 19.85' N)",
   "settings.positionFormat.dd": "Gradi decimali (54.33083°)",
-  "settings.nightMode": "Luce rossa notturna (visione notturna)",
-  "settings.nightModeHint":
-    "Colora l'intera app di rosso attenuato su sfondo quasi nero per preservare la visione notturna a bordo.",
   "settings.aiVoice": 'Usa la voce IA per "Ascolta"',
   "settings.aiVoiceHint":
     "Disattivata per impostazione predefinita. Solo se la attivi il testo viene inviato al nostro servizio vocale per una voce da operatore radio chiara. Finché resta disattivata viene usata solo la voce integrata del dispositivo e nessun testo lascia l'apparecchio.",
@@ -174,6 +167,7 @@ export const it = {
   "settings.buildDate": "Data build",
   "settings.lastChecked": "Ultimo controllo",
   "settings.checkUpdate": "Cerca aggiornamenti",
+  "settings.updateCheckFailed": "Impossibile cercare aggiornamenti. Nessuna connessione Internet?",
   "settings.checking": "Controllo in corso…",
   "settings.updateAvailable": "È disponibile una nuova versione.",
   "settings.updateNow": "Aggiorna ora",

@@ -6,8 +6,6 @@ export const hr = {
   "nav.terms": "Uvjeti",
   "nav.install": "Instaliraj",
   "nav.guide": "Vodič",
-  "nav.nightModeOn": "Uključi crveni način rada",
-  "nav.nightModeOff": "Isključi crveni način rada",
   "nav.themeNext": "sljedeće:",
   "settings.theme": "Način prikaza",
   "settings.themeHint": "Odaberite izgled aplikacije. Postavka uređaja ne primjenjuje se automatski.",
@@ -51,6 +49,10 @@ export const hr = {
   "call.position": "Položaj",
   "call.manualEntry": "Ručni unos",
   "call.waitingGps": "Čekanje na GPS…",
+  "call.gpsError.unsupported": "GPS nije dostupan na ovom uređaju",
+  "call.gpsError.denied": "Pristup lokaciji je odbijen – dopustite ga u postavkama preglednika ili uređaja",
+  "call.gpsError.unavailable": "Pozicija trenutačno nije dostupna",
+  "call.gpsError.timeout": "GPS pozicija nije primljena na vrijeme",
   "call.refreshFix": "Osvježi položaj",
   "call.manualPosition": "Ručni položaj",
   "call.autoUpdateOn": "Automatsko osvježavanje svakih {seconds}s",
@@ -105,15 +107,9 @@ export const hr = {
   "comms.title": "Daljnja komunikacija",
   "comms.intro": "Standardne radio fraze za daljnju komunikaciju, zahtjeve za tišinu, poništavanje lažnog alarma i završetak poziva u pogibelji.",
   "comms.h.relay": "Daljnja komunikacija tijekom slučaja pogibelji",
-  "comms.p.relay": "MAYDAY [VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS]\nThis is [VESSEL NAME], [CALL SIGN]\n[MESSAGE]\nOVER\n",
   "comms.h.silence": "Traženje tišine (samo obalna radio postaja ili plovilo u pogibelji)",
-  "comms.p.silence": "ALL STATIONS, ALL STATIONS, ALL STATIONS\nSILENCE MAYDAY\n",
   "comms.h.cancel": "Poništavanje pogrešno izdanog alarma za pogibelj (samo plovilo u pogibelji)",
-  "comms.p.cancel":
-    "ALL STATIONS, ALL STATIONS, ALL STATIONS\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
   "comms.h.end": "Završetak poziva u pogibelji (samo obalna postaja ili plovilo u pogibelji)",
-  "comms.p.end":
-    "MAYDAY\nAll STATIONS, ALL STATIONS, ALL STATIONS\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC\n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
 
   "nature.sinking": "Potonuće",
   "nature.takingOnWater": "Prodiranje vode",
@@ -149,9 +145,6 @@ export const hr = {
   "settings.positionFormat": "Format položaja",
   "settings.positionFormat.ddm": "Stupnjevi i decimalne minute (54° 19.85' N)",
   "settings.positionFormat.dd": "Decimalni stupnjevi (54.33083°)",
-  "settings.nightMode": "Način rada crvenog svjetla (noćni vid)",
-  "settings.nightModeHint":
-    "Tonira cijelu aplikaciju u prigušenu crvenu boju na gotovo crnoj pozadini kako bi se očuvao vaš noćni vid na plovilu.",
   "settings.aiVoice": 'Koristi AI glas za "Izgovori"',
   "settings.aiVoiceHint":
     "Isključeno prema zadanim postavkama. Tek ako ovo uključite, tekst skripte se šalje našoj govornoj službi za čist glas radio operatera. Dok je isključeno, koristi se samo ugrađeni glas vašeg uređaja i nikakav tekst ne napušta ovaj uređaj.",
@@ -174,6 +167,7 @@ export const hr = {
   "settings.buildDate": "Datum verzije",
   "settings.lastChecked": "Posljednja provjera",
   "settings.checkUpdate": "Provjeri ažuriranja",
+  "settings.updateCheckFailed": "Provjera ažuriranja nije uspjela. Nema internetske veze?",
   "settings.checking": "Provjera…",
   "settings.updateAvailable": "Dostupna je nova verzija.",
   "settings.updateNow": "Ažuriraj sada",
