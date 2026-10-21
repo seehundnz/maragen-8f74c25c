@@ -11,7 +11,7 @@ const ICONS: Record<ThemeMode, typeof Moon> = {
   night: Flashlight,
 };
 
-export function NightModeToggle() {
+export function ThemeToggle() {
   const { settings, setSettings } = useSettings();
   const { t } = useT();
   const theme = resolveTheme(settings);

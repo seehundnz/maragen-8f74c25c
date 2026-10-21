@@ -1,15 +1,24 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { Fix } from "@/lib/position";
 
+/** Language-neutral reason why no GPS fix is available; translated in the UI. */
+export type GeoError = "unsupported" | "denied" | "unavailable" | "timeout";
+
+function toGeoError(err: GeolocationPositionError): GeoError {
+  if (err.code === err.PERMISSION_DENIED) return "denied";
+  if (err.code === err.TIMEOUT) return "timeout";
+  return "unavailable";
+}
+
 export function useGeoPosition(autoUpdate: boolean, intervalSeconds: number) {
   const [fix, setFix] = useState<Fix | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<GeoError | null>(null);
   const [loading, setLoading] = useState(false);
   const manualRef = useRef(false);
 
   const refresh = useCallback(() => {
     if (typeof navigator === "undefined" || !navigator.geolocation) {
-      setError("Geolocation is not available on this device");
+      setError("unsupported");
       return;
     }
     setLoading(true);
@@ -26,7 +35,7 @@ export function useGeoPosition(autoUpdate: boolean, intervalSeconds: number) {
         setLoading(false);
       },
       (err) => {
-        setError(err.message || "Position unavailable");
+        setError(toGeoError(err));
         setLoading(false);
       },
       { enableHighAccuracy: true, timeout: 15000, maximumAge: 0 },
