@@ -1,28 +1,24 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { useEffect, useMemo, useState } from "react";
-import { AlertTriangle, ChevronDown, Copy, Crosshair, Loader2, Maximize2, Radio, RefreshCw, Share2, Square, Volume2, X } from "lucide-react";
+import { createFileRoute, notFound } from "@tanstack/react-router";
+import { useMemo, useState } from "react";
+import { Copy, Maximize2, Share2 } from "lucide-react";
 import { toast } from "sonner";
 
 import { AppShell } from "@/components/AppShell";
 import { CallTabs } from "@/components/CallTabs";
+import { CallDetailsForm } from "@/components/call/CallDetailsForm";
+import { Channel16Notice } from "@/components/call/Channel16Notice";
+import { DscSection } from "@/components/call/DscSection";
+import { FurtherComms } from "@/components/call/FurtherComms";
+import { PositionPanel } from "@/components/call/PositionPanel";
+import { ReadModeOverlay } from "@/components/call/ReadModeOverlay";
+import { SpeakButton } from "@/components/call/SpeakButton";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { useGeoPosition, useUtcNow } from "@/hooks/useGeoPosition";
 import { useSpeech } from "@/hooks/useSpeech";
 import { useSettings, useVessels } from "@/hooks/useFleet";
 import { buildScript } from "@/lib/templates";
-import { formatPositionShort, utcClockString } from "@/lib/position";
 import { CALL_META, isCallType, type CallInput, type CallType } from "@/lib/types";
-import { useT, type TranslationKey } from "@/lib/i18n";
+import { useT } from "@/lib/i18n";
 
 export const Route = createFileRoute("/call/$type")({
   staticData: { sitemap: true },
@@ -43,7 +39,9 @@ export const Route = createFileRoute("/call/$type")({
         { property: "og:title", content: title },
         { property: "og:description", content: description },
         { property: "og:type", content: "website" },
-        ...(meta ? [{ property: "og:url", content: `https://app.vhfcall.eu/call/${params.type}` }] : []),
+        ...(meta
+          ? [{ property: "og:url", content: `https://app.vhfcall.eu/call/${params.type}` }]
+          : []),
         { name: "twitter:card", content: "summary" },
       ],
       links: meta ? [{ rel: "canonical", href: `https://app.vhfcall.eu/call/${params.type}` }] : [],
@@ -51,36 +49,6 @@ export const Route = createFileRoute("/call/$type")({
   },
   component: CallPage,
 });
-
-const NATURE_PRESETS: Record<CallType, { key: TranslationKey; value: string }[]> = {
-  mayday: [
-    { key: "nature.sinking", value: "Sinking" },
-    { key: "nature.takingOnWater", value: "Taking on water" },
-    { key: "nature.fire", value: "Fire on board" },
-    { key: "nature.pob", value: "Person overboard" },
-    { key: "nature.grounding", value: "Grounding" },
-    { key: "nature.capsized", value: "Capsized" },
-    { key: "nature.collision", value: "Collision" },
-    { key: "nature.medical", value: "Medical emergency" },
-  ],
-  panpan: [
-    { key: "nature.engineFailure", value: "Engine failure" },
-    { key: "nature.steeringFailure", value: "Steering failure" },
-    { key: "nature.dismasted", value: "Dismasted" },
-    { key: "nature.adrift", value: "Adrift" },
-    { key: "nature.outOfFuel", value: "Out of fuel" },
-    { key: "nature.medicalAdvice", value: "Medical advice required" },
-    { key: "nature.riggingDamage", value: "Rigging damage" },
-  ],
-  securite: [
-    { key: "nature.navHazard", value: "Navigation hazard sighted" },
-    { key: "nature.floatingObject", value: "Floating object adrift" },
-    { key: "nature.unlitBuoy", value: "Unlit buoy" },
-    { key: "nature.restrictedManoeuvrability", value: "Restricted manoeuvrability" },
-    { key: "nature.severeWeather", value: "Severe weather observed" },
-  ],
-  standard: [],
-};
 
 function CallPage() {
   const { type } = Route.useLoaderData();
@@ -93,22 +61,8 @@ function CallPage() {
     settings.autoUpdate,
     settings.intervalSeconds,
   );
-  const [readMode, setReadMode] = useState(false);
-
-  useEffect(() => {
-    if (!readMode) return;
-    const previous = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = previous;
-    };
-  }, [readMode]);
   const speech = useSpeech();
-  const [manualOpen, setManualOpen] = useState(false);
-  const [dscOpen, setDscOpen] = useState(false);
-  const [commsOpen, setCommsOpen] = useState(false);
-  const [manualLat, setManualLat] = useState("");
-  const [manualLon, setManualLon] = useState("");
+  const [readMode, setReadMode] = useState(false);
   const [input, setInput] = useState<CallInput>({
     nature: "",
     assistance: "immediate assistance",
@@ -117,13 +71,6 @@ function CallPage() {
     station: "",
     message: "",
   });
-
-  const MESSAGE_PLACEHOLDER: Record<CallType, TranslationKey> = {
-    mayday: "call.additionalMessagePlaceholder",
-    panpan: "call.additionalMessagePlaceholder.panpan",
-    securite: "call.additionalMessagePlaceholder.securite",
-    standard: "call.additionalMessagePlaceholder.standard",
-  };
 
   const activeVessel =
     vessels.find((v) => v.id === settings.activeVesselId) ?? vessels[0] ?? null;
@@ -171,17 +118,8 @@ function CallPage() {
     else if (result.fallback) toast.info(t("call.offlineVoice"));
   };
 
-  const SpeakButton = ({ size = "sm" as const }) => (
-    <Button size={size} variant="secondary" onClick={toggleSpeak}>
-      {speech.loading ? (
-        <Loader2 className="animate-spin" />
-      ) : speech.speaking ? (
-        <Square />
-      ) : (
-        <Volume2 />
-      )}
-      {speech.speaking ? t("call.stop") : t("call.speak")}
-    </Button>
+  const speakButton = (
+    <SpeakButton speaking={speech.speaking} loading={speech.loading} onClick={toggleSpeak} />
   );
 
   return (
@@ -195,245 +133,29 @@ function CallPage() {
             <p className="mt-1 text-sm text-muted-foreground">{t(`call.${type}.description`)}</p>
           </section>
 
-          {type === "mayday" && (
-            <section className="rounded-xl border-2 border-primary bg-primary/10 p-4">
-              <button
-                type="button"
-                onClick={() => setDscOpen((prev) => !prev)}
-                className="group flex w-full cursor-pointer items-center justify-between text-left text-sm font-black tracking-widest text-primary uppercase"
-                aria-expanded={dscOpen}
-              >
-                <span className="flex min-w-0 flex-1 items-center gap-2 break-words pr-2 leading-tight">
-                  <AlertTriangle className="size-4 shrink-0" /> {t("dsc.title")}
-                </span>
-                <ChevronDown
-                  className={`size-4 shrink-0 transition-transform ${dscOpen ? "rotate-180" : ""}`}
-                />
-              </button>
-              {dscOpen && (
-                <>
-                  <p className="mt-2 text-sm">{t("dsc.intro")}</p>
-                  <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm text-muted-foreground">
-                    <li>{t("dsc.step1")}</li>
-                    <li>{t("dsc.step2")}</li>
-                    <li>{t("dsc.step3")}</li>
-                    <li>{t("dsc.step4")}</li>
-                  </ol>
-                  <p className="mt-2 text-xs text-muted-foreground">{t("dsc.note")}</p>
-                </>
-              )}
-            </section>
-          )}
+          {type === "mayday" && <DscSection />}
 
+          <PositionPanel
+            now={now}
+            fix={fix}
+            error={error}
+            loading={loading}
+            refresh={refresh}
+            setManualFix={setManualFix}
+            settings={settings}
+          />
 
+          <CallDetailsForm
+            type={type}
+            vessels={vessels}
+            activeVessel={activeVessel}
+            onSelectVessel={(id) => setSettings((s) => ({ ...s, activeVesselId: id }))}
+            input={input}
+            setInput={setInput}
+            defaultChannel={settings.defaultChannel}
+          />
 
-
-
-          <section className="grid gap-3 rounded-xl border border-border bg-card p-4">
-            <div className="grid gap-4 sm:grid-cols-[1fr_1.5fr]">
-              <div className="space-y-1">
-                <p className="text-xs leading-4 tracking-widest text-muted-foreground uppercase">
-                  {t("call.utcTime")}
-                </p>
-                <p className="font-mono text-sm leading-6 tabular-nums whitespace-nowrap">
-                  {now ? utcClockString(now) : "--:--:-- UTC"}
-                </p>
-              </div>
-              <div className="space-y-1">
-                <p className="text-xs leading-4 tracking-widest text-muted-foreground uppercase">
-                  {t("call.position")}
-                </p>
-                <p className="font-mono text-sm leading-6 whitespace-nowrap">
-                  {formatPositionShort(fix, settings.positionFormat)}
-                </p>
-                <p className="text-xs text-muted-foreground">
-                  {fix?.manual
-                    ? t("call.manualEntry")
-                    : fix
-                      ? `±${Math.round(fix.accuracy ?? 0)} m · ${new Date(fix.timestamp).toUTCString().slice(17, 25)} UTC`
-                      : (error ?? t("call.waitingGps"))}
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-wrap gap-2">
-
-              <Button variant="secondary" size="sm" onClick={refresh} disabled={loading}>
-                <RefreshCw className={loading ? "animate-spin" : ""} /> {t("call.refreshFix")}
-              </Button>
-              <Button variant="secondary" size="sm" onClick={() => setManualOpen((o) => !o)} aria-pressed={manualOpen}>
-                <Crosshair /> {t("call.manualPosition")}
-              </Button>
-              <span className="self-center text-xs text-muted-foreground">
-                {settings.autoUpdate
-                  ? t("call.autoUpdateOn", { seconds: settings.intervalSeconds })
-                  : t("call.autoUpdateOff")}
-              </span>
-            </div>
-
-            {manualOpen && (
-              <div className="grid gap-2 sm:col-span-2 sm:grid-cols-3">
-                <div>
-                  <Label htmlFor="lat">{t("call.latitude")}</Label>
-                  <Input
-                    id="lat"
-                    inputMode="decimal"
-                    value={manualLat}
-                    onChange={(e) => setManualLat(e.target.value)}
-                    placeholder="54.32100"
-                  />
-                </div>
-                <div>
-                  <Label htmlFor="lon">{t("call.longitude")}</Label>
-                  <Input
-                    id="lon"
-                    inputMode="decimal"
-                    value={manualLon}
-                    onChange={(e) => setManualLon(e.target.value)}
-                    placeholder="10.12345"
-                  />
-                </div>
-                <Button
-                  className="self-end"
-                  onClick={() => {
-                    const la = Number(manualLat);
-                    const lo = Number(manualLon);
-                    if (Number.isFinite(la) && Number.isFinite(lo)) {
-                      setManualFix(la, lo);
-                      toast.success(t("call.manualPositionSet"));
-                    } else {
-                      toast.error(t("call.invalidCoordinates"));
-                    }
-                  }}
-                >
-                  {t("call.usePosition")}
-                </Button>
-              </div>
-            )}
-          </section>
-
-          <section className="space-y-3 rounded-xl border border-border bg-card p-4">
-            <div>
-              <Label htmlFor="vessel">{t("call.vessel")}</Label>
-              {vessels.length ? (
-                <Select
-                  value={activeVessel?.id ?? ""}
-                  onValueChange={(id) => setSettings((s) => ({ ...s, activeVesselId: id }))}
-                >
-                  <SelectTrigger id="vessel">
-                    <SelectValue placeholder={t("call.selectVessel")} />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {vessels.map((v) => (
-                      <SelectItem key={v.id} value={v.id}>
-                        {v.name} · {v.mmsi}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              ) : (
-                <p className="text-sm text-muted-foreground">
-                  {t("call.noVessel")}{" "}
-                  <Link to="/vessels" className="text-primary underline">
-                    {t("call.addYourVessel")}
-                  </Link>
-                </p>
-              )}
-            </div>
-
-            {type === "standard" ? (
-              <div>
-                <Label htmlFor="station">{t("call.stationCalled")}</Label>
-                <Input
-                  id="station"
-                  value={input.station}
-                  onChange={(e) => setInput((i) => ({ ...i, station: e.target.value }))}
-                  placeholder="Kiel Marina"
-                />
-              </div>
-            ) : (
-              <div className="space-y-2">
-                <Label htmlFor="nature">
-                  {type === "securite" ? t("call.safetyMessage") : t("call.natureOfSituation")}
-                </Label>
-                <Input
-                  id="nature"
-                  value={input.nature}
-                  onChange={(e) => setInput((i) => ({ ...i, nature: e.target.value }))}
-                  placeholder={type === "securite" ? "Container adrift" : "Taking on water"}
-                />
-                <div className="flex flex-wrap gap-2">
-                  {NATURE_PRESETS[type].map((preset) => (
-                    <button
-                      key={preset.key}
-                      type="button"
-                      onClick={() => setInput((i) => ({ ...i, nature: preset.value }))}
-                      className="rounded-full border border-border px-3 py-1 text-xs transition-colors hover:border-primary hover:text-primary"
-                    >
-                      {t(preset.key)}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            <div className="grid gap-3 sm:grid-cols-3">
-              {type !== "securite" && type !== "standard" && (
-                <div>
-                  <Label htmlFor="assistance">{t("call.assistanceRequired")}</Label>
-                  <Input
-                    id="assistance"
-                    value={input.assistance}
-                    onChange={(e) => setInput((i) => ({ ...i, assistance: e.target.value }))}
-                  />
-                </div>
-              )}
-              {type !== "standard" && (
-                <div>
-                  <Label htmlFor="pob">{t("call.pob")}</Label>
-                  <Input
-                    id="pob"
-                    inputMode="numeric"
-                    value={input.pob}
-                    onChange={(e) => setInput((i) => ({ ...i, pob: e.target.value }))}
-                    placeholder={activeVessel?.pob || "4"}
-                  />
-                </div>
-              )}
-              <div>
-                <Label htmlFor="channel">{t("call.channel")}</Label>
-                <Input
-                  id="channel"
-                  inputMode="numeric"
-                  value={input.channel}
-                  onChange={(e) => setInput((i) => ({ ...i, channel: e.target.value }))}
-                  placeholder={activeVessel?.channel || settings.defaultChannel}
-                />
-              </div>
-            </div>
-
-            <div>
-              <Label htmlFor="message">{t("call.additionalMessage")}</Label>
-              <Textarea
-                id="message"
-                rows={2}
-                value={input.message}
-                onChange={(e) => setInput((i) => ({ ...i, message: e.target.value }))}
-                placeholder={t(MESSAGE_PLACEHOLDER[type])}
-              />
-            </div>
-          </section>
-
-          {type !== "standard" && (
-            <section className="flex items-start gap-3 rounded-xl border-2 border-primary bg-primary/10 p-4">
-              <Radio className="mt-0.5 size-5 shrink-0 text-primary" />
-              <div>
-                <p className="text-sm font-black tracking-widest text-primary uppercase">
-                  {t("call.channel16Notice")}
-                </p>
-                <p className="mt-1 text-xs text-muted-foreground">{t("call.channel16NoticeHint")}</p>
-              </div>
-            </section>
-          )}
+          {type !== "standard" && <Channel16Notice />}
 
           <section className="rounded-xl border-2 border-primary bg-card p-4">
             <div className="mb-3 grid grid-cols-[1fr_auto] items-center gap-3">
@@ -441,7 +163,7 @@ function CallPage() {
                 {t("call.radioScript")}
               </h2>
               <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:justify-end">
-                <SpeakButton />
+                {speakButton}
                 <Button size="sm" variant="secondary" onClick={copy}>
                   <Copy /> {t("call.copy")}
                 </Button>
@@ -458,101 +180,23 @@ function CallPage() {
             </pre>
             <p className="mt-3 text-xs text-muted-foreground">{t("call.scriptEnglishNote")}</p>
           </section>
-          {type === "mayday" && (
-            <section className="rounded-xl border border-border bg-card p-4">
-              <button
-                type="button"
-                onClick={() => setCommsOpen((prev) => !prev)}
-                className="group flex w-full cursor-pointer items-center justify-between text-left text-sm font-black tracking-widest text-foreground uppercase"
-                aria-expanded={commsOpen}
-              >
-                <span className="pr-2">{t("comms.title")}</span>
-                <ChevronDown
-                  className={`size-4 shrink-0 transition-transform ${commsOpen ? "rotate-180" : ""}`}
-                />
-              </button>
-              {commsOpen && (
-                <div className="mt-3 space-y-4">
-                  <p className="text-sm text-muted-foreground">{t("comms.intro")}</p>
-                  <div>
-                    <p className="text-sm font-bold tracking-widest text-foreground uppercase">{t("comms.h.relay")}</p>
-                    <p className="font-mono text-base leading-relaxed break-words whitespace-pre-wrap">
-                      {t("comms.p.relay")}
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold tracking-widest text-foreground uppercase">{t("comms.h.silence")}</p>
-                    <p className="font-mono text-base leading-relaxed break-words whitespace-pre-wrap">
-                      {t("comms.p.silence")}
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold tracking-widest text-foreground uppercase">{t("comms.h.cancel")}</p>
-                    <p className="font-mono text-base leading-relaxed break-words whitespace-pre-wrap">
-                      {t("comms.p.cancel")}
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold tracking-widest text-foreground uppercase">{t("comms.h.end")}</p>
-                    <p className="font-mono text-base leading-relaxed break-words whitespace-pre-wrap">
-                      {t("comms.p.end")}
-                    </p>
-                  </div>
-                </div>
-              )}
-            </section>
-          )}
+
+          {type === "mayday" && <FurtherComms />}
 
           <p className="pb-2 text-xs text-muted-foreground">{t("call.disclaimer")}</p>
-
         </div>
       </AppShell>
 
       <CallTabs active={type} />
 
       {readMode && (
-        <div
-          className="fixed inset-0 z-50 flex h-[100dvh] flex-col bg-background"
-          style={{
-            paddingTop: "max(1rem, env(safe-area-inset-top))",
-            paddingLeft: "max(1rem, env(safe-area-inset-left))",
-            paddingRight: "max(1rem, env(safe-area-inset-right))",
-            paddingBottom: "max(1rem, env(safe-area-inset-bottom))",
-          }}
-        >
-          <div className="mx-auto w-full max-w-3xl shrink-0">
-            <div className="mb-4 flex items-center justify-between">
-              <span className="text-lg font-black tracking-widest text-primary">{meta.label}</span>
-              <div className="flex gap-2">
-                <SpeakButton />
-                <Button variant="secondary" size="sm" onClick={() => setReadMode(false)}>
-                  <X /> {t("call.close")}
-                </Button>
-              </div>
-            </div>
-          </div>
-          <div
-            className="min-h-0 w-full flex-1 overflow-y-auto overscroll-contain"
-            style={{ WebkitOverflowScrolling: "touch" }}
-          >
-            <div className="mx-auto max-w-3xl pb-16">
-              {type !== "standard" && (
-                <div className="mb-6 flex items-start gap-3 rounded-xl border-2 border-primary bg-primary/10 p-4">
-                  <Radio className="mt-1 size-6 shrink-0 text-primary" />
-                  <div>
-                    <p className="text-base font-black tracking-widest text-primary uppercase sm:text-lg">
-                      {t("call.channel16Notice")}
-                    </p>
-                    <p className="mt-1 text-sm text-muted-foreground">{t("call.channel16NoticeHint")}</p>
-                  </div>
-                </div>
-              )}
-              <pre className="font-mono text-2xl leading-relaxed break-words whitespace-pre-wrap sm:text-3xl">
-                {script}
-              </pre>
-            </div>
-          </div>
-        </div>
+        <ReadModeOverlay
+          label={meta.label}
+          script={script}
+          showChannel16={type !== "standard"}
+          speakButton={speakButton}
+          onClose={() => setReadMode(false)}
+        />
       )}
     </div>
   );
