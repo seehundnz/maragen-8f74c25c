@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { RefreshCw, Download, Wifi, WifiOff, MonitorSmartphone, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
+import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { useT } from "@/lib/i18n";
 import { APP_VERSION, BUILD_DATE, checkForUpdate, applyUpdate, onUpdateAvailable, swAllowed, getSwStatus, onSwStatusChange, isOnline, isPwaInstalled, onConnectionChange, onInstallModeChange, getLastUpdateCheck, type SwStatus } from "@/lib/pwa";
@@ -48,6 +49,9 @@ export function UpdateSection() {
       setChecked(true);
       setLastCheck(getLastUpdateCheck());
       if (!found && !swAllowed()) window.location.reload();
+    } catch {
+      // Typically offline at sea: the update server can't be reached.
+      toast.error(t("settings.updateCheckFailed"));
     } finally {
       setChecking(false);
     }
