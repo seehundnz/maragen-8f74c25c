@@ -6,11 +6,10 @@ export const es = {
   "nav.terms": "Condiciones",
   "nav.install": "Instalar",
   "nav.guide": "Guía",
-  "nav.nightModeOn": "Activar modo luz roja",
-  "nav.nightModeOff": "Desactivar modo luz roja",
   "nav.themeNext": "siguiente:",
   "settings.theme": "Modo de visualización",
-  "settings.themeHint": "Elige el aspecto de la aplicación. El ajuste del dispositivo no se aplica automáticamente.",
+  "settings.themeHint":
+    "Elige el aspecto de la aplicación. El ajuste del dispositivo no se aplica automáticamente.",
   "settings.theme.dark": "Oscuro",
   "settings.theme.light": "Claro",
   "settings.theme.night": "Noche (luz roja)",
@@ -28,11 +27,13 @@ export const es = {
   "install.android.step1": "Abre el menú del navegador (tres puntos).",
   "install.android.step2": 'Elige "Instalar app" o "Añadir a pantalla de inicio".',
   "install.android.step3": "Confirma la instalación.",
-  "install.desktop.step1": "Abre el menú del navegador o el icono de instalación en la barra de direcciones.",
+  "install.desktop.step1":
+    "Abre el menú del navegador o el icono de instalación en la barra de direcciones.",
   "install.desktop.step2": 'Elige "Instalar" y confirma.',
 
   "home.title": "¿Qué tipo de llamada necesitas?",
-  "home.subtitle": "Elige un tipo de llamada — los datos de tu embarcación, la posición y la hora se insertan automáticamente.",
+  "home.subtitle":
+    "Elige un tipo de llamada — los datos de tu embarcación, la posición y la hora se insertan automáticamente.",
 
   "call.mayday.short": "Socorro",
   "call.panpan.short": "Urgencia",
@@ -51,6 +52,11 @@ export const es = {
   "call.position": "Posición",
   "call.manualEntry": "Entrada manual",
   "call.waitingGps": "Esperando GPS…",
+  "call.gpsError.unsupported": "El GPS no está disponible en este dispositivo",
+  "call.gpsError.denied":
+    "Acceso a la ubicación denegado: permítelo en los ajustes del navegador o del dispositivo",
+  "call.gpsError.unavailable": "Posición no disponible en este momento",
+  "call.gpsError.timeout": "No se recibió la posición GPS a tiempo",
   "call.refreshFix": "Actualizar posición",
   "call.manualPosition": "Posición manual",
   "call.autoUpdateOn": "Actualización automática cada {seconds}s",
@@ -95,25 +101,26 @@ export const es = {
     "Esta app es solo una ayuda. No sustituye una formación radiotelefónica adecuada, una alerta de socorro DSC ni el criterio del patrón. Envía siempre primero una alerta DSC cuando esté disponible.",
 
   "dsc.title": "Enviar primero una alerta de socorro DSC",
-  "dsc.intro": "Si tu radio tiene DSC (botón rojo de socorro), envía la alerta DSC antes de hablar:",
-  "dsc.step1": "Si el tiempo lo permite, selecciona la naturaleza del socorro en el menú DSC de la radio (p. ej., hundimiento, incendio, hombre al agua).",
-  "dsc.step2": "A continuación, levanta la tapa y mantén pulsado el botón rojo DISTRESS durante unos 5 segundos.",
+  "dsc.intro":
+    "Si tu radio tiene DSC (botón rojo de socorro), envía la alerta DSC antes de hablar:",
+  "dsc.step1":
+    "Si el tiempo lo permite, selecciona la naturaleza del socorro en el menú DSC de la radio (p. ej., hundimiento, incendio, hombre al agua).",
+  "dsc.step2":
+    "A continuación, levanta la tapa y mantén pulsado el botón rojo DISTRESS durante unos 5 segundos.",
   "dsc.step3": "Espera la confirmación; la radio cambia automáticamente al canal 16.",
   "dsc.step4": "Después, pronuncia el mensaje MAYDAY siguiente en el canal 16.",
-  "dsc.note": "Comprueba que tu MMSI esté programado en la radio y que haya una posición GPS conectada. Sin DSC, llama MAYDAY directamente por el canal 16.",
+  "dsc.note":
+    "Comprueba que tu MMSI esté programado en la radio y que haya una posición GPS conectada. Sin DSC, llama MAYDAY directamente por el canal 16.",
 
   "comms.title": "Comunicación adicional",
-  "comms.intro": "Frases estándar de radio para comunicación adicional, solicitud de silencio, cancelación de una falsa alarma y finalización de una llamada de socorro.",
+  "comms.intro":
+    "Frases estándar de radio para comunicación adicional, solicitud de silencio, cancelación de una falsa alarma y finalización de una llamada de socorro.",
   "comms.h.relay": "Comunicación adicional durante un caso de socorro",
-  "comms.p.relay": "MAYDAY [VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS]\nThis is [VESSEL NAME], [CALL SIGN]\n[MESSAGE]\nOVER\n",
   "comms.h.silence": "Solicitar silencio (solo estación costera o embarcación en peligro)",
-  "comms.p.silence": "ALL STATIONS, ALL STATIONS, ALL STATIONS\nSILENCE MAYDAY\n",
-  "comms.h.cancel": "Anular una alerta de socorro emitida por error (solo la embarcación en peligro)",
-  "comms.p.cancel":
-    "ALL STATIONS, ALL STATIONS, ALL STATIONS\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
-  "comms.h.end": "Finalizar una llamada de socorro (solo estación costera o embarcación en peligro)",
-  "comms.p.end":
-    "MAYDAY\nAll STATIONS, ALL STATIONS, ALL STATIONS\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC\n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
+  "comms.h.cancel":
+    "Anular una alerta de socorro emitida por error (solo la embarcación en peligro)",
+  "comms.h.end":
+    "Finalizar una llamada de socorro (solo estación costera o embarcación en peligro)",
 
   "nature.sinking": "Hundiéndose",
   "nature.takingOnWater": "Entrada de agua",
@@ -138,10 +145,12 @@ export const es = {
 
   "settings.title": "Ajustes",
   "settings.language": "Idioma",
-  "settings.languageHint": "Idioma de la interfaz. Los guiones de radio permanecen siempre en inglés.",
+  "settings.languageHint":
+    "Idioma de la interfaz. Los guiones de radio permanecen siempre en inglés.",
   "settings.language.auto": "Automático (idioma del dispositivo)",
   "settings.autoUpdate": "Actualizar posición automáticamente",
-  "settings.autoUpdateHint": "Actualiza la posición GPS de forma continua mientras la pantalla de llamada está abierta.",
+  "settings.autoUpdateHint":
+    "Actualiza la posición GPS de forma continua mientras la pantalla de llamada está abierta.",
   "settings.interval": "Intervalo de actualización (segundos)",
   "settings.intervalHint": "Por defecto 10 segundos. Rango permitido de 2 a 300 segundos.",
   "settings.intervalError": "El valor debe estar entre 2 y 300 segundos.",
@@ -149,9 +158,6 @@ export const es = {
   "settings.positionFormat": "Formato de posición",
   "settings.positionFormat.ddm": "Grados y minutos decimales (54° 19.85' N)",
   "settings.positionFormat.dd": "Grados decimales (54.33083°)",
-  "settings.nightMode": "Modo luz roja (visión nocturna)",
-  "settings.nightModeHint":
-    "Tiñe toda la app de rojo tenue sobre un fondo casi negro para preservar tu visión nocturna a bordo.",
   "settings.aiVoice": 'Usar voz IA para "Hablar"',
   "settings.aiVoiceHint":
     "Desactivado de forma predeterminada. Solo si activas esto se envía el texto del guion a nuestro servicio de voz para obtener una voz clara de operador de radio. Mientras permanezca desactivado, solo se usa la voz integrada de tu dispositivo y ningún texto sale nunca de este dispositivo.",
@@ -174,6 +180,7 @@ export const es = {
   "settings.buildDate": "Fecha de compilación",
   "settings.lastChecked": "Última comprobación",
   "settings.checkUpdate": "Buscar actualizaciones",
+  "settings.updateCheckFailed": "No se pudieron buscar actualizaciones. ¿Sin conexión a Internet?",
   "settings.checking": "Comprobando…",
   "settings.updateAvailable": "Hay una nueva versión disponible.",
   "settings.updateNow": "Actualizar ahora",
@@ -208,13 +215,15 @@ export const es = {
 
   "vessels.title": "Embarcaciones",
   "vessels.add": "Añadir embarcación",
-  "vessels.empty": "Aún no hay embarcaciones. Añade tu barco para que cada llamada de radio se rellene automáticamente.",
+  "vessels.empty":
+    "Aún no hay embarcaciones. Añade tu barco para que cada llamada de radio se rellene automáticamente.",
   "vessels.active": "Activa",
   "vessels.setActive": "Marcar como activa",
   "vessels.edit": "Editar embarcación",
   "vessels.delete": "Eliminar embarcación",
   "vessels.deleteConfirmTitle": "¿Eliminar embarcación?",
-  "vessels.deleteConfirmBody": "{name} y todos sus datos se eliminarán permanentemente de este dispositivo.",
+  "vessels.deleteConfirmBody":
+    "{name} y todos sus datos se eliminarán permanentemente de este dispositivo.",
   "vessels.deleteConfirm": "Eliminar",
   "vessels.deleteCancel": "Cancelar",
   "vessels.deleted": "{name} eliminada",
@@ -234,7 +243,8 @@ export const es = {
   "vessels.defaultChannel": "Canal VHF predeterminado",
   "vessels.save": "Guardar embarcación",
   "vessels.cancel": "Cancelar",
-  "vessels.englishNotice": "Introduce el tipo de embarcación, la eslora y el color del casco en inglés — se insertan tal cual en el guion de radio en inglés.",
+  "vessels.englishNotice":
+    "Introduce el tipo de embarcación, la eslora y el color del casco en inglés — se insertan tal cual en el guion de radio en inglés.",
   "vessels.errName": "El nombre de la embarcación es obligatorio",
   "vessels.errMmsi": "El MMSI debe tener exactamente 9 dígitos",
   "vessels.errMmsiShort": "El MMSI es demasiado corto — faltan {count} dígito(s) (9 en total)",
@@ -261,7 +271,7 @@ export const es = {
     "solo se utiliza la síntesis de voz integrada de tu dispositivo. No se transmite ningún texto del guion ni datos de la embarcación; todo permanece en tu dispositivo.",
   "privacy.h.install": "Instalar la app en tu teléfono (PWA)",
   "privacy.p.install1":
-    "Esta app se puede añadir a tu pantalla de inicio para que se abra como una app normal, a pantalla completa y sin barra del navegador. En iPhone/iPad, ábrela en Safari, toca el icono de compartir y elige \"Añadir a pantalla de inicio\". En Android, ábrela en Chrome y elige \"Instalar app\" o \"Añadir a pantalla de inicio\" en el menú.",
+    'Esta app se puede añadir a tu pantalla de inicio para que se abra como una app normal, a pantalla completa y sin barra del navegador. En iPhone/iPad, ábrela en Safari, toca el icono de compartir y elige "Añadir a pantalla de inicio". En Android, ábrela en Chrome y elige "Instalar app" o "Añadir a pantalla de inicio" en el menú.',
   "privacy.p.install2":
     "Una vez instalados, los archivos de la app (código, iconos, estilos) se almacenan en la caché del navegador de tu dispositivo para que también se inicie sin conexión de red — útil en alta mar. Esta caché permanece en tu dispositivo, no contiene datos personales y nunca se sube. Al eliminar el icono de la app o borrar los datos del sitio en tu navegador se elimina, junto con tus perfiles de embarcación y ajustes.",
   "privacy.p.install3":
@@ -294,16 +304,19 @@ export const es = {
   "terms.p.safety2":
     "No se asume ninguna responsabilidad por el uso de esta app. El operador y los desarrolladores no pueden ser considerados responsables de ningún incidente, daño o consecuencia derivada de su uso. Usas la app enteramente bajo tu propia responsabilidad y eres el único responsable de tus acciones y decisiones en el agua.",
   "share.qrTitle": "Compartir embarcación",
-  "share.qrHint": "Haz que un miembro de la tripulación escanee este código en la app para importar este perfil de embarcación.",
+  "share.qrHint":
+    "Haz que un miembro de la tripulación escanee este código en la app para importar este perfil de embarcación.",
   "share.qrAlt": "Código QR con los datos de la embarcación de {name}",
   "share.copyCode": "Copiar código",
   "share.copied": "Código para compartir copiado",
-  "share.privacyNote": "El código contiene únicamente los datos de esta embarcación. No se sube nada — compártelo solo con tu propia tripulación.",
+  "share.privacyNote":
+    "El código contiene únicamente los datos de esta embarcación. No se sube nada — compártelo solo con tu propia tripulación.",
   "share.share": "Compartir",
   "share.scan": "Escanear código QR",
   "share.scanTitle": "Importar embarcación",
   "share.scanHint": "Apunta la cámara al código QR que se muestra en el otro dispositivo.",
-  "share.cameraError": "Cámara no disponible. Permite el acceso a la cámara o pega el código para compartir abajo.",
+  "share.cameraError":
+    "Cámara no disponible. Permite el acceso a la cámara o pega el código para compartir abajo.",
   "share.pasteLabel": "O pega el código para compartir",
   "share.pasteAction": "Importar desde código",
   "share.invalidCode": "Este código no es un código de embarcación válido",
@@ -321,7 +334,8 @@ export const es = {
     "Puedes compartir un perfil de embarcación con tu tripulación como código QR. El código se genera en tu dispositivo y contiene únicamente los datos de esa embarcación (nombre, MMSI, indicativo de llamada, tipo, eslora, color del casco, personas a bordo, canal). No se envía nada a un servidor. Al escanear se usa la cámara de tu dispositivo únicamente para decodificar el código en el navegador; no se almacena ni se transmite ninguna imagen, vídeo o resultado del escaneo. Como el MMSI y el indicativo de llamada pueden identificar a una embarcación y a su propietario, comparte el código solo con personas de confianza.",
 
   "guide.title": "Cómo usar esta app",
-  "guide.subtitle": "Un recorrido rápido por todas las funciones — desde tu primera embarcación hasta una llamada de radio lista para leer.",
+  "guide.subtitle":
+    "Un recorrido rápido por todas las funciones — desde tu primera embarcación hasta una llamada de radio lista para leer.",
   "guide.h.intro": "Qué hace esta app",
   "guide.p.intro1":
     "VHF Call Builder genera guiones de llamadas de radio VHF listos para leer —Mayday, Pan-Pan, Sécurité y llamadas de rutina— usando los datos de tu embarcación, la hora UTC actual y tu posición GPS. Todo permanece en tu dispositivo: sin cuenta, sin servidor, sin necesidad de internet tras la primera carga.",
@@ -359,9 +373,12 @@ export const es = {
   "guide.p.settings2":
     "También puedes comprobar actualizaciones de la app, ver la versión instalada y borrar del dispositivo todos los datos en caché y perfiles de embarcación.",
   "guide.h.pwa": "6. Instalación y uso sin conexión",
-  "guide.p.pwa1": "Esta app es una Progressive Web App y se puede instalar en cualquier dispositivo.",
-  "guide.p.pwa.ios": "iPhone/iPad: ábrela en Safari, toca el icono de compartir y elige «Añadir a pantalla de inicio».",
-  "guide.p.pwa.android": "Android: abre el menú del navegador y elige «Instalar app» o «Añadir a pantalla de inicio».",
+  "guide.p.pwa1":
+    "Esta app es una Progressive Web App y se puede instalar en cualquier dispositivo.",
+  "guide.p.pwa.ios":
+    "iPhone/iPad: ábrela en Safari, toca el icono de compartir y elige «Añadir a pantalla de inicio».",
+  "guide.p.pwa.android":
+    "Android: abre el menú del navegador y elige «Instalar app» o «Añadir a pantalla de inicio».",
   "guide.p.pwa.desktop": "Escritorio: usa el icono de instalación en la barra de direcciones.",
   "guide.p.pwa2":
     "Una vez instalada, la app se abre a pantalla completa como una app normal y funciona sin conexión — GPS, hora UTC y la voz integrada funcionan sin conexión. La voz IA para «Hablar» necesita conexión. La app se actualiza automáticamente en segundo plano; puedes forzar una comprobación en Ajustes.",
@@ -371,23 +388,34 @@ export const es = {
   "terms.title": "Condiciones de uso",
   "terms.subtitle": "Las reglas para usar esta aplicación.",
   "terms.h.scope": "Ámbito y finalidad",
-  "terms.p.scope": "Esta aplicación te ayuda a componer llamadas de radio VHF (Mayday, Pan-Pan, Sécurité y llamadas rutinarias) a partir de los datos de tu embarcación, tu posición y la hora. Es una herramienta de apoyo para uso privado y no comercial.",
+  "terms.p.scope":
+    "Esta aplicación te ayuda a componer llamadas de radio VHF (Mayday, Pan-Pan, Sécurité y llamadas rutinarias) a partir de los datos de tu embarcación, tu posición y la hora. Es una herramienta de apoyo para uso privado y no comercial.",
   "terms.h.liability": "Exención de responsabilidad",
-  "terms.p.liability": "La aplicación se proporciona «tal cual», sin garantía alguna. No sustituye una alerta de socorro DSC, una formación radioeléctrica adecuada ni el juicio del patrón. Envía siempre primero una alerta DSC si es posible. No se asume ninguna responsabilidad por incidentes, daños o consecuencias derivados del uso o la indisponibilidad de la aplicación; la utilizas enteramente bajo tu propio riesgo.",
+  "terms.p.liability":
+    "La aplicación se proporciona «tal cual», sin garantía alguna. No sustituye una alerta de socorro DSC, una formación radioeléctrica adecuada ni el juicio del patrón. Envía siempre primero una alerta DSC si es posible. No se asume ninguna responsabilidad por incidentes, daños o consecuencias derivados del uso o la indisponibilidad de la aplicación; la utilizas enteramente bajo tu propio riesgo.",
   "terms.h.availability": "Disponibilidad y exactitud",
-  "terms.p.availability": "No se garantiza la disponibilidad ininterrumpida, la funcionalidad sin conexión, la precisión del GPS ni la corrección de los textos generados y la síntesis de voz.",
+  "terms.p.availability":
+    "No se garantiza la disponibilidad ininterrumpida, la funcionalidad sin conexión, la precisión del GPS ni la corrección de los textos generados y la síntesis de voz.",
   "terms.h.changes": "Cambios en estas condiciones",
-  "terms.p.changes": "Estas condiciones pueden actualizarse con futuras versiones de la aplicación. Rige la versión mostrada en la aplicación.",
-  "privacy.p.termsLink": "El aviso de seguridad y las condiciones de uso se encuentran ahora en la página Condiciones.",
+  "terms.p.changes":
+    "Estas condiciones pueden actualizarse con futuras versiones de la aplicación. Rige la versión mostrada en la aplicación.",
+  "privacy.p.termsLink":
+    "El aviso de seguridad y las condiciones de uso se encuentran ahora en la página Condiciones.",
 
   "gate.title": "Antes de empezar",
-  "gate.intro": "Ten en cuenta los puntos clave de las condiciones de uso antes de utilizar la aplicación.",
-  "gate.p1": "Esta aplicación no sustituye la formación radiofónica ni un certificado de operador de radio.",
-  "gate.p2": "Utilizas la aplicación completamente bajo tu propia responsabilidad — sin responsabilidad por daños o consecuencias.",
-  "gate.p3": "No se garantiza la disponibilidad, la precisión del GPS ni la exactitud de los textos generados.",
-  "gate.p4": "En una emergencia sigue siempre las instrucciones del centro de coordinación de salvamento; una alerta de socorro DSC tiene prioridad.",
+  "gate.intro":
+    "Ten en cuenta los puntos clave de las condiciones de uso antes de utilizar la aplicación.",
+  "gate.p1":
+    "Esta aplicación no sustituye la formación radiofónica ni un certificado de operador de radio.",
+  "gate.p2":
+    "Utilizas la aplicación completamente bajo tu propia responsabilidad — sin responsabilidad por daños o consecuencias.",
+  "gate.p3":
+    "No se garantiza la disponibilidad, la precisión del GPS ni la exactitud de los textos generados.",
+  "gate.p4":
+    "En una emergencia sigue siempre las instrucciones del centro de coordinación de salvamento; una alerta de socorro DSC tiene prioridad.",
   "gate.readTerms": "Leer las condiciones de uso completas",
   "gate.checkbox": "He leído las condiciones de uso y las acepto.",
   "gate.accept": "Entendido — continuar",
-  "privacy.p.gate": "Tu aceptación de las condiciones de uso se almacena únicamente en la memoria local de este dispositivo y nunca se transmite. Borrar los datos de la app en Ajustes la restablece.",
+  "privacy.p.gate":
+    "Tu aceptación de las condiciones de uso se almacena únicamente en la memoria local de este dispositivo y nunca se transmite. Borrar los datos de la app en Ajustes la restablece.",
 } satisfies Record<string, string>;

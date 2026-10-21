@@ -80,7 +80,9 @@ function VesselEditPage() {
 
   return (
     <AppShell>
-      <h1 className="mb-4 text-2xl font-bold">{id === "new" ? t("vessels.addTitle") : t("vessels.editTitle")}</h1>
+      <h1 className="mb-4 text-2xl font-bold">
+        {id === "new" ? t("vessels.addTitle") : t("vessels.editTitle")}
+      </h1>
       <div className="space-y-4 rounded-xl border border-border bg-card p-4">
         <Field
           id="name"
@@ -165,7 +167,11 @@ function VesselEditPage() {
           </Button>
         </div>
       </div>
-      <VesselQrDialog vessel={draft.id ? draft : null} open={shareOpen} onOpenChange={setShareOpen} />
+      <VesselQrDialog
+        vessel={draft.id ? draft : null}
+        open={shareOpen}
+        onOpenChange={setShareOpen}
+      />
     </AppShell>
   );
 }

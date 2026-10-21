@@ -4,14 +4,19 @@ import { AppShell } from "@/components/AppShell";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { useSettings } from "@/hooks/useFleet";
 import { useT, type LanguagePreference } from "@/lib/i18n";
 import { setLanguagePreference } from "@/lib/i18n/languageStore";
 import { UpdateSection } from "@/components/UpdateSection";
 import { ClearDataSection } from "@/components/ClearDataSection";
 import { resolveTheme, type ThemeMode } from "@/lib/types";
-
 
 const title = "Settings — VHF Call Builder";
 const description =
@@ -67,7 +72,6 @@ function SettingsPage() {
                 <SelectItem value="nb">Norsk</SelectItem>
                 <SelectItem value="sv">Svenska</SelectItem>
               </SelectContent>
-
             </Select>
             <p className="mt-1 text-xs text-muted-foreground">{t("settings.languageHint")}</p>
           </div>
@@ -94,11 +98,15 @@ function SettingsPage() {
               min={2}
               max={300}
               value={settings.intervalSeconds}
-              onChange={(e) => setSettings((s) => ({ ...s, intervalSeconds: Number(e.target.value) }))}
+              onChange={(e) =>
+                setSettings((s) => ({ ...s, intervalSeconds: Number(e.target.value) }))
+              }
               className="max-w-32"
             />
             <p className="mt-1 text-xs text-muted-foreground">{t("settings.intervalHint")}</p>
-            {!intervalValid && <p className="mt-1 text-xs text-destructive">{t("settings.intervalError")}</p>}
+            {!intervalValid && (
+              <p className="mt-1 text-xs text-destructive">{t("settings.intervalError")}</p>
+            )}
           </div>
         </section>
 
@@ -117,7 +125,9 @@ function SettingsPage() {
             <Label htmlFor="format">{t("settings.positionFormat")}</Label>
             <Select
               value={settings.positionFormat}
-              onValueChange={(v) => setSettings((s) => ({ ...s, positionFormat: v as "ddm" | "dd" }))}
+              onValueChange={(v) =>
+                setSettings((s) => ({ ...s, positionFormat: v as "ddm" | "dd" }))
+              }
             >
               <SelectTrigger id="format" className="w-full max-w-md">
                 <SelectValue />
@@ -149,7 +159,6 @@ function SettingsPage() {
             <p className="mt-1 text-xs text-muted-foreground">{t("settings.themeHint")}</p>
           </div>
         </section>
-
 
         <section className="space-y-4 rounded-xl border border-border bg-card p-4">
           <div className="flex items-center justify-between gap-4">

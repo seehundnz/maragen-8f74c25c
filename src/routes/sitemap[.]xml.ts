@@ -1,6 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { getRouterInstance } from "@tanstack/react-start";
-import { sitemapStaticPaths, sitemapXML, sitemapPathForLocation, isSitemapRouteIncluded, type SitemapEntry } from "@/lib/sitemap";
+import {
+  sitemapStaticPaths,
+  sitemapXML,
+  sitemapPathForLocation,
+  isSitemapRouteIncluded,
+  type SitemapEntry,
+} from "@/lib/sitemap";
 import { CALL_TYPES } from "@/lib/types";
 
 const BASE_URL = "https://app.vhfcall.eu";

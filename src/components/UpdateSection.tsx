@@ -1,8 +1,33 @@
 import { useEffect, useState } from "react";
-import { RefreshCw, Download, Wifi, WifiOff, MonitorSmartphone, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
+import {
+  RefreshCw,
+  Download,
+  Wifi,
+  WifiOff,
+  MonitorSmartphone,
+  CheckCircle2,
+  AlertCircle,
+  Loader2,
+} from "lucide-react";
+import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { useT } from "@/lib/i18n";
-import { APP_VERSION, BUILD_DATE, checkForUpdate, applyUpdate, onUpdateAvailable, swAllowed, getSwStatus, onSwStatusChange, isOnline, isPwaInstalled, onConnectionChange, onInstallModeChange, getLastUpdateCheck, type SwStatus } from "@/lib/pwa";
+import {
+  APP_VERSION,
+  BUILD_DATE,
+  checkForUpdate,
+  applyUpdate,
+  onUpdateAvailable,
+  swAllowed,
+  getSwStatus,
+  onSwStatusChange,
+  isOnline,
+  isPwaInstalled,
+  onConnectionChange,
+  onInstallModeChange,
+  getLastUpdateCheck,
+  type SwStatus,
+} from "@/lib/pwa";
 
 function statusIcon(status: SwStatus) {
   switch (status) {
@@ -48,6 +73,9 @@ export function UpdateSection() {
       setChecked(true);
       setLastCheck(getLastUpdateCheck());
       if (!found && !swAllowed()) window.location.reload();
+    } catch {
+      // Typically offline at sea: the update server can't be reached.
+      toast.error(t("settings.updateCheckFailed"));
     } finally {
       setChecking(false);
     }
@@ -60,39 +88,57 @@ export function UpdateSection() {
 
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-5">
         <div className="rounded-lg border border-border p-2">
-          <p className="text-[10px] uppercase tracking-wider text-muted-foreground">{t("settings.swStatus")}</p>
+          <p className="text-[10px] uppercase tracking-wider text-muted-foreground">
+            {t("settings.swStatus")}
+          </p>
           <div className="mt-1 flex items-center gap-1.5 text-xs">
             {statusIcon(swStatus)}
             <span>{t(`settings.swStatus.${swStatus}`)}</span>
           </div>
         </div>
         <div className="rounded-lg border border-border p-2">
-          <p className="text-[10px] uppercase tracking-wider text-muted-foreground">{t("settings.connection")}</p>
+          <p className="text-[10px] uppercase tracking-wider text-muted-foreground">
+            {t("settings.connection")}
+          </p>
           <div className="mt-1 flex items-center gap-1.5 text-xs">
-            {online ? <Wifi className="size-4 text-success" aria-hidden /> : <WifiOff className="size-4 text-destructive" aria-hidden />}
+            {online ? (
+              <Wifi className="size-4 text-success" aria-hidden />
+            ) : (
+              <WifiOff className="size-4 text-destructive" aria-hidden />
+            )}
             <span>{online ? t("settings.online") : t("settings.offline")}</span>
           </div>
         </div>
         <div className="rounded-lg border border-border p-2">
-          <p className="text-[10px] uppercase tracking-wider text-muted-foreground">{t("settings.installStatus")}</p>
+          <p className="text-[10px] uppercase tracking-wider text-muted-foreground">
+            {t("settings.installStatus")}
+          </p>
           <div className="mt-1 flex items-center gap-1.5 text-xs">
-            <MonitorSmartphone className={`size-4 ${installed ? "text-success" : "text-muted-foreground"}`} aria-hidden />
+            <MonitorSmartphone
+              className={`size-4 ${installed ? "text-success" : "text-muted-foreground"}`}
+              aria-hidden
+            />
             <span>{installed ? t("settings.installed") : t("settings.notInstalled")}</span>
           </div>
         </div>
         <div className="rounded-lg border border-border p-2">
-          <p className="text-[10px] uppercase tracking-wider text-muted-foreground">{t("settings.version")}</p>
+          <p className="text-[10px] uppercase tracking-wider text-muted-foreground">
+            {t("settings.version")}
+          </p>
           <p className="mt-1 font-mono text-xs">v{APP_VERSION}</p>
         </div>
         <div className="rounded-lg border border-border p-2">
-          <p className="text-[10px] uppercase tracking-wider text-muted-foreground">{t("settings.buildDate")}</p>
+          <p className="text-[10px] uppercase tracking-wider text-muted-foreground">
+            {t("settings.buildDate")}
+          </p>
           <p className="mt-1 font-mono text-xs">{buildLabel}</p>
         </div>
       </div>
 
       {lastCheck && (
         <p className="text-xs text-muted-foreground">
-          {t("settings.lastChecked")}: <span className="font-mono">{lastCheck.toLocaleString()}</span>
+          {t("settings.lastChecked")}:{" "}
+          <span className="font-mono">{lastCheck.toLocaleString()}</span>
         </p>
       )}
 
@@ -119,4 +165,3 @@ export function UpdateSection() {
     </section>
   );
 }
-

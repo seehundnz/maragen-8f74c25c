@@ -172,7 +172,9 @@ function VesselsPage() {
           <DialogHeader>
             <DialogTitle>{t("share.confirmTitle")}</DialogTitle>
             <DialogDescription>
-              {duplicate ? t("share.duplicate", { mmsi: pending?.mmsi ?? "" }) : t("share.scanHint")}
+              {duplicate
+                ? t("share.duplicate", { mmsi: pending?.mmsi ?? "" })
+                : t("share.scanHint")}
             </DialogDescription>
           </DialogHeader>
           <div className="rounded-xl border border-border bg-card p-3">
@@ -182,7 +184,9 @@ function VesselsPage() {
             </p>
             {pending && (pending.vesselType || pending.length || pending.hullColor) && (
               <p className="text-xs text-muted-foreground">
-                {[pending.length, pending.vesselType, pending.hullColor].filter(Boolean).join(" · ")}
+                {[pending.length, pending.vesselType, pending.hullColor]
+                  .filter(Boolean)
+                  .join(" · ")}
               </p>
             )}
           </div>
@@ -204,7 +208,6 @@ function VesselsPage() {
         </DialogContent>
       </Dialog>
 
-
       <Dialog open={deleteConfirm !== null} onOpenChange={(o) => !o && setDeleteConfirm(null)}>
         <DialogContent className="max-w-sm">
           <DialogHeader>
@@ -214,7 +217,10 @@ function VesselsPage() {
             </DialogDescription>
           </DialogHeader>
           <div className="flex flex-wrap gap-2">
-            <Button variant="destructive" onClick={() => deleteConfirm && confirmDelete(deleteConfirm)}>
+            <Button
+              variant="destructive"
+              onClick={() => deleteConfirm && confirmDelete(deleteConfirm)}
+            >
               {t("vessels.deleteConfirm")}
             </Button>
             <Button variant="ghost" onClick={() => setDeleteConfirm(null)}>

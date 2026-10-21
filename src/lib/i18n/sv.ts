@@ -6,8 +6,6 @@ export const sv = {
   "nav.terms": "Villkor",
   "nav.install": "Installera",
   "nav.guide": "Guide",
-  "nav.nightModeOn": "Slå på nattläge",
-  "nav.nightModeOff": "Slå av nattläge",
   "nav.themeNext": "nästa:",
   "settings.theme": "Visningsläge",
   "settings.themeHint": "Välj hur appen ser ut. Enhetens inställning används inte automatiskt.",
@@ -28,7 +26,8 @@ export const sv = {
   "install.android.step1": "Öppna webbläsarens meny (tre prickar).",
   "install.android.step2": 'Välj "Installera app" eller "Lägg till på hemskärmen".',
   "install.android.step3": "Bekräfta installationen.",
-  "install.desktop.step1": "Öppna webbläsarens meny eller klicka på installationsikonen i adressfältet.",
+  "install.desktop.step1":
+    "Öppna webbläsarens meny eller klicka på installationsikonen i adressfältet.",
   "install.desktop.step2": 'Välj "Installera" och bekräfta.',
 
   "home.title": "Vilken typ av anrop behöver du göra?",
@@ -51,6 +50,11 @@ export const sv = {
   "call.position": "Position",
   "call.manualEntry": "Manuell inmatning",
   "call.waitingGps": "Väntar på GPS…",
+  "call.gpsError.unsupported": "GPS är inte tillgänglig på den här enheten",
+  "call.gpsError.denied":
+    "Platsåtkomst nekades – tillåt den i webbläsarens eller enhetens inställningar",
+  "call.gpsError.unavailable": "Positionen är inte tillgänglig just nu",
+  "call.gpsError.timeout": "Ingen GPS-position mottogs i tid",
   "call.refreshFix": "Uppdatera position",
   "call.manualPosition": "Manuell position",
   "call.autoUpdateOn": "Auto-uppdatering var {seconds}:e sekund",
@@ -96,24 +100,21 @@ export const sv = {
 
   "dsc.title": "Skicka ett DSC-nödlarm först",
   "dsc.intro": "Om din radio har DSC (röd nödknapp), skicka DSC-larmet innan du talar:",
-  "dsc.step1": "Om tiden tillåter, välj typ av nöd i radions DSC-meny (t.ex. sjunker, brand, man överbord).",
+  "dsc.step1":
+    "Om tiden tillåter, välj typ av nöd i radions DSC-meny (t.ex. sjunker, brand, man överbord).",
   "dsc.step2": "Lyft sedan locket och håll in den röda DISTRESS-knappen i ca 5 sekunder.",
   "dsc.step3": "Vänta på kvittens; radion växlar automatiskt till kanal 16.",
   "dsc.step4": "Läs sedan upp MAYDAY-meddelandet nedan på kanal 16.",
-  "dsc.note": "Kontrollera att ditt MMSI är programmerat i radion och att en GPS-position är ansluten. Utan DSC, anropa MAYDAY direkt på kanal 16.",
+  "dsc.note":
+    "Kontrollera att ditt MMSI är programmerat i radion och att en GPS-position är ansluten. Utan DSC, anropa MAYDAY direkt på kanal 16.",
 
   "comms.title": "Fortsatt kommunikation",
-  "comms.intro": "Standardfraser för fortsatt kommunikation, begäran om tystnad, återkallande av falsklarm och avslutande av nödanrop.",
+  "comms.intro":
+    "Standardfraser för fortsatt kommunikation, begäran om tystnad, återkallande av falsklarm och avslutande av nödanrop.",
   "comms.h.relay": "Fortsatt kommunikation under ett nödfall",
-  "comms.p.relay": "MAYDAY [VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS]\nThis is [VESSEL NAME], [CALL SIGN]\n[MESSAGE]\nOVER\n",
   "comms.h.silence": "Begäran om tystnad (endast kustradiostation eller fartyg i nöd)",
-  "comms.p.silence": "ALL STATIONS, ALL STATIONS, ALL STATIONS\nSILENCE MAYDAY\n",
   "comms.h.cancel": "Återkalla ett felaktigt utlöst nödlarm (endast fartyg i nöd)",
-  "comms.p.cancel":
-    "ALL STATIONS, ALL STATIONS, ALL STATIONS\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
   "comms.h.end": "Avsluta ett nödanrop (endast kuststation eller fartyg i nöd)",
-  "comms.p.end":
-    "MAYDAY\nAll STATIONS, ALL STATIONS, ALL STATIONS\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC\n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
 
   "nature.sinking": "Sjunker",
   "nature.takingOnWater": "Tar in vatten",
@@ -149,9 +150,6 @@ export const sv = {
   "settings.positionFormat": "Positionsformat",
   "settings.positionFormat.ddm": "Grader och decimalminuter (54° 19.85' N)",
   "settings.positionFormat.dd": "Decimalgrader (54.33083°)",
-  "settings.nightMode": "Nattläge (rött ljus)",
-  "settings.nightModeHint":
-    "Färgar hela appen i dämpat rött mot en nästan svart bakgrund för att bevara ditt mörkerseende ombord.",
   "settings.aiVoice": 'Använd AI-röst för "Tala"',
   "settings.aiVoiceHint":
     "Avstängd som standard. Om du slår på detta skickas texten till vår taltjänst för en tydlig radiopratarröst. När den är avstängd används endast din enhets inbyggda röst och ingen text lämnar enheten.",
@@ -174,6 +172,7 @@ export const sv = {
   "settings.buildDate": "Byggdatum",
   "settings.lastChecked": "Senast kontrollerad",
   "settings.checkUpdate": "Sök efter uppdateringar",
+  "settings.updateCheckFailed": "Kunde inte söka efter uppdateringar. Ingen internetanslutning?",
   "settings.checking": "Söker…",
   "settings.updateAvailable": "En ny version är tillgänglig.",
   "settings.updateNow": "Uppdatera nu",
@@ -208,13 +207,15 @@ export const sv = {
 
   "vessels.title": "Fartyg",
   "vessels.add": "Lägg till fartyg",
-  "vessels.empty": "Inga fartyg ännu. Lägg till din båt så att varje radioanrop fylls i automatiskt.",
+  "vessels.empty":
+    "Inga fartyg ännu. Lägg till din båt så att varje radioanrop fylls i automatiskt.",
   "vessels.active": "Aktivt",
   "vessels.setActive": "Välj som aktivt",
   "vessels.edit": "Redigera fartyg",
   "vessels.delete": "Ta bort fartyg",
   "vessels.deleteConfirmTitle": "Ta bort fartyg?",
-  "vessels.deleteConfirmBody": "{name} och alla dess uppgifter kommer att tas bort permanent från denna enhet.",
+  "vessels.deleteConfirmBody":
+    "{name} och alla dess uppgifter kommer att tas bort permanent från denna enhet.",
   "vessels.deleteConfirm": "Ta bort",
   "vessels.deleteCancel": "Avbryt",
   "vessels.deleted": "{name} borttagen",
@@ -234,7 +235,8 @@ export const sv = {
   "vessels.defaultChannel": "Standard VHF-kanal",
   "vessels.save": "Spara fartyg",
   "vessels.cancel": "Avbryt",
-  "vessels.englishNotice": "Vänligen ange fartygstyp, längd och skrovfärg på engelska — de infogas i det engelska radiomanuskriptet precis som de skrivs.",
+  "vessels.englishNotice":
+    "Vänligen ange fartygstyp, längd och skrovfärg på engelska — de infogas i det engelska radiomanuskriptet precis som de skrivs.",
   "vessels.errName": "Fartygsnamn krävs",
   "vessels.errMmsi": "MMSI måste vara exakt 9 siffror",
   "vessels.errMmsiShort": "MMSI är för kort — {count} siffra/siffror till behövs (9 totalt)",
@@ -294,16 +296,19 @@ export const sv = {
   "terms.p.safety2":
     "Inget ansvar tas för användningen av denna app. Operatören och utvecklarna kan inte hållas ansvariga för incidenter, skador eller konsekvenser som följer av dess användning. Du använder appen helt på egen risk och är ensam ansvarig för dina handlingar och beslut på vattnet.",
   "share.qrTitle": "Dela fartyg",
-  "share.qrHint": "Låt en besättningsmedlem skanna denna kod i appen för att importera fartygsprofilen.",
+  "share.qrHint":
+    "Låt en besättningsmedlem skanna denna kod i appen för att importera fartygsprofilen.",
   "share.qrAlt": "QR-kod med fartygsuppgifter för {name}",
   "share.copyCode": "Kopiera kod",
   "share.copied": "Delningskod kopierad",
-  "share.privacyNote": "Koden innehåller endast detta fartygs uppgifter. Ingenting laddas upp — dela den endast med din egen besättning.",
+  "share.privacyNote":
+    "Koden innehåller endast detta fartygs uppgifter. Ingenting laddas upp — dela den endast med din egen besättning.",
   "share.share": "Dela",
   "share.scan": "Skanna QR-kod",
   "share.scanTitle": "Importera fartyg",
   "share.scanHint": "Rikta kameran mot QR-koden som visas på den andra enheten.",
-  "share.cameraError": "Kameran är inte tillgänglig. Vänligen tillåt kameratillgång eller klistra in delningskoden nedan.",
+  "share.cameraError":
+    "Kameran är inte tillgänglig. Vänligen tillåt kameratillgång eller klistra in delningskoden nedan.",
   "share.pasteLabel": "Eller klistra in delningskoden",
   "share.pasteAction": "Importera från kod",
   "share.invalidCode": "Denna kod är inte en giltig delningskod för fartyg",
@@ -321,7 +326,8 @@ export const sv = {
     "Du kan dela en fartygsprofil med din besättning som en QR-kod. Koden genereras på din enhet och innehåller endast det fartygets uppgifter (namn, MMSI, anropssignal, typ, längd, skrovfärg, personer ombord, kanal). Ingenting skickas till en server. Skanningen använder din enhets kamera uteslutande för att avkoda koden i webbläsaren; ingen bild, video eller skanningsresultat lagras eller överförs. Eftersom MMSI och anropssignal kan identifiera ett fartyg och dess ägare bör du endast dela koden med personer du litar på.",
 
   "guide.title": "Hur man använder appen",
-  "guide.subtitle": "En snabb genomgång av alla funktioner — från ditt första fartyg till ett färdigt radioanrop.",
+  "guide.subtitle":
+    "En snabb genomgång av alla funktioner — från ditt första fartyg till ett färdigt radioanrop.",
   "guide.h.intro": "Vad appen gör",
   "guide.p.intro1":
     "VHF Call Builder genererar radiomanuskript som är redo att läsas upp — Mayday, Pan-Pan, Sécurité och rutinanrop — med hjälp av dina fartygsuppgifter, aktuell UTC-tid och din GPS-position. Allt stannar på din enhet: inget konto, ingen server och inget internet behövs efter den första laddningen.",
@@ -360,8 +366,10 @@ export const sv = {
     "Du kan också söka efter appuppdateringar, se installerad version och rensa all cachad data och alla fartygsprofiler från enheten.",
   "guide.h.pwa": "6. Installation & offline-användning",
   "guide.p.pwa1": "Denna app är en Progressive Web App och kan installeras på valfri enhet.",
-  "guide.p.pwa.ios": "iPhone/iPad: Öppna i Safari, tryck på dela-ikonen och välj ”Lägg till på hemskärmen”.",
-  "guide.p.pwa.android": "Android: Öppna webbläsarmenyn och välj ”Installera app” eller ”Lägg till på hemskärmen”.",
+  "guide.p.pwa.ios":
+    "iPhone/iPad: Öppna i Safari, tryck på dela-ikonen och välj ”Lägg till på hemskärmen”.",
+  "guide.p.pwa.android":
+    "Android: Öppna webbläsarmenyn och välj ”Installera app” eller ”Lägg till på hemskärmen”.",
   "guide.p.pwa.desktop": "Desktop: Använd installationsikonen i adressfältet.",
   "guide.p.pwa2":
     "När den är installerad öppnas appen i helskärm som en vanlig app och fungerar offline — GPS, UTC-tid och den inbyggda rösten fungerar alla utan anslutning. AI-rösten för ”Tala” kräver anslutning. Appen uppdaterar sig själv i bakgrunden; du kan tvinga fram en kontroll i inställningarna.",
@@ -371,23 +379,30 @@ export const sv = {
   "terms.title": "Användarvillkor",
   "terms.subtitle": "Reglerna för att använda den här appen.",
   "terms.h.scope": "Omfattning och syfte",
-  "terms.p.scope": "Den här appen hjälper dig att sätta samman VHF-radiomeddelanden (Mayday, Pan-Pan, Sécurité och rutinanrop) utifrån dina fartygsuppgifter, position och tid. Det är ett hjälpmedel för privat, icke-kommersiellt bruk.",
+  "terms.p.scope":
+    "Den här appen hjälper dig att sätta samman VHF-radiomeddelanden (Mayday, Pan-Pan, Sécurité och rutinanrop) utifrån dina fartygsuppgifter, position och tid. Det är ett hjälpmedel för privat, icke-kommersiellt bruk.",
   "terms.h.liability": "Ansvarsfriskrivning",
-  "terms.p.liability": "Appen tillhandahålls ”i befintligt skick” utan någon garanti. Den ersätter inte ett DSC-nödlarm, ordentlig radioutbildning eller skepparens omdöme. Skicka alltid ett DSC-larm först om möjligt. Inget ansvar tas för incidenter, skador eller följder av användningen eller otillgängligheten av appen; du använder den helt på egen risk.",
+  "terms.p.liability":
+    "Appen tillhandahålls ”i befintligt skick” utan någon garanti. Den ersätter inte ett DSC-nödlarm, ordentlig radioutbildning eller skepparens omdöme. Skicka alltid ett DSC-larm först om möjligt. Inget ansvar tas för incidenter, skador eller följder av användningen eller otillgängligheten av appen; du använder den helt på egen risk.",
   "terms.h.availability": "Tillgänglighet och korrekthet",
-  "terms.p.availability": "Ingen garanti ges för oavbruten tillgänglighet, offlinefunktion, GPS-noggrannhet eller korrektheten hos de genererade texterna och taluppläsningen.",
+  "terms.p.availability":
+    "Ingen garanti ges för oavbruten tillgänglighet, offlinefunktion, GPS-noggrannhet eller korrektheten hos de genererade texterna och taluppläsningen.",
   "terms.h.changes": "Ändringar av dessa villkor",
-  "terms.p.changes": "Dessa villkor kan uppdateras med framtida versioner av appen. Den version som visas i appen gäller.",
+  "terms.p.changes":
+    "Dessa villkor kan uppdateras med framtida versioner av appen. Den version som visas i appen gäller.",
   "privacy.p.termsLink": "Säkerhetsmeddelandet och användarvillkoren finns nu på sidan Villkor.",
 
   "gate.title": "Innan du börjar",
   "gate.intro": "Ta del av de viktigaste punkterna i användarvillkoren innan du använder appen.",
   "gate.p1": "Den här appen ersätter varken radioutbildning eller ett radiocertifikat.",
   "gate.p2": "Du använder appen helt på egen risk — inget ansvar för skador eller följder.",
-  "gate.p3": "Ingen garanti för tillgänglighet, GPS-noggrannhet eller riktigheten i de genererade texterna.",
-  "gate.p4": "Följ alltid räddningsledningscentralens anvisningar vid en nödsituation; ett DSC-nödlarm har företräde.",
+  "gate.p3":
+    "Ingen garanti för tillgänglighet, GPS-noggrannhet eller riktigheten i de genererade texterna.",
+  "gate.p4":
+    "Följ alltid räddningsledningscentralens anvisningar vid en nödsituation; ett DSC-nödlarm har företräde.",
   "gate.readTerms": "Läs hela användarvillkoren",
   "gate.checkbox": "Jag har läst användarvillkoren och godkänner dem.",
   "gate.accept": "Förstått — fortsätt",
-  "privacy.p.gate": "Ditt godkännande av användarvillkoren lagras endast lokalt på den här enheten och överförs aldrig. Det återställs när du raderar appdata i inställningarna.",
+  "privacy.p.gate":
+    "Ditt godkännande av användarvillkoren lagras endast lokalt på den här enheten och överförs aldrig. Det återställs när du raderar appdata i inställningarna.",
 } as const;

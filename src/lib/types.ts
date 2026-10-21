@@ -24,7 +24,6 @@ export interface Settings {
   activeVesselId: string | null;
   useAiVoice: boolean;
   language: "auto" | "en" | "de" | "fr" | "nl" | "es" | "it" | "sv" | "nb" | "hr" | "cs";
-  nightMode?: boolean;
   theme?: ThemeMode;
 }
 
@@ -36,7 +35,6 @@ export const DEFAULT_SETTINGS: Settings = {
   activeVesselId: null,
   useAiVoice: false,
   language: "auto",
-  nightMode: false,
   theme: "dark",
 };
 
@@ -87,9 +85,8 @@ export function isCallType(value: string): value is CallType {
   return (CALL_TYPES as string[]).includes(value);
 }
 
-export function resolveTheme(settings: { theme?: ThemeMode; nightMode?: boolean }): ThemeMode {
-  if (settings.theme) return settings.theme;
-  return settings.nightMode ? "night" : "dark";
+export function resolveTheme(settings: { theme?: ThemeMode }): ThemeMode {
+  return settings.theme ?? "dark";
 }
 
 export const THEME_ORDER: ThemeMode[] = ["dark", "light", "night"];

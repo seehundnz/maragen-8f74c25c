@@ -6,8 +6,7 @@
 export const BUILD_DATE: string =
   typeof __BUILD_DATE__ === "string" ? __BUILD_DATE__ : new Date().toISOString();
 
-export const APP_VERSION: string =
-  typeof __APP_VERSION__ === "string" ? __APP_VERSION__ : "0.0.0";
+export const APP_VERSION: string = typeof __APP_VERSION__ === "string" ? __APP_VERSION__ : "0.0.0";
 
 const SW_URL = "/sw.js";
 
@@ -29,8 +28,11 @@ export function swAllowed(): boolean {
   if (!import.meta.env.PROD) return false;
   if (window.self !== window.top) return false;
   if (isBlockedHost(window.location.hostname)) return false;
-  if (new URLSearchParams(window.location.search).has("sw") &&
-      new URLSearchParams(window.location.search).get("sw") === "off") return false;
+  if (
+    new URLSearchParams(window.location.search).has("sw") &&
+    new URLSearchParams(window.location.search).get("sw") === "off"
+  )
+    return false;
   return true;
 }
 
@@ -89,7 +91,6 @@ function setUpdateAvailable(value: boolean) {
   updateListeners.forEach((cb) => cb(value));
 }
 
-
 function deriveStatus(reg: ServiceWorkerRegistration | null): SwStatus {
   if (typeof window === "undefined" || !("serviceWorker" in navigator)) return "unsupported";
   if (!reg) return "notRegistered";
@@ -108,7 +109,11 @@ function refreshStatus() {
 function trackWorker(worker: ServiceWorker | null) {
   if (!worker) return;
   worker.addEventListener("statechange", () => {
-    if (worker.state === "installed" && navigator.serviceWorker.controller && registration?.waiting) {
+    if (
+      worker.state === "installed" &&
+      navigator.serviceWorker.controller &&
+      registration?.waiting
+    ) {
       setUpdateAvailable(true);
     }
     refreshStatus();
@@ -161,7 +166,6 @@ export async function registerServiceWorker(): Promise<void> {
     setSwStatus("notRegistered");
   }
 }
-
 
 export async function checkForUpdate(): Promise<boolean> {
   if (!registration) return false;
@@ -220,7 +224,6 @@ export async function clearAllData(): Promise<void> {
     /* ignore */
   }
 }
-
 
 export function onConnectionChange(cb: () => void): () => void {
   if (typeof window === "undefined") return () => {};
@@ -296,7 +299,8 @@ export function detectPlatform(): InstallPlatform {
   const ua = navigator.userAgent;
   const isIos =
     /iPad|iPhone|iPod/.test(ua) ||
-    (navigator.platform === "MacIntel" && (navigator as Navigator & { maxTouchPoints?: number }).maxTouchPoints! > 1);
+    (navigator.platform === "MacIntel" &&
+      (navigator as Navigator & { maxTouchPoints?: number }).maxTouchPoints! > 1);
   if (isIos) {
     const isSafari = /Safari/.test(ua) && !/CriOS|FxiOS|EdgiOS|OPiOS/.test(ua);
     return isSafari ? "ios-safari" : "ios-other";
@@ -304,4 +308,3 @@ export function detectPlatform(): InstallPlatform {
   if (/Android/.test(ua)) return "android";
   return "desktop";
 }
-

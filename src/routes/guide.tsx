@@ -97,7 +97,10 @@ function GuidePage() {
 
         <Section heading={t("guide.h.privacy")}>
           <p>{t("guide.p.privacy")}</p>
-          <Link to="/privacy" className="font-medium text-primary underline-offset-4 hover:underline">
+          <Link
+            to="/privacy"
+            className="font-medium text-primary underline-offset-4 hover:underline"
+          >
             {t("nav.privacy")}
           </Link>
         </Section>

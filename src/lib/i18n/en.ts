@@ -6,11 +6,10 @@ export const en = {
   "nav.terms": "Terms",
   "nav.install": "Install",
   "nav.guide": "Guide",
-  "nav.nightModeOn": "Turn on red-light mode",
-  "nav.nightModeOff": "Turn off red-light mode",
   "nav.themeNext": "next:",
   "settings.theme": "Display mode",
-  "settings.themeHint": "Choose how the app looks. The device setting is not applied automatically.",
+  "settings.themeHint":
+    "Choose how the app looks. The device setting is not applied automatically.",
   "settings.theme.dark": "Dark",
   "settings.theme.light": "Light",
   "settings.theme.night": "Night (red light)",
@@ -32,7 +31,8 @@ export const en = {
   "install.desktop.step2": 'Choose "Install" and confirm.',
 
   "home.title": "What kind of call do you need?",
-  "home.subtitle": "Choose a call type — your vessel data, position and time are inserted automatically.",
+  "home.subtitle":
+    "Choose a call type — your vessel data, position and time are inserted automatically.",
 
   "call.mayday.short": "Distress",
   "call.panpan.short": "Urgency",
@@ -51,6 +51,11 @@ export const en = {
   "call.position": "Position",
   "call.manualEntry": "Manual entry",
   "call.waitingGps": "Waiting for GPS…",
+  "call.gpsError.unsupported": "GPS is not available on this device",
+  "call.gpsError.denied":
+    "Location access was denied — allow it in your browser or device settings",
+  "call.gpsError.unavailable": "Position currently unavailable",
+  "call.gpsError.timeout": "No GPS position received in time",
   "call.refreshFix": "Refresh fix",
   "call.manualPosition": "Manual position",
   "call.autoUpdateOn": "Auto-update every {seconds}s",
@@ -96,24 +101,22 @@ export const en = {
 
   "dsc.title": "Send a DSC distress alert first",
   "dsc.intro": "If your radio has DSC (red distress button), send the DSC alert before speaking:",
-  "dsc.step1": "If time allows, select the nature of distress in the radio's DSC menu (e.g. sinking, fire, man overboard).",
-  "dsc.step2": "Then lift the cover and press and hold the red DISTRESS button for about 5 seconds.",
+  "dsc.step1":
+    "If time allows, select the nature of distress in the radio's DSC menu (e.g. sinking, fire, man overboard).",
+  "dsc.step2":
+    "Then lift the cover and press and hold the red DISTRESS button for about 5 seconds.",
   "dsc.step3": "Wait for the acknowledgement; the radio switches to channel 16 automatically.",
   "dsc.step4": "Then speak the MAYDAY message below on channel 16.",
-  "dsc.note": "Check that your MMSI is programmed into the radio and a GPS position is connected. Without DSC, call MAYDAY directly on channel 16.",
+  "dsc.note":
+    "Check that your MMSI is programmed into the radio and a GPS position is connected. Without DSC, call MAYDAY directly on channel 16.",
 
   "comms.title": "Further communication",
-  "comms.intro": "Standard radio phrases for further communication, silence requests, false-alarm cancellation and ending a distress call.",
+  "comms.intro":
+    "Standard radio phrases for further communication, silence requests, false-alarm cancellation and ending a distress call.",
   "comms.h.relay": "Further communication during a distress case",
-  "comms.p.relay": "MAYDAY [VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS]\nThis is [VESSEL NAME], [CALL SIGN]\n[MESSAGE]\nOVER\n",
   "comms.h.silence": "Asking for silence (only coast radio station or vessel in distress)",
-  "comms.p.silence": "ALL STATIONS, ALL STATIONS, ALL STATIONS\nSILENCE MAYDAY\n",
   "comms.h.cancel": "Revert a mistakenly issued distress alert (only vessel in distress)",
-  "comms.p.cancel":
-    "ALL STATIONS, ALL STATIONS, ALL STATIONS\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
   "comms.h.end": "End a distress call (only coast station or vessel in distress)",
-  "comms.p.end":
-    "MAYDAY\nAll STATIONS, ALL STATIONS, ALL STATIONS\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC\n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
 
   "nature.sinking": "Sinking",
   "nature.takingOnWater": "Taking on water",
@@ -149,9 +152,6 @@ export const en = {
   "settings.positionFormat": "Position format",
   "settings.positionFormat.ddm": "Degrees and decimal minutes (54° 19.85' N)",
   "settings.positionFormat.dd": "Decimal degrees (54.33083°)",
-  "settings.nightMode": "Red-light mode (night vision)",
-  "settings.nightModeHint":
-    "Tints the whole app in dim red on a near-black background so your night vision on board is preserved.",
   "settings.aiVoice": 'Use AI voice for "Speak"',
   "settings.aiVoiceHint":
     "Off by default. Only if you turn this on is the script text sent to our speech service for a clear radio-operator voice. While it stays off, only your device's built-in voice is used and no text ever leaves this device.",
@@ -174,6 +174,7 @@ export const en = {
   "settings.buildDate": "Build date",
   "settings.lastChecked": "Last checked",
   "settings.checkUpdate": "Check for updates",
+  "settings.updateCheckFailed": "Could not check for updates. No internet connection?",
   "settings.checking": "Checking…",
   "settings.updateAvailable": "A new version is available.",
   "settings.updateNow": "Update now",
@@ -214,7 +215,8 @@ export const en = {
   "vessels.edit": "Edit vessel",
   "vessels.delete": "Delete vessel",
   "vessels.deleteConfirmTitle": "Delete vessel?",
-  "vessels.deleteConfirmBody": "{name} and all its details will be permanently removed from this device.",
+  "vessels.deleteConfirmBody":
+    "{name} and all its details will be permanently removed from this device.",
   "vessels.deleteConfirm": "Delete",
   "vessels.deleteCancel": "Cancel",
   "vessels.deleted": "{name} deleted",
@@ -234,7 +236,8 @@ export const en = {
   "vessels.defaultChannel": "Default VHF channel",
   "vessels.save": "Save vessel",
   "vessels.cancel": "Cancel",
-  "vessels.englishNotice": "Please enter vessel type, length and hull colour in English — they are inserted into the English radio script as typed.",
+  "vessels.englishNotice":
+    "Please enter vessel type, length and hull colour in English — they are inserted into the English radio script as typed.",
   "vessels.errName": "Vessel name is required",
   "vessels.errMmsi": "MMSI must be exactly 9 digits",
   "vessels.errMmsiShort": "MMSI is too short — {count} more digit(s) needed (9 in total)",
@@ -261,7 +264,7 @@ export const en = {
     "only your device's built-in speech synthesis is used. No script text and no vessel data are transmitted; everything stays on your device.",
   "privacy.h.install": "Installing the app on your phone (PWA)",
   "privacy.p.install1":
-    "This app can be added to your home screen so it opens like a normal app, full screen and without a browser bar. On iPhone/iPad open it in Safari, tap the share icon and choose \"Add to Home Screen\". On Android open it in Chrome and choose \"Install app\" or \"Add to Home screen\" from the menu.",
+    'This app can be added to your home screen so it opens like a normal app, full screen and without a browser bar. On iPhone/iPad open it in Safari, tap the share icon and choose "Add to Home Screen". On Android open it in Chrome and choose "Install app" or "Add to Home screen" from the menu.',
   "privacy.p.install2":
     "When installed, the app files (code, icons, styles) are stored in your device's browser cache so it also starts without a network connection — useful offshore. This cache stays on your device, contains no personal data and is never uploaded. Deleting the app icon or clearing the site data in your browser removes it, together with your vessel profiles and settings.",
   "privacy.p.install3":
@@ -298,12 +301,14 @@ export const en = {
   "share.qrAlt": "QR code with the vessel data of {name}",
   "share.copyCode": "Copy code",
   "share.copied": "Share code copied",
-  "share.privacyNote": "The code contains only this vessel's data. Nothing is uploaded — share it only with your own crew.",
+  "share.privacyNote":
+    "The code contains only this vessel's data. Nothing is uploaded — share it only with your own crew.",
   "share.share": "Share",
   "share.scan": "Scan QR code",
   "share.scanTitle": "Import vessel",
   "share.scanHint": "Point the camera at the QR code shown on the other device.",
-  "share.cameraError": "Camera not available. Please allow camera access or paste the share code below.",
+  "share.cameraError":
+    "Camera not available. Please allow camera access or paste the share code below.",
   "share.pasteLabel": "Or paste the share code",
   "share.pasteAction": "Import from code",
   "share.invalidCode": "This code is not a valid vessel share code",
@@ -321,7 +326,8 @@ export const en = {
     "You can share a vessel profile with your crew as a QR code. The code is generated on your device and contains only that vessel's data (name, MMSI, call sign, type, length, hull colour, persons on board, channel). Nothing is sent to a server. Scanning uses your device camera solely to decode the code in the browser; no image, video or scan result is stored or transmitted. Because MMSI and call sign can identify a vessel and its owner, only share the code with people you trust.",
 
   "guide.title": "How to use this app",
-  "guide.subtitle": "A quick walkthrough of every feature — from your first vessel to a ready-to-read radio call.",
+  "guide.subtitle":
+    "A quick walkthrough of every feature — from your first vessel to a ready-to-read radio call.",
   "guide.h.intro": "What this app does",
   "guide.p.intro1":
     "VHF Call Builder generates ready-to-read VHF radio call scripts — Mayday, Pan-Pan, Sécurité and routine calls — using your vessel data, the current UTC time and your GPS position. Everything stays on your device: no account, no server, no internet needed after the first load.",
@@ -360,8 +366,10 @@ export const en = {
     "You can also check for app updates, see the installed version, and clear all cached data and vessel profiles from the device.",
   "guide.h.pwa": "6. Install & offline use",
   "guide.p.pwa1": "This app is a Progressive Web App and can be installed on any device.",
-  "guide.p.pwa.ios": "iPhone/iPad: Open in Safari, tap the share icon and choose “Add to Home Screen”.",
-  "guide.p.pwa.android": "Android: Open the browser menu and choose “Install app” or “Add to Home screen”.",
+  "guide.p.pwa.ios":
+    "iPhone/iPad: Open in Safari, tap the share icon and choose “Add to Home Screen”.",
+  "guide.p.pwa.android":
+    "Android: Open the browser menu and choose “Install app” or “Add to Home screen”.",
   "guide.p.pwa.desktop": "Desktop: Use the install icon in the address bar.",
   "guide.p.pwa2":
     "Once installed, the app opens full screen like a normal app and works offline — GPS, UTC time and the built-in voice all function without a connection. The AI voice for “Speak” needs a connection. The app updates itself in the background; you can force a check in Settings.",
@@ -371,25 +379,33 @@ export const en = {
   "terms.title": "Terms of Use",
   "terms.subtitle": "The rules for using this app.",
   "terms.h.scope": "Scope & purpose",
-  "terms.p.scope": "This app helps you compose VHF radio calls (Mayday, Pan-Pan, Sécurité and routine calls) from your vessel data, position and time. It is a support tool for private, non-commercial use.",
+  "terms.p.scope":
+    "This app helps you compose VHF radio calls (Mayday, Pan-Pan, Sécurité and routine calls) from your vessel data, position and time. It is a support tool for private, non-commercial use.",
   "terms.h.liability": "No liability",
-  "terms.p.liability": "The app is provided “as is” without any warranty. It does not replace a DSC distress alert, proper radio training or the skipper's judgement. Always send a DSC alert first where available. No liability is assumed for incidents, damages or consequences arising from the use or unavailability of this app; you use it entirely at your own risk.",
+  "terms.p.liability":
+    "The app is provided “as is” without any warranty. It does not replace a DSC distress alert, proper radio training or the skipper's judgement. Always send a DSC alert first where available. No liability is assumed for incidents, damages or consequences arising from the use or unavailability of this app; you use it entirely at your own risk.",
   "terms.h.availability": "Availability & accuracy",
-  "terms.p.availability": "No guarantee is given for uninterrupted availability, offline functionality, GPS accuracy or the correctness of the generated scripts and speech output.",
+  "terms.p.availability":
+    "No guarantee is given for uninterrupted availability, offline functionality, GPS accuracy or the correctness of the generated scripts and speech output.",
   "terms.h.changes": "Changes to these terms",
-  "terms.p.changes": "These terms may be updated with future versions of the app. The version shown in the app always applies.",
+  "terms.p.changes":
+    "These terms may be updated with future versions of the app. The version shown in the app always applies.",
   "privacy.p.termsLink": "The safety notice and terms of use have moved to the Terms page.",
 
   "gate.title": "Before you start",
   "gate.intro": "Please note the key points of the terms of use before using this app.",
   "gate.p1": "This app does not replace radio training or a radio operator certificate.",
-  "gate.p2": "You use the app entirely at your own risk — no liability for damages or consequences.",
-  "gate.p3": "No guarantee for availability, GPS accuracy or the correctness of the generated scripts.",
-  "gate.p4": "In an emergency always follow the rescue coordination centre; a DSC distress alert takes priority.",
+  "gate.p2":
+    "You use the app entirely at your own risk — no liability for damages or consequences.",
+  "gate.p3":
+    "No guarantee for availability, GPS accuracy or the correctness of the generated scripts.",
+  "gate.p4":
+    "In an emergency always follow the rescue coordination centre; a DSC distress alert takes priority.",
   "gate.readTerms": "Read the full terms of use",
   "gate.checkbox": "I have read the terms of use and agree to them.",
   "gate.accept": "Understood — continue",
-  "privacy.p.gate": "Your acceptance of the terms of use is stored only in this device's local storage and is never transmitted. Clearing the app data in Settings resets it.",
+  "privacy.p.gate":
+    "Your acceptance of the terms of use is stored only in this device's local storage and is never transmitted. Clearing the app data in Settings resets it.",
 } as const;
 
 export type TranslationKey = keyof typeof en;

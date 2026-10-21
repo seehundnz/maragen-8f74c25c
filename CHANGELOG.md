@@ -9,6 +9,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **MINOR** — new features, backwards-compatible
 - **PATCH** — bug fixes, text corrections, small improvements
 
+## [1.3.2] - 2026-10-22
+
+### Fixed
+- Manual position: empty fields no longer set 0° N 0° E; values outside ±90° / ±180° are rejected; a comma is accepted as decimal separator
+- Positions just below a full degree no longer read "60.00 minutes" but carry over to the next degree
+- GPS error messages are now shown in the selected language
+- "Check for updates" now shows a message when there is no internet connection
+
+### Changed
+- Further-communication radio phrases are kept in one place (still always in English); only their headings are translated
+- Mayday/call page split into smaller parts; the "Speak" button no longer rebuilds every second
+- Automatic tests for radio scripts and position formatting
+- Consistent code formatting
+
+### Removed
+- About 30 unused packages and the old red-light switch setting left over from before the three display modes
+
 ## [1.3.1] - 2026-10-10
 
 ### Fixed

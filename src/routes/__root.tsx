@@ -25,7 +25,6 @@ import {
 import { TermsGate } from "@/components/TermsGate";
 import { resolveTheme } from "@/lib/types";
 
-
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -161,7 +160,6 @@ function RootComponent() {
     document.documentElement.classList.toggle("night", theme === "night");
     document.documentElement.classList.toggle("light", theme === "light");
   }, [settings]);
-
 
   useEffect(() => {
     void registerServiceWorker();

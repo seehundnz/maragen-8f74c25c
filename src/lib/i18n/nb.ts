@@ -6,8 +6,6 @@ export const nb = {
   "nav.terms": "Vilkår",
   "nav.install": "Installer",
   "nav.guide": "Veiledning",
-  "nav.nightModeOn": "Slå på nattmodus",
-  "nav.nightModeOff": "Slå av nattmodus",
   "nav.themeNext": "neste:",
   "settings.theme": "Visningsmodus",
   "settings.themeHint": "Velg hvordan appen ser ut. Enhetens innstilling brukes ikke automatisk.",
@@ -32,7 +30,8 @@ export const nb = {
   "install.desktop.step2": 'Velg "Installer" og bekreft.',
 
   "home.title": "Hva slags oppkall trenger du?",
-  "home.subtitle": "Velg en type oppkall – fartøysopplysninger, posisjon og tid settes inn automatisk.",
+  "home.subtitle":
+    "Velg en type oppkall – fartøysopplysninger, posisjon og tid settes inn automatisk.",
 
   "call.mayday.short": "Nød",
   "call.panpan.short": "Haster",
@@ -51,6 +50,11 @@ export const nb = {
   "call.position": "Posisjon",
   "call.manualEntry": "Manuell inntasting",
   "call.waitingGps": "Venter på GPS…",
+  "call.gpsError.unsupported": "GPS er ikke tilgjengelig på denne enheten",
+  "call.gpsError.denied":
+    "Posisjonstilgang ble avvist – tillat den i nettleser- eller enhetsinnstillingene",
+  "call.gpsError.unavailable": "Posisjonen er ikke tilgjengelig akkurat nå",
+  "call.gpsError.timeout": "Ingen GPS-posisjon mottatt i tide",
   "call.refreshFix": "Oppdater posisjon",
   "call.manualPosition": "Manuell posisjon",
   "call.autoUpdateOn": "Auto-oppdatering hvert {seconds}. sekund",
@@ -96,24 +100,21 @@ export const nb = {
 
   "dsc.title": "Send et DSC-nødanrop først",
   "dsc.intro": "Hvis radioen din har DSC (rød nødknapp), send DSC-nødanropet før du snakker:",
-  "dsc.step1": "Hvis tiden tillater det, velg nødssituasjonens art i radioens DSC-meny (f.eks. sinking, fire, man overboard).",
+  "dsc.step1":
+    "Hvis tiden tillater det, velg nødssituasjonens art i radioens DSC-meny (f.eks. sinking, fire, man overboard).",
   "dsc.step2": "Løft deretter dekselet og hold inne den røde DISTRESS-knappen i ca. 5 sekunder.",
   "dsc.step3": "Vent på bekreftelse; radioen skifter automatisk til kanal 16.",
   "dsc.step4": "Les deretter opp MAYDAY-meldingen nedenfor på kanal 16.",
-  "dsc.note": "Sjekk at MMSI er programmert i radioen og at GPS-posisjon er tilkoblet. Uten DSC, kall opp MAYDAY direkte på kanal 16.",
+  "dsc.note":
+    "Sjekk at MMSI er programmert i radioen og at GPS-posisjon er tilkoblet. Uten DSC, kall opp MAYDAY direkte på kanal 16.",
 
   "comms.title": "Videre kommunikasjon",
-  "comms.intro": "Standard radiofraser for videre kommunikasjon, forespørsel om taushet, kansellering av falsk alarm og avslutning av nødsamtale.",
+  "comms.intro":
+    "Standard radiofraser for videre kommunikasjon, forespørsel om taushet, kansellering av falsk alarm og avslutning av nødsamtale.",
   "comms.h.relay": "Videre kommunikasjon under en nødssituasjon",
-  "comms.p.relay": "MAYDAY [VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS]\nThis is [VESSEL NAME], [CALL SIGN]\n[MESSAGE]\nOVER\n",
   "comms.h.silence": "Be om taushet (kun kystradiostasjon eller fartøy i nød)",
-  "comms.p.silence": "ALL STATIONS, ALL STATIONS, ALL STATIONS\nSILENCE MAYDAY\n",
   "comms.h.cancel": "Kanseller et feilaktig utløst nødanrop (kun fartøy i nød)",
-  "comms.p.cancel":
-    "ALL STATIONS, ALL STATIONS, ALL STATIONS\nThis is [VESSEL NAME], [VESSEL NAME], [VESSEL NAME]\nCall sign [CALL SIGN], MMSI [MMSI]\nCancel my false distress alert of [TIME OF DISTRESS CALL] UTC\nOVER\n",
   "comms.h.end": "Avslutt et nødoppkall (kun kystradiostasjon eller fartøy i nød)",
-  "comms.p.end":
-    "MAYDAY\nAll STATIONS, ALL STATIONS, ALL STATIONS\nThis is [COAST STATION NAME / VESSEL NAME IN DISTRESS] at [CURRENT UTC] UTC\n[VESSEL NAME IN DISTRESS], [CALL SIGN VESSEL IN DISTRESS], [MMSI VESSEL IN DISTRESS]\nSILENCE FINI\n",
 
   "nature.sinking": "Synker",
   "nature.takingOnWater": "Tar inn vann",
@@ -138,7 +139,8 @@ export const nb = {
 
   "settings.title": "Innstillinger",
   "settings.language": "Språk",
-  "settings.languageHint": "Språk i brukergrensesnittet. Radiomanuskript forblir alltid på engelsk.",
+  "settings.languageHint":
+    "Språk i brukergrensesnittet. Radiomanuskript forblir alltid på engelsk.",
   "settings.language.auto": "Automatisk (enhetens språk)",
   "settings.autoUpdate": "Auto-oppdater posisjon",
   "settings.autoUpdateHint": "Oppdater GPS-posisjonen kontinuerlig mens en oppkallsskjerm er åpen.",
@@ -149,9 +151,6 @@ export const nb = {
   "settings.positionFormat": "Posisjonsformat",
   "settings.positionFormat.ddm": "Grader og desimalminutter (54° 19.85' N)",
   "settings.positionFormat.dd": "Desimalgrader (54.33083°)",
-  "settings.nightMode": "Nattmodus (rødt lys)",
-  "settings.nightModeHint":
-    "Farger hele appen i dempet rødt på en nær svart bakgrunn for å bevare nattsynet om bord.",
   "settings.aiVoice": 'Bruk AI-stemme for "Les opp"',
   "settings.aiVoiceHint":
     "Av som standard. Hvis du slår på dette, sendes manuskriptet til vår taletjeneste for å få en tydelig stemme som en radiooperatør. Mens dette er av, brukes bare enhetens innebygde stemme, og ingen tekst forlater enheten.",
@@ -174,6 +173,7 @@ export const nb = {
   "settings.buildDate": "Byggdato",
   "settings.lastChecked": "Sist sjekket",
   "settings.checkUpdate": "Sjekk etter oppdateringer",
+  "settings.updateCheckFailed": "Kunne ikke se etter oppdateringer. Ingen internettforbindelse?",
   "settings.checking": "Sjekker…",
   "settings.updateAvailable": "En ny versjon er tilgjengelig.",
   "settings.updateNow": "Oppdater nå",
@@ -208,13 +208,15 @@ export const nb = {
 
   "vessels.title": "Fartøy",
   "vessels.add": "Legg til fartøy",
-  "vessels.empty": "Ingen fartøy ennå. Legg til båten din slik at hvert radiooppkall fylles ut automatisk.",
+  "vessels.empty":
+    "Ingen fartøy ennå. Legg til båten din slik at hvert radiooppkall fylles ut automatisk.",
   "vessels.active": "Aktiv",
   "vessels.setActive": "Sett som aktiv",
   "vessels.edit": "Rediger fartøy",
   "vessels.delete": "Slett fartøy",
   "vessels.deleteConfirmTitle": "Slette fartøy?",
-  "vessels.deleteConfirmBody": "{name} og alle tilhørende opplysninger vil bli permanent slettet fra denne enheten.",
+  "vessels.deleteConfirmBody":
+    "{name} og alle tilhørende opplysninger vil bli permanent slettet fra denne enheten.",
   "vessels.deleteConfirm": "Slett",
   "vessels.deleteCancel": "Avbryt",
   "vessels.deleted": "{name} slettet",
@@ -234,7 +236,8 @@ export const nb = {
   "vessels.defaultChannel": "Standard VHF-kanal",
   "vessels.save": "Lagre fartøy",
   "vessels.cancel": "Avbryt",
-  "vessels.englishNotice": "Vennligst skriv inn fartøytype, lengde og skrogfarge på engelsk – de settes direkte inn i det engelske radiomanuskriptet.",
+  "vessels.englishNotice":
+    "Vennligst skriv inn fartøytype, lengde og skrogfarge på engelsk – de settes direkte inn i det engelske radiomanuskriptet.",
   "vessels.errName": "Fartøynavn er påkrevd",
   "vessels.errMmsi": "MMSI må være nøyaktig 9 sifre",
   "vessels.errMmsiShort": "MMSI er for kort – trenger {count} siffer til (9 totalt)",
@@ -294,16 +297,19 @@ export const nb = {
   "terms.p.safety2":
     "Det tas intet ansvar for bruken av denne appen. Operatøren og utviklerne kan ikke holdes ansvarlige for hendelser, skader eller konsekvenser som følge av bruken. Du bruker appen helt på egen risiko og er selv ansvarlig for dine handlinger og beslutninger på vannet.",
   "share.qrTitle": "Del fartøy",
-  "share.qrHint": "La et besetningsmedlem skanne denne koden i appen for å importere denne fartøyprofilen.",
+  "share.qrHint":
+    "La et besetningsmedlem skanne denne koden i appen for å importere denne fartøyprofilen.",
   "share.qrAlt": "QR-kode med fartøydata for {name}",
   "share.copyCode": "Kopier kode",
   "share.copied": "Delingskode kopiert",
-  "share.privacyNote": "Koden inneholder kun dette fartøyets data. Ingenting lastes opp – del den kun med din egen besetning.",
+  "share.privacyNote":
+    "Koden inneholder kun dette fartøyets data. Ingenting lastes opp – del den kun med din egen besetning.",
   "share.share": "Del",
   "share.scan": "Skann QR-kode",
   "share.scanTitle": "Importer fartøy",
   "share.scanHint": "Rett kameraet mot QR-koden som vises på den andre enheten.",
-  "share.cameraError": "Kamera er ikke tilgjengelig. Gi kameratillatelse eller lim inn delingskoden nedenfor.",
+  "share.cameraError":
+    "Kamera er ikke tilgjengelig. Gi kameratillatelse eller lim inn delingskoden nedenfor.",
   "share.pasteLabel": "Eller lim inn delingskoden",
   "share.pasteAction": "Importer fra kode",
   "share.invalidCode": "Denne koden er ikke en gyldig delingskode for fartøy",
@@ -321,7 +327,8 @@ export const nb = {
     "Du kan dele en fartøyprofil med besetningen din som en QR-kode. Koden genereres på din enhet og inneholder kun det fartøyets data (navn, MMSI, kallesignal, type, lengde, skrogfarge, personer om bord, kanal). Ingenting sendes til en server. Skanning bruker enhetens kamera kun til å dekode koden i nettleseren; ingen bilder, videoer eller skanneresultater lagres eller overføres. Siden MMSI og kallesignal kan identifisere et fartøy og dets eier, bør du kun dele koden med folk du stoler på.",
 
   "guide.title": "Slik bruker du appen",
-  "guide.subtitle": "En rask gjennomgang av alle funksjoner – fra ditt første fartøy til et ferdig radiomanuskript.",
+  "guide.subtitle":
+    "En rask gjennomgang av alle funksjoner – fra ditt første fartøy til et ferdig radiomanuskript.",
   "guide.h.intro": "Hva denne appen gjør",
   "guide.p.intro1":
     "VHF Call Builder genererer ferdige radiomanuskripter – Mayday, Pan-Pan, Sécurité og rutineoppkall – ved hjelp av dine fartøydata, gjeldende UTC-tid og din GPS-posisjon. Alt forblir på din enhet: ingen brukerkonto, ingen server, og ikke behov for internett etter første innlasting.",
@@ -360,8 +367,10 @@ export const nb = {
     "Du kan også sjekke etter app-oppdateringer, se installert versjon, og slette alle mellomlagrede data og fartøyprofiler fra enheten.",
   "guide.h.pwa": "6. Installasjon og bruk uten nett",
   "guide.p.pwa1": "Denne appen er en Progressive Web App (PWA) og kan installeres på alle enheter.",
-  "guide.p.pwa.ios": "iPhone/iPad: Åpne i Safari, trykk på delingsikonet og velg «Legg til på hjemskjerm».",
-  "guide.p.pwa.android": "Android: Åpne nettlesermenyen og velg «Installer app» eller «Legg til på hjemskjerm».",
+  "guide.p.pwa.ios":
+    "iPhone/iPad: Åpne i Safari, trykk på delingsikonet og velg «Legg til på hjemskjerm».",
+  "guide.p.pwa.android":
+    "Android: Åpne nettlesermenyen og velg «Installer app» eller «Legg til på hjemskjerm».",
   "guide.p.pwa.desktop": "PC/Mac: Bruk installasjonsikonet i adressefeltet.",
   "guide.p.pwa2":
     "Når appen er installert, åpnes den i fullskjerm som en vanlig app og fungerer uten nett – GPS, UTC-tid og den innebygde stemmen fungerer alle uten tilkobling. AI-stemmen for «Les opp» trenger tilkobling. Appen oppdaterer seg selv i bakgrunnen; du kan tvinge frem en sjekk i Innstillinger.",
@@ -371,23 +380,30 @@ export const nb = {
   "terms.title": "Bruksvilkår",
   "terms.subtitle": "Reglene for bruk av denne appen.",
   "terms.h.scope": "Omfang og formål",
-  "terms.p.scope": "Denne appen hjelper deg med å lage VHF-radioanrop (Mayday, Pan-Pan, Sécurité og rutineanrop) basert på fartøydata, posisjon og tid. Den er et hjelpemiddel for privat, ikke-kommersiell bruk.",
+  "terms.p.scope":
+    "Denne appen hjelper deg med å lage VHF-radioanrop (Mayday, Pan-Pan, Sécurité og rutineanrop) basert på fartøydata, posisjon og tid. Den er et hjelpemiddel for privat, ikke-kommersiell bruk.",
   "terms.h.liability": "Ansvarsfraskrivelse",
-  "terms.p.liability": "Appen leveres «som den er» uten noen form for garanti. Den erstatter verken et DSC-nødsignal, ordentlig radioutdanning eller skipperens skjønn. Send alltid et DSC-varsel først der det er tilgjengelig. Det tas ikke ansvar for hendelser, skader eller følger av bruk eller utilgjengelighet av appen; bruken skjer helt på egen risiko.",
+  "terms.p.liability":
+    "Appen leveres «som den er» uten noen form for garanti. Den erstatter verken et DSC-nødsignal, ordentlig radioutdanning eller skipperens skjønn. Send alltid et DSC-varsel først der det er tilgjengelig. Det tas ikke ansvar for hendelser, skader eller følger av bruk eller utilgjengelighet av appen; bruken skjer helt på egen risiko.",
   "terms.h.availability": "Tilgjengelighet og nøyaktighet",
-  "terms.p.availability": "Det gis ingen garanti for uavbrutt tilgjengelighet, offline-funksjonalitet, GPS-nøyaktighet eller korrektheten av de genererte tekstene og taleutgangen.",
+  "terms.p.availability":
+    "Det gis ingen garanti for uavbrutt tilgjengelighet, offline-funksjonalitet, GPS-nøyaktighet eller korrektheten av de genererte tekstene og taleutgangen.",
   "terms.h.changes": "Endringer av disse vilkårene",
-  "terms.p.changes": "Disse vilkårene kan oppdateres med fremtidige versjoner av appen. Versjonen som vises i appen gjelder.",
+  "terms.p.changes":
+    "Disse vilkårene kan oppdateres med fremtidige versjoner av appen. Versjonen som vises i appen gjelder.",
   "privacy.p.termsLink": "Sikkerhetsmerknaden og bruksvilkårene finner du nå på siden Vilkår.",
 
   "gate.title": "Før du begynner",
   "gate.intro": "Vær oppmerksom på de viktigste punktene i bruksvilkårene før du bruker appen.",
   "gate.p1": "Denne appen erstatter verken radioutdanning eller et radiosertifikat.",
   "gate.p2": "Du bruker appen helt på egen risiko — intet ansvar for skader eller følger.",
-  "gate.p3": "Ingen garanti for tilgjengelighet, GPS-nøyaktighet eller korrektheten av de genererte tekstene.",
-  "gate.p4": "Følg alltid redningsledelsens instruksjoner i en nødsituasjon; et DSC-nødsignal har prioritet.",
+  "gate.p3":
+    "Ingen garanti for tilgjengelighet, GPS-nøyaktighet eller korrektheten av de genererte tekstene.",
+  "gate.p4":
+    "Følg alltid redningsledelsens instruksjoner i en nødsituasjon; et DSC-nødsignal har prioritet.",
   "gate.readTerms": "Les hele bruksvilkårene",
   "gate.checkbox": "Jeg har lest bruksvilkårene og godtar dem.",
   "gate.accept": "Forstått — fortsett",
-  "privacy.p.gate": "Ditt samtykke til bruksvilkårene lagres kun lokalt på denne enheten og overføres aldri. Det tilbakestilles når du sletter appdata i innstillingene.",
+  "privacy.p.gate":
+    "Ditt samtykke til bruksvilkårene lagres kun lokalt på denne enheten og overføres aldri. Det tilbakestilles når du sletter appdata i innstillingene.",
 } as const;
